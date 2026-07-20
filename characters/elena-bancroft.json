@@ -1,0 +1,38 @@
+{
+  "character_id": "char_001_elena_bancroft",
+  "name": "Elena Bancroft",
+  "profession": "Periodista de Investigación (Boston Globe)",
+  "biography": "Marcada por la crudeza de la Gran Depresión. Llegó a esta ciudad portuaria siguiendo la pista de cargamentos ilegales de oro y extrañas desapariciones, buscando la exclusiva que salve su carrera.",
+  "traits": [
+    "Atlética y ágil",
+    "Mente analítica y deductiva",
+    "Cínica ante lo paranormal",
+    "Oído entrenado para escuchar tras las puertas"
+  ],
+  "inventory": {
+    "camera": {
+      "item_id": "item_camera_bellows",
+      "name": "Cámara de fuelle Kodak (1938)",
+      "status": "Cargada con carrete limitado",
+      "description": "Cada fotografía gasta película física pero otorga pruebas irrefutables ante el periódico."
+    },
+    "flashlight": {
+      "item_id": "item_dynamo_flashlight",
+      "name": "Linterna de dínamo manual",
+      "status": "Funcional",
+      "description": "No usa pilas. Recargarla girando la manivela genera un ruido mecánico áspero que puede delatar tu posición si hay enemigos cerca."
+    },
+    "notebook": {
+      "item_id": "item_reporter_notebook",
+      "name": "Libreta de notas y lápiz",
+      "status": "Vacía",
+      "description": "Registra pistas, contradicciones de los lugareños y testimonios clave."
+    }
+  },
+  "psychological_state": "Alerta y racional",
+  "clues_found": [],
+  "narrative_flags": {
+    "detected_by_cult": false,
+    "has_proof_of_the_abyss": false
+  }
+}
