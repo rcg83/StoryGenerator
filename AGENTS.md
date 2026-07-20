@@ -7,22 +7,26 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 ## 🗺️ PASO 1: Sincronización del Contexto Global (LoreMaster)
 *Cada vez que se inicie la creación o edición de un nodo, el agente asumirá el rol de LoreMaster y ejecutará los siguientes pasos en orden:*
 
-1. **Leer `/docs/world-setting-1938.md`**: Asimilar el entorno de 1938, las limitaciones tecnológicas reales de la época y el estado de la ciudad según la Fase de la Invasión activa (Fases 1 a 4).
-2. **Leer `/stories/[story-name]/README.md`**: Extraer el prompt inicial, el enfoque del protagonista y los objetivos globales del relato.
-3. **Escanear `/characters/[character].json`**: Analizar el archivo de datos del personaje (ubicado en la raíz del proyecto, compartido entre historias). Registrar sus `traits` (rasgos cualitativos), el `status` actual de sus herramientas en el `inventory` y su `psychological_state` (estado mental de texto plano).
-4. **Validar Coherencia Histórica**: Asegurar que ningún elemento introducido rompa la tecnología o el tono de 1938 (prohibir anacronismos o magia de alta fantasía).
+1. **Leer `/world/1938-era.md`**: Asimilar el entorno de 1938, la tecnología disponible y las limitaciones de la época.
+2. **Leer `/world/factions/` y `/world/creatures/`**: Cargar la información de las facciones y criaturas relevantes para la historia (ej: `dagon-cult.md`, `the-deep-ones.md`).
+3. **Leer `/stories/[story-name]/README.md`**: Extraer el prompt inicial, el enfoque del protagonista y los objetivos globales del relato.
+4. **Leer `/stories/[story-name]/timeline.md`**: Cargar la cronología del evento activo y la fase horaria vigente (Fases 1 a 4).
+5. **Escanear `/characters/[character].json`**: Analizar el archivo de datos del personaje (ubicado en la raíz del proyecto, compartido entre historias). Registrar sus `traits` (rasgos cualitativos), el `status` actual de sus herramientas en el `inventory` y su `psychological_state` (estado mental de texto plano).
+6. **Escanear `/stories/[story-name]/images/`**: Registrar el catálogo de imágenes disponibles (nombres de archivo descriptivos). Anotar cuáles representan escenas, cuáles retratos de personajes y cuáles objetos. Este catálogo se usará en el PASO 2 para intentar vincular imágenes existentes al nodo.
+7. **Validar Coherencia Narrativa**: Asegurar que ningún elemento introducido rompa la tecnología de la época, las reglas de las facciones/criaturas definidas en `world/` o el tono establecido.
 
 ---
 
 ## 📐 PASO 2: Diseño Arquitectural del Nodo (NodePlotter)
 *Con el contexto fijado, el agente asumirá el rol de NodePlotter para calcular el esqueleto del mapa interactivo y sus ramificaciones:*
 
-1. **Alinear el Peligro con la Fase Horaria**: Diseñar los obstáculos del nodo en base a la Fase de la Noche activa en la cronología oficial.
+1. **Alinear el Peligro con la Fase Horaria**: Diseñar los obstáculos del nodo en base a la Fase de la Noche activa en la cronología de la historia.
 2. **Cruzar Obstáculos con Rasgos (`traits`)**: 
    * Si el personaje posee un rasgo idóneo (ej: *"Atlética y ágil"*), habilitar una opción de resolución física que tenga éxito natural, a menos que intervenga una deidad o fuerza mayor inevitable.
    * Si el jugador no posee un rasgo adecuado para la situación, la opción correspondiente debe implicar un riesgo narrativo evidente o el desgaste de un objeto.
 3. **Estructurar las Opciones**: Generar un mínimo de 2 y un máximo de 4 elecciones. Al menos una debe apelar a la profesión/deducción del personaje (ej: *"Tomar fotografía"*, *"Investigar la estática de la radio"*) y otra a la autopreservación.
 4. **Definir Pre-requisitos Cualitativos**: Rellenar las condiciones de acceso de las opciones basándose en si el jugador tiene un rasgo específico, un objeto útil en su inventario o una pista descubierta.
+5. **Vinculación de Imagen (Opcional)**: Revisar el catálogo de imágenes disponibles del PASO 1. Si alguna imagen existente encaja naturalmente con la escena o momento del nodo, asignarla al campo `image`. Si ninguna encaja bien, omitir el campo — no forzar una imagen que no represente fielmente la narrativa.
 
 ---
 
@@ -33,6 +37,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 2. **Filtro Atmosférico Lovecraftiano**: Describir los entornos utilizando estímulos sensoriales de la época (el olor fétido a fango abisal, el parpadeo titilante de las farolas de gas, el crujido de la madera podrida y el frío salitre).
 3. **Reflejar el Deterioro Mental**: Adaptar los adjetivos del texto al `psychological_state` del personaje. Si el personaje está *"Paranoico"*, el entorno debe describirse de forma más hostil y distorsionada que si estuviera *"Alerta y racional"*.
 4. **Redactar Elecciones Activas**: El texto de las opciones debe redactarse desde la perspectiva del dilema del personaje, dejando claras las intenciones detrás de cada camino (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado"*).
+5. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual del nodo.
 
 ---
 
@@ -51,7 +56,8 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 
 1. **Integridad de Rutas**: Verificar que todos los `target_node` declarados apunten a un ID de archivo existente o planificado dentro de la estructura de carpetas.
 2. **Evitar Deadlocks**: Validar que el nodo no sea un callejón sin salida narrativo, a menos que sea un final de historia explícito (Fin o Muerte).
-3. **Firma de Verificación**: Añadir la propiedad `"status": "verified"` en los metadatos del JSON del nodo una vez comprobado que se han seguido correctamente los Pasos 1 a 4.
+3. **Validación de Imagen**: Si el nodo declara un campo `image`, verificar que el archivo existe en `/stories/[story-name]/images/`. Si no existe, eliminar el campo `image` del nodo (no dejar referencias rotas).
+4. **Firma de Verificación**: Añadir la propiedad `"status": "verified"` en los metadatos del JSON del nodo una vez comprobado que se han seguido correctamente los Pasos 1 a 4.
 
 ---
 
