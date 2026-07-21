@@ -12,7 +12,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 3. **Leer `/stories/[story-name]/README.md`**: Extraer el prompt inicial, el enfoque del protagonista y los objetivos globales del relato.
 4. **Leer `/stories/[story-name]/timeline.md`**: Cargar la cronología del evento activo y la fase horaria vigente (Fases 1 a 4).
 5. **Escanear `/characters/[character].json`**: Analizar el archivo de datos del personaje (ubicado en la raíz del proyecto, compartido entre historias). Registrar sus `attributes` (rasgos con valores), sus `skills` (habilidades) y sus `items` (objetos en inventario).
-6. **Escanear `/stories/[story-name]/images/`**: Registrar el catálogo de imágenes disponibles (nombres de archivo descriptivos). Anotar cuáles representan escenas, cuáles retratos de personajes y cuáles objetos. Este catálogo se usará en el PASO 2 para intentar vincular imágenes existentes a la página.
+6. **Escanear `/stories/[story-name]/spreads/`**: Registrar el catálogo de spreads existentes (nombres de archivo). Anotar cuáles son spreads de decisión y cuáles son spreads de derrota (gameover). Este catálogo se usará en el PASO 2 para evitar duplicar spreads o enlazar a spreads inexistentes.
 7. **Validar Coherencia Narrativa**: Asegurar que ningún elemento introducido rompa la tecnología de la época, las reglas de las facciones/criaturas definidas en `world/` o el tono establecido.
 
 ---
@@ -53,13 +53,21 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 
 ## 📖 Estructura de Datos
 
+### Unidad Básica: StorySpread
+Cada spread contiene **2 páginas** con roles diferentes:
+
+| Página | Rol | Contenido | Opciones |
+|--------|-----|-----------|----------|
+| **leftPage** | Visual | Imágenes, mapas, fichas, inventario, pistas visuales | **NUNCA** |
+| **rightPage** | Narrativo | 2 párrafos de narrativa + decisiones | SÍ |
+
 ### StoryPage (Página Individual)
 ```json
 {
   "id": "string",
   "pageNumber": 1,
   "title": "string (opcional)",
-  "text": "string (narrativa principal)",
+  "text": "string (narrativa principal - SOLO en rightPage)",
   "mapData": {
     "backgroundImage": "string",
     "userPosition": { "col": 0, "row": 0 },
@@ -78,10 +86,17 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 ```json
 {
   "id": "string",
-  "leftPage": "StoryPage",
-  "rightPage": "StoryPage"
+  "leftPage": "StoryPage (visual - NUNCA opciones)",
+  "rightPage": "StoryPage (narrativo + decisiones)"
 }
 ```
+
+### Reglas de Contenido
+* **leftPage.pageOptions**: Siempre `[]` (vacío)
+* **leftPage.text**: Vacío o mínimo (para anotaciones técnicas)
+* **leftPage.mapData**: Imagen de fondo, posición del jugador, posición objetivo
+* **rightPage.text**: 2 párrafos narrativos (contexto atmosférico + situación inmediata)
+* **rightPage.pageOptions**: 2-4 opciones con `optionLink` a siguiente spread o gameover
 
 ### CharacterData (Datos del Personaje)
 ```json
