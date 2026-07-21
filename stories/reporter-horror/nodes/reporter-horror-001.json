@@ -1,39 +1,25 @@
 {
-  "node_id": "reporter-horror-001",
-  "location": "Habitación de la Pensión",
-  "time_of_day": "02:30 AM",
-  "story_phase": "Fase 3: La Cacería",
-  "status": "verified",
-  "narrative": "La oscuridad en el cuarto es absoluta desde que la centralita colapsó. El hedor a fango abisal y pescado podrido se filtra con violencia por las rendijas de las tablas del suelo. Fuera, en el pasillo, unos pasos pesados, húmedos y arrastrados se detienen en seco ante tu puerta. Un gemido gutural, como el de un animal ahogándose, hace vibrar los cristales de la ventana. De pronto, la madera vieja cruje con un estrépito seco; algo de una fuerza descomunal está embistiendo la cerradura. El marco de la puerta cede unos centímetros. No hay tiempo para pensar, la criatura va a entrar en cualquier segundo.",
-  "image": "habitacion-pension-puerta-rompiendose.jpg",
-  "choices": [
+  "id": "reporter-horror-001",
+  "pageNumber": 1,
+  "title": "La Habitación",
+  "text": "La oscuridad en el cuarto es absoluta desde que la centralita colapsó. El hedor a fango abisal y pescado podrido se filtra con violencia por las rendijas de las tablas del suelo. Fuera, en el pasillo, unos pasos pesados, húmedos y arrastrados se detienen en seco ante tu puerta. Un gemido gutural, como el de un animal ahogándose, hace vibrar los cristales de la ventana. De pronto, la madera vieja cruje con un estrépito seco; algo de una fuerza descomunal está embistiendo la cerradura. El marco de la puerta cede unos centímetros. No hay tiempo para pensar, la criatura va a entrar en cualquier segundo.",
+  "mapData": {
+    "backgroundImage": "habitacion-pension-puerta-rompiendose.jpg",
+    "userPosition": { "col": 0, "row": 0 },
+    "targetPosition": { "col": 1, "row": 0 }
+  },
+  "pageOptions": [
     {
-      "choice_text": "Utilizar tu agilidad para saltar por la ventana hacia el tejado del callejón inferior.",
-      "target_node": "reporter-horror-002",
-      "required_conditions": {
-        "character_traits": ["Atlética y ágil"]
-      }
+      "optionText": "Utilizar tu agilidad para saltar por la ventana hacia el tejado del callejón inferior.",
+      "optionLink": "reporter-horror-002"
     },
     {
-      "choice_text": "Apagar tu linterna, esconderte bajo la cama en silencio y rezar para que la criatura ignore el cuarto.",
-      "target_node": "reporter-horror-003",
-      "required_conditions": {}
+      "optionText": "Apagar tu linterna, esconderte bajo la cama en silencio y rezar para que la criatura ignore el cuarto.",
+      "optionLink": "reporter-horror-003"
     },
     {
-      "choice_text": "Preparar tu cámara de fuelle y esperar a que la puerta se rompa para capturar una fotografía del monstruo antes de huir.",
-      "target_node": "reporter-horror-004",
-      "required_conditions": {
-        "inventory_items": {
-          "item_camera_bellows": "Cargada con carrete limitado"
-        }
-      }
+      "optionText": "Preparar tu cámara de fuelle y esperar a que la puerta se rompa para capturar una fotografía del monstruo antes de huir.",
+      "optionLink": "reporter-horror-004"
     }
-  ],
-  "player_state_mutation": {
-    "psychological_state": "Perturbada y tensa",
-    "inventory_updates": {},
-    "flags_added": {
-      "sobrevivió_asalto_habitación": true
-    }
-  }
+  ]
 }
