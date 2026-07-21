@@ -51,6 +51,36 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 
 ---
 
+## 🎮 Tramo Jugable Estándar
+
+### Estructura de Decisiones
+Cada tramo jugable sigue esta estructura:
+
+* **10 decisiones** para alcanzar un savepoint
+* **3 decisiones críticas** (vida o muerte) distribuidas uniformemente
+* **7 decisiones normales** (correcta/alternativa, sin Game Over)
+* **Peligro constante** en toda la narrativa
+
+### Distribución de Spreads por Decisión
+
+| Tipo de Decisión | Spreads | Contenido |
+|------------------|---------|-----------|
+| **Crítica** | 3 | 1 correcta, 1 arriesgada, 1 GAME OVER |
+| **Normal** | 2 | 1 correcta, 1 alternativa |
+
+### Spreads Totales por Tramo
+* 3 decisiones críticas × 3 spreads = 9
+* 7 decisiones normales × 2 spreads = 14
+* **Total: ~23 spreads por tramo**
+
+### Reglas de Diseño
+* **Elección correcta:** Deducible leyendo el perfil del personaje (attributes, skills, items)
+* **Elección letal:** Obvia si prestas atención al contexto narrativo
+* **Consecuencia:** Game Over directo (muerte o captura)
+* **Flexibilidad:** Si la historia pide más tensión, se pueden añadir más decisiones críticas
+
+---
+
 ## 📖 Estructura de Datos
 
 ### Unidad Básica: StorySpread
