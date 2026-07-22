@@ -1,0 +1,1082 @@
+{
+  "spread-001": {
+    "id": "spread-001",
+    "leftPage": {
+      "id": "spread-001-left",
+      "pageNumber": 1,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "habitacion-pension-oscuridad.jpg",
+        "userPosition": {
+          "col": 2,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-001-right",
+      "pageNumber": 2,
+      "title": "La Habitación",
+      "text": "La oscuridad es absoluta desde que la centralita colapsó. El hedor a fango abisal y pescado podrido se filtra con violencia por las rendijas de las tablas del suelo. Tus manos tantean la superficie mojada de la mesa de noche. La linterna de dínamo yace a tu alcance, pero no la tocas: el ruido de la manivela te delataría.\n\nUn gemido gutural retumba en el pasillo. Los pasos pesados y húmedos se detienen ante tu puerta. La madera cruje. Algo de una fuerza descomunal embiste la cerradura. El marco cede unos centímetros. La criatura va a entrar en cualquier segundo.",
+      "pageOptions": [
+        {
+          "optionText": "Aprovechas tu agilidad para saltar por la ventana hacia el tejado del callejón inferior.",
+          "optionLink": "spread-002"
+        },
+        {
+          "optionText": "Preparas tu cámara de fuelle y esperas a que la puerta se rompa para capturar una fotografía del monstruo antes de huir.",
+          "optionLink": "spread-001b"
+        },
+        {
+          "optionText": "Apagas la linterna, te escondes bajo la cama en silencio y rezas para que la criatura ignore el cuarto.",
+          "optionLink": "gameover-001"
+        }
+      ]
+    },
+    "type": "critical"
+  },
+  "spread-001b": {
+    "id": "spread-001b",
+    "leftPage": {
+      "id": "spread-001b-left",
+      "pageNumber": 5,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "habitacion-pension-foto-monstruo.jpg",
+        "userPosition": {
+          "col": 2,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-001b-right",
+      "pageNumber": 6,
+      "title": "La Fotografía",
+      "text": "La puerta se estrella contra el suelo. La criatura se abre paso entre los escombros. Sus ojos enormes y sin párpados te buscan en la oscuridad. La luz de la linterna de la criatura brilla sobre su piel coriácea y escamosa.\n\nTu instinto de periodista se impone. Levantas la cámara de fuelle, ajustas el enfoque y disparas el obturador. El flash ilumina la habitación durante un segundo. Capturas la imagen. Pero el destello te delata. La criatura se lanza hacia ti.",
+      "pageOptions": [
+        {
+          "optionText": "Aprovechas la distracción para saltar por la ventana.",
+          "optionLink": "spread-002"
+        },
+        {
+          "optionText": "Intentas esquivar y salir por la puerta.",
+          "optionLink": "spread-003"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "spread-002": {
+    "id": "spread-002",
+    "leftPage": {
+      "id": "spread-002-left",
+      "pageNumber": 7,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "tejado-lluvia-noche.jpg",
+        "userPosition": {
+          "col": 3,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-002-right",
+      "pageNumber": 8,
+      "title": "El Tejado",
+      "text": "Caes sobre el tejado de pizarra mojada. El impacto te deja sin aliento. La lluvia te golpea la cara con fuerza. Abajo, en el callejón, escuchas gritos ahogados y el sonido de arrastre húmedo.\n\nEl tejado resbaladizo se extiende hacia el faro abandonado. Un cable de telégrafo cruza hacia el edificio de enfrente. La escalera de incendios está oxidada pero parece estable.",
+      "pageOptions": [
+        {
+          "optionText": "Trepas por el cable de telégrafo hacia el faro.",
+          "optionLink": "spread-003"
+        },
+        {
+          "optionText": "Bajas por la escalera de incendios hacia el callejón.",
+          "optionLink": "spread-004"
+        },
+        {
+          "optionText": "Corres por el tejado hacia la salida principal.",
+          "optionLink": "gameover-002"
+        }
+      ]
+    },
+    "type": "critical"
+  },
+  "spread-003": {
+    "id": "spread-003",
+    "leftPage": {
+      "id": "spread-003-left",
+      "pageNumber": 11,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "habitacion-vecino-ventana.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 3,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-003-right",
+      "pageNumber": 12,
+      "title": "La Habitación del Vecino",
+      "text": "Trepar el cable de telégrafo te deja temblando de frío. La habitación del vecino está vacía. La ventana está abierta de par en par. En el suelo yace un revólver de tambor con las balas agotadas.\n\nPor la ventana ves el callejón. Un Profundo draga un saco por el suelo. La luz de una farola parpadea sobre su piel viscosa. No te ha visto todavía.",
+      "pageOptions": [
+        {
+          "optionText": "Saltas por la ventana al callejón mientras el Profundo está distraído.",
+          "optionLink": "spread-004"
+        },
+        {
+          "optionText": "Buscas algo útil en la habitación del vecino.",
+          "optionLink": "spread-003b"
+        },
+        {
+          "optionText": "Esperas a que el Profundo se vaya antes de saltar.",
+          "optionLink": "gameover-003"
+        }
+      ]
+    },
+    "type": "critical"
+  },
+  "spread-003b": {
+    "id": "spread-003b",
+    "leftPage": {
+      "id": "spread-003b-left",
+      "pageNumber": 13,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "habitacion-vecino-busqueda.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 3,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-003b-right",
+      "pageNumber": 14,
+      "title": "Búsqueda",
+      "text": "Revisas los cajones con sigilo. Encuentras una linterna de dínamo con las pilas gastadas. No sirve. Pero debajo de la cama hallas un cuchillo de caza afilado.\n\nEl Profundo sigue en el callejón. Ahora ha dejado el saco y se acerca a la entrada del edificio. Tienes poco tiempo.",
+      "pageOptions": [
+        {
+          "optionText": "Coges el cuchillo y saltas por la ventana.",
+          "optionLink": "spread-004"
+        },
+        {
+          "optionText": "Esperas a que entre al edificio para esconderte mejor.",
+          "optionLink": "gameover-003"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "spread-004": {
+    "id": "spread-004",
+    "leftPage": {
+      "id": "spread-004-left",
+      "pageNumber": 17,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "escalera-principal-oscura.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 1,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-004-right",
+      "pageNumber": 18,
+      "title": "La Escalera",
+      "text": "Bajas por la escalera de incendios hasta el primer piso. La madera cruja bajo tus pies. En la planta baja, la escalera principal está bloqueada por un Profundo que revisa una habitación. Su arponazo metálico brilla en la penumbra.\n\nA tu derecha, una puerta entreabierta da al salón. A tu izquierda, una ventana al callejón trasero.",
+      "pageOptions": [
+        {
+          "optionText": "Entras en el salón y buscas otra salida.",
+          "optionLink": "spread-005"
+        },
+        {
+          "optionText": "Saltas por la ventana al callejón trasero.",
+          "optionLink": "spread-006"
+        },
+        {
+          "optionText": "Esperas a que el Profundo se vaya de la escalera.",
+          "optionLink": "gameover-004"
+        }
+      ]
+    },
+    "type": "critical"
+  },
+  "spread-005": {
+    "id": "spread-005",
+    "leftPage": {
+      "id": "spread-005-left",
+      "pageNumber": 21,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "salon-pension-oscuro.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-005-right",
+      "pageNumber": 22,
+      "title": "El Salón",
+      "text": "El salón está envuelto en oscuridad. Las cortinas de terciopelo rojo cuelgan desgarradas. En una esquina, una radio de onda corta emite estática constante. El olor a fango es más fuerte aquí.\n\nEscuchas pasos en la cocina. Algo se mueve entre los platos. La puerta trasera del edificio podría estar al otro lado.",
+      "pageOptions": [
+        {
+          "optionText": "Investigas la radio de onda corta.",
+          "optionLink": "spread-005b"
+        },
+        {
+          "optionText": "Te diriges directamente a la cocina.",
+          "optionLink": "spread-006"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "spread-005b": {
+    "id": "spread-005b",
+    "leftPage": {
+      "id": "spread-005b-left",
+      "pageNumber": 23,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "radio-estatica-cantico.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-005b-right",
+      "pageNumber": 24,
+      "title": "La Radio",
+      "text": "Te acercas a la radio. La estática se intensifica. De pronto, distingues voces guturales que entonan un cántico repetitivo. No son humanas. Las coordenadas '42°22'N, 70°58'O' se repiten entre la estática.\n\nTu instinto de periodista te dice que esto es una prueba irrefutable. La libreta de notas está en tu bolsillo.",
+      "pageOptions": [
+        {
+          "optionText": "Anotas las coordenadas y el cántico en tu libreta.",
+          "optionLink": "spread-006"
+        },
+        {
+          "optionText": "Destruyes la radio para que nadie más la escuche.",
+          "optionLink": "spread-006"
+        }
+      ]
+    },
+    "type": "mistery"
+  },
+  "spread-006": {
+    "id": "spread-006",
+    "leftPage": {
+      "id": "spread-006-left",
+      "pageNumber": 25,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "cocina-pension-puerta-trasera.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-006-right",
+      "pageNumber": 26,
+      "title": "La Cocina",
+      "text": "La cocina huele a grasa rancia y sal. La puerta trasera está ahí, pero cerrada con una llave vieja oxidada. En la mesa hay un cuchillo de carnicero y una caja de fósforos.\n\nLos pasos en el salón se acercan. La criatura ha entrado al edificio. No tienes mucho tiempo.",
+      "pageOptions": [
+        {
+          "optionText": "Buscas la llave en los cajones de la cocina.",
+          "optionLink": "spread-007"
+        },
+        {
+          "optionText": "Intentas forzar la puerta con el cuchillo.",
+          "optionLink": "spread-007"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "spread-007": {
+    "id": "spread-007",
+    "leftPage": {
+      "id": "spread-007-left",
+      "pageNumber": 27,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "puerta-trasera-cerradura.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 1,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-007-right",
+      "pageNumber": 28,
+      "title": "La Puerta Trasera",
+      "text": "Encuentras la llave debajo de laalfombra. Tu mano tiembla mientras la insertes en la cerradura. El metal oxidado resiste. Giras la llave con fuerza. La cerradura cede con un clic.\n\nEl Profundo ha entrado a la cocina. Su olor pestilente te envuelve. La puerta está a tu alcance.",
+      "pageOptions": [
+        {
+          "optionText": "Abres la puerta y sales corriendo al callejón.",
+          "optionLink": "spread-008"
+        },
+        {
+          "optionText": "Esperas un segundo para escuchar si hay peligro afuera.",
+          "optionLink": "gameover-005"
+        }
+      ]
+    },
+    "type": "critical"
+  },
+  "spread-008": {
+    "id": "spread-008",
+    "leftPage": {
+      "id": "spread-008-left",
+      "pageNumber": 31,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "callejon-trasero-noche.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-008-right",
+      "pageNumber": 32,
+      "title": "El Callejón",
+      "text": "Sales al callejón. El aire frío te golpea la cara. La lluvia ha cesado. Los charcos de agua salada reflejan la luz de la farola. El olor a fango es más fuerte aquí.\n\nA la izquierda, la calle principal hacia la iglesia. A la derecha, el camino hacia el muelle. Los gritos se escuchan desde todas las direcciones.",
+      "pageOptions": [
+        {
+          "optionText": "Te diriges hacia la iglesia.",
+          "optionLink": "spread-009"
+        },
+        {
+          "optionText": "Te diriges hacia el muelle.",
+          "optionLink": "spread-010"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "spread-009": {
+    "id": "spread-009",
+    "leftPage": {
+      "id": "spread-009-left",
+      "pageNumber": 33,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "iglesia-marcas-grasa.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 1
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-009-right",
+      "pageNumber": 34,
+      "title": "La Iglesia",
+      "text": "La iglesia se alza ante ti. Las puertas de roble están marcadas con grasa de ballena. Un símbolo del culto. La luz de las velas se filtra por las ventrales.\n\nUn hombre vestido con sotana se asoma por la puerta. Te reconoce. 'Elena, entra rápido. Los Profundos no entrarán aquí.'",
+      "pageOptions": [
+        {
+          "optionText": "Entras en la iglesia.",
+          "optionLink": "spread-011"
+        },
+        {
+          "optionText": "Le preguntas al sacerdote sobre el culto.",
+          "optionLink": "spread-011"
+        }
+      ]
+    },
+    "type": "mistery"
+  },
+  "spread-010": {
+    "id": "spread-010",
+    "leftPage": {
+      "id": "spread-010-left",
+      "pageNumber": 35,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "muelle-principal-noche.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 1
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-010-right",
+      "pageNumber": 36,
+      "title": "El Muelle",
+      "text": "El muelle de madera podrida cruje bajo tus pies. El agua negra del puerto golpea las pilas. Los barcos de pesca balancean sus mastiles oxidados.\n\nVes a varios Profundos arrastrando sacos hacia un barco pesquero. Los sacos se mueven. Alguien está dentro.",
+      "pageOptions": [
+        {
+          "optionText": "Te escondes y observas desde la oscuridad.",
+          "optionLink": "spread-012"
+        },
+        {
+          "optionText": "Intentas liberar a los cautivos.",
+          "optionLink": "gameover-006"
+        }
+      ]
+    },
+    "type": "critical"
+  },
+  "spread-011": {
+    "id": "spread-011",
+    "leftPage": {
+      "id": "spread-011-left",
+      "pageNumber": 39,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "iglesia-interior-velas.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 1
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-011-right",
+      "pageNumber": 40,
+      "title": "Interior de la Iglesia",
+      "text": "Las velas parpadean sobre los bancos de madera. El altar está cubierto con un tapiz que muestra criaturas marinas. El saterdote te sirve un vaso de brandy.\n\n'Somos la única protección que tienes', dice con voz tranquila. 'Los Profundos no entrarán aquí. Tenemos un pacto.' Sus ojos se desvían hacia la marca de grasa en la puerta.",
+      "pageOptions": [
+        {
+          "optionText": "Le preguntas directamente sobre el pacto con los Profundos.",
+          "optionLink": "spread-013"
+        },
+        {
+          "optionText": "Aceptas la protección y te quedas en la iglesia.",
+          "optionLink": "spread-013"
+        }
+      ]
+    },
+    "type": "mistery"
+  },
+  "spread-012": {
+    "id": "spread-012",
+    "leftPage": {
+      "id": "spread-012-left",
+      "pageNumber": 41,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "muelle-observando-oculto.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 1
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-012-right",
+      "pageNumber": 42,
+      "title": "Observación",
+      "text": "Te escondes detrás de un barril podrido. Los Profundos trabajan en silencio. Cargan los sacos en el barco. Los cánticos guturales se intensifican.\n\nTu instinto de periodista te dice que esto es una prueba irrefutable. La cámara de fuelle está lista. Pero el destello te delataría.",
+      "pageOptions": [
+        {
+          "optionText": "Tomas fotos sin flash desde la oscuridad.",
+          "optionLink": "spread-014"
+        },
+        {
+          "optionText": "Esperas a que se vayan para acercarte a los sacos.",
+          "optionLink": "spread-014"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "spread-013": {
+    "id": "spread-013",
+    "leftPage": {
+      "id": "spread-013-left",
+      "pageNumber": 43,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "iglesia-sacerdote-confrontacion.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 1
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-013-right",
+      "pageNumber": 44,
+      "title": "El Sacerdote",
+      "text": "El sacerdote baja la voz. 'El pueblo sobrevive gracias a los Profundos. El oro que traen del mar mantiene a la gente alimentada. Es un pacto antiguo.'\n\nSe acerca a ti. 'No puedes salir de aquí con esa información. Nadie te creería. Y si lo hacen, destruirán el pueblo.' Sus ojos reflejan una duda profunda.",
+      "pageOptions": [
+        {
+          "optionText": "Le convences de que la verdad debe salir a la luz.",
+          "optionLink": "spread-014"
+        },
+        {
+          "optionText": "Finges aceptar el pacto para ganar tiempo.",
+          "optionLink": "spread-014"
+        }
+      ]
+    },
+    "type": "mistery"
+  },
+  "spread-014": {
+    "id": "spread-014",
+    "leftPage": {
+      "id": "spread-014-left",
+      "pageNumber": 45,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "callejon-salida-edificio.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-014-right",
+      "pageNumber": 46,
+      "title": "El Camino por Delante",
+      "text": "Has logrado salir del edificio. La ciudad yace en penumbra bajo el cielo pre tormenta. Los charcos de agua salada reflejan las farolas titilantes. El olor a fango abisal impregna cada rincón.\n\nLos gritos se escuchan desde todas las direcciones. Los Profundos siguen su cacería. Pero tú estás viva. Y tienes una cámara llena de evidencia. El amanecer aún está lejos.",
+      "pageOptions": [
+        {
+          "optionText": "Continúas hacia el muelle para documentar el secuestro.",
+          "optionLink": "spread-015"
+        },
+        {
+          "optionText": "Vuelves a la iglesia para enfrentar al sacerdote.",
+          "optionLink": "spread-016"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "spread-015": {
+    "id": "spread-015",
+    "leftPage": {
+      "id": "spread-015-left",
+      "pageNumber": 47,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "muelle-documentando-secuestro.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 1
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-015-right",
+      "pageNumber": 48,
+      "title": "Evidencia del Secuestro",
+      "text": "Te acercas sigilosamente al muelle. Los Profundos han terminado de cargar. El barco pesquero se aleja lentamente del puerto. Los sacos se mueven débilmente.\n\nEn el suelo queda un arponazo roto y una red con restos de ropa humana. Tu cámara está lista.",
+      "pageOptions": [
+        {
+          "optionText": "Fotografías la evidencia y te escapas por la carretera.",
+          "optionLink": "spread-017"
+        },
+        {
+          "optionText": "Intentas alcanzar el barco nadando.",
+          "optionLink": "gameover-007"
+        }
+      ]
+    },
+    "type": "critical"
+  },
+  "spread-016": {
+    "id": "spread-016",
+    "leftPage": {
+      "id": "spread-016-left",
+      "pageNumber": 49,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "iglesia-confrontacion-final.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 1
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-016-right",
+      "pageNumber": 50,
+      "title": "Confrontación",
+      "text": "Vuelves a la iglesia. El sacerdote te espera. '¿Has visto lo que hacen?', pregunta con voz rota. 'He intentado ignorarlo durante años. Pero esta noche han cruzado una línea.'\n\nTe entrega una llave. 'El sótano de la iglesia. Ahí tienes las pruebas de todo. Llévalas a Boston. Que el mundo sepa la verdad.'",
+      "pageOptions": [
+        {
+          "optionText": "Bajas al sótano a buscar las pruebas.",
+          "optionLink": "spread-017"
+        },
+        {
+          "optionText": "Le pides al sacerdote que venga contigo.",
+          "optionLink": "spread-017"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "spread-017": {
+    "id": "spread-017",
+    "leftPage": {
+      "id": "spread-017-left",
+      "pageNumber": 51,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "carretera-colina-amanecer.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-017-right",
+      "pageNumber": 52,
+      "title": "La Carretera",
+      "text": "La carretera de la colina se extiende ante ti. El falso derrumbe ha sido removido por alguien. Un coche abandonado está al borde del camino. Las llaves están puestas.\n\nEl cielo empieza a aclarar. El amanecer se acerca. Los Profundos se retirarán pronto. Pero tú tienes las pruebas. La verdad debe salir a la luz.",
+      "pageOptions": [
+        {
+          "optionText": "Subes al coche y arrancas hacia Boston.",
+          "optionLink": "spread-018"
+        },
+        {
+          "optionText": "Miras atrás una última vez antes de irte.",
+          "optionLink": "spread-018"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "spread-018": {
+    "id": "spread-018",
+    "leftPage": {
+      "id": "spread-018-left",
+      "pageNumber": 53,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "amanecer-ciudad-fantasma.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 2,
+          "row": 2
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "spread-018-right",
+      "pageNumber": 54,
+      "title": "El Amanecer",
+      "text": "El amanecer baña la ciudad en una luz pálida y enfermiza. Las calles están vacías. Los charcos de agua salada reflejan el cielo gris. Algún Profundo se arrastra lentamente hacia el mar.\n\nLlevas la cámara al pecho. Las fotos están ahí. La prueba irrefutable de lo que ocurrió esta noche. El mundo sabrá la verdad sobre el Culto de Dagón y los Profundos del abismo.",
+      "pageOptions": [
+        {
+          "optionText": "Conduces hacia Boston con las pruebas.",
+          "optionLink": "end-001"
+        },
+        {
+          "optionText": "Te quedas para ayudar a los supervivientes.",
+          "optionLink": "end-002"
+        }
+      ]
+    },
+    "type": "default"
+  },
+  "end-001": {
+    "id": "end-001",
+    "leftPage": {
+      "id": "end-001-left",
+      "pageNumber": 55,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "coche-carretera-amanecer.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "end-001-right",
+      "pageNumber": 56,
+      "title": "Fin: La Verdad",
+      "text": "El coche avanza por la carretera costera. El sol naciente ilumina el horizonte. En el asiento del copiloto descansa la cámara con las fotos que cambiarán la historia.\n\nElena Bancroft sobrevivió. Y el mundo sabrá la verdad sobre lo que ocurrió esta noche en la ciudad portuaria. Los Profundos del abismo y el Culto de Dagón serán expuestos.",
+      "pageOptions": []
+    },
+    "type": "ending"
+  },
+  "end-002": {
+    "id": "end-002",
+    "leftPage": {
+      "id": "end-002-left",
+      "pageNumber": 57,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "ciudad-fantasma-amanecer.jpg",
+        "userPosition": {
+          "col": 1,
+          "row": 1
+        },
+        "targetPosition": {
+          "col": 1,
+          "row": 1
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "end-002-right",
+      "pageNumber": 58,
+      "title": "Fin: La Queda",
+      "text": "Te quedas. La ciudad necesita a alguien que cuente lo que pasó. Los supervivientes emergen de sus escondites, traumatizados pero vivos.\n\nElena Bancroft se convierte en la voz de los que no pudieron hablar. Las fotos que tomó serán la prueba irrefutable de la masacre. El Culto de Dagón será expuesto. Los Profundos no volverán.",
+      "pageOptions": []
+    },
+    "type": "ending"
+  },
+  "gameover-001": {
+    "id": "gameover-001",
+    "leftPage": {
+      "id": "gameover-001-left",
+      "pageNumber": 3,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "gameover-captura-cueva.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "gameover-001-right",
+      "pageNumber": 4,
+      "title": "Capturada",
+      "text": "Te escondes bajo la cama, conteniendo la respiración. Los pasos húmedos entran en la habitación. Un olor pestilente te envuelve. La criatura se detiene. Sus ojos sin párpados escanean la oscuridad.\n\nUna mano escamosa y fría te agarra el tobillo. El arponazo metálico brilla en la penumbra. El Profundo te arrastra por el suelo mientras forcejeas. Tu grito se ahoga bajo una mordaça de fibras marinas. Los ojos se te cierran mientras te meten en un saco. La última cosa que escuchas es el oleaje contra los muelles.",
+      "pageOptions": [
+        {
+          "optionText": "Reiniciar",
+          "optionLink": "spread-001"
+        }
+      ]
+    },
+    "type": "death"
+  },
+  "gameover-002": {
+    "id": "gameover-002",
+    "leftPage": {
+      "id": "gameover-002-left",
+      "pageNumber": 9,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "gameover-caida-tejado.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "gameover-002-right",
+      "pageNumber": 10,
+      "title": "Caída",
+      "text": "Corres por el tejado resbaladizo. Los pies se te escapan bajo la lluvia. Intentas agarrarte al canalón pero está oxidado y se rompe.\n\nCaes tres pisos sobre el adoquinado mojado. El impacto te rompe la espalda. La última cosa que ves es la silueta de un Profundo inclinándose sobre ti mientras pierdes el conocimiento.",
+      "pageOptions": [
+        {
+          "optionText": "Reiniciar",
+          "optionLink": "spread-001"
+        }
+      ]
+    },
+    "type": "death"
+  },
+  "gameover-003": {
+    "id": "gameover-003",
+    "leftPage": {
+      "id": "gameover-003-left",
+      "pageNumber": 15,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "gameover-espera-captura.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "gameover-003-right",
+      "pageNumber": 16,
+      "title": "Espera Fatal",
+      "text": "Esperas en la oscuridad. Los pasos húmedos se acercan a la entrada del edificio. La puerta cruje. La criatura entra.\n\nEscuchas sus pasos subir la escalera. Se detienen frente a la puerta de la habitación del vecino. La cerradura gira. La puerta se abre. Los ojos sin párpados te buscan en la penumbra.",
+      "pageOptions": [
+        {
+          "optionText": "Reiniciar",
+          "optionLink": "spread-001"
+        }
+      ]
+    },
+    "type": "death"
+  },
+  "gameover-004": {
+    "id": "gameover-004",
+    "leftPage": {
+      "id": "gameover-004-left",
+      "pageNumber": 19,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "gameover-escalera-captura.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "gameover-004-right",
+      "pageNumber": 20,
+      "title": "Trampa",
+      "text": "Escondido en la sombra, observas al Profundo. La criatura termina de revisar la habitación y se gira hacia ti. Sus ojos enormes te detectan en la penumbra.\n\nEl arponazo metálico se clava en la pared junto a tu cabeza. La fuerza del impacto te tumba al suelo. La criatura se lanza sobre ti.",
+      "pageOptions": [
+        {
+          "optionText": "Reiniciar",
+          "optionLink": "spread-001"
+        }
+      ]
+    },
+    "type": "death"
+  },
+  "gameover-005": {
+    "id": "gameover-005",
+    "leftPage": {
+      "id": "gameover-005-left",
+      "pageNumber": 29,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "gameover-puerta-captura.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "gameover-005-right",
+      "pageNumber": 30,
+      "title": "Demasiado Tarde",
+      "text": "Te detienes a escuchar. Un segundo. Dos segundos. La criatura se lanza desde la oscuridad de la cocina. Una mano escamosa te agarra el hombro.\n\nEl arponazo metálico se clava en tu pierna. Caes al suelo mientras la criatura te arrastra hacia los muelles.",
+      "pageOptions": [
+        {
+          "optionText": "Reiniciar",
+          "optionLink": "spread-001"
+        }
+      ]
+    },
+    "type": "death"
+  },
+  "gameover-006": {
+    "id": "gameover-006",
+    "leftPage": {
+      "id": "gameover-006-left",
+      "pageNumber": 37,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "gameover-muelle-captura.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "gameover-006-right",
+      "pageNumber": 38,
+      "title": "Captura en el Muelle",
+      "text": "Corres hacia los sacos. Los Profundos te detectan al instante. Los arpones se clavan en la madera a tu alrededor.\n\nUna red te envuelve. Caes al suelo mientras los Profundos te arrastran hacia el barco. Los cánticos ultrasónicos retumban en tu cabeza.",
+      "pageOptions": [
+        {
+          "optionText": "Reiniciar",
+          "optionLink": "spread-001"
+        }
+      ]
+    },
+    "type": "death"
+  },
+  "gameover-007": {
+    "id": "gameover-007",
+    "leftPage": {
+      "id": "gameover-007-left",
+      "pageNumber": 59,
+      "text": "",
+      "mapData": {
+        "backgroundImage": "gameover-ahogamiento.jpg",
+        "userPosition": {
+          "col": 0,
+          "row": 0
+        },
+        "targetPosition": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      "pageOptions": []
+    },
+    "rightPage": {
+      "id": "gameover-007-right",
+      "pageNumber": 60,
+      "title": "Ahogamiento",
+      "text": "Te lanzas al agua negra del puerto. El frío te roba el aliento. Los Profundos te rodean bajo la superficie. Sus manos escamosas te agarran los tobillos.\n\nTe arrastran hacia las cavernas submarinas. Los cánticos ultrasónicos retumban en tu cabeza mientras pierdes el conocimiento.",
+      "pageOptions": [
+        {
+          "optionText": "Reiniciar",
+          "optionLink": "spread-001"
+        }
+      ]
+    },
+    "type": "death"
+  }
+}
