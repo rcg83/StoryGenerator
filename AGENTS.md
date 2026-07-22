@@ -141,3 +141,41 @@ Cada spread contiene **2 páginas** con roles diferentes:
   "items": ["string"]
 }
 ```
+
+
+{
+  "id": "your-story-id",
+  "title": "Your Story Title",
+  "startPageId": "spread1",
+  "cover": {
+    "title": "COVER HEADLINE",
+    "subtitle": "Subtitle • Date",
+    "coverImage": "/images/cover-your-story.png"
+  },
+  "spreads": [
+    {
+      "id": "spread1",
+      "leftPage": {
+        "id": "page-1",
+        "pageNumber": 0,
+        "text": "Narrative text for the left page.\n\nParagraph two.",
+        "pageOptions": []
+      },
+      "rightPage": {
+        "id": "page-2",
+        "pageNumber": 1,
+        "text": "Narrative text for the right page.",
+        "pageOptions": [
+          {
+            "optionText": "Choice A",
+            "optionLink": "spread2"
+          },
+          {
+            "optionText": "Choice B",
+            "optionLink": "spread3"
+          }
+        ]
+      }
+    }
+  ]
+}
