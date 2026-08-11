@@ -13,7 +13,8 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 4. **Leer `/stories/[story-name]/timeline.md`**: Cargar la cronología del evento activo y la fase horaria vigente (Fases 1 a 4).
 5. **Escanear `/characters/[character].json`**: Analizar el archivo de datos del personaje (ubicado en la raíz del proyecto, compartido entre historias). Registrar sus `attributes` (rasgos con valores), sus `skills` (habilidades) y sus `items` (objetos en inventario).
 6. **Escanear `/stories/[story-name]/spreads/`**: Registrar el catálogo de spreads existentes (nombres de archivo). Anotar cuáles son spreads de decisión y cuáles son spreads de derrota (gameover). Este catálogo se usará en el PASO 2 para evitar duplicar spreads o enlazar a spreads inexistentes.
-7. **Validar Coherencia Narrativa**: Asegurar que ningún elemento introducido rompa la tecnología de la época, las reglas de las facciones/criaturas definidas en `world/` o el tono establecido.
+7. **Escanear el catálogo de imágenes**: Leer `/stories/[story-name]/images/[story-name]-image-names.txt` y registrar las imágenes disponibles de la historia. Detalle en `docs/images.md`.
+8. **Validar Coherencia Narrativa**: Asegurar que ningún elemento introducido rompa la tecnología de la época, las reglas de las facciones/criaturas definidas en `world/` o el tono establecido.
 
 ---
 
@@ -26,7 +27,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
    * Si el personaje no posee un atributo adecuado para la situación, la opción correspondiente debe implicar un riesgo narrativo evidente.
 3. **Estructurar las Opciones**: Generar un mínimo de 2 y un máximo de 4 elecciones. Al menos una debe apelar a la profesión/deducción del personaje (ej: *"Tomar fotografía"*, *"Investigar la estática de la radio"*) y otra a la autopreservación.
 4. **Vincular con Página Siguiente**: Cada opción debe apuntar a una `optionLink` que corresponda al ID de la página destino dentro del spread o en el spread siguiente.
-5. **Vinculación de Imagen (Opcional)**: Revisar el catálogo de imágenes disponibles del PASO 1. Si alguna imagen existente encaja naturalmente con la escena o momento de la página, asignarla al campo `mapData.backgroundImage`. Si ninguna encaja bien, omitir el campo `mapData` — no forzar una imagen que no represente fielmente la narrativa.
+5. **Vinculación de Imagen (Opcional)**: Revisar el catálogo de imágenes del PASO 1 (txt `[story-name]-image-names.txt`). Si alguna imagen existente encaja naturalmente con la escena o momento de la página, asignarla al campo `mapData.backgroundImage`. Si ninguna encaja bien, omitir el campo `mapData` — no forzar una imagen que no represente fielmente la narrativa.
 
 ---
 
@@ -37,7 +38,11 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 2. **Filtro Atmosférico Lovecraftiano**: Describir los entornos utilizando estímulos sensoriales de la época (el olor fétido a fango abisal, el parpadeo titilante de las farolas de gas, el crujido de la madera podrida y el frío salitre).
 3. **Adaptar al Tono de la Historia**: Mantener coherencia con el estado narrativo establecido en la sinopsis y el contexto de la historia.
 4. **Redactar Elecciones Activas**: El texto de las opciones debe redactarse desde la perspectiva del dilema del personaje, dejando claras las intenciones detrás de cada camino (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado"*).
-5. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual de la página.
+5. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual de la página. **El nombre de la imagen describe la situación concreta de la escena y debe tenerse muy en cuenta al redactar el `text` descriptivo**: cada elemento nombrado en el archivo (lugar, criatura, objeto, estado atmosférico) debe estar presente o resonar en la narrativa de la página.
+6. **Regla de Longitud Narrativa por Página**: El límite de palabras del `text` se aplica según el contenido de la propia página:
+   * **Página con imagen** (declara `mapData.backgroundImage`): máximo **30 palabras** en su `text`.
+   * **Página con elecciones o path selector** (`pageOptions` no vacío): máximo **60 palabras** en su `text`.
+   * Si una página tiene imagen **y** elecciones a la vez, aplicar el límite más estricto (**30 palabras**).
 
 ---
 
@@ -46,8 +51,12 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 
 1. **Integridad de Rutas**: Verificar que todas las `optionLink` declaradas apunten a un ID de página existente o planificado dentro de la estructura de spreads.
 2. **Evitar Deadlocks**: Validar que la página no sea un callejón sin salida narrativo, a menos que sea un final de historia explícito (Fin o Muerte).
-3. **Validación de Imagen**: Si la página declara un campo `mapData`, verificar que el archivo de imagen existe en `/stories/[story-name]/images/`. Si no existe, eliminar el campo `mapData` de la página (no dejar referencias rotas).
-4. **Firma de Verificación**: Añadir la propiedad `"status": "verified"` en los metadatos de la página una vez comprobado que se han seguido correctamente los Pasos 1 a 3.
+3. **Validación de Imagen**: Si la página declara un campo `mapData`, verificar que el nombre de la imagen está listado en `/stories/[story-name]/images/[story-name]-image-names.txt` y que el archivo existe en `/stories/[story-name]/images/`. Si no se cumple, eliminar el campo `mapData` de la página (no dejar referencias rotas).
+4. **Validación de Longitud Narrativa por Página**: Contar las palabras del `text` de cada página según su contenido:
+   * Página con imagen (`mapData.backgroundImage`): máximo **30 palabras**.
+   * Página con elecciones o path selector (`pageOptions` no vacío): máximo **60 palabras**.
+   Si no se cumple, devolver la página al ScribeAgent para redacción.
+5. **Firma de Verificación**: Añadir la propiedad `"status": "verified"` en los metadatos de la página una vez comprobado que se han seguido correctamente los Pasos 1 a 3.
 
 ---
 
@@ -78,6 +87,12 @@ Cada tramo jugable sigue esta estructura:
 * **Elección letal:** Obvia si prestas atención al contexto narrativo
 * **Consecuencia:** Game Over directo (muerte o captura)
 * **Flexibilidad:** Si la historia pide más tensión, se pueden añadir más decisiones críticas
+
+---
+
+## 📁 Documentación de Referencia (Índice)
+
+* `docs/images.md` — Convención del catálogo de imágenes: `stories/[story-name]/images/[story-name]-image-names.txt`.
 
 ---
 
@@ -123,10 +138,11 @@ Cada spread contiene **2 páginas** con roles diferentes:
 
 ### Reglas de Contenido
 * **leftPage.pageOptions**: Siempre `[]` (vacío)
-* **leftPage.text**: Vacío o mínimo (para anotaciones técnicas)
+* **leftPage.text**: Máximo **30 palabras** cuando la página declara imagen (`mapData.backgroundImage`); vacío o mínimo si no hay imagen
 * **leftPage.mapData**: Imagen de fondo, posición del jugador, posición objetivo
-* **rightPage.text**: 2 párrafos narrativos (contexto atmosférico + situación inmediata)
+* **rightPage.text**: Máximo **60 palabras** — es la página de decisiones/path selector (`pageOptions`)
 * **rightPage.pageOptions**: 2-4 opciones con `optionLink` a siguiente spread o gameover
+* **Path selector (página de decisiones)**: Página cuyo `pageOptions` no está vacío; el jugador elige el camino a seguir. Límite de `text`: **60 palabras**. Si además declara imagen, el límite baja a **30 palabras**
 
 ### CharacterData (Datos del Personaje)
 ```json
