@@ -6,8 +6,8 @@ Este documento define la convención del archivo markdown que actúa como **cat�
 
 ## 📍 Ubicación y Nombre
 
-* **Archivo:** `stories/[story-name]/image-names.md`
-* **Ejemplo:** `stories/reporter-horror/image-names.md`
+* **Archivo:** `stories/[story-name]/context/image-names.md`
+* **Ejemplo:** `stories/reporter-horror/context/image-names.md`
 
 ---
 
