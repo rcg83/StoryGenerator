@@ -7,24 +7,14 @@
     "subtitle": "Act I • Fase 3: La Cacería • 02:30 AM",
     "coverImage": "/images/cover-reporter-trapped-horror.png"
   },
-  "spreads": {
-    "spread-001": {
+  "spreads": [
+    {
       "id": "spread-001",
       "leftPage": {
         "id": "spread-001-left",
         "pageNumber": 1,
-        "text": "En el suelo, cuchillo en mano, esperas la embestida. La puerta cruje y cede: un Profundo se abre paso.",
-        "mapData": {
-          "backgroundImage": "Elena-floor-knife-crashdoor-deep-one.png",
-          "userPosition": {
-            "col": 2,
-            "row": 1
-          },
-          "targetPosition": {
-            "col": 0,
-            "row": 0
-          }
-        },
+        "text": "El cuchillo pesa en tu mano temblorosa. La puerta cruje, cede… un Profundo irrumpe. El suelo huele a fango abisal.",
+        "illustration": "Elena-floor-knife-crashdoor-deep-one.png",
         "pageOptions": []
       },
       "rightPage": {
@@ -49,7 +39,7 @@
       },
       "type": "critical"
     },
-    "spread-001b": {
+    {
       "id": "spread-001b",
       "leftPage": {
         "id": "spread-001b-left",
@@ -75,7 +65,7 @@
       },
       "type": "default"
     },
-    "spread-002": {
+    {
       "id": "spread-002",
       "leftPage": {
         "id": "spread-002-left",
@@ -105,7 +95,7 @@
       },
       "type": "critical"
     },
-    "spread-003": {
+    {
       "id": "spread-003",
       "leftPage": {
         "id": "spread-003-left",
@@ -135,7 +125,7 @@
       },
       "type": "critical"
     },
-    "spread-003b": {
+    {
       "id": "spread-003b",
       "leftPage": {
         "id": "spread-003b-left",
@@ -161,7 +151,7 @@
       },
       "type": "default"
     },
-    "spread-004": {
+    {
       "id": "spread-004",
       "leftPage": {
         "id": "spread-004-left",
@@ -191,7 +181,7 @@
       },
       "type": "critical"
     },
-    "spread-005": {
+    {
       "id": "spread-005",
       "leftPage": {
         "id": "spread-005-left",
@@ -217,7 +207,7 @@
       },
       "type": "default"
     },
-    "spread-005b": {
+    {
       "id": "spread-005b",
       "leftPage": {
         "id": "spread-005b-left",
@@ -243,7 +233,7 @@
       },
       "type": "mistery"
     },
-    "spread-006": {
+    {
       "id": "spread-006",
       "leftPage": {
         "id": "spread-006-left",
@@ -280,7 +270,7 @@
       },
       "type": "default"
     },
-    "spread-007": {
+    {
       "id": "spread-007",
       "leftPage": {
         "id": "spread-007-left",
@@ -317,7 +307,7 @@
       },
       "type": "critical"
     },
-    "spread-008": {
+    {
       "id": "spread-008",
       "leftPage": {
         "id": "spread-008-left",
@@ -354,7 +344,7 @@
       },
       "type": "default"
     },
-    "spread-009": {
+    {
       "id": "spread-009",
       "leftPage": {
         "id": "spread-009-left",
@@ -391,7 +381,7 @@
       },
       "type": "mistery"
     },
-    "spread-010": {
+    {
       "id": "spread-010",
       "leftPage": {
         "id": "spread-010-left",
@@ -428,7 +418,7 @@
       },
       "type": "critical"
     },
-    "spread-011": {
+    {
       "id": "spread-011",
       "leftPage": {
         "id": "spread-011-left",
@@ -465,7 +455,7 @@
       },
       "type": "mistery"
     },
-    "spread-012": {
+    {
       "id": "spread-012",
       "leftPage": {
         "id": "spread-012-left",
@@ -502,7 +492,7 @@
       },
       "type": "default"
     },
-    "spread-013": {
+    {
       "id": "spread-013",
       "leftPage": {
         "id": "spread-013-left",
@@ -539,7 +529,7 @@
       },
       "type": "mistery"
     },
-    "spread-014": {
+    {
       "id": "spread-014",
       "leftPage": {
         "id": "spread-014-left",
@@ -576,7 +566,7 @@
       },
       "type": "default"
     },
-    "spread-015": {
+    {
       "id": "spread-015",
       "leftPage": {
         "id": "spread-015-left",
@@ -613,7 +603,7 @@
       },
       "type": "critical"
     },
-    "spread-016": {
+    {
       "id": "spread-016",
       "leftPage": {
         "id": "spread-016-left",
@@ -650,7 +640,7 @@
       },
       "type": "default"
     },
-    "spread-017": {
+    {
       "id": "spread-017",
       "leftPage": {
         "id": "spread-017-left",
@@ -687,7 +677,7 @@
       },
       "type": "default"
     },
-    "spread-018": {
+    {
       "id": "spread-018",
       "leftPage": {
         "id": "spread-018-left",
@@ -724,7 +714,7 @@
       },
       "type": "default"
     },
-    "end-001": {
+    {
       "id": "end-001",
       "leftPage": {
         "id": "end-001-left",
@@ -752,7 +742,7 @@
       },
       "type": "ending"
     },
-    "end-002": {
+    {
       "id": "end-002",
       "leftPage": {
         "id": "end-002-left",
@@ -780,12 +770,13 @@
       },
       "type": "ending"
     },
-    "gameover-001": {
+    {
       "id": "gameover-001",
       "leftPage": {
         "id": "gameover-001-left",
         "pageNumber": 3,
         "text": "",
+        "illustration": "reporter-trapped-under-bed-cenital-view.png",
         "pageOptions": []
       },
       "rightPage": {
@@ -802,7 +793,7 @@
       },
       "type": "death"
     },
-    "gameover-002": {
+    {
       "id": "gameover-002",
       "leftPage": {
         "id": "gameover-002-left",
@@ -824,7 +815,7 @@
       },
       "type": "death"
     },
-    "gameover-003": {
+    {
       "id": "gameover-003",
       "leftPage": {
         "id": "gameover-003-left",
@@ -846,7 +837,7 @@
       },
       "type": "death"
     },
-    "gameover-004": {
+    {
       "id": "gameover-004",
       "leftPage": {
         "id": "gameover-004-left",
@@ -868,7 +859,7 @@
       },
       "type": "death"
     },
-    "gameover-005": {
+    {
       "id": "gameover-005",
       "leftPage": {
         "id": "gameover-005-left",
@@ -901,7 +892,7 @@
       },
       "type": "death"
     },
-    "gameover-006": {
+    {
       "id": "gameover-006",
       "leftPage": {
         "id": "gameover-006-left",
@@ -934,7 +925,7 @@
       },
       "type": "death"
     },
-    "gameover-007": {
+    {
       "id": "gameover-007",
       "leftPage": {
         "id": "gameover-007-left",
@@ -967,5 +958,37 @@
       },
       "type": "death"
     }
-  }
+  ],
+  "spreadIds": [
+    "spread-001",
+    "spread-001b",
+    "spread-002",
+    "spread-003",
+    "spread-003b",
+    "spread-004",
+    "spread-005",
+    "spread-005b",
+    "spread-006",
+    "spread-007",
+    "spread-008",
+    "spread-009",
+    "spread-010",
+    "spread-011",
+    "spread-012",
+    "spread-013",
+    "spread-014",
+    "spread-015",
+    "spread-016",
+    "spread-017",
+    "spread-018",
+    "end-001",
+    "end-002",
+    "gameover-001",
+    "gameover-002",
+    "gameover-003",
+    "gameover-004",
+    "gameover-005",
+    "gameover-006",
+    "gameover-007"
+  ]
 }
