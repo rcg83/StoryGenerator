@@ -14,8 +14,8 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 ## Imágenes de Página
 
-### Elena-floor-knife-crashdoor-deep-one.png
-- **Sentido:** Elena en el suelo de la habitación, cuchillo en mano, mientras un Profundo derriba la puerta. El suelo huele a fango abisal.
+### Elena-floor-crashdoor-deep-one.png
+- **Sentido:** Elena en el suelo de la habitación mientras un Profundo derriba la puerta. El suelo huele a fango abisal.
 - **Lugar:** `spread-001` → `leftPage.illustration` (página inicial, elección crítica).
 
 ### reporter-trapped-under-bed-cenital-view.png

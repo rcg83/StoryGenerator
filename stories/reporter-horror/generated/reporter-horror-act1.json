@@ -13,15 +13,15 @@
       "leftPage": {
         "id": "spread-001-left",
         "pageNumber": 1,
-        "text": "El cuchillo pesa en tu mano temblorosa. La puerta cruje, cede… un Profundo irrumpe. El suelo huele a fango abisal.",
-        "illustration": "Elena-floor-knife-crashdoor-deep-one.png",
+        "text": "El embate de la puerta te arroja al suelo. Un Profundo irrumpe en la penumbra. El hedor a fango abisal lo invade todo.",
+        "illustration": "Elena-floor-crashdoor-deep-one.png",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-001-right",
         "pageNumber": 2,
         "title": "La Habitación",
-        "text": "La oscuridad es absoluta desde que la centralita colapsó. El hedor a fango abisal sube del suelo. Tu mano tantea el cuchillo del cajón; no servirá contra lo que viene.\n\nUn gemido gutural retumba tras la puerta. Algo embiste la cerradura. El marco cede. En el suelo, entre astillas, la hoja brilla. El Profundo va a entrar.",
+        "text": "La oscuridad es absoluta desde que la centralita colapsó. El hedor a fango abisal sube del suelo y te oprime el pecho.\n\nUn gemido gutural retumba tras la puerta. El embate final desgarra la cerradura; el marco cede. No hay salida: solo la ventana al callejón, y poco tiempo antes de que la criatura entre.",
         "pageOptions": [
           {
             "optionText": "Aprovechas tu agilidad para saltar por la ventana hacia el tejado del callejón inferior.",
@@ -137,10 +137,10 @@
         "id": "spread-003b-right",
         "pageNumber": 14,
         "title": "Búsqueda",
-        "text": "Revisas los cajones con sigilo. Encuentras una linterna de dínamo agotada; no sirve. Bajo la cama hallas un cuchillo de caza afilado, de hoja fría y pesada.\n\nEl Profundo ha dejado el saco y se acerca a la entrada, arrastrando los pies húmedos. Tienes poco tiempo.",
+        "text": "Revisas los cajones con sigilo. Encuentras una linterna de dínamo agotada; no sirve. Bajo la cama hallas una palanca de hierro oxidada, fría y pesada.\n\nEl Profundo ha dejado el saco y se acerca a la entrada, arrastrando los pies húmedos. Tienes poco tiempo.",
         "pageOptions": [
           {
-            "optionText": "Coges el cuchillo y saltas por la ventana.",
+            "optionText": "Coges la palanca y saltas por la ventana.",
             "optionLink": "spread-004"
           },
           {
@@ -256,14 +256,14 @@
         "id": "spread-006-right",
         "pageNumber": 26,
         "title": "La Cocina",
-        "text": "La cocina huele a grasa rancia y salitre. La puerta trasera está ahí, cerrada con una cerradura vieja y oxidada. En la mesa, un cuchillo de carnicero y una caja de fósforos descansan en silencio bajo la penumbra.\n\nLos pasos pesados en el salón se acercan. La criatura ha entrado al edificio; su aliento ronco y húmedo llena los pasillos. No tienes mucho tiempo.",
+        "text": "La cocina huele a grasa rancia y salitre. La puerta trasera está ahí, cerrada con una cerradura vieja y oxidada. En la mesa, una barra de hierro y una caja de fósforos descansan en silencio bajo la penumbra.\n\nLos pasos pesados en el salón se acercan. La criatura ha entrado al edificio; su aliento ronco y húmedo llena los pasillos. No tienes mucho tiempo.",
         "pageOptions": [
           {
             "optionText": "Buscas la llave en los cajones de la cocina.",
             "optionLink": "spread-007"
           },
           {
-            "optionText": "Intentas forzar la puerta con el cuchillo.",
+            "optionText": "Intentas forzar la cerradura con la barra de hierro.",
             "optionLink": "spread-007"
           }
         ]
