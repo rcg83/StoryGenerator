@@ -24,15 +24,15 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Aprovechas tu agilidad para saltar por la ventana hacia el tejado del callejón inferior: es la salida más alta y la criatura aún te busca en el suelo.",
+            "optionText": "Saltas por la ventana hacia el tejado del callejón para ganar altura antes de que la criatura te alcance en el suelo.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Preparas tu cámara de fuelle y esperas a que la puerta se rompa para capturar la fotografía del monstruo antes de huir: la prueba vale el riesgo.",
+            "optionText": "Preparas la cámara de fuelle y aguardas el derribo de la puerta para capturar la fotografía del monstruo antes de huir.",
             "optionLink": "spread-001b"
           },
           {
-            "optionText": "Apagas la linterna, te escondes bajo la cama en silencio y rezas para que la criatura no huela tu pánico.",
+            "optionText": "Te escondes bajo la cama y contienes la respiración, rezando para que la criatura no perciba tu pánico.",
             "optionLink": "gameover-001"
           }
         ]
@@ -44,7 +44,7 @@
       "leftPage": {
         "id": "spread-001b-left",
         "pageNumber": 5,
-        "text": "La puerta se estrella contra el suelo. Sus ojos sin párpados te buscan en la oscuridad; su piel coriácea brilla bajo tu linterna caída.\n\nTu instinto periodístico se impone: levantas la cámara, disparas el flash y capturas la imagen del horror.\n\nPero el destello te delata. La criatura se lanza hacia ti con toda su masa.",
+        "text": "La puerta se estrella. Ojos sin párpados te buscan; su piel brilla en la penumbra. Disparas el flash y capturas el horror. El destello te delata: la criatura se lanza.",
         "pageOptions": []
       },
       "rightPage": {
@@ -54,11 +54,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Aprovechas la distracción del destello para saltar por la ventana: el momento de fuga es ahora, no después.",
+            "optionText": "Usas el destello como cortina de humo y saltas por la ventana para escapar antes de que la criatura reaccione.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Intentas esquivar a la criatura y salir por la puerta: la salida frontal sigue abierta y es tu única vía.",
+            "optionText": "Esquivas a la criatura y te lanzas por la puerta para aprovechar la única vía frontal que sigue abierta.",
             "optionLink": "spread-003"
           }
         ]
@@ -80,15 +80,15 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Trepas por el cable de telégrafo hacia el faro: es la vía alta y fuera de la vista de la calle.",
+            "optionText": "Trepas por el cable de telégrafo hacia el faro para mantenerte en altura, fuera de la vista de la calle.",
             "optionLink": "spread-003"
           },
           {
-            "optionText": "Bajas por la escalera de incendios hacia el callejón: es la ruta más directa hacia la salvación.",
+            "optionText": "Bajas por la escalera de incendios hacia el callejón para tomar la ruta más directa hacia la salvación.",
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Corres por el tejado hacia la salida principal: velocidad y distancia, sin mirar atrás.",
+            "optionText": "Lanzas una carrera por el tejado hacia la salida principal, cegada por la prisa y sin medir el agua bajo tus pies.",
             "optionLink": "gameover-002"
           }
         ]
@@ -110,15 +110,15 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Saltas por la ventana al callejón mientras el Profundo está distraído: el momento de ventaja se está escapando.",
+            "optionText": "Saltas por la ventana al callejón mientras el Profundo está distraído, para no desaprovechar el único momento de ventaja.",
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Buscas algo útil en la habitación del vecino antes de bajar: armarse aumenta tus posibilidades.",
+            "optionText": "Registras la habitación del vecino en busca de algo útil antes de bajar, para no arriesgarte desarmada.",
             "optionLink": "spread-003b"
           },
           {
-            "optionText": "Esperas a que el Profundo se vaya antes de saltar: la paciencia a veces es el mejor refugio.",
+            "optionText": "Esperas agazapada a que el Profundo abandone el callejón antes de saltar, confiando en que la paciencia pase desapercibida.",
             "optionLink": "gameover-003"
           }
         ]
@@ -130,7 +130,7 @@
       "leftPage": {
         "id": "spread-003b-left",
         "pageNumber": 13,
-        "text": "Revisas los cajones con sigilo: una linterna de dínamo agotada, inservible.\n\nBajo la cama hay una palanca de hierro oxidada, fría y pesada al tacto.\n\nEn el callejón, el Profundo ha soltado el saco y se acerca a la entrada.\n\nArrastra los pies húmedos. Tienes poco tiempo para decidir.",
+        "text": "Revisas los cajones con sigilo: una caja de cerillas mojadas, inservible.\n\nBajo la cama hay una palanca de hierro oxidada, fría y pesada al tacto.\n\nEn el callejón, el Profundo ha soltado el saco y se acerca a la entrada.\n\nArrastra los pies húmedos. Tienes poco tiempo para decidir.",
         "pageOptions": []
       },
       "rightPage": {
@@ -140,11 +140,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Coges la palanca y saltas por la ventana: hierro en mano, la huida gana fuerza.",
+            "optionText": "Coges la palanca de hierro y saltas por la ventana para bajar al callejón con algo con que defenderte.",
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Esperas a que la criatura entre al edificio para esconderte mejor tras la puerta.",
+            "optionText": "Esperas a que la criatura entre en el edificio para esconderte mejor tras la puerta.",
             "optionLink": "gameover-003"
           }
         ]
@@ -166,15 +166,15 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Entras en el salón entreabierto en busca de otra salida: quizá la cocina tenga puerta trasera.",
+            "optionText": "Entras en el salón entreabierto para buscar otra salida, confiando en que la cocina tenga una puerta trasera.",
             "optionLink": "spread-005"
           },
           {
-            "optionText": "Saltas por la ventana al callejón trasero: está despejado y conduce al muelle.",
+            "optionText": "Saltas por la ventana al callejón trasero, que se ve despejado y conduce hacia el muelle.",
             "optionLink": "spread-006"
           },
           {
-            "optionText": "Esperas escondida a que el Profundo se retire de la escalera antes de seguir bajando.",
+            "optionText": "Te quedas escondida esperando a que el Profundo se retire de la escalera, apostando por una paciencia que la criatura no te concede.",
             "optionLink": "gameover-004"
           }
         ]
@@ -196,11 +196,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Investigas la radio de onda corta: la estática puede esconder una señal del culto.",
+            "optionText": "Investigas la radio de onda corta para descifrar la estática, que podría esconder una señal del culto.",
             "optionLink": "spread-005b"
           },
           {
-            "optionText": "Te diriges a la cocina con la palanca lista: la salida trasera es tu prioridad.",
+            "optionText": "Te diriges a la cocina con la palanca empuñada para despejar la salida trasera, tu prioridad.",
             "optionLink": "spread-006"
           }
         ]
@@ -222,11 +222,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Anotas las coordenadas y el cántico en tu libreta: la evidencia puede costarte la vida, pero es tu oficio.",
+            "optionText": "Anotas las coordenadas y el cántico en tu libreta, porque la evidencia es tu oficio aunque te cueste la vida.",
             "optionLink": "spread-006"
           },
           {
-            "optionText": "Destruyes la radio de un golpe para que nadie más escuche el cántico: callar la señal también es protegerte.",
+            "optionText": "Destruyes la radio de un golpe para silenciar el cántico y protegerte de quien esté escuchando la señal.",
             "optionLink": "spread-006"
           }
         ]
@@ -259,11 +259,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Buscas la llave en los cajones de la cocina: la cerradura vieja necesita su llave exacta, no fuerza bruta.",
+            "optionText": "Rebuscas la llave en los cajones de la cocina, porque la cerradura vieja exige su llave exacta antes que fuerza bruta.",
             "optionLink": "spread-007"
           },
           {
-            "optionText": "Intentas forzar la cerradura con la barra de hierro: el óxido cederá antes que tu paciencia.",
+            "optionText": "Intentas forzar la cerradura con la barra de hierro, esperando que el óxido ceda antes que tu paciencia.",
             "optionLink": "spread-007"
           }
         ]
@@ -296,11 +296,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Abres la puerta y sales corriendo al callejón: la salida está abierta y el Profundo a tus espaldas.",
+            "optionText": "Abres la puerta y corres por el callejón para dejar atrás al Profundo mientras la salida sigue abierta.",
             "optionLink": "spread-008"
           },
           {
-            "optionText": "Esperas un segundo para escuchar si hay peligro afuera: la prudencia a veces cuesta caro.",
+            "optionText": "Te detienes un segundo a escuchar si hay peligro afuera, y esa pausa de prudencia decide tu suerte.",
             "optionLink": "gameover-005"
           }
         ]
@@ -333,11 +333,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Te diriges hacia la iglesia: sus muros viejos parecen prometer refugio y respuestas.",
+            "optionText": "Te diriges hacia la iglesia buscando refugio y respuestas tras sus muros viejos.",
             "optionLink": "spread-009"
           },
           {
-            "optionText": "Te diriges hacia el muelle: el origen del mal suele guardar la clave y la salida.",
+            "optionText": "Te diriges hacia el muelle porque el origen del mal suele guardar también la clave de la salida.",
             "optionLink": "spread-010"
           }
         ]
@@ -407,11 +407,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Te escondes y observas desde la oscuridad: entender el ritual antes de actuar te da ventaja.",
+            "optionText": "Te ocultas en la oscuridad y observas para entender el ritual antes de actuar.",
             "optionLink": "spread-012"
           },
           {
-            "optionText": "Intentas liberar a los cautivos ahora mismo: cada segundo que respiran dentro importa.",
+            "optionText": "Te lanzas a liberar a los cautivos en este instante, porque cada segundo que respiran dentro de los sacos es un latido que no puedes ignorar.",
             "optionLink": "gameover-006"
           }
         ]
@@ -444,11 +444,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Le preguntas directamente sobre el pacto con los Profundos: la verdad no se sirve en copa.",
+            "optionText": "Le preguntas directamente sobre el pacto con los Profundos, queriendo arrancarle la verdad antes que aceptar su brandy.",
             "optionLink": "spread-013"
           },
           {
-            "optionText": "Aceptas la protección y el refugio por esta noche: la cordura también se gana descansando.",
+            "optionText": "Aceptas la copa y el refugio que te ofrece por esta noche, para guardar fuerzas y mantener la compostura.",
             "optionLink": "spread-013"
           }
         ]
@@ -481,11 +481,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Tomas fotos sin flash desde la oscuridad: la prueba gráfica puede costarte, pero la noche lo exige.",
+            "optionText": "Disparas la cámara sin flash desde la oscuridad para conseguir una prueba gráfica, aunque la noche cobre caro el gesto.",
             "optionLink": "spread-014"
           },
           {
-            "optionText": "Esperas a que se vayan para acercarte a los sacos: primero el refugio, después la evidencia.",
+            "optionText": "Esperas a que los Profundos se marchen antes de acercarte a los sacos, para asegurar tu escondite antes de arriesgarte por la evidencia.",
             "optionLink": "spread-014"
           }
         ]
@@ -518,7 +518,7 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Le convences de que la verdad debe salir a la luz: una historia así merece ser contada, no enterrada.",
+            "optionText": "Convences al sacerdote de que la verdad debe salir a la luz, porque una historia así merece ser contada y no enterrada.",
             "optionLink": "spread-014"
           },
           {
@@ -555,11 +555,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Continúas hacia el muelle para documentar el secuestro: la evidencia final está a tiro de cámara.",
+            "optionText": "Continúas hacia el muelle para documentar el secuestro y conseguir la evidencia final con tu cámara.",
             "optionLink": "spread-015"
           },
           {
-            "optionText": "Vuelves a la iglesia para enfrentar al sacerdote: las respuestas que esquiva se quedan en el altar.",
+            "optionText": "Vuelves a la iglesia para enfrentar al sacerdote y arrancarle las respuestas que esconde en el altar.",
             "optionLink": "spread-016"
           }
         ]
@@ -592,11 +592,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Fotografías la evidencia y te escapas por la carretera: la prueba tuya vale más que el mar.",
+            "optionText": "Fotografías la cadena rota y la red con ropa humana para asegurar la evidencia antes de escapar por la carretera.",
             "optionLink": "spread-017"
           },
           {
-            "optionText": "Intentas alcanzar el barco nadando: liberar a los cautivos o ahogar tu culpa en el intento.",
+            "optionText": "Te lanzas al agua para alcanzar el barco nadando, decidida a liberar a los cautivos o callar tu culpa en el intento.",
             "optionLink": "gameover-007"
           }
         ]
@@ -629,11 +629,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Bajas al sótano a buscar las pruebas: la verdad de todo está bajo tus pies.",
+            "optionText": "Bajas al sótano en busca de las pruebas, convencida de que la verdad está bajo tus pies.",
             "optionLink": "spread-017"
           },
           {
-            "optionText": "Le pides al sacerdote que te acompañe: que su testimonio testifique con las pruebas.",
+            "optionText": "Pides al sacerdote que baje contigo para que su testimonio respalde las pruebas que encuentres.",
             "optionLink": "spread-017"
           }
         ]
@@ -666,11 +666,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Subes al coche y arrancas hacia Boston: el asiento está listo y la verdad no espera.",
+            "optionText": "Subes al coche y arrancas hacia Boston para entregar la verdad antes de que se enfríe.",
             "optionLink": "spread-018"
           },
           {
-            "optionText": "Miras atrás una última vez: grabar el pueblo en la memoria antes de enterrarlo en reportaje.",
+            "optionText": "Miras atrás una última vez para grabar el pueblo en la memoria antes de enterrarlo en tu reportaje.",
             "optionLink": "spread-018"
           }
         ]
@@ -703,11 +703,11 @@
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Conduces hacia Boston con las pruebas: el mundo sabrá la verdad del Culto de Dagón.",
+            "optionText": "Conduces hacia Boston con las pruebas para que el mundo conozca la verdad del Culto de Dagón.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Te quedas para ayudar a los supervivientes: la historia también vive en quienes quedan.",
+            "optionText": "Te quedas a ayudar a los supervivientes, porque la historia también vive en quienes quedan.",
             "optionLink": "end-002"
           }
         ]

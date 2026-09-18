@@ -26,9 +26,9 @@ Elena es una periodista de investigación del Boston Globe que ha llegado a la c
 |---|-----------|---------------------|----------------------|
 | 1 | Habitación rota | Saltar ventana (atlética) | Esconderse (sin sigilo) |
 | 2 | Tejado/Pasillo | Trepar faro (atlética) | Correr tejado (resbaladizo) |
-| 3 | Habitación Vecino | Salir ventana (linterna) | Esperar (captura) |
+| 3 | Habitación Vecino | Salir ventana (atlética) | Esperar (captura) |
 | 4 | Escalera Principal | Disparar (revólver) | Esperar (bloqueado) |
-| 5 | Salón | Buscar linterna (dínamo) | Salir corriendo (oscuro) |
+| 5 | Salón | Escuchar radio (deducción) | Salir corriendo (oscuro) |
 | 6 | Cocina | Buscar llave (deducción) | Ventana (clavada) |
 | 7 | Almacén | Explorar (periodista) | Salir sin saber |
 | 8 | Puerta Trasera | Forzar (atlética) | Otra ruta (única salida) |
