@@ -37,12 +37,12 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 1. **Perspectiva Narrativa**: Escribir estrictamente en segunda persona del singular ("Tú") para forzar la inmersión del lector.
 2. **Filtro Atmosférico Lovecraftiano**: Describir los entornos utilizando estímulos sensoriales de la época (el olor fétido a fango abisal, el parpadeo titilante de las farolas de gas, el crujido de la madera podrida y el frío salitre).
 3. **Adaptar al Tono de la Historia**: Mantener coherencia con el estado narrativo establecido en la sinopsis y el contexto de la historia.
-4. **Redactar Elecciones Activas**: El texto de las opciones debe redactarse desde la perspectiva del dilema del personaje, dejando claras las intenciones detrás de cada camino (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado"*).
+4. **Redactar Elecciones Detalladas y Justificadas**: El texto de cada opción de la `rightPage` debe explicar **qué hace el personaje y con qué intención**, para que el lector entienda bien no solo la acción sino el dilema detrás de ella (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado: es la salida más alta y la criatura aún no te ha visto"*).
 5. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual de la página. **El nombre de la imagen describe la situación concreta de la escena y debe tenerse muy en cuenta al redactar el `text` descriptivo**: cada elemento nombrado en el archivo (lugar, criatura, objeto, estado atmosférico) debe estar presente o resonar en la narrativa de la página.
-6. **Regla de Longitud Narrativa por Página**: El límite de palabras del `text` se aplica según el contenido de la propia página:
-   * **Página con imagen** (declara `mapData.backgroundImage` **o** `illustration`): máximo **30 palabras** en su `text`.
-   * **Página con elecciones o path selector** (`pageOptions` no vacío): máximo **60 palabras** en su `text`.
-   * Si una página tiene imagen **y** elecciones a la vez, aplicar el límite más estricto (**30 palabras**).
+6. **Regla de Longitud Narrativa por Página**: La narrativa vive **siempre en la `leftPage`** según su contenido visual:
+   * **leftPage con imagen** (declara `mapData.backgroundImage` **o** `illustration`): máximo **30 palabras** en su `text`.
+   * **leftPage sin imagen**: **3–4 párrafos breves**, cada uno de máximo **30 palabras**.
+   * La `rightPage` no lleva narrativa: su `text` queda vacío (`""`) y contiene únicamente `pageOptions`.
 
 ---
 
@@ -52,10 +52,11 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 1. **Integridad de Rutas**: Verificar que todas las `optionLink` declaradas apunten a un ID de página existente o planificado dentro de la estructura de spreads.
 2. **Evitar Deadlocks**: Validar que la página no sea un callejón sin salida narrativo, a menos que sea un final de historia explícito (Fin o Muerte).
 3. **Validación de Imagen**: Si la página declara un campo `mapData` **o** `illustration`, verificar que el nombre de la imagen está listado en `/stories/[story-name]/context/image-names.md`. Si no se cumple, eliminar el campo correspondiente de la página (no dejar referencias rotas).
-4. **Validación de Longitud Narrativa por Página**: Contar las palabras del `text` de cada página según su contenido:
-   * Página con imagen (`mapData.backgroundImage` **o** `illustration`): máximo **30 palabras**.
-   * Página con elecciones o path selector (`pageOptions` no vacío): máximo **60 palabras**.
-   Si no se cumple, devolver la página al ScribeAgent para redacción.
+4. **Validación de Longitud Narrativa por Página**: Contar las palabras del `text` de la `leftPage` según su contenido visual:
+   * `leftPage` con imagen (`mapData.backgroundImage` **o** `illustration`): máximo **30 palabras** en total.
+   * `leftPage` sin imagen: **3–4 párrafos breves**, cada uno de máximo **30 palabras**.
+   * `rightPage.text`: debe estar vacío (`""`) — solo contiene `pageOptions`.
+   Si no se cumple (incluida una `rightPage` con narrativa), devolver la página al ScribeAgent para redacción.
 5. **Firma de Verificación**: Añadir la propiedad `"status": "verified"` en los metadatos de la página una vez comprobado que se han seguido correctamente los Pasos 1 a 3.
 
 ---
@@ -104,8 +105,8 @@ Cada spread contiene **2 páginas** con roles diferentes:
 
 | Página | Rol | Contenido | Opciones |
 |--------|-----|-----------|----------|
-| **leftPage** | Visual | Imágenes, mapas, fichas, inventario, pistas visuales | **NUNCA** |
-| **rightPage** | Narrativo | 2 párrafos de narrativa + decisiones | SÍ |
+| **leftPage** | Visual + Narrativa | Imagen (`illustration`/`mapData`, si aplica) + texto de la escena | **NUNCA** |
+| **rightPage** | Decisiones | Solo elecciones (`pageOptions`); `text` vacío (`""`) | SÍ |
 
 ### StoryPage (Página Individual)
 ```json
@@ -113,7 +114,7 @@ Cada spread contiene **2 páginas** con roles diferentes:
   "id": "string",
   "pageNumber": 1,
   "title": "string (opcional)",
-  "text": "string (narrativa principal - SOLO en rightPage)",
+  "text": "string (narrativa principal - en leftPage; rightPage siempre vacío)",
   "illustration": "string (opcional - imagen simple de página)",
   "mapData": {
     "backgroundImage": "string",
@@ -133,19 +134,19 @@ Cada spread contiene **2 páginas** con roles diferentes:
 ```json
 {
   "id": "string",
-  "leftPage": "StoryPage (visual - NUNCA opciones)",
-  "rightPage": "StoryPage (narrativo + decisiones)"
+  "leftPage": "StoryPage (visual + narrativa - NUNCA opciones)",
+  "rightPage": "StoryPage (solo elecciones - text vacío)"
 }
 ```
 
 ### Reglas de Contenido
 * **leftPage.pageOptions**: Siempre `[]` (vacío)
-* **leftPage.text**: Máximo **30 palabras** cuando la página declara imagen (`mapData.backgroundImage` **o** `illustration`); vacío o mínimo si no hay imagen
+* **leftPage.text**: La narrativa vive en la leftPage. Con imagen (`mapData.backgroundImage` **o** `illustration`): máximo **30 palabras** en total. Sin imagen: **3–4 párrafos breves**, cada uno de máximo **30 palabras**
 * **leftPage.mapData**: Imagen de fondo, posición del jugador, posición objetivo
 * **leftPage.illustration**: Imagen simple de página (sin posiciones de mapa), opcional
-* **rightPage.text**: Máximo **60 palabras** — es la página de decisiones/path selector (`pageOptions`)
-* **rightPage.pageOptions**: 2-4 opciones con `optionLink` a siguiente spread o gameover
-* **Path selector (página de decisiones)**: Página cuyo `pageOptions` no está vacío; el jugador elige el camino a seguir. Límite de `text`: **60 palabras**. Si además declara imagen (`mapData.backgroundImage` **o** `illustration`), el límite baja a **30 palabras**
+* **rightPage.text**: Siempre `""` (vacío) — la rightPage contiene SOLO las elecciones
+* **rightPage.pageOptions**: 2-4 opciones con `optionLink` a siguiente spread o gameover. Cada opción debe ser **detallada y justificada**: expresa qué hace el personaje y con qué intención
+* **Path selector (página de decisiones)**: Página cuyo `pageOptions` no está vacío; el jugador elige el camino a seguir. Su `text` queda vacío (`""`)
 
 ### CharacterData (Datos del Personaje)
 ```json
@@ -178,19 +179,20 @@ Cada spread contiene **2 páginas** con roles diferentes:
         "id": "page-1",
         "pageNumber": 0,
         "text": "Narrative text for the left page.\n\nParagraph two.",
+        "illustration": "cocina-pension-puerta-trasera.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "page-2",
         "pageNumber": 1,
-        "text": "Narrative text for the right page.",
+        "text": "",
         "pageOptions": [
           {
-            "optionText": "Choice A",
+            "optionText": "Choice A with intention",
             "optionLink": "spread2"
           },
           {
-            "optionText": "Choice B",
+            "optionText": "Choice B with intention",
             "optionLink": "spread3"
           }
         ]
