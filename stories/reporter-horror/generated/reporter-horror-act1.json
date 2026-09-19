@@ -13,26 +13,26 @@
       "leftPage": {
         "id": "spread-001-left",
         "pageNumber": 1,
-        "text": "El embate de la puerta te arroja al suelo. Un Profundo irrumpe en la penumbra. El hedor a fango abisal lo invade todo.",
+        "text": "La puerta del ático se comba y salta de la bisagra. Tú caes contra el suelo frío. La silueta escamosa llena el umbral; huele a fango, a sal y a pescado podrido. En la habitación, la única salida prometedora es la ventana, abierta a la cornisa que bordea la fachada.",
         "illustration": "Elena-floor-crashdoor-deep-one.png",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-001-right",
         "pageNumber": 2,
-        "title": "La Habitación",
+        "title": "La Habitación del Ático",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Saltas por la ventana hacia el tejado del callejón para ganar altura antes de que la criatura te alcance en el suelo.",
+            "optionText": "Saltas por la ventana y avanzas por la cornisa estrecha hasta la ventana de la habitación contigua: es la única vía que no pasa por delante de la criatura.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Preparas la cámara de fuelle y aguardas el derribo de la puerta para capturar la fotografía del monstruo antes de huir.",
+            "optionText": "Disparas el flash de la cámara de fuelle para cegarla y corres por el pasillo mientras la criatura se recupera.",
             "optionLink": "spread-001b"
           },
           {
-            "optionText": "Te escondes bajo la cama y contienes la respiración, rezando para que la criatura no perciba tu pánico.",
+            "optionText": "Te escondes bajo la cama y contienes la respiración, esperando que la criatura no perciba tu pánico entre las sombras.",
             "optionLink": "gameover-001"
           }
         ]
@@ -43,22 +43,22 @@
       "id": "spread-001b",
       "leftPage": {
         "id": "spread-001b-left",
-        "pageNumber": 5,
-        "text": "La puerta se estrella. Ojos sin párpados te buscan; su piel brilla en la penumbra. Disparas el flash y capturas el horror. El destello te delata: la criatura se lanza.",
+        "pageNumber": 3,
+        "text": "El flash de magnesio ilumina el cuarto entero. La criatura retrocede, cegada, con un silbido que te perfora los oídos.\n\nAprovechas el segundo para cruzar el pasillo del ático. La balaustrada cruje y, a tu espalda, el arrastre húmedo vuelve a empezar.\n\nLas habitaciones de arriba están clausuradas con tablas. Solo la puerta de la escalera de servicio sigue abierta, y la ventana de la alcoba contigua, sin barrotes, brilla con la luz de la calle.\n\nTu corazón late más fuerte que cualquier crujido del hotel.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-001b-right",
-        "pageNumber": 6,
-        "title": "La Fotografía",
+        "pageNumber": 4,
+        "title": "El Pasillo del Ático",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Usas el destello como cortina de humo y saltas por la ventana para escapar antes de que la criatura reaccione.",
+            "optionText": "Te cuelas en la alcoba contigua para ganar distancia antes de seguir bajando por el hotel.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Esquivas a la criatura y te lanzas por la puerta para aprovechar la única vía frontal que sigue abierta.",
+            "optionText": "Pegas el oído a los pasos y bajas de inmediato por la escalera de servicio, antes de que la criatura te vea.",
             "optionLink": "spread-003"
           }
         ]
@@ -69,57 +69,81 @@
       "id": "spread-002",
       "leftPage": {
         "id": "spread-002-left",
-        "pageNumber": 7,
-        "text": "Caes sobre el tejado de pizarra mojada. El impacto te deja sin aliento; la lluvia te golpea la cara.\n\nAbajo, en el callejón, gritos ahogados y arrastres húmedos que hielan la espalda.\n\nEl tejado resbaladizo se extiende hacia el faro abandonado; un cable de telégrafo cruza al edificio de enfrente.\n\nLa escalera de incendios, oxidada y chirriante, parece lo bastante estable para bajar.",
+        "pageNumber": 5,
+        "text": "La cornisa abraza la fachada del ático; abajo, la ciudad se estira en sombras. Te deslizas hasta la ventana de la alcoba contigua y entras en una habitación vacía que huele a alcanfor y a humedad.",
+        "illustration": "acceso-cornisa-noche.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-002-right",
-        "pageNumber": 8,
-        "title": "El Tejado",
+        "pageNumber": 6,
+        "title": "La Cornisa",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Trepas por el cable de telégrafo hacia el faro para mantenerte en altura, fuera de la vista de la calle.",
+            "optionText": "Bajas por la escalera de servicio con sigilo, midiendo cada crujido de la madera antes de pisar para no delatarte.",
             "optionLink": "spread-003"
           },
           {
-            "optionText": "Bajas por la escalera de incendios hacia el callejón para tomar la ruta más directa hacia la salvación.",
-            "optionLink": "spread-004"
-          },
-          {
-            "optionText": "Lanzas una carrera por el tejado hacia la salida principal, cegada por la prisa y sin medir el agua bajo tus pies.",
-            "optionLink": "gameover-002"
+            "optionText": "Registras la alcoba en busca de algo útil antes de bajar, porque no quieres seguir desarmada.",
+            "optionLink": "spread-002b"
           }
         ]
       },
-      "type": "critical"
+      "type": "default"
+    },
+    {
+      "id": "spread-002b",
+      "leftPage": {
+        "id": "spread-002b-left",
+        "pageNumber": 7,
+        "text": "Revuelves los cajones con manos temblorosas. Un despertador, un cepillo, naipes de un viejo solitario. Nada que sirva.\n\nBajo la almohada encuentras un revólver de tambor; al abrirlo, el alvéolo está vacío. Pesa poco más que el miedo.\n\nJunto a la ventana, el hueco de un barrote que alguien se llevó hace años: aquí arriba, la salida sería posible, pero la escalera ya gruñe con pasos.\n\nEl pasillo vuelve a crujir. La alcoba se empieza a cerrar sobre ti.",
+        "pageOptions": []
+      },
+      "rightPage": {
+        "id": "spread-002b-right",
+        "pageNumber": 8,
+        "title": "La Alcoba",
+        "text": "",
+        "pageOptions": [
+          {
+            "optionText": "Dejas el revólver vacío y bajas por la escalera de servicio en el momento en que los pasos de abajo doblan a lo lejos.",
+            "optionLink": "spread-003"
+          },
+          {
+            "optionText": "Esperas el compás de los pasos en el umbral para salir justo en el hueco que te cubre.",
+            "optionLink": "spread-003"
+          }
+        ]
+      },
+      "type": "default"
     },
     {
       "id": "spread-003",
       "leftPage": {
         "id": "spread-003-left",
-        "pageNumber": 11,
-        "text": "Trepar el cable te deja temblando, con las manos marcadas por el acero.\n\nLa habitación del vecino está vacía; la ventana abierta de par en par. En el suelo, un revólver de tambor sin balas.\n\nPor la ventana ves el callejón: un Profundo arrastra un saco hacia la farola que parpadea.\n\nAún no te ha visto. El aire está cargado de salitre y amenaza.",
+        "pageNumber": 9,
+        "text": "El rellano de la planta de arriba huele a óxido y a cuerda vieja. En la pared del fondo, el pozo del montacargas abre su boca oscura y baja hasta la planta baja. El cable grasiento tiembla cuando la criatura pisa la escalera.",
+        "illustration": "pozo-luz-montacargas.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-003-right",
-        "pageNumber": 12,
-        "title": "La Habitación del Vecino",
+        "pageNumber": 10,
+        "title": "El Pozo del Montacargas",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Saltas por la ventana al callejón mientras el Profundo está distraído, para no desaprovechar el único momento de ventaja.",
+            "optionText": "Te cuelgas del cable grasiento y desciendes por el pozo, confiando en tu fuerza para no soltarte en el vacío.",
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Registras la habitación del vecino en busca de algo útil antes de bajar, para no arriesgarte desarmada.",
+            "optionText": "Te escondes detrás de los arcones del pasillo y esperas a que la criatura cruce el rellano sin verte.",
             "optionLink": "spread-003b"
           },
           {
-            "optionText": "Esperas agazapada a que el Profundo abandone el callejón antes de saltar, confiando en que la paciencia pase desapercibida.",
-            "optionLink": "gameover-003"
+            "optionText": "Cruzas el descansillo corriendo a la vista de la criatura, sin medir la velocidad de sus zancadas.",
+            "optionLink": "gameover-002"
           }
         ]
       },
@@ -129,23 +153,23 @@
       "id": "spread-003b",
       "leftPage": {
         "id": "spread-003b-left",
-        "pageNumber": 13,
-        "text": "Revisas los cajones con sigilo: una caja de cerillas mojadas, inservible.\n\nBajo la cama hay una palanca de hierro oxidada, fría y pesada al tacto.\n\nEn el callejón, el Profundo ha soltado el saco y se acerca a la entrada.\n\nArrastra los pies húmedos. Tienes poco tiempo para decidir.",
+        "pageNumber": 11,
+        "text": "Te agazapas tras los arcones apilados. El polvo te sube por la nariz y contienes un estornudo con toda la fuerza de tus puños.\n\nLos pasos húmedos se acercan; la criatura se detiene a medio metro de ti y huele el aire con un silbido que huele a marea.\n\nEl silencio se alarga hasta que un arrastre en la puerta de abajo la distrae. Sueltas el aire que llevabas mordiendo.\n\nCuando la criatura baja la escalera, te deslizas hacia el pozo con las piernas entumecidas.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-003b-right",
-        "pageNumber": 14,
-        "title": "Búsqueda",
+        "pageNumber": 12,
+        "title": "Tras los Arcones",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Coges la palanca de hierro y saltas por la ventana para bajar al callejón con algo con que defenderte.",
+            "optionText": "Bajas por el cable del montacargas ahora que el pasillo queda vacío y el peligro se ha alejado.",
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Esperas a que la criatura entre en el edificio para esconderte mejor tras la puerta.",
-            "optionLink": "gameover-003"
+            "optionText": "Aprovechas el momento y bajas por la escalera principal dos tramos, sin encender la linterna.",
+            "optionLink": "spread-004"
           }
         ]
       },
@@ -155,53 +179,77 @@
       "id": "spread-004",
       "leftPage": {
         "id": "spread-004-left",
-        "pageNumber": 17,
-        "text": "Bajas por la escalera de incendios; la madera cruje y cada peldaño amenaza con delatarte.\n\nAbajo, un Profundo bloquea la escalera principal. Sus garras brillan en la penumbra.\n\nA tu derecha, una puerta entreabierta da al salón; a la izquierda, una ventana abierta al callejón.\n\nLa criatura aún no te ha visto: es tu único as en la manga.",
+        "pageNumber": 13,
+        "text": "La sala común del hotel está en semipenumbra. Las ventanas con barrotes dejan entrar la luz de gas; en una consola, una radio de onda corta escupe estática. Tras la puerta de la cocina, algo arrastra muebles y gruñe.",
+        "illustration": "sala-comun-radio.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-004-right",
-        "pageNumber": 18,
-        "title": "La Escalera",
+        "pageNumber": 14,
+        "title": "La Sala Común",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Entras en el salón entreabierto para buscar otra salida, confiando en que la cocina tenga una puerta trasera.",
+            "optionText": "Afinas la radio de onda corta y, entre la estática, capturas un cántico gutural y unas coordenadas que copias en tu libreta: la evidencia vale el riesgo.",
             "optionLink": "spread-005"
           },
           {
-            "optionText": "Saltas por la ventana al callejón trasero, que se ve despejado y conduce hacia el muelle.",
-            "optionLink": "spread-006"
-          },
-          {
-            "optionText": "Te quedas escondida esperando a que el Profundo se retire de la escalera, apostando por una paciencia que la criatura no te concede.",
-            "optionLink": "gameover-004"
+            "optionText": "Destruyes la radio de un golpe para silenciar el cántico y no dejar rastro de que estuviste aquí.",
+            "optionLink": "spread-004b"
           }
         ]
       },
-      "type": "critical"
+      "type": "default"
+    },
+    {
+      "id": "spread-004b",
+      "leftPage": {
+        "id": "spread-004b-left",
+        "pageNumber": 15,
+        "text": "El golpe de tu talón quiebra los tubos y la estática muere con un chirrido. El silencio que sigue es peor.\n\nDesde la cocina, el arrastre se detiene. Algo escucha. Tú también escuchas, con el corazón en la garganta.\n\nSales de la sala común hacia el pasillo de servicio, donde el humo de las cocinas se cuela por las rendijas.",
+        "pageOptions": []
+      },
+      "rightPage": {
+        "id": "spread-004b-right",
+        "pageNumber": 16,
+        "title": "Silencio",
+        "text": "",
+        "pageOptions": [
+          {
+            "optionText": "Caminas por el pasillo de servicio hacia la escalera, contando el compás de tus propios pasos lentos.",
+            "optionLink": "spread-005"
+          },
+          {
+            "optionText": "Esperas a que el arrastre de la cocina se reanude antes de moverte, para que cubra el ruido de la madera.",
+            "optionLink": "spread-005"
+          }
+        ]
+      },
+      "type": "default"
     },
     {
       "id": "spread-005",
       "leftPage": {
         "id": "spread-005-left",
-        "pageNumber": 21,
-        "text": "El salón está en penumbra. Cortinas rojas desgarradas cubren las ventanas clausuradas.\n\nEn una esquina, una radio de onda corta escupe estática que te eriza los dientes.\n\nEn la cocina escuchas pasos pesados; algo se mueve entre platos rotos.\n\nLa puerta trasera podría estar al otro lado, pero el ruido te frena.",
+        "pageNumber": 17,
+        "text": "El pasillo de servicio aprieta entre paredes de madera. El humo se cuela por las rendijas y marea los ojos. Al fondo, la criatura arrastra un saco que patalea. Los fósforos de tu bolsillo pesan como una idea.",
+        "illustration": "pasillo-servicio-humo.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-005-right",
-        "pageNumber": 22,
-        "title": "El Salón",
+        "pageNumber": 18,
+        "title": "El Pasillo de Servicio",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Investigas la radio de onda corta para descifrar la estática, que podría esconder una señal del culto.",
-            "optionLink": "spread-005b"
+            "optionText": "Enciendes los fósforos y los lanzas al pasillo para alzar una cortina de humo que empuje a la criatura hacia el otro lado.",
+            "optionLink": "spread-006"
           },
           {
-            "optionText": "Te diriges a la cocina con la palanca empuñada para despejar la salida trasera, tu prioridad.",
-            "optionLink": "spread-006"
+            "optionText": "Esperas el compás de los pasos y cruzas el pasillo en silencio cuando la criatura dobla la esquina.",
+            "optionLink": "spread-005b"
           }
         ]
       },
@@ -211,59 +259,80 @@
       "id": "spread-005b",
       "leftPage": {
         "id": "spread-005b-left",
-        "pageNumber": 23,
-        "text": "Te acercas a la radio; la estática sube de intensidad hasta volverse cántico.\n\nVoces guturales repiten un cántico ajeno a lo humano, entre ráfagas de interferencia.\n\nLas coordenadas '42°22'N, 70°58'O' se dibujan una y otra vez en la niebla sonora.\n\nTu instinto periodístico lo sabe: esto es una prueba. La libreta está en tu bolsillo.",
+        "pageNumber": 19,
+        "text": "Cuentas los pasos: tres, cuatro... cuando la criatura gira la esquina, te deslizas pegado a la pared.\n\nLa madera del suelo gime bajo tu peso justo entre dos pisadas del arrastre. Te quedas de piedra.\n\nLa criatura sigue hacia la cocina y el pasillo queda vacío hasta la escalera de los criados.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-005b-right",
-        "pageNumber": 24,
-        "title": "La Radio",
+        "pageNumber": 20,
+        "title": "En Silencio",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Anotas las coordenadas y el cántico en tu libreta, porque la evidencia es tu oficio aunque te cueste la vida.",
+            "optionText": "Pasas por la escalera de los criados y bajas un piso sin encender la linterna, tanteando cada peldaño.",
             "optionLink": "spread-006"
           },
           {
-            "optionText": "Destruyes la radio de un golpe para silenciar el cántico y protegerte de quien esté escuchando la señal.",
+            "optionText": "Avanzas a tientas con la mano en la pared como guía, probando cada escalón antes de cargarlo con tu peso.",
             "optionLink": "spread-006"
           }
         ]
       },
-      "type": "mistery"
+      "type": "default"
     },
     {
       "id": "spread-006",
       "leftPage": {
         "id": "spread-006-left",
-        "pageNumber": 25,
-        "text": "La cocina huele a grasa rancia y salitre. La puerta trasera, cerrada con cerradura oxidada. En la mesa, una barra de hierro y fósforos.",
-        "mapData": {
-          "backgroundImage": "cocina-pension-puerta-trasera.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 2
-          }
-        },
+        "pageNumber": 21,
+        "text": "La cocina del hotel apesta a grasa rancia y a sal. La puerta de servicio está cerrada con una cerradura gorda y oxidada. Sobre la mesa, una barra de hierro y un cuchillo sin mango.",
+        "illustration": "cocina-hotel-puerta-servicio.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-006-right",
-        "pageNumber": 26,
+        "pageNumber": 22,
         "title": "La Cocina",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Rebuscas la llave en los cajones de la cocina, porque la cerradura vieja exige su llave exacta antes que fuerza bruta.",
+            "optionText": "Rebusca la llave en el cajón de los útiles: esa cerradura gorda exige su llave exacta, no la fuerza bruta.",
             "optionLink": "spread-007"
           },
           {
-            "optionText": "Intentas forzar la cerradura con la barra de hierro, esperando que el óxido ceda antes que tu paciencia.",
+            "optionText": "Encaja la barra de hierro y fuerzas la cerradura; el ruido puede delatar tu posición a la planta baja.",
+            "optionLink": "spread-006b"
+          },
+          {
+            "optionText": "Embistes la puerta con el hombro para derribarla de un solo golpe y no perder más tiempo.",
+            "optionLink": "gameover-003"
+          }
+        ]
+      },
+      "type": "critical"
+    },
+    {
+      "id": "spread-006b",
+      "leftPage": {
+        "id": "spread-006b-left",
+        "pageNumber": 23,
+        "text": "La barra chirría contra el metal; un chasquido seco. La cerradura cede, pero el eco sube por la escalera vacía y algo responde desde abajo con un gruñido húmedo.",
+        "illustration": "cerradura-puerta-servicio.jpg",
+        "pageOptions": []
+      },
+      "rightPage": {
+        "id": "spread-006b-right",
+        "pageNumber": 24,
+        "title": "Cerradura",
+        "text": "",
+        "pageOptions": [
+          {
+            "optionText": "Bajas por la escalera de servicio ahora que la puerta está abierta, antes de que el gruñido llegue.",
+            "optionLink": "spread-007"
+          },
+          {
+            "optionText": "Esperas tras la puerta entreabierta a que dejen de escuchar antes de bajar.",
             "optionLink": "spread-007"
           }
         ]
@@ -274,71 +343,103 @@
       "id": "spread-007",
       "leftPage": {
         "id": "spread-007-left",
-        "pageNumber": 27,
-        "text": "La llave, bajo una alfombra mohosa, tiembla entre tus dedos. El metal oxidado resiste hasta ceder con un clic seco.",
-        "mapData": {
-          "backgroundImage": "puerta-trasera-cerradura.jpg",
-          "userPosition": {
-            "col": 1,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 1,
-            "row": 2
-          }
-        },
+        "pageNumber": 25,
+        "text": "El almacén del piso bajo guarda sombra y polvo: cajas apiladas, un maniquí sin cabeza, botellas vacías. Un olor a humo sube desde el vestíbulo junto al hueco de la escalera principal.",
+        "illustration": "almacen-trastos-penumbra.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-007-right",
-        "pageNumber": 28,
-        "title": "La Puerta Trasera",
+        "pageNumber": 26,
+        "title": "El Almacén",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Abres la puerta y corres por el callejón para dejar atrás al Profundo mientras la salida sigue abierta.",
+            "optionText": "Examinas el almacén y, entre los trastos, encuentras un plano del hotel con las salidas de servicio marcadas: saber dónde pisar te ahorra tiempo y vidas.",
             "optionLink": "spread-008"
           },
           {
-            "optionText": "Te detienes un segundo a escuchar si hay peligro afuera, y esa pausa de prudencia decide tu suerte.",
-            "optionLink": "gameover-005"
+            "optionText": "Cruzas el almacén directo a la escalera para no perder un segundo en detenerte.",
+            "optionLink": "spread-007b"
           }
         ]
       },
-      "type": "critical"
+      "type": "default"
+    },
+    {
+      "id": "spread-007b",
+      "leftPage": {
+        "id": "spread-007b-left",
+        "pageNumber": 27,
+        "text": "Atraviesas el almacén sin mirar nada, con la prisa pegada a la espalda.\n\nEn la escalera principal, el olor a humo y a sal se espesa. Las luces de gas chisporrotean como animalillos heridos.\n\nY más abajo, en el vestíbulo, una sombra larga cruza el mosaico de la recepción.",
+        "pageOptions": []
+      },
+      "rightPage": {
+        "id": "spread-007b-right",
+        "pageNumber": 28,
+        "title": "De Prisa",
+        "text": "",
+        "pageOptions": [
+          {
+            "optionText": "Te pegas a la pared y bajas con cuidado, sin perder de vista la sombra que cruza el vestíbulo.",
+            "optionLink": "spread-008"
+          },
+          {
+            "optionText": "Esperas en el rellano hasta que la sombra desaparezca de la puerta antes de continuar.",
+            "optionLink": "spread-008"
+          }
+        ]
+      },
+      "type": "default"
     },
     {
       "id": "spread-008",
       "leftPage": {
         "id": "spread-008-left",
-        "pageNumber": 31,
-        "text": "El aire frío te golpea en el callejón. Los charcos reflejan la farola parpadeante. A la izquierda, la iglesia; a la derecha, el muelle.",
-        "mapData": {
-          "backgroundImage": "callejon-trasero-noche.jpg",
-          "userPosition": {
-            "col": 1,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 2
-          }
-        },
+        "pageNumber": 29,
+        "text": "La caja de la escalera se hunde hacia el vestíbulo. Los barrotes de las ventanas de la planta baja dibujan rayas de luz de gas sobre el escalón. El hueco del ascensor, muerto, deja oír un goteo insistente.",
+        "illustration": "rellano-escaleras-noche.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-008-right",
-        "pageNumber": 32,
-        "title": "El Callejón",
+        "pageNumber": 30,
+        "title": "La Escalera",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Te diriges hacia la iglesia buscando refugio y respuestas tras sus muros viejos.",
+            "optionText": "Te detienes a escuchar el compás de los pasos en la planta baja antes de bajar el último tramo.",
             "optionLink": "spread-009"
           },
           {
-            "optionText": "Te diriges hacia el muelle porque el origen del mal suele guardar también la clave de la salida.",
-            "optionLink": "spread-010"
+            "optionText": "Bajas el último tramo decidida, casi en la oscuridad, para salir cuanto antes a la calle.",
+            "optionLink": "spread-008b"
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "id": "spread-008b",
+      "leftPage": {
+        "id": "spread-008b-left",
+        "pageNumber": 31,
+        "text": "Bajas el último tramo de puntillas y, al llegar al vestíbulo, chocas con la puerta de la recepción, que está entornada.\n\nEl chirrido de la bisagra se hace más fuerte que tus pasos. Algo en el pasillo de la cocina enmudece de golpe.\n\nEsperas con la frente fría y el aliento cortado a que el hotel vuelva a respirar.",
+        "pageOptions": []
+      },
+      "rightPage": {
+        "id": "spread-008b-right",
+        "pageNumber": 32,
+        "title": "El Último Tramo",
+        "text": "",
+        "pageOptions": [
+          {
+            "optionText": "Te deslizas hacia la puerta de calle pegado a la sombra del mostrador de caoba.",
+            "optionLink": "spread-009"
+          },
+          {
+            "optionText": "Te apoyas tras la puerta de la recepción esperando el momento justo para cruzar el vestíbulo.",
+            "optionLink": "spread-009"
           }
         ]
       },
@@ -349,365 +450,74 @@
       "leftPage": {
         "id": "spread-009-left",
         "pageNumber": 33,
-        "text": "La iglesia alza sus puertas de roble, marcadas con grasa de ballena: el símbolo del culto. Un hombre de sotana te hace un gesto urgente.",
-        "mapData": {
-          "backgroundImage": "iglesia-marcas-grasa.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 1
-          }
-        },
+        "text": "El vestíbulo del hotel: mosaico roto, un mostrador de caoba y, tras los cristales de la puerta, la calle negra. Las ventanas con barrotes enmarcan la noche. Un letrero cuelga oscuro: 'Gilman House'.",
+        "illustration": "vestibulo-puerta-calle.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-009-right",
         "pageNumber": 34,
-        "title": "La Iglesia",
+        "title": "El Vestíbulo",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Entras en la iglesia, confiando en el refugio que prometen sus muros encendidos.",
-            "optionLink": "spread-011"
+            "optionText": "Aguardas el compás de la criatura que patrulla el vestíbulo para cruzar hacia la salida sin ser vista.",
+            "optionLink": "spread-010"
           },
           {
-            "optionText": "Le preguntas al sacerdote sobre el culto antes de decidir si cruzar el umbral.",
-            "optionLink": "spread-011"
+            "optionText": "Avanzas sigilosa por el lado del mostrador hasta la puerta de calle, ganando cobertura de los cristales.",
+            "optionLink": "spread-009b"
           }
         ]
       },
-      "type": "mistery"
+      "type": "default"
+    },
+    {
+      "id": "spread-009b",
+      "leftPage": {
+        "id": "spread-009b-left",
+        "pageNumber": 35,
+        "text": "Te arrastras tras el mostrador de caoba. Detrás cuelgan las llaves de las habitaciones, oxidadas, y el libro de registro abierto.\n\nEn la página final, una caligrafía temblorosa lista nombres y fechas: todos del mismo día, todos apuntados como 'baja por la madrugada'.\n\nEl papel huele a sal. Arrancas la página, la guardas en la libreta y sigues hacia la puerta.",
+        "pageOptions": []
+      },
+      "rightPage": {
+        "id": "spread-009b-right",
+        "pageNumber": 36,
+        "title": "Detrás del Mostrador",
+        "text": "",
+        "pageOptions": [
+          {
+            "optionText": "Cruzas el vestíbulo hacia la puerta principal cuando la patrulla se aleja hacia la cocina.",
+            "optionLink": "spread-010"
+          },
+          {
+            "optionText": "Vas de la puerta principal a la salida de servicio trasera, comprobando que el pasillo esté vacío.",
+            "optionLink": "spread-010"
+          }
+        ]
+      },
+      "type": "default"
     },
     {
       "id": "spread-010",
       "leftPage": {
         "id": "spread-010-left",
-        "pageNumber": 35,
-        "text": "El muelle de madera podrida cruje bajo tus pies. Los Profundos arrastran sacos hacia un barco; los sacos se mueven con espasmos débiles.",
-        "mapData": {
-          "backgroundImage": "muelle-principal-noche.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 1
-          }
-        },
+        "pageNumber": 37,
+        "text": "El vestíbulo parece haberse rendido a la noche. Frente a ti, la puerta de la calle; a tu izquierda, el pasillo de servicio que lleva al patio trasero.\n\nAmbas salidas respiran calle y silencio. Ya no hay barrotes ni puertas clausuradas a tu alrededor: solo falta decidir qué boca de la noche usar.\n\nEl letrero del 'Gilman House' se balancea perezoso, como si el hotel cerrara los ojos contigo.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-010-right",
-        "pageNumber": 36,
-        "title": "El Muelle",
+        "pageNumber": 38,
+        "title": "La Salida",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Te ocultas en la oscuridad y observas para entender el ritual antes de actuar.",
-            "optionLink": "spread-012"
-          },
-          {
-            "optionText": "Te lanzas a liberar a los cautivos en este instante, porque cada segundo que respiran dentro de los sacos es un latido que no puedes ignorar.",
-            "optionLink": "gameover-006"
-          }
-        ]
-      },
-      "type": "critical"
-    },
-    {
-      "id": "spread-011",
-      "leftPage": {
-        "id": "spread-011-left",
-        "pageNumber": 39,
-        "text": "Las velas parpadean sobre los bancos. El altar luce un tapiz de criaturas marinas. El sacerdote te tiende un vaso de brandy con calma.",
-        "mapData": {
-          "backgroundImage": "iglesia-interior-velas.jpg",
-          "userPosition": {
-            "col": 1,
-            "row": 1
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 1
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "spread-011-right",
-        "pageNumber": 40,
-        "title": "Interior de la Iglesia",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Le preguntas directamente sobre el pacto con los Profundos, queriendo arrancarle la verdad antes que aceptar su brandy.",
-            "optionLink": "spread-013"
-          },
-          {
-            "optionText": "Aceptas la copa y el refugio que te ofrece por esta noche, para guardar fuerzas y mantener la compostura.",
-            "optionLink": "spread-013"
-          }
-        ]
-      },
-      "type": "mistery"
-    },
-    {
-      "id": "spread-012",
-      "leftPage": {
-        "id": "spread-012-left",
-        "pageNumber": 41,
-        "text": "Oculta tras un barril podrido, observas a los Profundos cargar los sacos. Los cánticos suben desde el barco; la cámara pesa en tus manos.",
-        "mapData": {
-          "backgroundImage": "muelle-observando-oculto.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 1
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "spread-012-right",
-        "pageNumber": 42,
-        "title": "Observación",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Disparas la cámara sin flash desde la oscuridad para conseguir una prueba gráfica, aunque la noche cobre caro el gesto.",
-            "optionLink": "spread-014"
-          },
-          {
-            "optionText": "Esperas a que los Profundos se marchen antes de acercarte a los sacos, para asegurar tu escondite antes de arriesgarte por la evidencia.",
-            "optionLink": "spread-014"
-          }
-        ]
-      },
-      "type": "default"
-    },
-    {
-      "id": "spread-013",
-      "leftPage": {
-        "id": "spread-013-left",
-        "pageNumber": 43,
-        "text": "El sacerdote baja la voz: 'El pueblo sobrevive gracias a su oro. Es un pacto antiguo.' Se acerca y sus ojos reflejan duda.",
-        "mapData": {
-          "backgroundImage": "iglesia-sacerdote-confrontacion.jpg",
-          "userPosition": {
-            "col": 1,
-            "row": 1
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 1
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "spread-013-right",
-        "pageNumber": 44,
-        "title": "El Sacerdote",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Convences al sacerdote de que la verdad debe salir a la luz, porque una historia así merece ser contada y no enterrada.",
-            "optionLink": "spread-014"
-          },
-          {
-            "optionText": "Finges aceptar el pacto para ganar tiempo y acercarte a la verdad por tu cuenta.",
-            "optionLink": "spread-014"
-          }
-        ]
-      },
-      "type": "mistery"
-    },
-    {
-      "id": "spread-014",
-      "leftPage": {
-        "id": "spread-014-left",
-        "pageNumber": 45,
-        "text": "Has salido del edificio. La ciudad yace en penumbra; el olor a fango abisal impregna cada rincón. Los gritos siguen sonando a lo lejos.",
-        "mapData": {
-          "backgroundImage": "callejon-salida-edificio.jpg",
-          "userPosition": {
-            "col": 1,
-            "row": 1
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 2
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "spread-014-right",
-        "pageNumber": 46,
-        "title": "El Camino por Delante",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Continúas hacia el muelle para documentar el secuestro y conseguir la evidencia final con tu cámara.",
-            "optionLink": "spread-015"
-          },
-          {
-            "optionText": "Vuelves a la iglesia para enfrentar al sacerdote y arrancarle las respuestas que esconde en el altar.",
-            "optionLink": "spread-016"
-          }
-        ]
-      },
-      "type": "default"
-    },
-    {
-      "id": "spread-015",
-      "leftPage": {
-        "id": "spread-015-left",
-        "pageNumber": 47,
-        "text": "El barco se aleja hacia el mar negro con los sacos a bordo. En el suelo quedan una cadena rota y una red con ropa humana.",
-        "mapData": {
-          "backgroundImage": "muelle-documentando-secuestro.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 1
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "spread-015-right",
-        "pageNumber": 48,
-        "title": "Evidencia del Secuestro",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Fotografías la cadena rota y la red con ropa humana para asegurar la evidencia antes de escapar por la carretera.",
-            "optionLink": "spread-017"
-          },
-          {
-            "optionText": "Te lanzas al agua para alcanzar el barco nadando, decidida a liberar a los cautivos o callar tu culpa en el intento.",
-            "optionLink": "gameover-007"
-          }
-        ]
-      },
-      "type": "critical"
-    },
-    {
-      "id": "spread-016",
-      "leftPage": {
-        "id": "spread-016-left",
-        "pageNumber": 49,
-        "text": "El sacerdote te espera junto al altar con la voz rota: 'Esta noche han cruzado una línea.' Te entrega una llave vieja y fría.",
-        "mapData": {
-          "backgroundImage": "iglesia-confrontacion-final.jpg",
-          "userPosition": {
-            "col": 1,
-            "row": 1
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 1
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "spread-016-right",
-        "pageNumber": 50,
-        "title": "Confrontación",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Bajas al sótano en busca de las pruebas, convencida de que la verdad está bajo tus pies.",
-            "optionLink": "spread-017"
-          },
-          {
-            "optionText": "Pides al sacerdote que baje contigo para que su testimonio respalde las pruebas que encuentres.",
-            "optionLink": "spread-017"
-          }
-        ]
-      },
-      "type": "default"
-    },
-    {
-      "id": "spread-017",
-      "leftPage": {
-        "id": "spread-017-left",
-        "pageNumber": 51,
-        "text": "La carretera de la colina se abre libre. Un coche abandonado espera al borde, con las llaves puestas. El cielo empieza a aclarar.",
-        "mapData": {
-          "backgroundImage": "carretera-colina-amanecer.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 2
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "spread-017-right",
-        "pageNumber": 52,
-        "title": "La Carretera",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Subes al coche y arrancas hacia Boston para entregar la verdad antes de que se enfríe.",
-            "optionLink": "spread-018"
-          },
-          {
-            "optionText": "Miras atrás una última vez para grabar el pueblo en la memoria antes de enterrarlo en tu reportaje.",
-            "optionLink": "spread-018"
-          }
-        ]
-      },
-      "type": "default"
-    },
-    {
-      "id": "spread-018",
-      "leftPage": {
-        "id": "spread-018-left",
-        "pageNumber": 53,
-        "text": "El amanecer baña la ciudad en luz pálida. Las calles vacías, los charcos grises. En tu pecho, la cámara guarda la prueba irrefutable.",
-        "mapData": {
-          "backgroundImage": "amanecer-ciudad-fantasma.jpg",
-          "userPosition": {
-            "col": 1,
-            "row": 1
-          },
-          "targetPosition": {
-            "col": 2,
-            "row": 2
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "spread-018-right",
-        "pageNumber": 54,
-        "title": "El Amanecer",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Conduces hacia Boston con las pruebas para que el mundo conozca la verdad del Culto de Dagón.",
+            "optionText": "Empujas la puerta principal y sales a la calle principal, delante del hotel.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Te quedas a ayudar a los supervivientes, porque la historia también vive en quienes quedan.",
+            "optionText": "Tomas el pasillo de servicio y sales al callejón trasero, en silencio y sin encender ninguna luz.",
             "optionLink": "end-002"
           }
         ]
@@ -718,25 +528,15 @@
       "id": "end-001",
       "leftPage": {
         "id": "end-001-left",
-        "pageNumber": 55,
-        "text": "El coche avanza por la carretera costera; el sol naciente ilumina el horizonte. En el copiloto descansa la cámara que cambiará la historia.",
-        "mapData": {
-          "backgroundImage": "coche-carretera-amanecer.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 0,
-            "row": 0
-          }
-        },
+        "pageNumber": 39,
+        "text": "La calle ante el hotel está en sombras y destrozos: un tranvía volcado, escombros y humo quieto. No hay criaturas a la vista, pero el aire guarda su olor. Estás fuera.",
+        "illustration": "calle-destrozos-bloqueada.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "end-001-right",
-        "pageNumber": 56,
-        "title": "Fin: La Verdad",
+        "pageNumber": 40,
+        "title": "Fin: La Calle",
         "text": "",
         "pageOptions": []
       },
@@ -746,25 +546,15 @@
       "id": "end-002",
       "leftPage": {
         "id": "end-002-left",
-        "pageNumber": 57,
-        "text": "Te quedas. Los supervivientes emergen de sus escondites, vivos. Elena Bancroft será la voz de los que no pudieron hablar.",
-        "mapData": {
-          "backgroundImage": "ciudad-fantasma-amanecer.jpg",
-          "userPosition": {
-            "col": 1,
-            "row": 1
-          },
-          "targetPosition": {
-            "col": 1,
-            "row": 1
-          }
-        },
+        "pageNumber": 41,
+        "text": "El callejón trasero del hotel se pierde en la oscuridad. Charcos de agua de mar, un gato que huye y farolas apagadas. Cierras la puerta de servicio sin ruido; la noche se traga el edificio. Eres una sombra más.",
+        "illustration": "callejon-trasero-noche.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "end-002-right",
-        "pageNumber": 58,
-        "title": "Fin: La Queda",
+        "pageNumber": 42,
+        "title": "Fin: El Callejón",
         "text": "",
         "pageOptions": []
       },
@@ -774,19 +564,19 @@
       "id": "gameover-001",
       "leftPage": {
         "id": "gameover-001-left",
-        "pageNumber": 3,
-        "text": "Los pasos húmedos entran. Sus ojos sin párpados escanean la oscuridad; una mano escamosa te agarra el tobillo y te arrastra.",
+        "pageNumber": 43,
+        "text": "Los pasos húmedos se detienen junto a la cama. Sus ojos sin párpados barren la penumbra; una mano escamosa te cierra el tobillo y te arrastra hasta el pasillo.",
         "illustration": "reporter-trapped-under-bed-cenital-view.png",
         "pageOptions": []
       },
       "rightPage": {
         "id": "gameover-001-right",
-        "pageNumber": 4,
+        "pageNumber": 44,
         "title": "Capturada",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación de la pensión.",
+            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación del ático del hotel.",
             "optionLink": "spread-001"
           }
         ]
@@ -797,18 +587,18 @@
       "id": "gameover-002",
       "leftPage": {
         "id": "gameover-002-left",
-        "pageNumber": 9,
-        "text": "Corres por el tejado resbaladizo; los pies se te escapan bajo la lluvia.\n\nIntentas agarrarte al canalón, pero el metal oxidado se rompe en tus manos.\n\nCaes tres pisos sobre el adoquinado mojado; el impacto te rompe la espalda.\n\nLa última imagen es la silueta de un Profundo inclinándose sobre ti.",
+        "pageNumber": 45,
+        "text": "Cruzas el descansillo en cinco zancadas; la criatura gira la cabeza como un parpadeo.\n\nSus manos te atrapan por la espalda y te levantan del suelo; la piel te quema con el frío del mar.\n\nPataleas, pero el brazo de la criatura es un bloque de marea que no cede.\n\nTe arrastra hacia la escalera de arriba, donde la noche del hotel se traga tu grito.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "gameover-002-right",
-        "pageNumber": 10,
-        "title": "Caída",
+        "pageNumber": 46,
+        "title": "Atrapada",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación de la pensión.",
+            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación del ático del hotel.",
             "optionLink": "spread-001"
           }
         ]
@@ -819,139 +609,19 @@
       "id": "gameover-003",
       "leftPage": {
         "id": "gameover-003-left",
-        "pageNumber": 15,
-        "text": "Esperas en la oscuridad; los pasos húmedos se acercan a la entrada.\n\nLa puerta cruje y la criatura entra. Sus pasos suben la escalera.\n\nSe detienen frente a la habitación del vecino; la cerradura gira.\n\nLa puerta se abre y los ojos sin párpados te buscan en la penumbra.",
+        "pageNumber": 47,
+        "text": "La puerta salta de la bisagra. Al otro lado, tres criaturas esperaban. Antes de que puedas gritar, una red húmeda te envuelve y te arrastran por la escalera hacia la planta baja.",
+        "illustration": "gameover-puerta-captura.jpg",
         "pageOptions": []
       },
       "rightPage": {
         "id": "gameover-003-right",
-        "pageNumber": 16,
-        "title": "Espera Fatal",
+        "pageNumber": 48,
+        "title": "Emboscada",
         "text": "",
         "pageOptions": [
           {
-            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación de la pensión.",
-            "optionLink": "spread-001"
-          }
-        ]
-      },
-      "type": "death"
-    },
-    {
-      "id": "gameover-004",
-      "leftPage": {
-        "id": "gameover-004-left",
-        "pageNumber": 19,
-        "text": "Escondido en la sombra, observas al Profundo revisar la habitación.\n\nLa criatura se gira y sus ojos enormes te detectan en la penumbra.\n\nUna garra se clava en la pared junto a tu cabeza; el impacto te tumba.\n\nLa criatura se lanza sobre ti mientras la oscuridad se traga tu grito.",
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "gameover-004-right",
-        "pageNumber": 20,
-        "title": "Trampa",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación de la pensión.",
-            "optionLink": "spread-001"
-          }
-        ]
-      },
-      "type": "death"
-    },
-    {
-      "id": "gameover-005",
-      "leftPage": {
-        "id": "gameover-005-left",
-        "pageNumber": 29,
-        "text": "Te detienes un segundo, dos. Demasiado. Una garra te agarra el hombro; caes al suelo y algo te arrastra hacia los muelles.",
-        "mapData": {
-          "backgroundImage": "gameover-puerta-captura.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 0,
-            "row": 0
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "gameover-005-right",
-        "pageNumber": 30,
-        "title": "Demasiado Tarde",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación de la pensión.",
-            "optionLink": "spread-001"
-          }
-        ]
-      },
-      "type": "death"
-    },
-    {
-      "id": "gameover-006",
-      "leftPage": {
-        "id": "gameover-006-left",
-        "pageNumber": 37,
-        "text": "Corres hacia los sacos; los Profundos te detectan al instante. Una red te envuelve y te arrastran hacia el barco.",
-        "mapData": {
-          "backgroundImage": "gameover-muelle-captura.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 0,
-            "row": 0
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "gameover-006-right",
-        "pageNumber": 38,
-        "title": "Captura en el Muelle",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación de la pensión.",
-            "optionLink": "spread-001"
-          }
-        ]
-      },
-      "type": "death"
-    },
-    {
-      "id": "gameover-007",
-      "leftPage": {
-        "id": "gameover-007-left",
-        "pageNumber": 59,
-        "text": "El agua negra se cierra sobre ti; el frío roba el aliento. Manos escamosas te agarran los tobillos y te arrastran hacia el abismo.",
-        "mapData": {
-          "backgroundImage": "gameover-ahogamiento.jpg",
-          "userPosition": {
-            "col": 0,
-            "row": 0
-          },
-          "targetPosition": {
-            "col": 0,
-            "row": 0
-          }
-        },
-        "pageOptions": []
-      },
-      "rightPage": {
-        "id": "gameover-007-right",
-        "pageNumber": 60,
-        "title": "Ahogamiento",
-        "text": "",
-        "pageOptions": [
-          {
-            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación de la pensión.",
+            "optionText": "Reiniciar la noche y despertar de nuevo en la habitación del ático del hotel.",
             "optionLink": "spread-001"
           }
         ]
@@ -963,32 +633,26 @@
     "spread-001",
     "spread-001b",
     "spread-002",
+    "spread-002b",
     "spread-003",
     "spread-003b",
     "spread-004",
+    "spread-004b",
     "spread-005",
     "spread-005b",
     "spread-006",
+    "spread-006b",
     "spread-007",
+    "spread-007b",
     "spread-008",
+    "spread-008b",
     "spread-009",
+    "spread-009b",
     "spread-010",
-    "spread-011",
-    "spread-012",
-    "spread-013",
-    "spread-014",
-    "spread-015",
-    "spread-016",
-    "spread-017",
-    "spread-018",
     "end-001",
     "end-002",
     "gameover-001",
     "gameover-002",
-    "gameover-003",
-    "gameover-004",
-    "gameover-005",
-    "gameover-006",
-    "gameover-007"
+    "gameover-003"
   ]
 }

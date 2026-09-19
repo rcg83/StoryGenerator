@@ -40,8 +40,8 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 4. **Redactar Elecciones Detalladas y Justificadas**: El texto de cada opción de la `rightPage` debe explicar **qué hace el personaje y con qué intención**, para que el lector entienda bien no solo la acción sino el dilema detrás de ella (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado: es la salida más alta y la criatura aún no te ha visto"*).
 5. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual de la página. **El nombre de la imagen describe la situación concreta de la escena y debe tenerse muy en cuenta al redactar el `text` descriptivo**: cada elemento nombrado en el archivo (lugar, criatura, objeto, estado atmosférico) debe estar presente o resonar en la narrativa de la página.
 6. **Regla de Longitud Narrativa por Página**: La narrativa vive **siempre en la `leftPage`** según su contenido visual:
-   * **leftPage con imagen** (declara `mapData.backgroundImage` **o** `illustration`): máximo **30 palabras** en su `text`.
-   * **leftPage sin imagen**: **3–4 párrafos breves**, cada uno de máximo **30 palabras**.
+   * **leftPage con imagen** (declara `mapData.backgroundImage` **o** `illustration`): texto breve y visual, hasta **50 palabras** en su `text`, sin forzar la extensión.
+   * **leftPage sin imagen**: **3–4 párrafos breves**, cada uno de máximo **50 palabras**.
    * La `rightPage` no lleva narrativa: su `text` queda vacío (`""`) y contiene únicamente `pageOptions`.
 
 ---
@@ -53,8 +53,8 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 2. **Evitar Deadlocks**: Validar que la página no sea un callejón sin salida narrativo, a menos que sea un final de historia explícito (Fin o Muerte).
 3. **Validación de Imagen**: Si la página declara un campo `mapData` **o** `illustration`, verificar que el nombre de la imagen está listado en `/stories/[story-name]/context/image-names.md`. Si no se cumple, eliminar el campo correspondiente de la página (no dejar referencias rotas).
 4. **Validación de Longitud Narrativa por Página**: Contar las palabras del `text` de la `leftPage` según su contenido visual:
-   * `leftPage` con imagen (`mapData.backgroundImage` **o** `illustration`): máximo **30 palabras** en total.
-   * `leftPage` sin imagen: **3–4 párrafos breves**, cada uno de máximo **30 palabras**.
+   * `leftPage` con imagen (`mapData.backgroundImage` **o** `illustration`): hasta **50 palabras** en total, sin forzar la extensión.
+   * `leftPage` sin imagen: **3–4 párrafos breves**, cada uno de máximo **50 palabras**.
    * `rightPage.text`: debe estar vacío (`""`) — solo contiene `pageOptions`.
    Si no se cumple (incluida una `rightPage` con narrativa), devolver la página al ScribeAgent para redacción.
 5. **Firma de Verificación**: Añadir la propiedad `"status": "verified"` en los metadatos de la página una vez comprobado que se han seguido correctamente los Pasos 1 a 3.
@@ -141,7 +141,7 @@ Cada spread contiene **2 páginas** con roles diferentes:
 
 ### Reglas de Contenido
 * **leftPage.pageOptions**: Siempre `[]` (vacío)
-* **leftPage.text**: La narrativa vive en la leftPage. Con imagen (`mapData.backgroundImage` **o** `illustration`): máximo **30 palabras** en total. Sin imagen: **3–4 párrafos breves**, cada uno de máximo **30 palabras**
+* **leftPage.text**: La narrativa vive en la leftPage. Con imagen (`mapData.backgroundImage` **o** `illustration`): hasta **50 palabras** en total, sin forzar la extensión. Sin imagen: **3–4 párrafos breves**, cada uno de máximo **50 palabras**
 * **leftPage.mapData**: Imagen de fondo, posición del jugador, posición objetivo
 * **leftPage.illustration**: Imagen simple de página (sin posiciones de mapa), opcional
 * **rightPage.text**: Siempre `""` (vacío) — la rightPage contiene SOLO las elecciones
