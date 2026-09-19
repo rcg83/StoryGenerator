@@ -77,8 +77,8 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 ## ✅ Reglas
 
 * Solo se referencia una imagen si **está listada en el `.md`**.
-* La imagen se referencia vía **`mapData.backgroundImage`** (imagen de mapa con posiciones de jugador/objetivo) **o** `illustration` (imagen simple de página, sin posiciones). El catálogo `.md` aplica a ambos campos por igual.
-* Si ninguna imagen del catálogo encaja naturalmente con la escena, **omitir el campo correspondiente** (`mapData` o `illustration`) — no forzar una imagen que no represente fielmente la narrativa.
+* La imagen se referencia vía el campo **`illustration`** como objeto `{ name, description }`: `name` es el archivo listado en este catálogo y `description` (un único párrafo de máximo **100 palabras** que describe la escena e incluye pistas para la decisión) es el contenido alternativo por accesibilidad o cuando la imagen no está disponible. El front puede mostrar la imagen o la descripción.
+* Si ninguna imagen del catálogo encaja naturalmente con la escena, **omitir el campo `illustration`** — no forzar una imagen que no represente fielmente la narrativa.
 * Al añadir una imagen nueva a la historia, **registrarla en el `.md`** con su entrada de sentido y lugar.
 * El archivo físico de la imagen puede estar **pendiente de generación**: basta con que esté listado en el `.md` para poder referenciarlo en la historia.
 * La portada del libro (`cover.coverImage`) se documenta en la sección **Portada / Magazine Cover** del `.md`.

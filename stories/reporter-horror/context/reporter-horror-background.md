@@ -11,6 +11,7 @@
 5. **Primera decisión obligatoria:** La primera elección del Act I debe ser **salir por la cornisa a la habitación contigua**. Está prohibido saltar a otro techo ni a un edificio vecino en la decisión inicial.
 6. **Terminología:** Los personajes **no conocen** términos lovecraftianos en su propio mundo. Prohibido en el texto jugable: "Profundo", "Culto de Dagón", "fango abisal". Usar "la criatura", "eso", "el monstruo". El lore sí puede usar esa terminología en documentos de autor.
 7. **Estructura:** 10 decisiones (3 **críticas** con Game Over, 7 **normales**) repartidas en la bajada por las plantas 4 → 0. Total ~23 spreads del tramo + 2 finales de éxito (end-001 La Calle, end-002 El Callejón).
+8. **Ilustraciones con descripción:** Toda página con `illustration` la declara como objeto `{ name, description }`. `name` debe estar listado en `image-names.md`. `description` es **un único párrafo de máximo 100 palabras, todo junto** (sin saltos de línea), en segunda persona, que describe qué muestra la imagen **e incluye pistas y detalles para tomar decisiones correctas**; sirve de contenido alternativo por accesibilidad o cuando la imagen no está disponible (el front muestra la imagen o la descripción). Prohibido `mapData`: ese campo ya no existe en el modelo.
 
 ---
 

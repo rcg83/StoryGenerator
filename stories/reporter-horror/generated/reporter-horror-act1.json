@@ -14,7 +14,10 @@
         "id": "spread-001-left",
         "pageNumber": 1,
         "text": "La puerta del ático se comba y salta de la bisagra. Tú caes contra el suelo frío. La silueta escamosa llena el umbral; huele a fango, a sal y a pescado podrido. En la habitación, la única salida prometedora es la ventana, abierta a la cornisa que bordea la fachada.",
-        "illustration": "Elena-floor-crashdoor-deep-one.png",
+        "illustration": {
+          "name": "Elena-floor-crashdoor-deep-one.png",
+          "description": "En el ático del hotel, la puerta de tu habitación acaba de saltar de la bisagra. En el umbral se recorta una criatura escamosa, más alta que la puerta, con la piel húmeda de marea y ojos sin párpados. El suelo está salpicado de fango. A tu espalda, la ventana abierta deja entrar la noche y la cornisa de piedra que bordea la fachada: la única salida."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -71,7 +74,10 @@
         "id": "spread-002-left",
         "pageNumber": 5,
         "text": "La cornisa abraza la fachada del ático; abajo, la ciudad se estira en sombras. Te deslizas hasta la ventana de la alcoba contigua y entras en una habitación vacía que huele a alcanfor y a humedad.",
-        "illustration": "acceso-cornisa-noche.jpg",
+        "illustration": {
+          "name": "acceso-cornisa-noche.jpg",
+          "description": "Te deslizas por la cornisa exterior del ático con los dedos clavados en la piedra húmeda; muy abajo, la ciudad se estira en sombras entre luces de gas que parpadean. A tu derecha, la ventana de la alcoba contigua está abierta y sin barrotes. El viento salado empuja tu abrigo mientras calculas el siguiente paso hacia la única entrada posible."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -124,7 +130,10 @@
         "id": "spread-003-left",
         "pageNumber": 9,
         "text": "El rellano de la planta de arriba huele a óxido y a cuerda vieja. En la pared del fondo, el pozo del montacargas abre su boca oscura y baja hasta la planta baja. El cable grasiento tiembla cuando la criatura pisa la escalera.",
-        "illustration": "pozo-luz-montacargas.jpg",
+        "illustration": {
+          "name": "pozo-luz-montacargas.jpg",
+          "description": "Ante ti se abre el pozo del montacargas del hotel: una boca rectangular de metal oxidado que se hunde hasta la planta baja, con un cable grasiento y un contrapeso clavado en la pared. Desde el rellano, el hueco a oscuras dibuja sombras que se mueven con tu respiración. Es la bajada más rápida y silenciosa si no resbalas."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -181,7 +190,10 @@
         "id": "spread-004-left",
         "pageNumber": 13,
         "text": "La sala común del hotel está en semipenumbra. Las ventanas con barrotes dejan entrar la luz de gas; en una consola, una radio de onda corta escupe estática. Tras la puerta de la cocina, algo arrastra muebles y gruñe.",
-        "illustration": "sala-comun-radio.jpg",
+        "illustration": {
+          "name": "sala-comun-radio.jpg",
+          "description": "La sala común del hotel respira semipenumbra: sillones raídos, una lámpara de gas moribunda y, sobre la consola, una radio de onda corta que escupe estática viva. Al fondo, las ventanas con barrotes cierran la planta y tras la puerta de la cocina algo arrastra muebles y gruñe. La radio encendida parece lo único útil de la sala."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -234,7 +246,10 @@
         "id": "spread-005-left",
         "pageNumber": 17,
         "text": "El pasillo de servicio aprieta entre paredes de madera. El humo se cuela por las rendijas y marea los ojos. Al fondo, la criatura arrastra un saco que patalea. Los fósforos de tu bolsillo pesan como una idea.",
-        "illustration": "pasillo-servicio-humo.jpg",
+        "illustration": {
+          "name": "pasillo-servicio-humo.jpg",
+          "description": "El pasillo de servicio, estrecho y con las paredes de madera podrida, se llena de humo gris que entra por las rendijas. Al fondo, de espaldas, una criatura arrastra un saco que aún patalea; sus giros de cabeza marcan el compás que no debes romper. Los fósforos de tu bolsillo podrían cubrir tu avance con esa misma humareda."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -287,7 +302,10 @@
         "id": "spread-006-left",
         "pageNumber": 21,
         "text": "La cocina del hotel apesta a grasa rancia y a sal. La puerta de servicio está cerrada con una cerradura gorda y oxidada. Sobre la mesa, una barra de hierro y un cuchillo sin mango.",
-        "illustration": "cocina-hotel-puerta-servicio.jpg",
+        "illustration": {
+          "name": "cocina-hotel-puerta-servicio.jpg",
+          "description": "En la cocina del hotel, la grasa rancia tiñe las mesas de estaño y sobre la fuente descansan un cuchillo sin mango y una barra de hierro. La puerta de servicio que baja a la siguiente planta está cerrada con una cerradura gorda y oxidada, demasiado fuerte para forzarla en silencio; cerca, el cajón de los útiles apenas está entornado."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -318,7 +336,10 @@
         "id": "spread-006b-left",
         "pageNumber": 23,
         "text": "La barra chirría contra el metal; un chasquido seco. La cerradura cede, pero el eco sube por la escalera vacía y algo responde desde abajo con un gruñido húmedo.",
-        "illustration": "cerradura-puerta-servicio.jpg",
+        "illustration": {
+          "name": "cerradura-puerta-servicio.jpg",
+          "description": "Primer plano de la cerradura de la puerta de servicio: el metal, verde y cuarteado, ha recibido los arañazos recientes de una palanca que quedó marcada en la madera. Alrededor, marcas de chispas y surcos quemados delatan el forcejo. El ojo de la cerradura parece exigir su llave exacta antes que más fuerza destructiva."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -345,7 +366,10 @@
         "id": "spread-007-left",
         "pageNumber": 25,
         "text": "El almacén del piso bajo guarda sombra y polvo: cajas apiladas, un maniquí sin cabeza, botellas vacías. Un olor a humo sube desde el vestíbulo junto al hueco de la escalera principal.",
-        "illustration": "almacen-trastos-penumbra.jpg",
+        "illustration": {
+          "name": "almacen-trastos-penumbra.jpg",
+          "description": "El almacén del piso bajo es un mar de sombra y polvo: cajas apiladas hasta el techo, un maniquí sin cabeza en la esquina y estanterías de botellas vacías. Entre dos cajas asoma un rollo de papel enrollado que parece un plano, quizá del propio edificio y de sus salidas de servicio."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -398,7 +422,10 @@
         "id": "spread-008-left",
         "pageNumber": 29,
         "text": "La caja de la escalera se hunde hacia el vestíbulo. Los barrotes de las ventanas de la planta baja dibujan rayas de luz de gas sobre el escalón. El hueco del ascensor, muerto, deja oír un goteo insistente.",
-        "illustration": "rellano-escaleras-noche.jpg",
+        "illustration": {
+          "name": "rellano-escaleras-noche.jpg",
+          "description": "La caja de la escalera principal desciende hacia el vestíbulo: los barrotes de las ventanas de la planta baja cortan la luz de gas en rayas sobre los escalones. En el rellano, el hueco del ascensor, muerto, deja caer un goteo lento que mide el silencio de abajo, donde quizá algo espera."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -451,7 +478,10 @@
         "id": "spread-009-left",
         "pageNumber": 33,
         "text": "El vestíbulo del hotel: mosaico roto, un mostrador de caoba y, tras los cristales de la puerta, la calle negra. Las ventanas con barrotes enmarcan la noche. Un letrero cuelga oscuro: 'Gilman House'.",
-        "illustration": "vestibulo-puerta-calle.jpg",
+        "illustration": {
+          "name": "vestibulo-puerta-calle.jpg",
+          "description": "El vestíbulo del hotel se despliega ante ti: mosaico agrietado, mostrador de caoba descascarillado y, al fondo, la puerta de calle con sus cristales tras los que la noche espera. Las ventanas con barrotes enmarcan la calle vacía y un letrero cuelga oscuro sobre la recepción: Gilman House."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -530,7 +560,10 @@
         "id": "end-001-left",
         "pageNumber": 39,
         "text": "La calle ante el hotel está en sombras y destrozos: un tranvía volcado, escombros y humo quieto. No hay criaturas a la vista, pero el aire guarda su olor. Estás fuera.",
-        "illustration": "calle-destrozos-bloqueada.jpg",
+        "illustration": {
+          "name": "calle-destrozos-bloqueada.jpg",
+          "description": "Frente al hotel, la calle principal es un escenario en ruinas: un tranvía volcado cruza la vía, escombros de un incendio humean bajo la niebla y las farolas rotas dejan la vía a oscuras. No se ve ninguna criatura, solo humo quieto y el silencio de una ciudad que ha dejado de respirar."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -548,7 +581,10 @@
         "id": "end-002-left",
         "pageNumber": 41,
         "text": "El callejón trasero del hotel se pierde en la oscuridad. Charcos de agua de mar, un gato que huye y farolas apagadas. Cierras la puerta de servicio sin ruido; la noche se traga el edificio. Eres una sombra más.",
-        "illustration": "callejon-trasero-noche.jpg",
+        "illustration": {
+          "name": "callejon-trasero-noche.jpg",
+          "description": "El callejón trasero del hotel se estira entre muros de ladrillo: charcos de agua de mar que reflejan nada, un gato que cruza junto a las farolas apagadas y la puerta de servicio que acabas de cerrar a tu espalda. La noche se traga el edificio entero y te convierte en una sombra más."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -566,7 +602,10 @@
         "id": "gameover-001-left",
         "pageNumber": 43,
         "text": "Los pasos húmedos se detienen junto a la cama. Sus ojos sin párpados barren la penumbra; una mano escamosa te cierra el tobillo y te arrastra hasta el pasillo.",
-        "illustration": "reporter-trapped-under-bed-cenital-view.png",
+        "illustration": {
+          "name": "reporter-trapped-under-bed-cenital-view.png",
+          "description": "Vista cenital de la habitación del ático: bajo la cama, tu cuerpo encogido convierte la ropa de cama en un refugio visible. A un paso, la criatura agachada rastrea el suelo con una mano escamosa y sus ojos sin párpados recorren la penumbra hacia ti, palmo a palmo."
+        },
         "pageOptions": []
       },
       "rightPage": {
@@ -611,7 +650,10 @@
         "id": "gameover-003-left",
         "pageNumber": 47,
         "text": "La puerta salta de la bisagra. Al otro lado, tres criaturas esperaban. Antes de que puedas gritar, una red húmeda te envuelve y te arrastran por la escalera hacia la planta baja.",
-        "illustration": "gameover-puerta-captura.jpg",
+        "illustration": {
+          "name": "gameover-puerta-captura.jpg",
+          "description": "La puerta de servicio ha saltado de su marco y estás arrodillada en el pasillo de la planta baja: tres criaturas escamosas te rodean en círculo mientras una red húmeda ya envuelve tus muñecas. Sus rostros sin boca se inclinan sobre ti y los dedos de marea cierran el cerco sin dejarte hueco."
+        },
         "pageOptions": []
       },
       "rightPage": {

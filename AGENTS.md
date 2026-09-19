@@ -27,7 +27,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
    * Si el personaje no posee un atributo adecuado para la situación, la opción correspondiente debe implicar un riesgo narrativo evidente.
 3. **Estructurar las Opciones**: Generar un mínimo de 2 y un máximo de 4 elecciones. Al menos una debe apelar a la profesión/deducción del personaje (ej: *"Tomar fotografía"*, *"Investigar la estática de la radio"*) y otra a la autopreservación.
 4. **Vincular con Página Siguiente**: Cada opción debe apuntar a una `optionLink` que corresponda al ID de la página destino dentro del spread o en el spread siguiente.
-5. **Vinculación de Imagen (Opcional)**: Revisar el catálogo de imágenes del PASO 1 (`[story-name]/context/image-names.md`). Si alguna imagen del catálogo encaja naturalmente con la escena o momento de la página, asignarla al campo `illustration` (imagen simple de página) o a `mapData.backgroundImage` (imagen de mapa con posiciones). Si ninguna encaja bien, omitir ambos campos — no forzar una imagen que no represente fielmente la narrativa.
+5. **Vinculación de Imagen (Opcional)**: Revisar el catálogo de imágenes del PASO 1 (`[story-name]/context/image-names.md`). Si alguna imagen del catálogo encaja naturalmente con la escena o momento de la página, asignarla al campo `illustration` como objeto con `name` y `description`. Si ninguna encaja bien, omitir el campo — no forzar una imagen que no represente fielmente la narrativa.
 
 ---
 
@@ -38,9 +38,10 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 2. **Filtro Atmosférico Lovecraftiano**: Describir los entornos utilizando estímulos sensoriales de la época (el olor fétido a fango abisal, el parpadeo titilante de las farolas de gas, el crujido de la madera podrida y el frío salitre).
 3. **Adaptar al Tono de la Historia**: Mantener coherencia con el estado narrativo establecido en la sinopsis y el contexto de la historia.
 4. **Redactar Elecciones Detalladas y Justificadas**: El texto de cada opción de la `rightPage` debe explicar **qué hace el personaje y con qué intención**, para que el lector entienda bien no solo la acción sino el dilema detrás de ella (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado: es la salida más alta y la criatura aún no te ha visto"*).
-5. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual de la página. **El nombre de la imagen describe la situación concreta de la escena y debe tenerse muy en cuenta al redactar el `text` descriptivo**: cada elemento nombrado en el archivo (lugar, criatura, objeto, estado atmosférico) debe estar presente o resonar en la narrativa de la página.
-6. **Regla de Longitud Narrativa por Página**: La narrativa vive **siempre en la `leftPage`** según su contenido visual:
-   * **leftPage con imagen** (declara `mapData.backgroundImage` **o** `illustration`): texto breve y visual, hasta **50 palabras** en su `text`, sin forzar la extensión.
+5. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo (`illustration.name`) sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual de la página. **El nombre de la imagen describe la situación concreta de la escena y debe tenerse muy en cuenta al redactar el `text` descriptivo y la `illustration.description`**: cada elemento nombrado en el archivo (lugar, criatura, objeto, estado atmosférico) debe estar presente o resonar en la narrativa de la página.
+6. **Descripción de Imagen (`illustration.description`)**: Redactar **un único párrafo de máximo 100 palabras, todo junto** (sin saltos de línea), en segunda persona, describiendo qué muestra la imagen (lugar, criatura, objeto, estado atmosférico) **e incluyendo pistas y detalles relevantes para que el lector pueda tomar decisiones correctas**. Sirve de contenido alternativo por accesibilidad o cuando la imagen no está disponible: el front muestra la imagen o la descripción.
+7. **Regla de Longitud Narrativa por Página**: La narrativa vive **siempre en la `leftPage`** según su contenido visual:
+   * **leftPage con imagen** (declara `illustration`): texto breve y visual, hasta **50 palabras** en su `text`, sin forzar la extensión. La descripción de la imagen (1 párrafo, máx. **100 palabras**) es un campo aparte, no computa dentro de ese `text`.
    * **leftPage sin imagen**: **3–4 párrafos breves**, cada uno de máximo **50 palabras**.
    * La `rightPage` no lleva narrativa: su `text` queda vacío (`""`) y contiene únicamente `pageOptions`.
 
@@ -51,9 +52,9 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 
 1. **Integridad de Rutas**: Verificar que todas las `optionLink` declaradas apunten a un ID de página existente o planificado dentro de la estructura de spreads.
 2. **Evitar Deadlocks**: Validar que la página no sea un callejón sin salida narrativo, a menos que sea un final de historia explícito (Fin o Muerte).
-3. **Validación de Imagen**: Si la página declara un campo `mapData` **o** `illustration`, verificar que el nombre de la imagen está listado en `/stories/[story-name]/context/image-names.md`. Si no se cumple, eliminar el campo correspondiente de la página (no dejar referencias rotas).
+3. **Validación de Imagen**: Si la página declara `illustration`, verificar que `illustration.name` está listado en `/stories/[story-name]/context/image-names.md` y que `illustration.description` existe. Si no se cumple, eliminar el campo `illustration` de la página (no dejar referencias rotas).
 4. **Validación de Longitud Narrativa por Página**: Contar las palabras del `text` de la `leftPage` según su contenido visual:
-   * `leftPage` con imagen (`mapData.backgroundImage` **o** `illustration`): hasta **50 palabras** en total, sin forzar la extensión.
+   * `leftPage` con imagen (`illustration`): `text` hasta **50 palabras** en total, sin forzar la extensión; `illustration.description` un único párrafo de máximo **100 palabras**.
    * `leftPage` sin imagen: **3–4 párrafos breves**, cada uno de máximo **50 palabras**.
    * `rightPage.text`: debe estar vacío (`""`) — solo contiene `pageOptions`.
    Si no se cumple (incluida una `rightPage` con narrativa), devolver la página al ScribeAgent para redacción.
@@ -105,7 +106,7 @@ Cada spread contiene **2 páginas** con roles diferentes:
 
 | Página | Rol | Contenido | Opciones |
 |--------|-----|-----------|----------|
-| **leftPage** | Visual + Narrativa | Imagen (`illustration`/`mapData`, si aplica) + texto de la escena | **NUNCA** |
+| **leftPage** | Visual + Narrativa | Imagen (`illustration`, si aplica) + `illustration.description` + texto de la escena | **NUNCA** |
 | **rightPage** | Decisiones | Solo elecciones (`pageOptions`); `text` vacío (`""`) | SÍ |
 
 ### StoryPage (Página Individual)
@@ -115,11 +116,9 @@ Cada spread contiene **2 páginas** con roles diferentes:
   "pageNumber": 1,
   "title": "string (opcional)",
   "text": "string (narrativa principal - en leftPage; rightPage siempre vacío)",
-  "illustration": "string (opcional - imagen simple de página)",
-  "mapData": {
-    "backgroundImage": "string",
-    "userPosition": { "col": 0, "row": 0 },
-    "targetPosition": { "col": 1, "row": 0 }
+  "illustration": {
+    "name": "imagen-de-pagina.jpg (opcional)",
+    "description": "Un único párrafo de máximo 100 palabras con pistas para la decisión"
   },
   "pageOptions": [
     {
@@ -141,9 +140,8 @@ Cada spread contiene **2 páginas** con roles diferentes:
 
 ### Reglas de Contenido
 * **leftPage.pageOptions**: Siempre `[]` (vacío)
-* **leftPage.text**: La narrativa vive en la leftPage. Con imagen (`mapData.backgroundImage` **o** `illustration`): hasta **50 palabras** en total, sin forzar la extensión. Sin imagen: **3–4 párrafos breves**, cada uno de máximo **50 palabras**
-* **leftPage.mapData**: Imagen de fondo, posición del jugador, posición objetivo
-* **leftPage.illustration**: Imagen simple de página (sin posiciones de mapa), opcional
+* **leftPage.text**: La narrativa vive en la leftPage. Con imagen (`illustration`): hasta **50 palabras** en total, sin forzar la extensión. Sin imagen: **3–4 párrafos breves**, cada uno de máximo **50 palabras**
+* **leftPage.illustration**: Objeto opcional `{ "name": "imagen.jpg", "description": "…" }`. `name`: archivo listado en `image-names.md`. `description`: **un único párrafo de máximo 100 palabras** que describe la imagen e incluye pistas para la decisión (contenido alternativo por accesibilidad / imagen ausente)
 * **rightPage.text**: Siempre `""` (vacío) — la rightPage contiene SOLO las elecciones
 * **rightPage.pageOptions**: 2-4 opciones con `optionLink` a siguiente spread o gameover. Cada opción debe ser **detallada y justificada**: expresa qué hace el personaje y con qué intención
 * **Path selector (página de decisiones)**: Página cuyo `pageOptions` no está vacío; el jugador elige el camino a seguir. Su `text` queda vacío (`""`)
@@ -179,7 +177,10 @@ Cada spread contiene **2 páginas** con roles diferentes:
         "id": "page-1",
         "pageNumber": 0,
         "text": "Narrative text for the left page.\n\nParagraph two.",
-        "illustration": "cocina-pension-puerta-trasera.jpg",
+        "illustration": {
+          "name": "cocina-pension-puerta-trasera.jpg",
+          "description": "Un único párrafo de máximo 100 palabras con pistas para la decisión."
+        },
         "pageOptions": []
       },
       "rightPage": {

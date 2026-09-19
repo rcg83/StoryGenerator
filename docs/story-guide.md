@@ -11,10 +11,10 @@ Cada spread contiene **2 páginas**:
 
 | Página | Contenido | Opciones |
 |--------|-----------|----------|
-| **leftPage** | Visual + Narrativa: imagen (`illustration`/`mapData`, si aplica) + texto de la escena | **NUNCA** |
+| **leftPage** | Visual + Narrativa: imagen (`illustration`, si aplica) con su descripción + texto de la escena | **NUNCA** |
 | **rightPage** | Decisiones: solo elecciones (`pageOptions`); `text` vacío (`""`) | SÍ |
 
-**Narrativa:** vive siempre en la `leftPage`. Con imagen: hasta **50 palabras**, sin forzar la extensión. Sin imagen: **3–4 párrafos breves**, cada uno de máximo **50 palabras**. Cada opción de la `rightPage` debe ser **detallada y justificada**: expresa qué hace el personaje y con qué intención.
+**Narrativa:** vive siempre en la `leftPage`. Con imagen: hasta **50 palabras** en su `text`, sin forzar la extensión; la `illustration` se acompaña de una `description` en un único párrafo de máximo **100 palabras** con pistas para la decisión. Sin imagen: **3–4 párrafos breves**, cada uno de máximo **50 palabras**. Cada opción de la `rightPage` debe ser **detallada y justificada**: expresa qué hace el personaje y con qué intención.
 
 ### Estructura de Archivos
 ```

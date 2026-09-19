@@ -43,15 +43,15 @@ Una entrada por imagen, indicando su **sentido** (qué muestra) y su **lugar** (
 
 1. **PASO 1 (LoreMaster):** Leer el `.md` y registrar el catálogo de imágenes disponibles de la historia.
 2. **PASO 2 (PagePlotter):** Al vincular una imagen a un spread, elegir únicamente entre los nombres listados en el `.md`.
-3. **PASO 4 (PageAuditor):** Validar que `mapData.backgroundImage` **o** `illustration` estén listados en el `.md`. Si no se cumple, eliminar el campo correspondiente de la página (no dejar referencias rotas).
+3. **PASO 4 (PageAuditor):** Validar que `illustration.name` esté listado en el `.md` y que `illustration.description` exista (un único párrafo de máximo 100 palabras). Si no se cumple, eliminar el campo `illustration` de la página (no dejar referencias rotas).
 
 ---
 
 ## ✅ Reglas
 
 * Solo se referencia una imagen si **está listada en el `.md`**.
-* La imagen se referencia vía **`mapData.backgroundImage`** (imagen de mapa con posiciones de jugador/objetivo) **o** `illustration` (imagen simple de página, sin posiciones). El catálogo `.md` aplica a ambos campos por igual.
-* Si ninguna imagen del catálogo encaja naturalmente con la escena, **omitir el campo correspondiente** (`mapData` o `illustration`) — no forzar una imagen que no represente fielmente la narrativa.
+* La imagen se referencia vía el campo **`illustration`** como objeto `{ name, description }`: `name` es el archivo listado en el catálogo y `description` (un único párrafo de máximo **100 palabras** que describe la escena e incluye pistas para la decisión) es el contenido alternativo por accesibilidad o cuando la imagen no está disponible. El front puede mostrar la imagen o la descripción.
+* Si ninguna imagen del catálogo encaja naturalmente con la escena, **omitir el campo `illustration`** — no forzar una imagen que no represente fielmente la narrativa.
 * Al añadir una imagen nueva a la historia, **registrarla en el `.md`** con su entrada de sentido y lugar.
 * El archivo físico de la imagen puede estar **pendiente de generación**: basta con que esté listado en el `.md` para poder referenciarlo en la historia.
 * La portada del libro (`cover.coverImage`) se documenta en la sección **Portada / Magazine Cover** del `.md`.

@@ -12,10 +12,9 @@ export interface CharacterData {
   items: string[];
 }
 
-export interface MapData {
-  backgroundImage: string;
-  userPosition: { col: number; row: number };
-  targetPosition: { col: number; row: number };
+export interface StoryPageIllustration {
+  name: string;
+  description: string;
 }
 
 export interface StoryPage {
@@ -24,7 +23,6 @@ export interface StoryPage {
   text: string;
   pageOptions: StoryPageOption[];
   title?: string;
-  illustration?: string;
+  illustration?: StoryPageIllustration;
   characterData?: CharacterData;
-  mapData?: MapData;
 }
