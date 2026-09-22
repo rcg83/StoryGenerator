@@ -15,6 +15,7 @@ export interface CharacterData {
 export interface StoryPageIllustration {
   name: string;
   description: string;
+  size?: 'small' | 'medium' | 'large' | 'full';
 }
 
 export interface StoryPage {

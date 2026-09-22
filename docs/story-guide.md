@@ -12,9 +12,35 @@ Cada spread contiene **2 páginas**:
 | Página | Contenido | Opciones |
 |--------|-----------|----------|
 | **leftPage** | Visual + Narrativa: imagen (`illustration`, si aplica) con su descripción + texto de la escena | **NUNCA** |
-| **rightPage** | Decisiones: solo elecciones (`pageOptions`); `text` vacío (`""`) | SÍ |
+| **rightPage** | Decisiones: elecciones (`pageOptions`) + párrafos de contexto que completan las 4 zonas | SÍ |
 
-**Narrativa:** vive siempre en la `leftPage`. Con imagen: hasta **50 palabras** en su `text`, sin forzar la extensión; la `illustration` se acompaña de una `description` en un único párrafo de máximo **100 palabras** con pistas para la decisión. Sin imagen: **3–4 párrafos breves**, cada uno de máximo **50 palabras**. Cada opción de la `rightPage` debe ser **detallada y justificada**: expresa qué hace el personaje y con qué intención.
+### 🔢 Regla de las 4 Zonas
+Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un número fijo de zonas:
+
+| Componente | Zonas | Límite |
+|------------|-------|--------|
+| Párrafo de narrativa | 1 | máx. **40 palabras** |
+| Opción (`pageOption`) | 1 | máx. **30 palabras** |
+| Imagen `small` | 1 | — |
+| Imagen `medium` | 2 | — |
+| Imagen `large` | 3 | — |
+| Imagen `full` | 4 (página entera, sin texto) | — |
+| `illustration.description` | no ocupa zona (accesibilidad) | 1 párrafo, máx. **100 palabras** |
+
+**leftPage (narrativa, nunca opciones):**
+* Sin imagen → **4 párrafos** de máx. 40 palabras.
+* Con imagen según `size`: `small` → 3 párrafos · `medium` → 2 · `large` → 1 · `full` → 0.
+* `size` default en leftPage: `large`.
+
+**rightPage (path selector):**
+* Cada opción ocupa 1 zona; el resto de zonas se rellena con párrafos de contexto (máx. 40 palabras):
+  * 2 opciones → 2 párrafos + 2 opciones.
+  * 3 opciones → 1 párrafo + 3 opciones.
+  * 4 opciones → 0 párrafos + 4 opciones.
+* Opcionalmente, 1 imagen `small` (1 zona) puede sustituir a uno de esos párrafos.
+* `size` default en rightPage: `small`. La rightPage **no** tiene `text` vacío obligatorio: su `text` contiene los párrafos de contexto.
+
+**Gameover y finales (exentos de la regla de opciones):** con imagen → 1 párrafo de máx. 40 palabras; sin imagen → hasta 4 párrafos. La opción "Reiniciar" es control de UI, no computa como zona.
 
 ### Estructura de Archivos
 ```
