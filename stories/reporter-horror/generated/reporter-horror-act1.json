@@ -1,9 +1,9 @@
 {
   "id": "reporter-horror-act1",
-  "title": "The Reporter Trapped in Horror",
+  "titleEn": "The Reporter Trapped in Horror",
+  "titleEs": "La Reportera Atrapada en el Horror",
   "startPageId": "spread-001",
   "cover": {
-    "title": "THE REPORTER TRAPPED IN HORROR",
     "subtitle": "Act I • Fase 3: La Cacería • 02:30 AM",
     "coverImage": "/images/cover-reporter-trapped-horror.png"
   },

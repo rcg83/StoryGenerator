@@ -178,10 +178,10 @@ Cada spread contiene **2 páginas** con roles diferentes:
 
 {
   "id": "your-story-id",
-  "title": "Your Story Title",
+  "titleEn": "Your Story Title",
+  "titleEs": "Su Historia en Español",
   "startPageId": "spread1",
   "cover": {
-    "title": "COVER HEADLINE",
     "subtitle": "Subtitle • Date",
     "coverImage": "/images/cover-your-story.png"
   },
