@@ -1,5 +1,9 @@
 # 🏨 Contexto de la Historia: The Reporter Trapped in Horror
 
+## 🏢 Escenario
+
+* **Escenario(s):** `gilman-house` → [`world/scenarios/gilman-house.md`](../../../world/scenarios/gilman-house.md). El plano físico del edificio (plantas, zonas, conexiones y elementos) es la verdad espacial de esta historia: toda página debe ser coherente con él.
+
 ## ✅ Requisitos Fijos del Act I (obligatorios en futuras regeneraciones)
 
 > Esta sección es ley. Ningún agente puede romper estas reglas al generar o editar el Act I.

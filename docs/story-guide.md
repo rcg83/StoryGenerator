@@ -1,6 +1,6 @@
 # 📖 Guía de Estructura del Libro Interactivo
 
-Documento genérico de referencia válido para todas las historias. Cada historia vive en `stories/[story-name]/` y sigue esta estructura común.
+Documento genérico de referencia válido para todas las historias. Cada historia vive en `stories/[story-name]/` y sigue esta estructura común. Los escenarios físicos (edificios y espacios reutilizables) viven en `world/scenarios/<scenario-id>.md` y se enlazan desde el contexto de cada historia.
 
 ---
 
@@ -56,6 +56,21 @@ stories/[story-name]/
 
 ---
 
+## 🏢 Escenarios Compartidos
+
+* **Ubicación:** `world/scenarios/<scenario-id>.md` — recursos físicos compartidos entre historias (ej: `gilman-house.md`).
+* **Declaración:** cada historia declara sus escenarios en `stories/[story-name]/context/[story-name]-background.md` mediante la sección `**Escenario(s):** <scenario-id>`.
+* **Carga:** el pipeline (PASO 1) lee los escenarios declarados y los trata como la verdad física del espacio.
+
+## 📏 Continuidad Espacial
+
+* Cada página ancla al personaje: **planta + zona**, de dónde llegó y qué conexión queda delante.
+* Las transiciones entre spreads son continuas: la salida de un spread enlaza de forma natural con la llegada del siguiente (puerta, escalera, cornisa o montacargas por tramos).
+* Cada `optionLink` debe conectar espacios **adyacentes** según el escenario; se descarta toda transición físicamente imposible.
+* Los **elementos de cada zona son estables** y se toman del escenario, no se inventan fuera de él.
+
+---
+
 ## 🎯 Savepoint (Hito de Convergencia)
 
 * **Ubicación:** punto de la historia donde convergen todas las rutas correctas.
@@ -77,6 +92,7 @@ stories/[story-name]/
 Cada opción en `rightPage` apunta a:
 * **Siguiente spread** (elección correcta): `spread-XX`
 * **Game Over** (elección letal): `gameover-XX`
+* Toda transición debe conectar espacios **adyacentes** según el escenario de la historia (ver Continuidad Espacial).
 
 **Flujo:**
 ```

@@ -9,12 +9,13 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 
 1. **Leer `/world/1938-era.md`**: Asimilar el entorno de 1938, la tecnología disponible y las limitaciones de la época.
 2. **Leer `/world/factions/` y `/world/creatures/`**: Cargar la información de las facciones y criaturas relevantes para la historia (ej: `dagon-cult.md`, `the-deep-ones.md`).
-3. **Leer `/stories/[story-name]/context/[story-name]-background.md`**: Extraer el prompt inicial, el enfoque del protagonista y los objetivos globales del relato.
-4. **Leer `/stories/[story-name]/context/timeline.md`**: Cargar la cronología del evento activo y la fase horaria vigente (Fases 1 a 4).
-5. **Escanear `/characters/[character].json`**: Analizar el archivo de datos del personaje (ubicado en la raíz del proyecto, compartido entre historias). Registrar sus `attributes` (rasgos con valores), sus `skills` (habilidades) y sus `items` (objetos en inventario).
-6. **Escanear `/stories/[story-name]/generated/`**: Registrar el catálogo de spreads existentes (los ids del array `spreads` y `spreadIds` del JSON generado). Anotar cuáles son spreads de decisión y cuáles son spreads de derrota (gameover). Este catálogo se usará en el PASO 2 para evitar duplicar spreads o enlazar a spreads inexistentes.
-7. **Escanear el catálogo de imágenes**: Leer `/stories/[story-name]/context/image-names.md` y registrar las imágenes disponibles de la historia (su sentido y su lugar). Detalle en `docs/images.md`.
-8. **Validar Coherencia Narrativa**: Asegurar que ningún elemento introducido rompa la tecnología de la época, las reglas de las facciones/criaturas definidas en `world/` o el tono establecido.
+3. **Leer `/world/scenarios/`**: Cargar el/los escenario(s) que la historia declare en `[story-name]-background.md`, en `world/scenarios/<scenario-id>.md` (ej: `gilman-house.md`). Es la verdad física del espacio: plantas, zonas, elementos y conexiones. Toda página debe ser coherente con esa geografía.
+4. **Leer `/stories/[story-name]/context/[story-name]-background.md`**: Extraer el prompt inicial, el enfoque del protagonista, los objetivos globales del relato y los escenarios declarados.
+5. **Leer `/stories/[story-name]/context/timeline.md`**: Cargar la cronología del evento activo y la fase horaria vigente (Fases 1 a 4).
+6. **Escanear `/characters/[character].json`**: Analizar el archivo de datos del personaje (ubicado en la raíz del proyecto, compartido entre historias). Registrar sus `attributes` (rasgos con valores), sus `skills` (habilidades) y sus `items` (objetos en inventario).
+7. **Escanear `/stories/[story-name]/generated/`**: Registrar el catálogo de spreads existentes (los ids del array `spreads` y `spreadIds` del JSON generado). Anotar cuáles son spreads de decisión y cuáles son spreads de derrota (gameover). Este catálogo se usará en el PASO 2 para evitar duplicar spreads o enlazar a spreads inexistentes.
+8. **Escanear el catálogo de imágenes**: Leer `/stories/[story-name]/context/image-names.md` y registrar las imágenes disponibles de la historia (su sentido y su lugar). Detalle en `docs/images.md`.
+9. **Validar Coherencia Narrativa**: Asegurar que ningún elemento introducido rompa la tecnología de la época, las reglas de las facciones/criaturas definidas en `world/`, la geografía de los escenarios definidos en `world/scenarios/` o el tono establecido.
 
 ---
 
@@ -27,7 +28,8 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
    * Si el personaje no posee un atributo adecuado para la situación, la opción correspondiente debe implicar un riesgo narrativo evidente.
 3. **Estructurar las Opciones**: Generar un mínimo de 2 y un máximo de 4 elecciones. Al menos una debe apelar a la profesión/deducción del personaje (ej: *"Tomar fotografía"*, *"Investigar la estática de la radio"*) y otra a la autopreservación.
 4. **Vincular con Página Siguiente**: Cada opción debe apuntar a una `optionLink` que corresponda al ID de la página destino dentro del spread o en el spread siguiente.
-5. **Vinculación de Imagen (Opcional)**: Revisar el catálogo de imágenes del PASO 1 (`[story-name]/context/image-names.md`). Si alguna imagen del catálogo encaja naturalmente con la escena o momento de la página, asignarla al campo `illustration` como objeto con `name`, `description` y `size` (opcional; default `large` en `leftPage`, `small` en `rightPage`). Si ninguna encaja bien, omitir el campo — no forzar una imagen que no represente fielmente la narrativa.
+5. **Adyacencia Física**: Cada `optionLink` debe conectar dos espacios adyacentes según el escenario del PASO 1 (misma planta por puerta o cornisa, o planta contigua por escalera/montacargas). Se descarta toda transición físicamente imposible.
+6. **Vinculación de Imagen (Opcional)**: Revisar el catálogo de imágenes del PASO 1 (`[story-name]/context/image-names.md`). Si alguna imagen del catálogo encaja naturalmente con la escena o momento de la página, asignarla al campo `illustration` como objeto con `name`, `description` y `size` (opcional; default `large` en `leftPage`, `small` en `rightPage`). Si ninguna encaja bien, omitir el campo — no forzar una imagen que no represente fielmente la narrativa.
 
 ---
 
@@ -35,12 +37,13 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 *El agente asumirá el rol de ScribeAgent para transformar el esqueleto técnico en prosa literaria de terror psicológico:*
 
 1. **Perspectiva Narrativa**: Escribir estrictamente en segunda persona del singular ("Tú") para forzar la inmersión del lector.
-2. **Filtro Atmosférico Lovecraftiano**: Describir los entornos utilizando estímulos sensoriales de la época (el olor fétido a fango abisal, el parpadeo titilante de las farolas de gas, el crujido de la madera podrida y el frío salitre).
-3. **Adaptar al Tono de la Historia**: Mantener coherencia con el estado narrativo establecido en la sinopsis y el contexto de la historia.
-4. **Redactar Elecciones Detalladas y Justificadas**: El texto de cada opción de la `rightPage` debe explicar **qué hace el personaje y con qué intención**, para que el lector entienda bien no solo la acción sino el dilema detrás de ella (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado: es la salida más alta y la criatura aún no te ha visto"*).
-5. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo (`illustration.name`) sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual de la página. **El nombre de la imagen describe la situación concreta de la escena y debe tenerse muy en cuenta al redactar el `text` descriptivo y la `illustration.description`**: cada elemento nombrado en el archivo (lugar, criatura, objeto, estado atmosférico) debe estar presente o resonar en la narrativa de la página.
-6. **Descripción de Imagen (`illustration.description`)**: Redactar **un único párrafo de máximo 100 palabras, todo junto** (sin saltos de línea), en segunda persona, describiendo qué muestra la imagen (lugar, criatura, objeto, estado atmosférico) **e incluyendo pistas y detalles relevantes para que el lector pueda tomar decisiones correctas**. Sirve de contenido alternativo por accesibilidad o cuando la imagen no está disponible: el front muestra la imagen o la descripción.
-7. **Regla de Longitud Narrativa por Página (Regla de las 4 Zonas)**: Cada página se estructura en **4 zonas**. Todo componente ocupa un número fijo de zonas:
+2. **Anclaje Físico-Espacial**: Anclar cada página al escenario del PASO 1: el personaje sabe dónde está (planta + zona), de dónde llegó y qué conexión queda delante. Las transiciones son continuas (la salida de un spread enlaza de forma natural con la llegada del siguiente) y los elementos nombrados existen en el plano del escenario.
+3. **Filtro Atmosférico Lovecraftiano**: Describir los entornos utilizando estímulos sensoriales de la época (el olor fétido a fango abisal, el parpadeo titilante de las farolas de gas, el crujido de la madera podrida y el frío salitre).
+4. **Adaptar al Tono de la Historia**: Mantener coherencia con el estado narrativo establecido en la sinopsis y el contexto de la historia.
+5. **Redactar Elecciones Detalladas y Justificadas**: El texto de cada opción de la `rightPage` debe explicar **qué hace el personaje y con qué intención**, para que el lector entienda bien no solo la acción sino el dilema detrás de ella (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado: es la salida más alta y la criatura aún no te ha visto"*).
+6. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo (`illustration.name`) sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual de la página. **El nombre de la imagen describe la situación concreta de la escena y debe tenerse muy en cuenta al redactar el `text` descriptivo y la `illustration.description`**: cada elemento nombrado en el archivo (lugar, criatura, objeto, estado atmosférico) debe estar presente o resonar en la narrativa de la página.
+7. **Descripción de Imagen (`illustration.description`)**: Redactar **un único párrafo de máximo 100 palabras, todo junto** (sin saltos de línea), en segunda persona, describiendo qué muestra la imagen (lugar, criatura, objeto, estado atmosférico) **e incluyendo pistas y detalles relevantes para que el lector pueda tomar decisiones correctas**. Sirve de contenido alternativo por accesibilidad o cuando la imagen no está disponible: el front muestra la imagen o la descripción.
+8. **Regla de Longitud Narrativa por Página (Regla de las 4 Zonas)**: Cada página se estructura en **4 zonas**. Todo componente ocupa un número fijo de zonas:
    * **1 zona** = 1 párrafo de narrativa (máx. **40 palabras**) o 1 opción (`pageOption`, máx. **30 palabras**).
    * **Imagen** = según su `size`: `small` (1 zona), `medium` (2 zonas), `large` (3 zonas, default en `leftPage`), `full` (4 zonas, página entera de imagen, sin texto).
    * **`illustration.description`** = máx. 100 palabras, un único párrafo con pistas para la decisión (campo de accesibilidad, no ocupa zona).
@@ -60,12 +63,13 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 
 1. **Integridad de Rutas**: Verificar que todas las `optionLink` declaradas apunten a un ID de página existente o planificado dentro de la estructura de spreads.
 2. **Evitar Deadlocks**: Validar que la página no sea un callejón sin salida narrativo, a menos que sea un final de historia explícito (Fin o Muerte).
-3. **Validación de Imagen**: Si la página declara `illustration`, verificar que `illustration.name` está listado en `/stories/[story-name]/context/image-names.md`, que `illustration.description` existe y que `illustration.size` es uno de `small`, `medium`, `large` o `full`. Si no se cumple, eliminar el campo `illustration` de la página (no dejar referencias rotas).
-4. **Validación de Longitud Narrativa por Página (Regla de las 4 Zonas)**: Verificar que cada página suma exactamente **4 zonas** con los límites de palabras (párrafo máx. 40; opción máx. 30; `illustration.description` un único párrafo máx. 100 palabras):
+3. **Plausibilidad Espacial**: Verificar que cada `optionLink` conecte espacios adyacentes según la red de conexiones del escenario cargado en el PASO 1 (`world/scenarios/`). Si la transición es físicamente imposible, devolver la página al ScribeAgent.
+4. **Validación de Imagen**: Si la página declara `illustration`, verificar que `illustration.name` está listado en `/stories/[story-name]/context/image-names.md`, que `illustration.description` existe y que `illustration.size` es uno de `small`, `medium`, `large` o `full`. Si no se cumple, eliminar el campo `illustration` de la página (no dejar referencias rotas).
+5. **Validación de Longitud Narrativa por Página (Regla de las 4 Zonas)**: Verificar que cada página suma exactamente **4 zonas** con los límites de palabras (párrafo máx. 40; opción máx. 30; `illustration.description` un único párrafo máx. 100 palabras):
    * `leftPage`: sin imagen → **4 párrafos**; con imagen según `size` — `small` → 3, `medium` → 2, `large` → 1, `full` → 0 párrafos.
    * `rightPage`: número de párrafos de contexto = 4 − número de opciones (2 opciones → 2 párrafos; 3 → 1; 4 → 0), opcionalmente sustituyendo un párrafo por 1 imagen `small`.
    * Si no se cumple, devolver la página al ScribeAgent para redacción.
-5. **Firma de Verificación**: Añadir la propiedad `"status": "verified"` en los metadatos de la página una vez comprobado que se han seguido correctamente los Pasos 1 a 3.
+6. **Firma de Verificación**: Añadir la propiedad `"status": "verified"` en los metadatos de la página una vez comprobado que se han seguido correctamente los Pasos 1 a 3.
 
 ---
 
@@ -103,6 +107,7 @@ Cada tramo jugable sigue esta estructura:
 
 * `docs/images.md` — Convención del catálogo de imágenes: `stories/[story-name]/context/image-names.md`.
 * `docs/story-guide.md` — Estructura genérica del libro interactivo: spreads, decisiones, enlaces entre spreads y reglas de diseño.
+* `world/scenarios/` — Escenarios físicos compartidos (edificios y espacios): cada historia declara los que usa en su `[story-name]-background.md`.
 
 ---
 
