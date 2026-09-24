@@ -13,11 +13,11 @@
       "leftPage": {
         "id": "spread-001-left",
         "pageNumber": 1,
-        "text": "La puerta del ático salta de la bisagra. Tú caes contra el suelo frío. La silueta escamosa llena el umbral; huele a fango y a pescado podrido. Solo la ventana abierta a la cornisa promete una salida.",
+        "text": "Estás en el ático del Gilman House, cuarta planta: tu habitación, al fondo del pasillo, huele a salitre. La puerta salta de la bisagra. Una criatura escamosa llena el umbral. Solo la ventana a la cornisa promete salida.",
         "illustration": {
           "name": "Elena-floor-crashdoor-deep-one.png",
           "size": "large",
-          "description": "En el ático del hotel, la puerta de tu habitación acaba de saltar de la bisagra. En el umbral se recorta una criatura escamosa, más alta que la puerta, con la piel húmeda de marea y ojos sin párpados. El suelo está salpicado de fango. A tu espalda, la ventana abierta deja entrar la noche y la cornisa de piedra que bordea la fachada: la única salida."
+          "description": "En el ático del hotel, tu habitación al fondo del pasillo acaba de recibir el golpe: la puerta salta de la bisagra y en el umbral se recorta una criatura escamosa y húmeda, más alta que el marco, con ojos sin párpados. El suelo está salpicado de fango. A tu espalda, la ventana abierta deja pasar la noche sobre la cornisa de piedra que bordea la fachada: la única salida que no cruza delante de la criatura."
         },
         "pageOptions": []
       },
@@ -25,18 +25,18 @@
         "id": "spread-001-right",
         "pageNumber": 2,
         "title": "La Habitación del Ático",
-        "text": "La criatura cruza el umbral con paso lento. El tiempo se estira: cada salida esconde su propio precio, y aún no sabes cuál vale la pena.",
+        "text": "Estás al fondo del pasillo, en el cuarto del ático más alejado de la escalera de servicio. La criatura todavía cruza el umbral con paso pesado. Cada salida guarda su precio.",
         "pageOptions": [
           {
-            "optionText": "Saltas por la ventana y avanzas por la cornisa estrecha hasta la ventana de la habitación contigua: es la única vía que no pasa por delante de la criatura.",
+            "optionText": "Saltas a la cornisa y avanzas hasta la ventana de la alcoba contigua, a un par de pasos: el camino que no pasa delante de la criatura.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Disparas el flash de la cámara de fuelle para cegarla y corres por el pasillo mientras la criatura se recupera.",
+            "optionText": "Disparas el flash de la cámara de fuelle para cegarla y cruzas el pasillo del ático hacia la escalera de servicio.",
             "optionLink": "spread-001b"
           },
           {
-            "optionText": "Te escondes bajo la cama y contienes la respiración, esperando que la criatura no perciba tu pánico entre las sombras.",
+            "optionText": "Te escondes bajo la cama y contienes la respiración, esperando que la criatura no perciba tu miedo.",
             "optionLink": "gameover-001"
           }
         ]
@@ -48,21 +48,21 @@
       "leftPage": {
         "id": "spread-001b-left",
         "pageNumber": 3,
-        "text": "El flash de magnesio ilumina el cuarto entero. La criatura retrocede, cegada, con un silbido que te perfora los oídos.\n\nAprovechas el segundo para cruzar el pasillo del ático. La balaustrada cruje y, a tu espalda, el arrastre húmedo vuelve a empezar.\n\nLas habitaciones de arriba están clausuradas con tablas. Solo la puerta de la escalera de servicio sigue abierta, y la ventana de la alcoba contigua, sin barrotes, brilla con la luz de la calle.\n\nTu corazón late más fuerte que cualquier crujido del hotel.",
+        "text": "El flash de magnesio enciende el cuarto; la criatura retrocede, cegada, con un silbido agudo. Cruzas el pasillo del ático: habitaciones clausuradas con tablas, y al fondo la escalera de servicio y el hueco del montacargas.\n\nDetrás de ti, el arrastre húmedo vuelve a empezar: la escalera de servicio es tu única bajada en esta planta. La balaustrada del pasillo cruje con tus pasos.\n\nCasi todas las puertas del ático están clavadas con tablas; solo la alcoba contigua conserva su ventana abierta y sin barrotes.\n\nTu corazón late más fuerte que el crujido de la madera. Debes salir del pasillo antes de que la criatura alcance la escalera.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-001b-right",
         "pageNumber": 4,
         "title": "El Pasillo del Ático",
-        "text": "El silencio del pasillo se rompe con el arrastre húmedo que dobla la esquina. Aquí arriba ya no queda tiempo para dudar.\n\nLa escalera de servicio baja hacia la penumbra del hotel. Elegir el camino correcto ahora define toda la bajada.",
+        "text": "El pasillo del ático, planta cuatro, termina en la escalera de servicio que baja a la planta tres, donde espera el pozo del montacargas. Elegir ahora define toda la bajada.",
         "pageOptions": [
           {
-            "optionText": "Te cuelas en la alcoba contigua para ganar distancia antes de seguir bajando por el hotel.",
+            "optionText": "Entras en la alcoba contigua para ganar aire antes de continuar la bajada por la escalera de servicio.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Pegas el oído a los pasos y bajas de inmediato por la escalera de servicio, antes de que la criatura te vea.",
+            "optionText": "Bajas de inmediato por la escalera de servicio, midiendo cada peldaño para que la criatura no te alcance en el pasillo.",
             "optionLink": "spread-003"
           }
         ]
@@ -74,11 +74,11 @@
       "leftPage": {
         "id": "spread-002-left",
         "pageNumber": 5,
-        "text": "La cornisa abraza la fachada del ático; abajo, la ciudad se estira en sombras. Te deslizas hasta la ventana de la alcoba contigua y entras en una habitación vacía que huele a alcanfor y a humedad.",
+        "text": "Salvaste la cornisa: la alcoba contigua te recibe con olor a alcanfor y humedad. Su puerta da al pasillo del ático; al fondo de ese pasillo baja la escalera de servicio hacia la planta tres.",
         "illustration": {
           "name": "acceso-cornisa-noche.jpg",
           "size": "large",
-          "description": "Te deslizas por la cornisa exterior del ático con los dedos clavados en la piedra húmeda; muy abajo, la ciudad se estira en sombras entre luces de gas que parpadean. A tu derecha, la ventana de la alcoba contigua está abierta y sin barrotes. El viento salado empuja tu abrigo mientras calculas el siguiente paso hacia la única entrada posible."
+          "description": "En la cornisa de piedra del ático, planta cuatro, te deslizas ceñida a la fachada con las manos clavadas en la pared húmeda. Abajo, la ciudad duerme entre farolas de gas que parpadean. A tu derecha, la ventana abierta de la alcoba contigua, sin barrotes, marca el único hueco de entrada; su puerta interior comunica con el pasillo del ático y, al fondo, con la escalera de servicio."
         },
         "pageOptions": []
       },
@@ -86,14 +86,14 @@
         "id": "spread-002-right",
         "pageNumber": 6,
         "title": "La Cornisa",
-        "text": "La alcoba de la huésped se cierra sobre ti con olor a alcanfor. La escalera de servicio debe estar al fondo del pasillo.\n\nAlgo en esa habitación puede salvarte la vida, pero cada segundo pasado aquí acerca los pasos húmedos.",
+        "text": "La alcoba contigua, planta cuatro, tiene su puerta al pasillo del ático. Bajar la escalera de servicio te lleva al descansillo de la planta tres y al pozo del montacargas.\n\nCada segundo en esta habitación acerca los pasos húmedos. La luz de gas de la calle lame el techo vacío.",
         "pageOptions": [
           {
-            "optionText": "Bajas por la escalera de servicio con sigilo, midiendo cada crujido de la madera antes de pisar para no delatarte.",
+            "optionText": "Sales a la escalera de servicio con sigilo, cargando cada peldaño antes de pisarlo, para que la madera no te delate.",
             "optionLink": "spread-003"
           },
           {
-            "optionText": "Registras la alcoba en busca de algo útil antes de bajar, porque no quieres seguir desarmada.",
+            "optionText": "Registras la alcoba antes de bajar, porque no quieres seguir desarmada hasta la calle.",
             "optionLink": "spread-002b"
           }
         ]
@@ -105,21 +105,21 @@
       "leftPage": {
         "id": "spread-002b-left",
         "pageNumber": 7,
-        "text": "Revuelves los cajones con manos temblorosas. Un despertador, un cepillo, naipes de un viejo solitario. Nada que sirva.\n\nBajo la almohada encuentras un revólver de tambor; al abrirlo, el alvéolo está vacío. Pesa poco más que el miedo.\n\nJunto a la ventana, el hueco de un barrote que alguien se llevó hace años: aquí arriba, la salida sería posible, pero la escalera ya gruñe con pasos.\n\nEl pasillo vuelve a crujir. La alcoba se empieza a cerrar sobre ti.",
+        "text": "Revisas los cajones con manos temblorosas: un despertador, un cepillo, naipes de un solitario. Nada que sirva.\n\nBajo la almohada encuentras un revólver de tambor; el alvéolo está vacío. Pesa poco más que el miedo que llevas dentro.\n\nLa alcoba guarda su puerta al pasillo del ático: a tu espalda, la cornisa que ya cruzaste; al fondo del pasillo, la escalera de servicio.\n\nEl pasillo vuelve a crujir. La alcoba se cierra sobre ti: hay que bajar ya antes de que llegue.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-002b-right",
         "pageNumber": 8,
         "title": "La Alcoba",
-        "text": "Con el revólver vacío en la mano entiendes la regla de la noche: aquí nada pesa más que el miedo.\n\nLa escalera de servicio espera abajo, y los pasos del ático ya se anuncian en la balaustrada.",
+        "text": "Con el revólver vacío en la mano entiendes la regla de la noche: aquí nada pesa más que el miedo. La bajada espera en la escalera de servicio.\n\nLos pasos del pasillo ya se anuncian en la balaustrada. Cada segundo de espera te acerca a la criatura.",
         "pageOptions": [
           {
-            "optionText": "Dejas el revólver vacío y bajas por la escalera de servicio en el momento en que los pasos de abajo doblan a lo lejos.",
+            "optionText": "Dejas el revólver vacío y bajas por la escalera de servicio mientras los pasos se apagan tras la balaustrada.",
             "optionLink": "spread-003"
           },
           {
-            "optionText": "Esperas el compás de los pasos en el umbral para salir justo en el hueco que te cubre.",
+            "optionText": "Escuchas el compás de los pasos desde el umbral y sales justo cuando el pasillo queda a oscuras.",
             "optionLink": "spread-003"
           }
         ]
@@ -131,11 +131,11 @@
       "leftPage": {
         "id": "spread-003-left",
         "pageNumber": 9,
-        "text": "El rellano huele a óxido y a cuerda vieja. En la pared del fondo, el pozo del montacargas abre su boca oscura hasta la planta baja. El cable grasiento tiembla cuando la criatura pisa la escalera.",
+        "text": "La escalera de servicio termina en el descansillo de la planta tres. En la pared del fondo, el pozo del montacargas abre su boca de metal oxidado; el cable grasiento tiembla cuando la criatura pisa los peldaños.",
         "illustration": {
           "name": "pozo-luz-montacargas.jpg",
           "size": "large",
-          "description": "Ante ti se abre el pozo del montacargas del hotel: una boca rectangular de metal oxidado que se hunde hasta la planta baja, con un cable grasiento y un contrapeso clavado en la pared. Desde el rellano, el hueco a oscuras dibuja sombras que se mueven con tu respiración. Es la bajada más rápida y silenciosa si no resbalas."
+          "description": "El pozo del montacargas, planta tres: una boca rectangular de metal oxidado que baja hasta el sótano con aberturas en cada rellano de servicio. Del techo cuelga un cable grasiento y un contrapeso clavado en la pared. A la derecha, arcones apilados ofrecen sombra; a la izquierda, la escalera principal desciende hacia las plantas dos y uno. Sin cabina ni caja: solo el hueco, el cable y el silencio."
         },
         "pageOptions": []
       },
@@ -143,18 +143,18 @@
         "id": "spread-003-right",
         "pageNumber": 10,
         "title": "El Pozo del Montacargas",
-        "text": "El pozo del montacargas baja hasta la planta baja entre sombras. Detrás de ti, el arrastre húmedo sube: hay que decidir el descenso antes de que llegue.",
+        "text": "El descansillo de la planta tres comunica con la escalera principal; el pozo del montacargas atraviesa las plantas de servicio, con apertura en cada rellano. Detrás, los pasos húmedos suben.",
         "pageOptions": [
           {
-            "optionText": "Te cuelgas del cable grasiento y desciendes por el pozo, confiando en tu fuerza para no soltarte en el vacío.",
+            "optionText": "Te cuelgas del cable grasiento y desciendes un tramo hasta la apertura de la planta dos, confiando en tu fuerza.",
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Te escondes detrás de los arcones del pasillo y esperas a que la criatura cruce el rellano sin verte.",
+            "optionText": "Te ocultas tras los arcones apilados y esperas a que la criatura cruce el descansillo sin verte.",
             "optionLink": "spread-003b"
           },
           {
-            "optionText": "Cruzas el descansillo corriendo a la vista de la criatura, sin medir la velocidad de sus zancadas.",
+            "optionText": "Cruzas el descansillo corriendo hasta la escalera principal, sin medir la velocidad de sus zancadas.",
             "optionLink": "gameover-002"
           }
         ]
@@ -166,21 +166,21 @@
       "leftPage": {
         "id": "spread-003b-left",
         "pageNumber": 11,
-        "text": "Te agazapas tras los arcones apilados. El polvo te sube por la nariz y contienes un estornudo con toda la fuerza de tus puños.\n\nLos pasos húmedos se acercan; la criatura se detiene a medio metro de ti y huele el aire con un silbido que huele a marea.\n\nEl silencio se alarga hasta que un arrastre en la puerta de abajo la distrae. Sueltas el aire que llevabas mordiendo.\n\nCuando la criatura baja la escalera, te deslizas hacia el pozo con las piernas entumecidas.",
+        "text": "Te agazapas tras los arcones del descansillo. El polvo te sube por la nariz; contienes un estornudo con todas tus fuerzas.\n\nLos pasos húmedos se detienen a medio metro de ti. La criatura huele el aire con un silbido que sabe a marea.\n\nUn ruido en la planta baja la distrae. Suelta el aire que llevabas mordiendo mientras el arrastre se aleja escalera abajo.\n\nEl descansillo vuelve a quedarse en silencio. El pozo del montacargas espera con su cable grasiento.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-003b-right",
         "pageNumber": 12,
         "title": "Tras los Arcones",
-        "text": "La criatura se aleja escalera abajo y el rellano queda en silencio. El pozo del montacargas espera su cable grasiento.\n\nBajar ahora es cuestión de suerte y de pulso; la alternativa es la escalera principal, a ciegas.",
+        "text": "El pasillo se ha vaciado y el descansillo de la planta tres queda libre. Bajar ahora es cuestión de pulso.\n\nEl pozo del montacargas y la escalera principal ofrecen dos caminos hacia la planta dos; la criatura ya no vigila.",
         "pageOptions": [
           {
-            "optionText": "Bajas por el cable del montacargas ahora que el pasillo queda vacío y el peligro se ha alejado.",
+            "optionText": "Bajas un tramo por el cable del montacargas hacia la planta dos, con el pasillo vacío y el peligro lejano.",
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Aprovechas el momento y bajas por la escalera principal dos tramos, sin encender la linterna.",
+            "optionText": "Bajas por la escalera principal dos tramos hasta la planta dos, sin encender ninguna luz.",
             "optionLink": "spread-004"
           }
         ]
@@ -192,11 +192,11 @@
       "leftPage": {
         "id": "spread-004-left",
         "pageNumber": 13,
-        "text": "La sala común del hotel está en semipenumbra. Las ventanas con barrotes dejan entrar la luz de gas; en una consola, una radio de onda corta escupe estática. Tras la puerta de la cocina, algo arrastra muebles y gruñe.",
+        "text": "La salida del montacargas te deja en el rellano de servicio de la planta dos. Ante ti, la sala común: ventanales con barrotes y, en la consola, una radio de onda corta escupiendo estática.",
         "illustration": {
           "name": "sala-comun-radio.jpg",
           "size": "large",
-          "description": "La sala común del hotel respira semipenumbra: sillones raídos, una lámpara de gas moribunda y, sobre la consola, una radio de onda corta que escupe estática viva. Al fondo, las ventanas con barrotes cierran la planta y tras la puerta de la cocina algo arrastra muebles y gruñe. La radio encendida parece lo único útil de la sala."
+          "description": "La sala común de la planta dos respira semipenumbra: sillones raídos, una lámpara de gas moribunda y, sobre la consola, una radio de onda corta que escupe estática viva. Al fondo, los ventanales con barrotes cierran la planta; tras la puerta de la cocina, algo arrastra muebles y gruñe. La radio encendida parece lo único útil de la sala: entre interferencias se repite un cántico y unas coordenadas."
         },
         "pageOptions": []
       },
@@ -204,10 +204,10 @@
         "id": "spread-004-right",
         "pageNumber": 14,
         "title": "La Sala Común",
-        "text": "La radio escupe estática viva entre el cántico gutural. En la libreta cabe la prueba que estabas buscando.\n\nPero la cocina al fondo arrastra muebles; el tiempo de la sala se mide en crujidos.",
+        "text": "La planta dos conecta la sala común con el pasillo de servicio y la escalera de los criados. La radio guarda la pista que buscas.\n\nTras la puerta de la cocina, algo arrastra muebles. El tiempo de la sala se mide en crujidos.",
         "pageOptions": [
           {
-            "optionText": "Afinas la radio de onda corta y, entre la estática, capturas un cántico gutural y unas coordenadas que copias en tu libreta: la evidencia vale el riesgo.",
+            "optionText": "Afinas la radio y copias en tu libreta el cántico y las coordenadas que asoman entre la estática: la prueba vale el riesgo.",
             "optionLink": "spread-005"
           },
           {
@@ -223,21 +223,21 @@
       "leftPage": {
         "id": "spread-004b-left",
         "pageNumber": 15,
-        "text": "El golpe de tu talón quiebra los tubos y la estática muere con un chirrido. El silencio que sigue es peor.\n\nDesde la cocina, el arrastre se detiene. Algo escucha. Tú también escuchas, con el corazón en la garganta.\n\nSales de la sala común hacia el pasillo de servicio, donde el humo de las cocinas se cuela por las rendijas.\n\nLas farolas de gas parpadean; el pasillo de servicio guarda su humo y su propio silencio.",
+        "text": "El golpe de tu talón quiebra los tubos de la radio; la estática muere con un chirrido. El silencio que sigue es peor.\n\nDesde la cocina, el arrastre se detiene. Algo escucha. Tú también escuchas, con el corazón en la garganta.\n\nSales de la sala común por la puerta lateral al pasillo de servicio de la planta dos, donde el humo de las cocinas se cuela entre las rendijas.\n\nEl pasillo de servicio guarda su humo y su silencio. Hacia la escalera de los criados, la bajada continúa.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-004b-right",
         "pageNumber": 16,
         "title": "Silencio",
-        "text": "El silencio se asienta como una marea. La radio ya no puede darte la prueba que buscabas.\n\nEl pasillo de servicio, con su humo de cocina, espera hacia la escalera.",
+        "text": "El silencio se asienta como una marea. La radio ya no puede darte la prueba que buscabas; el pasillo, sí abre el camino abajo.\n\nAl fondo del pasillo de servicio espera la escalera de los criados, que baja a la cocina de la planta uno.",
         "pageOptions": [
           {
-            "optionText": "Caminas por el pasillo de servicio hacia la escalera, contando el compás de tus propios pasos lentos.",
+            "optionText": "Avanzas por el pasillo hacia la escalera de los criados, contando tus propios pasos para no romper el silencio.",
             "optionLink": "spread-005"
           },
           {
-            "optionText": "Esperas a que el arrastre de la cocina se reanude antes de moverte, para que cubra el ruido de la madera.",
+            "optionText": "Esperas a que el arrastre de la cocina se reanude para cubrir el ruido de la madera, y entonces te mueves.",
             "optionLink": "spread-005"
           }
         ]
@@ -249,11 +249,11 @@
       "leftPage": {
         "id": "spread-005-left",
         "pageNumber": 17,
-        "text": "El pasillo de servicio aprieta entre paredes de madera. El humo se cuela por las rendijas y marea los ojos. Al fondo, la criatura arrastra un saco que patalea. Los fósforos de tu bolsillo pesan como una idea.",
+        "text": "El pasillo de servicio de la planta dos aprieta entre paredes de madera; el humo marea los ojos. Al fondo, junto a la escalera de los criados, una criatura arrastra un saco que patalea.",
         "illustration": {
           "name": "pasillo-servicio-humo.jpg",
           "size": "large",
-          "description": "El pasillo de servicio, estrecho y con las paredes de madera podrida, se llena de humo gris que entra por las rendijas. Al fondo, de espaldas, una criatura arrastra un saco que aún patalea; sus giros de cabeza marcan el compás que no debes romper. Los fósforos de tu bolsillo podrían cubrir tu avance con esa misma humareda."
+          "description": "El pasillo de servicio de la planta dos, estrecho y con paredes de madera podrida, se llena de humo gris que entra por las rendijas. Junto a la escalera de los criados, de espaldas, una criatura arrastra un saco que todavía patalea; sus giros de cabeza marcan el compás que no debes romper. Los fósforos de tu bolsillo podrían cubrir tu avance con esa misma humareda."
         },
         "pageOptions": []
       },
@@ -261,14 +261,14 @@
         "id": "spread-005-right",
         "pageNumber": 18,
         "title": "El Pasillo de Servicio",
-        "text": "La criatura arrastra el saco sin mirar atrás. El humo del pasillo tiembla con cada farola de gas.\n\nUna cortina de humo cubriría tu avance; el compás de sus pasos marca el instante exacto.",
+        "text": "Solo te separan de la escalera de los criados unos metros y la criatura de espaldas. La humareda puede cubrir tus pasos.\n\nEl humo tiembla con cada farola de gas. El compás de sus pisadas marca el instante exacto.",
         "pageOptions": [
           {
-            "optionText": "Enciendes los fósforos y los lanzas al pasillo para alzar una cortina de humo que empuje a la criatura hacia el otro lado.",
+            "optionText": "Enciendes los fósforos y los lanzas hacia el pasillo: la humareda empuja a la criatura lejos de la escalera de los criados.",
             "optionLink": "spread-006"
           },
           {
-            "optionText": "Esperas el compás de los pasos y cruzas el pasillo en silencio cuando la criatura dobla la esquina.",
+            "optionText": "Esperas el compás de los pasos y deslizas por la escalera en silencio cuando la criatura dobla la esquina.",
             "optionLink": "spread-005b"
           }
         ]
@@ -280,21 +280,21 @@
       "leftPage": {
         "id": "spread-005b-left",
         "pageNumber": 19,
-        "text": "Cuentas los pasos: tres, cuatro... cuando la criatura gira la esquina, te deslizas pegado a la pared.\n\nLa madera del suelo gime bajo tu peso justo entre dos pisadas del arrastre. Te quedas de piedra.\n\nLa criatura sigue hacia la cocina y el pasillo queda vacío hasta la escalera de los criados.\n\nEl humo se asienta a tu espalda; solo queda bajar con el compás aprendido.",
+        "text": "Cuentas los pasos: tres, cuatro... cuando la criatura gira la esquina, te deslizas hasta la boca de la escalera de los criados.\n\nLa madera del suelo gime bajo tu peso justo entre dos pisadas del arrastre. Te quedas de piedra un instante.\n\nLa criatura sigue hacia la cocina y el pasillo queda vacío hasta la escalera de los criados, tu bajada hacia la planta uno.\n\nBajas con la mano en la pared como guía. Cada peldaño de la escalera de los criados suena distinto; eliges el que calla.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-005b-right",
         "pageNumber": 20,
         "title": "En Silencio",
-        "text": "El pasillo queda en silencio tras la esquina donde dobló la criatura. Solo restan unos metros hasta la escalera.\n\nEl humo se asienta a tu espalda; cada peldaño de servicio es un nuevo envite.",
+        "text": "El pasillo de la planta dos queda a tu espalda; la escalera de los criados baja directa a la cocina de la planta uno.\n\nEl humo se asienta arriba. Cada peldaño del descenso es un nuevo envite contra la madera que cruje.",
         "pageOptions": [
           {
-            "optionText": "Pasas por la escalera de los criados y bajas un piso sin encender la linterna, tanteando cada peldaño.",
+            "optionText": "Bajas por la escalera de los criados cargando cada peldaño antes de pisarlo, para no delatarte.",
             "optionLink": "spread-006"
           },
           {
-            "optionText": "Avanzas a tientas con la mano en la pared como guía, probando cada escalón antes de cargarlo con tu peso.",
+            "optionText": "Pruebas el peso de cada escalón con la punta del pie y cargas el cuerpo solo cuando el peldaño aguanta.",
             "optionLink": "spread-006"
           }
         ]
@@ -306,11 +306,11 @@
       "leftPage": {
         "id": "spread-006-left",
         "pageNumber": 21,
-        "text": "La cocina del hotel apesta a grasa rancia y a sal. La puerta de servicio está cerrada con una cerradura gorda y oxidada. Sobre la mesa, una barra de hierro y un cuchillo sin mango.",
+        "text": "La escalera de los criados te deja en la cocina de la planta uno: grasa rancia y sal en el aire. La puerta de servicio que baja al almacén está cerrada con una cerradura gorda y oxidada.",
         "illustration": {
           "name": "cocina-hotel-puerta-servicio.jpg",
           "size": "large",
-          "description": "En la cocina del hotel, la grasa rancia tiñe las mesas de estaño y sobre la fuente descansan un cuchillo sin mango y una barra de hierro. La puerta de servicio que baja a la siguiente planta está cerrada con una cerradura gorda y oxidada, demasiado fuerte para forzarla en silencio; cerca, el cajón de los útiles apenas está entornado."
+          "description": "En la cocina de la planta uno, la grasa rancia tiñe las mesas de estaño y sobre la fuente descansan un cuchillo sin mango y una barra de hierro. La puerta de servicio que baja hacia el almacén está cerrada con una cerradura gorda y oxidada, demasiado fuerte para forzarla en silencio. Cerca, el cajón de los útiles apenas está entornado."
         },
         "pageOptions": []
       },
@@ -318,18 +318,18 @@
         "id": "spread-006-right",
         "pageNumber": 22,
         "title": "La Cocina",
-        "text": "La cocina hiede a grasa y la cerradura oxidada separa tu salida. Detrás, en el pasillo, el arrastre húmedo ya se acerca y obliga a decidir.",
+        "text": "La cocina de la planta uno guarda la puerta de servicio hacia el almacén; detrás, en la escalera, el arrastre vuelve a acercarse. Decide antes de que llegue.",
         "pageOptions": [
           {
-            "optionText": "Rebusca la llave en el cajón de los útiles: esa cerradura gorda exige su llave exacta, no la fuerza bruta.",
+            "optionText": "Revisas el cajón de los útiles: esa cerradura gorda exige su llave exacta, no la fuerza bruta.",
             "optionLink": "spread-007"
           },
           {
-            "optionText": "Encaja la barra de hierro y fuerzas la cerradura; el ruido puede delatar tu posición a la planta baja.",
+            "optionText": "Encajas la barra de hierro en la cerradura y fuerzas; el ruido puede delatar tu posición.",
             "optionLink": "spread-006b"
           },
           {
-            "optionText": "Embistes la puerta con el hombro para derribarla de un solo golpe y no perder más tiempo.",
+            "optionText": "Embistes la puerta con el hombro para derribarla de un solo golpe, sin esperar más.",
             "optionLink": "gameover-003"
           }
         ]
@@ -341,11 +341,11 @@
       "leftPage": {
         "id": "spread-006b-left",
         "pageNumber": 23,
-        "text": "La barra chirría contra el metal; un chasquido seco. La cerradura cede, pero el eco sube por la escalera vacía y algo responde desde abajo con un gruñido húmedo.",
+        "text": "La barra chirría contra el metal y la cerradura cede con un chasquido seco. La puerta de servicio abre al descansillo que baja al almacén de la planta uno; el eco sube y algo responde desde abajo.",
         "illustration": {
           "name": "cerradura-puerta-servicio.jpg",
           "size": "large",
-          "description": "Primer plano de la cerradura de la puerta de servicio: el metal, verde y cuarteado, ha recibido los arañazos recientes de una palanca que quedó marcada en la madera. Alrededor, marcas de chispas y surcos quemados delatan el forcejo. El ojo de la cerradura parece exigir su llave exacta antes que más fuerza destructiva."
+          "description": "Primer plano de la cerradura de la puerta de servicio de la cocina, planta uno: el metal, verde y cuarteado, muestra arañazos recientes de una palanca que quedó marcada en la madera. Alrededor, marcas de chispas del forcejo. Más allá, la puerta entreabierta deja ver un descansillo que baja hacia el almacén; el ojo de la cerradura pide su llave, no más fuerza."
         },
         "pageOptions": []
       },
@@ -353,14 +353,14 @@
         "id": "spread-006b-right",
         "pageNumber": 24,
         "title": "Cerradura",
-        "text": "La cerradura cede con un chasquido y la puerta de servicio se abre a la oscuridad del descenso.\n\nEl gruñido de abajo marca el compás: bajar ahora o esperar el instante exacto.",
+        "text": "La puerta de servicio cede; detrás, el descansillo baja hacia el almacén de la planta uno. El gruñido de abajo marca el compás.\n\nBajar ahora o esperar el instante exacto: el descansillo queda en penumbra y la planta baja, aún lejos.",
         "pageOptions": [
           {
-            "optionText": "Bajas por la escalera de servicio ahora que la puerta está abierta, antes de que el gruñido llegue.",
+            "optionText": "Bajas al almacén por el descansillo de servicio antes de que el gruñido suba.",
             "optionLink": "spread-007"
           },
           {
-            "optionText": "Esperas tras la puerta entreabierta a que dejen de escuchar antes de bajar.",
+            "optionText": "Esperas tras la puerta entreabierta a que el silencio confirme el camino antes de bajar.",
             "optionLink": "spread-007"
           }
         ]
@@ -372,11 +372,11 @@
       "leftPage": {
         "id": "spread-007-left",
         "pageNumber": 25,
-        "text": "El almacén del piso bajo guarda sombra y polvo: cajas apiladas, un maniquí sin cabeza, botellas vacías. Un olor a humo sube desde el vestíbulo junto al hueco de la escalera principal.",
+        "text": "El descansillo de servicio desemboca en el almacén de la planta uno: sombra, polvo, cajas apiladas y un maniquí sin cabeza. Un olor a humo sube desde el vestíbulo junto al hueco de la escalera principal.",
         "illustration": {
           "name": "almacen-trastos-penumbra.jpg",
           "size": "large",
-          "description": "El almacén del piso bajo es un mar de sombra y polvo: cajas apiladas hasta el techo, un maniquí sin cabeza en la esquina y estanterías de botellas vacías. Entre dos cajas asoma un rollo de papel enrollado que parece un plano, quizá del propio edificio y de sus salidas de servicio."
+          "description": "El almacén de la planta uno es un mar de sombra y polvo: cajas apiladas hasta el techo, un maniquí sin cabeza en la esquina y estanterías de botellas vacías. Entre dos cajas asoma un rollo de papel enrollado: un plano del hotel, quizá, con sus salidas de servicio marcadas. En la pared del fondo, el hueco de la escalera principal baja hacia el vestíbulo."
         },
         "pageOptions": []
       },
@@ -384,14 +384,14 @@
         "id": "spread-007-right",
         "pageNumber": 26,
         "title": "El Almacén",
-        "text": "Entre cajas y botellas, el polvo del almacén guarda secretos útiles; un plano ahorra tiempo y vida.\n\nLa escalera, en cambio, está a solo unos pasos si decides no detenerte.",
+        "text": "El almacén de la planta uno da a la escalera principal, que desciende al vestíbulo. Un plano ahorra tiempo y vida.\n\nEl polvo del almacén guarda secretos útiles; la escalera, en cambio, está a solo unos pasos.",
         "pageOptions": [
           {
-            "optionText": "Examinas el almacén y, entre los trastos, encuentras un plano del hotel con las salidas de servicio marcadas: saber dónde pisar te ahorra tiempo y vidas.",
+            "optionText": "Examinas el almacén y encuentras un plano del hotel con las salidas de servicio: saber dónde pisar te ahorra vidas.",
             "optionLink": "spread-008"
           },
           {
-            "optionText": "Cruzas el almacén directo a la escalera para no perder un segundo en detenerte.",
+            "optionText": "Cruzas el almacén directo a la escalera principal para no perder un segundo en detenerte.",
             "optionLink": "spread-007b"
           }
         ]
@@ -403,14 +403,14 @@
       "leftPage": {
         "id": "spread-007b-left",
         "pageNumber": 27,
-        "text": "Atraviesas el almacén sin mirar nada, con la prisa pegada a la espalda.\n\nEn la escalera principal, el olor a humo y a sal se espesa. Las luces de gas chisporrotean como animalillos heridos.\n\nY más abajo, en el vestíbulo, una sombra larga cruza el mosaico de la recepción.\n\nLa noche cuelga de los barrotes y la sal empapa el aire del descenso.",
+        "text": "Atraviesas el almacén sin mirar nada más, con la prisa pegada a la espalda hacia el hueco de la escalera principal.\n\nEn la escalera principal de la planta uno, el olor a humo y a sal se espesa; las luces de gas chisporrotean como animalillos heridos.\n\nMás abajo, en el vestíbulo de la planta baja, una sombra larga cruza el mosaico de la recepción.\n\nLa noche cuelga de los barrotes de los ventanales bajos y la sal empapa el aire del descenso.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-007b-right",
         "pageNumber": 28,
         "title": "De Prisa",
-        "text": "La sombra cruza el mosaico del vestíbulo en un vaivén de farola. Bajar con cuidado es posible.\n\nEsperar en el rellano hasta que la sombra se aleje también tiene su lógica.",
+        "text": "La escalera principal baja del almacén al vestíbulo de la planta baja; la sombra cruza el mosaico en un vaivén de farola.\n\nEsperar en el rellano hasta que la sombra se aleje también tiene su lógica: esta noche, la paciencia paga.",
         "pageOptions": [
           {
             "optionText": "Te pegas a la pared y bajas con cuidado, sin perder de vista la sombra que cruza el vestíbulo.",
@@ -429,11 +429,11 @@
       "leftPage": {
         "id": "spread-008-left",
         "pageNumber": 29,
-        "text": "La caja de la escalera se hunde hacia el vestíbulo. Los barrotes de las ventanas de la planta baja dibujan rayas de luz de gas sobre el escalón. El hueco del ascensor, muerto, deja oír un goteo insistente.",
+        "text": "Bajas un tramo y te detienes en la caja de la escalera, entre la planta uno y la planta baja. Los barrotes de los ventanales dibujan rayas de luz de gas; el hueco del ascensor muerto deja caer un goteo.",
         "illustration": {
           "name": "rellano-escaleras-noche.jpg",
           "size": "large",
-          "description": "La caja de la escalera principal desciende hacia el vestíbulo: los barrotes de las ventanas de la planta baja cortan la luz de gas en rayas sobre los escalones. En el rellano, el hueco del ascensor, muerto, deja caer un goteo lento que mide el silencio de abajo, donde quizá algo espera."
+          "description": "La caja de la escalera principal desciende de la planta uno a la planta baja: los barrotes de los ventanales cortan la luz de gas en rayas sobre los escalones. En el descansillo, el hueco del ascensor de viajeros, muerto desde hace años, deja caer un goteo lento que mide el silencio de abajo. En el vestíbulo, una sombra cruza frente a la puerta acristalada."
         },
         "pageOptions": []
       },
@@ -441,14 +441,14 @@
         "id": "spread-008-right",
         "pageNumber": 30,
         "title": "La Escalera",
-        "text": "El goteo del ascensor mide el silencio de la planta baja. Escuchar antes de bajar puede revelar el compás.\n\nLa impaciencia pesa, pero el último tramo es el más expuesto.",
+        "text": "El goteo del ascensor mide la espera. Escuchar el compás de los pasos en el vestíbulo puede revelar cuándo cruzar.\n\nEl último tramo es el más expuesto; la impaciencia pesa tanto como el miedo.",
         "pageOptions": [
           {
             "optionText": "Te detienes a escuchar el compás de los pasos en la planta baja antes de bajar el último tramo.",
             "optionLink": "spread-009"
           },
           {
-            "optionText": "Bajas el último tramo decidida, casi en la oscuridad, para salir cuanto antes a la calle.",
+            "optionText": "Bajas el último tramo casi en la oscuridad para salir cuanto antes a la calle.",
             "optionLink": "spread-008b"
           }
         ]
@@ -460,21 +460,21 @@
       "leftPage": {
         "id": "spread-008b-left",
         "pageNumber": 31,
-        "text": "Bajas el último tramo de puntillas y, al llegar al vestíbulo, chocas con la puerta de la recepción, que está entornada.\n\nEl chirrido de la bisagra se hace más fuerte que tus pasos. Algo en el pasillo de la cocina enmudece de golpe.\n\nEsperas con la frente fría y el aliento cortado a que el hotel vuelva a respirar.\n\nEl mostrador de caoba está a tu espalda; la puerta de calle aguarda tras los cristales.",
+        "text": "Bajas el último tramo de puntillas y chocas con la puerta de la recepción, que está entornada. El chirrido de la bisagra suena más fuerte que tus pasos.\n\nAlgo en el pasillo de la cocina enmudece de golpe. Esperas con la frente fría y el aliento cortado a que el hotel vuelva a respirar.\n\nEstás en el vestíbulo de la planta baja: mosaico roto, mostrador de caoba y la puerta de calle tras los cristales. El letrero 'Gilman House' cuelga oscuro.\n\nEl mostrador de caoba está a tu espalda; la salida, frente a ti. La noche aguarda tras los cristales.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-008b-right",
         "pageNumber": 32,
         "title": "El Último Tramo",
-        "text": "El chirrido de la bisagra se queda flotando en la noche del vestíbulo.\n\nEl mostrador de caoba ofrece su sombra; la puerta de calle aguarda tras los cristales.",
+        "text": "El vestíbulo de la planta baja concentra las últimas salidas: la puerta principal y el pasillo hacia el callejón trasero.\n\nEl chirrido de la bisagra se queda flotando; el mostrador ofrece su sombra y la puerta, su cristal.",
         "pageOptions": [
           {
-            "optionText": "Te deslizas hacia la puerta de calle pegado a la sombra del mostrador de caoba.",
+            "optionText": "Te deslizas hacia la puerta de calle pegada a la sombra del mostrador de caoba.",
             "optionLink": "spread-009"
           },
           {
-            "optionText": "Te apoyas tras la puerta de la recepción esperando el momento justo para cruzar el vestíbulo.",
+            "optionText": "Te apoyas tras la puerta de la recepción y esperas el momento justo para cruzar el vestíbulo.",
             "optionLink": "spread-009"
           }
         ]
@@ -486,11 +486,11 @@
       "leftPage": {
         "id": "spread-009-left",
         "pageNumber": 33,
-        "text": "El vestíbulo del hotel: mosaico roto, un mostrador de caoba y, tras los cristales de la puerta, la calle negra. Las ventanas con barrotes enmarcan la noche. Un letrero cuelga oscuro: 'Gilman House'.",
+        "text": "El vestíbulo se despliega ante ti: mosaico roto, mostrador de caoba y la puerta de calle tras la que espera la noche vacía. Detrás del mostrador, el registro y llaves oxidadas; al fondo, el pasillo al callejón trasero.",
         "illustration": {
           "name": "vestibulo-puerta-calle.jpg",
           "size": "large",
-          "description": "El vestíbulo del hotel se despliega ante ti: mosaico agrietado, mostrador de caoba descascarillado y, al fondo, la puerta de calle con sus cristales tras los que la noche espera. Las ventanas con barrotes enmarcan la calle vacía y un letrero cuelga oscuro sobre la recepción: Gilman House."
+          "description": "El vestíbulo de la planta baja se despliega ante ti: mosaico agrietado, mostrador de caoba descascarillado y, al fondo, la puerta de calle con sus cristales tras los que la noche espera. Las ventanas con barrotes enmarcan la calle vacía y el letrero 'Gilman House' cuelga oscuro sobre la recepción. Una criatura patrulla en vaivén entre el mostrador y el pasillo trasero."
         },
         "pageOptions": []
       },
@@ -498,14 +498,14 @@
         "id": "spread-009-right",
         "pageNumber": 34,
         "title": "El Vestíbulo",
-        "text": "La patrulla recorre el vestíbulo con paso húmedo. Cruzar hacia la salida exige elegir el momento.\n\nEl mostrador de caoba puede ser la cobertura que necesitas para llegar a la puerta.",
+        "text": "La criatura patrulla el vestíbulo en vaivén. Cruzar hacia la salida exige elegir el instante exacto.\n\nEl mostrador de caoba puede ser la cobertura para llegar a la puerta; el pasillo trasero, la vía para desaparecer.",
         "pageOptions": [
           {
-            "optionText": "Aguardas el compás de la criatura que patrulla el vestíbulo para cruzar hacia la salida sin ser vista.",
+            "optionText": "Aguardas el compás de la criatura y cruzas hacia la salida cuando da la espalda al pasillo.",
             "optionLink": "spread-010"
           },
           {
-            "optionText": "Avanzas sigilosa por el lado del mostrador hasta la puerta de calle, ganando cobertura de los cristales.",
+            "optionText": "Avanzas sigilosa tras el mostrador hasta la puerta de calle, cubierta por la sombra de la caoba.",
             "optionLink": "spread-009b"
           }
         ]
@@ -517,21 +517,21 @@
       "leftPage": {
         "id": "spread-009b-left",
         "pageNumber": 35,
-        "text": "Te arrastras tras el mostrador de caoba. Detrás cuelgan las llaves de las habitaciones, oxidadas, y el libro de registro abierto.\n\nEn la página final, una caligrafía temblorosa lista nombres y fechas: todos del mismo día, todos apuntados como 'baja por la madrugada'.\n\nEl papel huele a sal. Arrancas la página, la guardas en la libreta y sigues hacia la puerta.\n\nEl aire de la calle se cuela por los cristales; la noche está a un paso.",
+        "text": "Te arrastras tras el mostrador de caoba. Detrás cuelgan las llaves de las habitaciones, oxidadas, y el libro de registro abierto.\n\nEn la página final, una caligrafía temblorosa lista nombres y fechas: todos del mismo día, todos 'baja por la madrugada'.\n\nEl papel huele a sal. Arrancas la página, la guardas en la libreta y miras hacia la puerta de calle.\n\nLa criatura patrulla de espaldas al mostrador; los cristales de la puerta se llenan de noche.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-009b-right",
         "pageNumber": 36,
         "title": "Detrás del Mostrador",
-        "text": "El libro de registro guarda una prueba más valiosa que el oro: nombres, fechas y el mismo 'baja por la madrugada'.\n\nLa patrulla se aleja hacia la cocina; el vestíbulo queda a tu espalda con la salida al frente.",
+        "text": "El registro guarda una prueba más valiosa que el oro: nombres, fechas y la misma 'baja por la madrugada'.\n\nLa patrulla se aleja hacia la cocina; el vestíbulo queda a tu espalda con la salida al frente.",
         "pageOptions": [
           {
             "optionText": "Cruzas el vestíbulo hacia la puerta principal cuando la patrulla se aleja hacia la cocina.",
             "optionLink": "spread-010"
           },
           {
-            "optionText": "Vas de la puerta principal a la salida de servicio trasera, comprobando que el pasillo esté vacío.",
+            "optionText": "Vas de la puerta principal al pasillo de servicio trasero, comprobando que el pasillo esté vacío.",
             "optionLink": "spread-010"
           }
         ]
@@ -543,21 +543,21 @@
       "leftPage": {
         "id": "spread-010-left",
         "pageNumber": 37,
-        "text": "El vestíbulo parece haberse rendido a la noche. Frente a ti, la puerta de la calle; a tu izquierda, el pasillo de servicio que lleva al patio trasero.\n\nAmbas salidas respiran calle y silencio. Ya no hay barrotes ni puertas clausuradas a tu alrededor: solo falta decidir qué boca de la noche usar.\n\nEl letrero del 'Gilman House' se balancea perezoso, como si el hotel cerrara los ojos contigo.\n\nLa marea salada se cuela por ambas puertas como un último aviso.",
+        "text": "El vestíbulo parece haberse rendido a la noche. Frente a ti, la puerta de la calle; a tu izquierda, el pasillo de servicio que lleva al callejón trasero.\n\nAmbas salidas respiran calle y silencio. Ya no hay barrotes ni puertas clausuradas a tu alrededor.\n\nEl letrero del Gilman House se balancea perezoso, como si el hotel cerrara los ojos contigo.\n\nLa marea salada se cuela por ambas puertas como un último aviso antes de la calle.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "spread-010-right",
         "pageNumber": 38,
         "title": "La Salida",
-        "text": "La calle principal y el callejón trasero ofrecen dos bocas de la noche. Ya no hay barrotes que te cierren el paso.\n\nEl letrero del Gilman House se balancea a tu espalda como despedida.",
+        "text": "La calle principal y el callejón trasero ofrecen dos bocas de la noche; ambas te sacan del edificio.\n\nEliges cómo salir: a la vista por la puerta principal, o desapareciendo por el pasillo trasero.",
         "pageOptions": [
           {
-            "optionText": "Empujas la puerta principal y sales a la calle principal, delante del hotel.",
+            "optionText": "Empujas la puerta principal y sales a la calle, delante del hotel.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Tomas el pasillo de servicio y sales al callejón trasero, en silencio y sin encender ninguna luz.",
+            "optionText": "Tomas el pasillo de servicio y sales al callejón trasero, en silencio y sin encender luz.",
             "optionLink": "end-002"
           }
         ]
@@ -569,11 +569,11 @@
       "leftPage": {
         "id": "end-001-left",
         "pageNumber": 39,
-        "text": "La calle ante el hotel está en sombras y destrozos: un tranvía volcado, escombros y humo quieto. No hay criaturas a la vista, pero el aire guarda su olor. Estás fuera.",
+        "text": "La calle ante el hotel está en sombras: un tranvía volcado, escombros y humo quieto. No hay criaturas a la vista, pero el aire guarda su olor. Has escapado del edificio.",
         "illustration": {
           "name": "calle-destrozos-bloqueada.jpg",
           "size": "large",
-          "description": "Frente al hotel, la calle principal es un escenario en ruinas: un tranvía volcado cruza la vía, escombros de un incendio humean bajo la niebla y las farolas rotas dejan la vía a oscuras. No se ve ninguna criatura, solo humo quieto y el silencio de una ciudad que ha dejado de respirar."
+          "description": "Frente al hotel, la calle principal es un escenario en ruinas: un tranvía volcado cruza la vía, escombros de un incendio humean bajo la niebla y las farolas rotas dejan la vía a oscuras. No se ve ninguna criatura, solo humo quieto y el silencio de una ciudad que ha dejado de respirar. Estás fuera del edificio, con la libreta llena de pistas."
         },
         "pageOptions": []
       },
@@ -581,7 +581,7 @@
         "id": "end-001-right",
         "pageNumber": 40,
         "title": "Fin: La Calle",
-        "text": "",
+        "text": "Fin. La noche no ha terminado, pero el Gilman House queda a tu espalda. Guardas la libreta: todavía hay una historia que escribir.",
         "pageOptions": []
       },
       "type": "ending"
@@ -591,11 +591,11 @@
       "leftPage": {
         "id": "end-002-left",
         "pageNumber": 41,
-        "text": "El callejón trasero del hotel se pierde en la oscuridad. Charcos de agua de mar, un gato que huye y farolas apagadas. Cierras la puerta de servicio sin ruido; la noche se traga el edificio. Eres una sombra más.",
+        "text": "El callejón trasero se pierde en la oscuridad: charcos de agua de mar, un gato que huye y farolas apagadas. Cierras la puerta de servicio sin ruido; la noche se traga el hotel y te convierte en sombra.",
         "illustration": {
           "name": "callejon-trasero-noche.jpg",
           "size": "large",
-          "description": "El callejón trasero del hotel se estira entre muros de ladrillo: charcos de agua de mar que reflejan nada, un gato que cruza junto a las farolas apagadas y la puerta de servicio que acabas de cerrar a tu espalda. La noche se traga el edificio entero y te convierte en una sombra más."
+          "description": "El callejón trasero del hotel se estira entre muros de ladrillo: charcos de agua de mar que reflejan nada, un gato que cruza junto a las farolas apagadas y la puerta de servicio que acabas de cerrar. La noche se traga el edificio entero y te convierte en una sombra más. La calle principal, al fondo, sigue bloqueada por escombros."
         },
         "pageOptions": []
       },
@@ -603,7 +603,7 @@
         "id": "end-002-right",
         "pageNumber": 42,
         "title": "Fin: El Callejón",
-        "text": "",
+        "text": "Fin. Has salido por la puerta de servicio, invisible para la noche. La ciudad duerme herida, y tú ya no eres la misma reportera que entró.",
         "pageOptions": []
       },
       "type": "ending"
@@ -613,11 +613,11 @@
       "leftPage": {
         "id": "gameover-001-left",
         "pageNumber": 43,
-        "text": "Los pasos húmedos se detienen junto a la cama. Sus ojos sin párpados barren la penumbra; una mano escamosa te cierra el tobillo y te arrastra hasta el pasillo.",
+        "text": "Los pasos se detienen junto a la cama. Una mano escamosa te cierra el tobillo y te arrastra hacia el pasillo del ático mientras gritas.",
         "illustration": {
           "name": "reporter-trapped-under-bed-cenital-view.png",
           "size": "large",
-          "description": "Vista cenital de la habitación del ático: bajo la cama, tu cuerpo encogido convierte la ropa de cama en un refugio visible. A un paso, la criatura agachada rastrea el suelo con una mano escamosa y sus ojos sin párpados recorren la penumbra hacia ti, palmo a palmo."
+          "description": "Vista cenital de la habitación del ático: bajo la cama, tu cuerpo encogido convierte la ropa de cama en un refugio visible. A un paso, la criatura agachada rastrea el suelo con una mano escamosa y sus ojos sin párpados recorren la penumbra hacia ti, palmo a palmo. No hay salida tras el escondite: la ventana a la cornisa quedó atrás, junto a la puerta."
         },
         "pageOptions": []
       },
@@ -640,7 +640,7 @@
       "leftPage": {
         "id": "gameover-002-left",
         "pageNumber": 45,
-        "text": "Cruzas el descansillo en cinco zancadas; la criatura gira la cabeza como un parpadeo.\n\nSus manos te atrapan por la espalda y te levantan del suelo; la piel te quema con el frío del mar.\n\nPataleas, pero el brazo de la criatura es un bloque de marea que no cede.\n\nTe arrastra hacia la escalera de arriba, donde la noche del hotel se traga tu grito.",
+        "text": "Cruzas el descansillo en cinco zancadas; la criatura gira la cabeza como un parpadeo.\n\nSus manos te atrapan por la espalda y te levantan del suelo; la piel te quema con el frío del mar.\n\nPataleas, pero el brazo de la criatura es un bloque de marea que no cede.\n\nTe arrastra hacia la escalera de arriba, donde el hotel se traga tu grito.",
         "pageOptions": []
       },
       "rightPage": {
@@ -662,11 +662,11 @@
       "leftPage": {
         "id": "gameover-003-left",
         "pageNumber": 47,
-        "text": "La puerta salta de la bisagra. Al otro lado, tres criaturas esperaban. Antes de que puedas gritar, una red húmeda te envuelve y te arrastran por la escalera hacia la planta baja.",
+        "text": "La puerta salta de la bisagra. Al otro lado, varias criaturas esperaban; una red húmeda te envuelve y te arrastran hacia la planta baja.",
         "illustration": {
           "name": "gameover-puerta-captura.jpg",
           "size": "large",
-          "description": "La puerta de servicio ha saltado de su marco y estás arrodillada en el pasillo de la planta baja: tres criaturas escamosas te rodean en círculo mientras una red húmeda ya envuelve tus muñecas. Sus rostros sin boca se inclinan sobre ti y los dedos de marea cierran el cerco sin dejarte hueco."
+          "description": "La puerta de servicio de la cocina ha saltado de su marco y estás arrodillada en el pasillo de la planta uno: tres criaturas escamosas te rodean en círculo mientras una red húmeda envuelve tus muñecas. Sus rostros sin boca se inclinan sobre ti y los dedos de marea cierran el cerco. La cerradura exigía su llave; la fuerza bruta trajo a toda la patrulla."
         },
         "pageOptions": []
       },
