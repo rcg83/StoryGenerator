@@ -11,8 +11,8 @@ Cada spread contiene **2 páginas**:
 
 | Página | Contenido | Opciones |
 |--------|-----------|----------|
-| **leftPage** | Visual + Narrativa: imagen (`illustration`, si aplica) con su descripción + texto de la escena | **NUNCA** |
-| **rightPage** | Decisiones: elecciones (`pageOptions`) + párrafos de contexto que completan las 4 zonas | SÍ |
+| **leftPage** | Narrativa: texto de la escena. En gameovers y finales es **solo texto** (nunca imagen) | **NUNCA** |
+| **rightPage** | Decisiones: elecciones (`pageOptions`) + párrafos de contexto que completan las 4 zonas. En gameovers y finales, imagen `full` + "Reiniciar" | SÍ |
 
 ### 🔢 Regla de las 4 Zonas
 Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un número fijo de zonas:
@@ -40,7 +40,14 @@ Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un 
 * Opcionalmente, 1 imagen `small` (1 zona) puede sustituir a uno de esos párrafos.
 * `size` default en rightPage: `small`. La rightPage **no** tiene `text` vacío obligatorio: su `text` contiene los párrafos de contexto.
 
-**Gameover y finales (exentos de la regla de opciones):** con imagen → 1 párrafo de máx. 40 palabras; sin imagen → hasta 4 párrafos. La opción "Reiniciar" es control de UI, no computa como zona.
+**Gameover y finales (exentos de la regla de opciones):** layout canónico de página completa de imagen:
+
+| Página | Contenido |
+|--------|-----------|
+| **leftPage** | **Solo texto**: exactamente **4 párrafos** de máx. 40 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante). Nunca `illustration`, nunca opciones |
+| **rightPage** | **Imagen `full`** (4 zonas, página entera), `text` `""` y `title` opcional. En `gameover-*`: **una sola** opción "Reiniciar" → `startPageId` (control de UI, no computa como zona). En `end-*`: **ninguna** opción (el front gestiona el reinicio del capítulo) |
+
+Fallback: si el catálogo no tiene imagen para ese gameover/final, se omite `illustration` y la `rightPage` queda con `text` `""` + `title` (+ "Reiniciar" en los gameovers).
 
 ### Estructura de Archivos
 ```

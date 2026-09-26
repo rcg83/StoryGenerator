@@ -33,8 +33,8 @@ Una entrada por imagen, indicando su **sentido** (qué muestra) y su **lugar** (
 ## Imágenes de Página
 
 ### reporter-trapped-under-bed-cenital-view.png
-- **Sentido:** Vista cenital de la habitación: Elena oculta bajo la cama mientras el Profundo rastrea la oscuridad.
-- **Lugar:** `gameover-001` → `leftPage.illustration` (Game Over por esconderse bajo la cama).
+- **Sentido:** Vista cenital de la habitación del ático: Elena oculta bajo la cama mientras la criatura rastrea la oscuridad con sus ojos sin párpados.
+- **Lugar:** `gameover-001` → `rightPage.illustration` (Game Over por esconderse bajo la cama; imagen `full` de página entera).
 ```
 
 ---
@@ -42,7 +42,7 @@ Una entrada por imagen, indicando su **sentido** (qué muestra) y su **lugar** (
 ## 🔄 Uso en el Pipeline
 
 1. **PASO 1 (LoreMaster):** Leer el `.md` y registrar el catálogo de imágenes disponibles de la historia.
-2. **PASO 2 (PagePlotter):** Al vincular una imagen a un spread, elegir únicamente entre los nombres listados en el `.md` y asignar su `size` según la zona que ocupará (ver Regla de las 4 Zonas en `story-guide.md`).
+2. **PASO 2 (PagePlotter):** Al vincular una imagen a un spread, elegir únicamente entre los nombres listados en el `.md` y asignar su `size` según la zona que ocupará (ver Regla de las 4 Zonas en `story-guide.md`). En spreads de gameover y finales, la imagen se asigna a la `rightPage` con `size: "full"`.
 3. **PASO 4 (PageAuditor):** Validar que `illustration.name` esté listado en el `.md`, que `illustration.description` exista (un único párrafo de máximo 100 palabras) y que `illustration.size` sea uno de `small`/`medium`/`large`/`full`. Si no se cumple, eliminar el campo `illustration` de la página (no dejar referencias rotas).
 
 ---
@@ -51,6 +51,7 @@ Una entrada por imagen, indicando su **sentido** (qué muestra) y su **lugar** (
 
 * Solo se referencia una imagen si **está listada en el `.md`**.
 * La imagen se referencia vía el campo **`illustration`** como objeto `{ name, size, description }`: `name` es el archivo listado en el catálogo, `size` es opcional (`small` = 1 zona, `medium` = 2, `large` = 3, `full` = 4; default `large` en `leftPage`, `small` en `rightPage`) y `description` (un único párrafo de máximo **100 palabras** que describe la escena e incluye pistas para la decisión) es el contenido alternativo por accesibilidad o cuando la imagen no está disponible. El front puede mostrar la imagen o la descripción.
+* **Gameover y finales:** la imagen va **siempre en la `rightPage`** con `size: "full"` (página entera, 4 zonas) y la `leftPage` queda **solo con texto**. El `Lugar` de la entrada del catálogo se anota como `rightPage.illustration`.
 * Si ninguna imagen del catálogo encaja naturalmente con la escena, **omitir el campo `illustration`** — no forzar una imagen que no represente fielmente la narrativa.
 * Al añadir una imagen nueva a la historia, **registrarla en el `.md`** con su entrada de sentido y lugar.
 * El archivo físico de la imagen puede estar **pendiente de generación**: basta con que esté listado en el `.md` para poder referenciarlo en la historia.

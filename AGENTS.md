@@ -30,6 +30,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 4. **Vincular con Página Siguiente**: Cada opción debe apuntar a una `optionLink` que corresponda al ID de la página destino dentro del spread o en el spread siguiente.
 5. **Adyacencia Física**: Cada `optionLink` debe conectar dos espacios adyacentes según el escenario del PASO 1 (misma planta por puerta o cornisa, o planta contigua por escalera/montacargas). Se descarta toda transición físicamente imposible.
 6. **Vinculación de Imagen (Opcional)**: Revisar el catálogo de imágenes del PASO 1 (`[story-name]/context/image-names.md`). Si alguna imagen del catálogo encaja naturalmente con la escena o momento de la página, asignarla al campo `illustration` como objeto con `name`, `description` y `size` (opcional; default `large` en `leftPage`, `small` en `rightPage`). Si ninguna encaja bien, omitir el campo — no forzar una imagen que no represente fielmente la narrativa.
+   * **Excepción obligatoria (gameover y finales)**: en los spreads de muerte (`gameover-*`) y de final (`end-*`) la imagen va **siempre en la `rightPage`** con `size: "full"` (página entera de imagen, 4 zonas), y la `leftPage` queda **solo con texto**, nunca con `illustration`.
 
 ---
 
@@ -53,8 +54,8 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
    * **rightPage (path selector de decisiones)**: cada opción ocupa 1 zona; el resto se rellena con párrafos de contexto (máx. 40 palabras):
      - 2 opciones → 2 párrafos + 2 opciones · 3 opciones → 1 párrafo + 3 opciones · 4 opciones → 0 párrafos + 4 opciones.
      - Opcionalmente puede incluir 1 imagen `small` (1 zona) en lugar de uno de esos párrafos.
-   * **Gameover y finales (exentos de la regla de opciones)**: con imagen → 1 párrafo de máx. 40 palabras; sin imagen → hasta 4 párrafos. La opción "Reiniciar" es control de UI, no computa como zona.
-   * La `rightPage` **no** está limitada a `text` vacío: su `text` contiene los párrafos de contexto que completan las 4 zonas.
+   * **Gameover y finales (exentos de la regla de opciones)**: la `leftPage` es **solo texto** (nunca `illustration`, nunca opciones) con **exactamente 4 párrafos** de máx. 40 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante). La `rightPage` lleva la imagen `full` (4 zonas, página entera) y `text` vacío, con `title` opcional; en los spreads de muerte (`gameover-*`) añade una **única** opción "Reiniciar" (control de UI, no computa como zona) que enlaza al `startPageId`, y en los finales (`end-*`) se queda **sin opciones** (el front gestiona el reinicio del capítulo). Fallback: si el catálogo no tiene imagen para ese gameover/final, se omite `illustration` y la `rightPage` queda con `text` vacío + `title` (+ "Reiniciar" en los gameovers).
+   * La `rightPage` **no** está limitada a `text` vacío: su `text` contiene los párrafos de contexto que completan las 4 zonas (salvo en gameover/finales, donde la imagen `full` ocupa la página entera).
 
 ---
 
@@ -68,6 +69,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 5. **Validación de Longitud Narrativa por Página (Regla de las 4 Zonas)**: Verificar que cada página suma exactamente **4 zonas** con los límites de palabras (párrafo máx. 40; opción máx. 30; `illustration.description` un único párrafo máx. 100 palabras):
    * `leftPage`: sin imagen → **4 párrafos**; con imagen según `size` — `small` → 3, `medium` → 2, `large` → 1, `full` → 0 párrafos.
    * `rightPage`: número de párrafos de contexto = 4 − número de opciones (2 opciones → 2 párrafos; 3 → 1; 4 → 0), opcionalmente sustituyendo un párrafo por 1 imagen `small`.
+   * **Gameovers y finales**: `leftPage` sin `illustration` y con **4 párrafos**; `rightPage` con `illustration.size: "full"`, `text` vacío y `title` opcional. En `gameover-*`, una sola opción "Reiniciar" → `startPageId`; en `end-*`, ninguna opción. Si el catálogo no ofrece imagen para ese spread, se omite `illustration` y la `rightPage` conserva `text` vacío + `title` (+ "Reiniciar" en los gameovers).
    * Si no se cumple, devolver la página al ScribeAgent para redacción.
 6. **Firma de Verificación**: Añadir la propiedad `"status": "verified"` en los metadatos de la página una vez comprobado que se han seguido correctamente los Pasos 1 a 3.
 
@@ -127,10 +129,10 @@ Cada spread contiene **2 páginas** con roles diferentes:
   "id": "string",
   "pageNumber": 1,
   "title": "string (opcional)",
-  "text": "string (narrativa en párrafos; en rightPage, párrafos de contexto de la regla de 4 zonas)",
+  "text": "string (narrativa en párrafos; en rightPage, párrafos de contexto de la regla de 4 zonas; vacío en gameover/finales)",
   "illustration": {
     "name": "imagen-de-pagina.jpg (opcional)",
-    "size": "small | medium | large | full (opcional; default large en leftPage, small en rightPage)",
+    "size": "small | medium | large | full (opcional; default large en leftPage, small en rightPage; full obligatorio en gameover/finales)",
     "description": "Un único párrafo de máximo 100 palabras con pistas para la decisión"
   },
   "pageOptions": [
@@ -146,8 +148,8 @@ Cada spread contiene **2 páginas** con roles diferentes:
 ```json
 {
   "id": "string",
-  "leftPage": "StoryPage (visual + narrativa - NUNCA opciones)",
-  "rightPage": "StoryPage (decisiones: opciones + párrafos de contexto que completan las 4 zonas)"
+  "leftPage": "StoryPage (narrativa - NUNCA opciones; en gameover/finales nunca illustration)",
+  "rightPage": "StoryPage (decisiones: opciones + párrafos de contexto; en gameover/finales imagen full + Reiniciar)"
 }
 ```
 
@@ -155,11 +157,11 @@ Cada spread contiene **2 páginas** con roles diferentes:
 * **Cada StoryPage suma exactamente 4 zonas.** 1 zona = 1 párrafo (máx. 40 palabras) o 1 opción (máx. 30 palabras) o 1 imagen `small`. Una imagen `medium`/`large`/`full` ocupa 2/3/4 zonas.
 * **leftPage.pageOptions**: Siempre `[]` (vacío)
 * **leftPage.text**: La narrativa vive en la leftPage. Sin imagen: **4 párrafos** de máx. 40 palabras. Con imagen según `size`: `small` → 3 párrafos, `medium` → 2, `large` → 1, `full` → 0
-* **leftPage.illustration**: Objeto `{ "name", "description", "size" }`. `name`: archivo listado en `image-names.md`. `description`: **un único párrafo de máximo 100 palabras** que describe la imagen e incluye pistas para la decisión (contenido alternativo por accesibilidad / imagen ausente). `size`: opcional, default `large` en leftPage y `small` en rightPage
+* **leftPage.illustration**: Objeto `{ "name", "description", "size" }`. `name`: archivo listado en `image-names.md`. `description`: **un único párrafo de máximo 100 palabras** que describe la imagen e incluye pistas para la decisión (contenido alternativo por accesibilidad / imagen ausente). `size`: opcional, default `large` en leftPage y `small` en rightPage. En gameovers y finales la imagen **nunca** va en la `leftPage`
 * **rightPage.text**: Párrafos de contexto que completan las 4 zonas: 2 opciones → 2 párrafos; 3 opciones → 1 párrafo; 4 opciones → `""`. Opcionalmente un párrafo puede sustituirse por 1 imagen `small`
 * **rightPage.pageOptions**: 2-4 opciones con `optionLink` a siguiente spread o gameover. Cada opción debe ser **detallada y justificada** (máx. **30 palabras**): expresa qué hace el personaje y con qué intención
 * **Path selector (página de decisiones)**: Página cuyo `pageOptions` no está vacío; el jugador elige el camino a seguir
-* **Gameovers y finales (exentos)**: con imagen → 1 párrafo de máx. 40 palabras; sin imagen → hasta 4 párrafos. La opción "Reiniciar" es control de UI, no computa como zona
+* **Gameovers y finales (exentos de la regla de opciones)**: `leftPage` solo texto con **4 párrafos**; `rightPage` con la imagen `size: "full"`, `text` `""` y `title` opcional. En `gameover-*`, una única opción "Reiniciar" (control de UI, no computa como zona) que enlaza al `startPageId`; en `end-*`, ninguna opción. Si el catálogo no ofrece imagen, se omite `illustration` y la `rightPage` queda en `text` `""` + `title` (+ "Reiniciar" en los gameovers)
 
 ### CharacterData (Datos del Personaje)
 ```json

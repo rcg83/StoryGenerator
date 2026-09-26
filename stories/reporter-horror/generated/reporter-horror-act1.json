@@ -569,19 +569,19 @@
       "leftPage": {
         "id": "end-001-left",
         "pageNumber": 39,
-        "text": "La calle ante el hotel está en sombras: un tranvía volcado, escombros y humo quieto. No hay criaturas a la vista, pero el aire guarda su olor. Has escapado del edificio.",
-        "illustration": {
-          "name": "calle-destrozos-bloqueada.jpg",
-          "size": "large",
-          "description": "Frente al hotel, la calle principal es un escenario en ruinas: un tranvía volcado cruza la vía, escombros de un incendio humean bajo la niebla y las farolas rotas dejan la vía a oscuras. No se ve ninguna criatura, solo humo quieto y el silencio de una ciudad que ha dejado de respirar. Estás fuera del edificio, con la libreta llena de pistas."
-        },
+        "text": "Empujas la puerta acristalada con el hombro y la bisagra, sin un muelle, cede. El aire de la calle te golpea en la cara: salitre, humo de brasero y marea baja.\n\nEl hotel queda a tu espalda. Dentro del vestíbulo, con el letrero de Gilman House colgando sobre la recepción, se oye un crujido de madera; la puerta ya está cerrada.\n\nEn la calle principal no hay criatura a la vista: solo un tranvía volcado, escombros humeantes y farolas de gas rotas que nadie va a encender.\n\nGuardas la libreta bajo el impermeable y aprietas el paso. La noche no ha terminado, pero has salido del edificio: todavía hay una historia que escribir.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "end-001-right",
         "pageNumber": 40,
         "title": "Fin: La Calle",
-        "text": "Fin. La noche no ha terminado, pero el Gilman House queda a tu espalda. Guardas la libreta: todavía hay una historia que escribir.",
+        "text": "",
+        "illustration": {
+          "name": "calle-destrozos-bloqueada.jpg",
+          "size": "full",
+          "description": "Frente al hotel, la calle principal es un escenario en ruinas: un tranvía volcado cruza la vía, escombros de un incendio humean bajo la niebla y las farolas rotas dejan la vía a oscuras. No se ve ninguna criatura, solo humo quieto y el silencio de una ciudad que ha dejado de respirar. Estás fuera del edificio, con la libreta llena de pistas."
+        },
         "pageOptions": []
       },
       "type": "ending"
@@ -591,19 +591,19 @@
       "leftPage": {
         "id": "end-002-left",
         "pageNumber": 41,
-        "text": "El callejón trasero se pierde en la oscuridad: charcos de agua de mar, un gato que huye y farolas apagadas. Cierras la puerta de servicio sin ruido; la noche se traga el hotel y te convierte en sombra.",
-        "illustration": {
-          "name": "callejon-trasero-noche.jpg",
-          "size": "large",
-          "description": "El callejón trasero del hotel se estira entre muros de ladrillo: charcos de agua de mar que reflejan nada, un gato que cruza junto a las farolas apagadas y la puerta de servicio que acabas de cerrar. La noche se traga el edificio entero y te convierte en una sombra más. La calle principal, al fondo, sigue bloqueada por escombros."
-        },
+        "text": "Tomas el pasillo de servicio y cierras la puerta a tu espalda sin hacer ruido. El pestillo cae solo y el hotel deja de empujarte.\n\nEl callejón se estira entre muros de ladrillo: charcos de agua de mar que reflejan un cielo sin estrellas, un gato que huye de tu sombra y farolas apagadas desde años.\n\nLa puerta de servicio queda como un rectángulo negro a tu espalda. Al fondo, la calle principal sigue bloqueada por escombros y humo.\n\nAdvances sin encender luz y la noche te traga entera. Sales del edificio invisible para ella: la ciudad duerme herida y tú ya no eres la misma reportera que entró.",
         "pageOptions": []
       },
       "rightPage": {
         "id": "end-002-right",
         "pageNumber": 42,
         "title": "Fin: El Callejón",
-        "text": "Fin. Has salido por la puerta de servicio, invisible para la noche. La ciudad duerme herida, y tú ya no eres la misma reportera que entró.",
+        "text": "",
+        "illustration": {
+          "name": "callejon-trasero-noche.jpg",
+          "size": "full",
+          "description": "El callejón trasero del hotel se estira entre muros de ladrillo: charcos de agua de mar que reflejan nada, un gato que cruza junto a las farolas apagadas y la puerta de servicio que acabas de cerrar. La noche se traga el edificio entero y te convierte en una sombra más. La calle principal, al fondo, sigue bloqueada por escombros."
+        },
         "pageOptions": []
       },
       "type": "ending"
@@ -613,12 +613,7 @@
       "leftPage": {
         "id": "gameover-001-left",
         "pageNumber": 43,
-        "text": "Los pasos se detienen junto a la cama. Una mano escamosa te cierra el tobillo y te arrastra hacia el pasillo del ático mientras gritas.",
-        "illustration": {
-          "name": "reporter-trapped-under-bed-cenital-view.png",
-          "size": "large",
-          "description": "Vista cenital de la habitación del ático: bajo la cama, tu cuerpo encogido convierte la ropa de cama en un refugio visible. A un paso, la criatura agachada rastrea el suelo con una mano escamosa y sus ojos sin párpados recorren la penumbra hacia ti, palmo a palmo. No hay salida tras el escondite: la ventana a la cornisa quedó atrás, junto a la puerta."
-        },
+        "text": "Te metes bajo la ropa de cama y apagas el cuerpo hasta volverte parte del colchón. La puerta, ya sin bisagra, deja entrar el aire frío del pasillo del ático y un hedor de agua de mar.\n\nUna mano escamosa tantea el suelo a palmo del escondite. Los dedos recorren tus zapatillas, tu tobillo, y se detienen con la precisión de quien ya sabe que hay alguien debajo.\n\nEl agarre te arranca de debajo de la cama. La puerta derrumbada y el pasillo del ático son el único camino que esa mano conoce, y tu grito solo los enardece.\n\nTus dedos arañan el colchón, la alfombra, el suelo frío. Nada te frena. La ventana a la cornisa quedó atrás: la criatura ya te lleva por el pasillo y el hotel se traga tu voz.",
         "pageOptions": []
       },
       "rightPage": {
@@ -626,6 +621,11 @@
         "pageNumber": 44,
         "title": "Capturada",
         "text": "",
+        "illustration": {
+          "name": "reporter-trapped-under-bed-cenital-view.png",
+          "size": "full",
+          "description": "Vista cenital de la habitación del ático: bajo la cama, tu cuerpo encogido convierte la ropa de cama en un refugio visible. A un paso, la criatura agachada rastrea el suelo con una mano escamosa y sus ojos sin párpados recorren la penumbra hacia ti, palmo a palmo. No hay salida tras el escondite: la ventana a la cornisa quedó atrás, junto a la puerta."
+        },
         "pageOptions": [
           {
             "optionText": "Reiniciar la noche y despertar de nuevo en la habitación del ático del hotel.",
@@ -640,7 +640,7 @@
       "leftPage": {
         "id": "gameover-002-left",
         "pageNumber": 45,
-        "text": "Cruzas el descansillo en cinco zancadas; la criatura gira la cabeza como un parpadeo.\n\nSus manos te atrapan por la espalda y te levantan del suelo; la piel te quema con el frío del mar.\n\nPataleas, pero el brazo de la criatura es un bloque de marea que no cede.\n\nTe arrastra hacia la escalera de arriba, donde el hotel se traga tu grito.",
+        "text": "Bajas la escalera de servicio desde el ático y pisas el descansillo de la planta tres sin medir el ruido. Al fondo de la pared, la boca del pozo del montacargas se abre en metal oxidado.\n\nCruzas las cinco zancadas que te faltan hacia la escalera principal. La criatura gira la cabeza como un parpadeo y ya ha medido tu espalda.\n\nSus manos escamosas te atrapan por detrás y te levantan del suelo. La piel te quema con el frío del mar y huele a alga arrancada.\n\nPataleas, pero ese brazo es un bloque de marea que no cede. Te arrastra hacia la escalera de arriba, y el hotel se traga tu grito peldaño a peldaño.",
         "pageOptions": []
       },
       "rightPage": {
@@ -648,6 +648,11 @@
         "pageNumber": 46,
         "title": "Atrapada",
         "text": "",
+        "illustration": {
+          "name": "escalera-servicio-captura.jpg",
+          "size": "full",
+          "description": "En la escalera de servicio entre la planta tres y el ático, la criatura escamosa te arrastra peldaño a peldaño: sus manos aferradas a tu cintura, la boca sin labios abierta sobre tu nuca. La balaustrada de madera está rota y las fibras saltan al paso. Abajo, el descansillo del montacargas queda abierto y oscuro, y la escalera principal que te quedaba delante ya no existe para ti."
+        },
         "pageOptions": [
           {
             "optionText": "Reiniciar la noche y despertar de nuevo en la habitación del ático del hotel.",
@@ -662,12 +667,7 @@
       "leftPage": {
         "id": "gameover-003-left",
         "pageNumber": 47,
-        "text": "La puerta salta de la bisagra. Al otro lado, varias criaturas esperaban; una red húmeda te envuelve y te arrastran hacia la planta baja.",
-        "illustration": {
-          "name": "gameover-puerta-captura.jpg",
-          "size": "large",
-          "description": "La puerta de servicio de la cocina ha saltado de su marco y estás arrodillada en el pasillo de la planta uno: tres criaturas escamosas te rodean en círculo mientras una red húmeda envuelve tus muñecas. Sus rostros sin boca se inclinan sobre ti y los dedos de marea cierran el cerco. La cerradura exigía su llave; la fuerza bruta trajo a toda la patrulla."
-        },
+        "text": "Embistes la puerta de servicio de la cocina con el hombro y el marco entero cruje. La cerradura oxidada no cede: la madera, sí. El golpe resuena en la planta uno como un disparo.\n\nAntes de que caiga el último tornillo, la puerta salta de la bisagra y la hoja golpea la pared. Al otro lado no hay una sola criatura, sino un pasillo lleno de ellas, esperando.\n\nUna red húmeda te envuelve las muñecas y tira de ti hacia abajo. Tres caras sin boca se inclinan sobre las tuyas y los dedos de marea cierran el cerco.\n\nLa llave de los útiles se quedó en el cajón de la cocina, y ese cajón ya no existe para ti. Arrastrada, bajas los escalones del descansillo de servicio y la red te lleva con ella.",
         "pageOptions": []
       },
       "rightPage": {
@@ -675,6 +675,11 @@
         "pageNumber": 48,
         "title": "Emboscada",
         "text": "",
+        "illustration": {
+          "name": "gameover-puerta-captura.jpg",
+          "size": "full",
+          "description": "La puerta de servicio de la cocina ha saltado de su marco y estás arrodillada en el pasillo de la planta uno: tres criaturas escamosas te rodean en círculo mientras una red húmeda envuelve tus muñecas. Sus rostros sin boca se inclinan sobre ti y los dedos de marea cierran el cerco. La cerradura exigía su llave; la fuerza bruta trajo a toda la patrulla."
+        },
         "pageOptions": [
           {
             "optionText": "Reiniciar la noche y despertar de nuevo en la habitación del ático del hotel.",

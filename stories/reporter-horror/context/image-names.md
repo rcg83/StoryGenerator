@@ -22,7 +22,7 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 ### reporter-trapped-under-bed-cenital-view.png
 - **Sentido:** Vista cenital de la habitación del ático: Elena oculta bajo la cama mientras la criatura rastrea la oscuridad con sus ojos sin párpados.
-- **Lugar:** `gameover-001` → `leftPage.illustration` (Game Over por esconderse bajo la cama).
+- **Lugar:** `gameover-001` → `rightPage.illustration` (Game Over por esconderse bajo la cama; imagen `full` de página entera).
 
 ### acceso-cornisa-noche.jpg
 - **Sentido:** Cornisa de la fachada del ático del hotel (planta 4): Elena deslizándose por el borde de piedra hacia la ventana de la alcoba contigua, con la ciudad en sombras muy abajo.
@@ -50,7 +50,11 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 ### gameover-puerta-captura.jpg
 - **Sentido:** La criatura agarrando a Elena junto a la puerta de servicio del hotel.
-- **Lugar:** `gameover-003` → `leftPage.illustration` (Game Over por embestir la puerta a lo bruto).
+- **Lugar:** `gameover-003` → `rightPage.illustration` (Game Over por embestir la puerta a lo bruto; imagen `full` de página entera).
+
+### escalera-servicio-captura.jpg
+- **Sentido:** Escalera de servicio del hotel entre P3 y P4: la criatura escamosa arrastrando a Elena por los peldaños que crujen, con la balaustrada rota y la boca oscura del pozo del montacargas al fondo del descansillo.
+- **Lugar:** `gameover-002` → `rightPage.illustration` (Game Over por cruzar el descansillo de P3 corriendo; imagen `full` de página entera).
 
 ### almacen-trastos-penumbra.jpg
 - **Sentido:** Almacén del piso bajo del hotel en penumbra: cajas apiladas y un maniquí sin cabeza entre polvo y botellas vacías.
@@ -66,18 +70,19 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 ### calle-destrozos-bloqueada.jpg
 - **Sentido:** Calle principal ante el hotel en sombras: un tranvía volcado, escombros, humo quieto y calles bloqueadas.
-- **Lugar:** `end-001` → `leftPage.illustration` (Fin: La Calle).
+- **Lugar:** `end-001` → `rightPage.illustration` (Fin: La Calle; imagen `full` de página entera).
 
 ### callejon-trasero-noche.jpg
 - **Sentido:** Callejón trasero del hotel de noche, con charcos de agua de mar y farolas apagadas.
-- **Lugar:** `end-002` → `leftPage.illustration` (Fin: El Callejón).
+- **Lugar:** `end-002` → `rightPage.illustration` (Fin: El Callejón; imagen `full` de página entera).
 
 ---
 
 ## ✅ Reglas
 
 * Solo se referencia una imagen si **está listada en el `.md`**.
-* La imagen se referencia vía el campo **`illustration`** como objeto `{ name, description }`: `name` es el archivo listado en este catálogo y `description` (un único párrafo de máximo **100 palabras** que describe la escena e incluye pistas para la decisión) es el contenido alternativo por accesibilidad o cuando la imagen no está disponible. El front puede mostrar la imagen o la descripción.
+* La imagen se referencia vía el campo **`illustration`** como objeto `{ name, description, size }`: `name` es el archivo listado en este catálogo, `size` es opcional (`small` = 1 zona, `medium` = 2, `large` = 3, `full` = 4; default `large` en `leftPage`, `small` en `rightPage`) y `description` (un único párrafo de máximo **100 palabras** que describe la escena e incluye pistas para la decisión) es el contenido alternativo por accesibilidad o cuando la imagen no está disponible. El front puede mostrar la imagen o la descripción.
+* **Gameover y finales:** la imagen va **siempre en la `rightPage`** con `size: "full"` (página entera) y la `leftPage` queda **solo con texto**.
 * Si ninguna imagen del catálogo encaja naturalmente con la escena, **omitir el campo `illustration`** — no forzar una imagen que no represente fielmente la narrativa.
 * Al añadir una imagen nueva a la historia, **registrarla en el `.md`** con su entrada de sentido y lugar.
 * El archivo físico de la imagen puede estar **pendiente de generación**: basta con que esté listado en el `.md` para poder referenciarlo en la historia.
