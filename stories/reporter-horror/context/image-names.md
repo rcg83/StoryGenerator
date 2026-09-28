@@ -54,6 +54,10 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 ### escalera-servicio-captura.jpg
 - **Sentido:** Escalera de servicio del hotel entre P3 y P4: la criatura escamosa arrastrando a Elena por los peldaños que crujen, con la balaustrada rota y la boca oscura del pozo del montacargas al fondo del descansillo.
+- **Lugar:** No usada en esta versión (sustituida por `Elena-grabbed-by-deepone-from-behind.png` en `gameover-002`).
+
+### Elena-grabbed-by-deepone-from-behind.png
+- **Sentido:** Descansillo del montacargas en la planta tres: la criatura escamosa aferra a Elena por detrás y la levanta del suelo, a cinco zancadas de la escalera principal, con la balaustrada astillada y el cable grasiento del pozo balanceándose.
 - **Lugar:** `gameover-002` → `rightPage.illustration` (Game Over por cruzar el descansillo de P3 corriendo; imagen `full` de página entera).
 
 ### almacen-trastos-penumbra.jpg
@@ -88,3 +92,4 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 * El archivo físico de la imagen puede estar **pendiente de generación**: basta con que esté listado en el `.md` para poder referenciarlo en la historia.
 * La portada del libro (`cover.coverImage`) se documenta en la sección **Portada / Magazine Cover** del `.md`.
 * **Convención de nombres:** descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-trasero-noche.jpg`, `vestibulo-puerta-calle.jpg`). Los nombres ya existentes en el catálogo se respetan tal cual.
+* **Nombre exacto del archivo:** `illustration.name` debe coincidir **carácter a carácter** con el nombre del archivo físico en el front, incluidas erratas y extensión (`Elena-grabbed-by-deepone-from-behind.png` se llama así en el front, con `behing`; corregir la errata rompe la carga de la imagen). Al documentar una imagen, copiar el nombre del archivo real, no escribirlo de memoria.
