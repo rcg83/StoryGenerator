@@ -34,7 +34,7 @@ Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un 
 | Imagen `medium` | 2 | — |
 | Imagen `large` | 3 | — |
 | Imagen `full` | 4 (página entera, sin texto) | — |
-| `illustration.description` | no ocupa zona (accesibilidad) | 1 párrafo, máx. **100 palabras** |
+| `illustration.description` | no ocupa zona (accesibilidad) | 1 párrafo en **tercera persona**, máx. **60-70 palabras**, descripción pura de la imagen (sus elementos permiten deducir la decisión, no se dan como pistas) |
 
 **leftPage (narrativa, nunca opciones):**
 * Sin imagen → **4 párrafos** de máx. 40 palabras.
