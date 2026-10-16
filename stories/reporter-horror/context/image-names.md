@@ -2,7 +2,7 @@
 
 Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada entrada indica el **sentido** de la imagen (qué muestra) y su **lugar** (dónde se usa dentro de la historia). Solo se referencian en la historia imágenes listadas aquí.
 
-**Nota:** Este catálogo es para el **Act I** (escapada vertical del hotel de 5 plantas, plantas 0-4). Las ventanas de las plantas 0, 1 y 2 tienen barrotes; las de las plantas 3 y 4 no.
+**Nota:** Este catálogo corresponde a los **capítulos de la escapada vertical del hotel de 5 plantas (plantas 0-4)**, que arranca en el Capítulo 1. Las ventanas de las plantas 0, 1 y 2 tienen barrotes; las de las plantas 3 y 4 no.
 
 ---
 

@@ -6,6 +6,15 @@ Documento genérico de referencia válido para todas las historias. Cada histori
 
 ## ⚙️ Estructura del Libro Interactivo
 
+### Unidad de Progresión: Capítulo (Chapter)
+Cada historia se divide en **capítulos** (dominio `Chapter`). Un capítulo es un **archivo JSON autocontenido** en `stories/[story-name]/generated/[story-name]-chapter-NN.json` con su propio `id`, `startPageId`, `spreadIds` y `cover` opcional.
+
+* **Tamaño fijo:** cada capítulo contiene **exactamente entre 6 y 8 spreads en total**, contando spreads de decisión, gameovers y finales. Ni más ni menos.
+* **Composición:** 4-6 spreads de decisión + 1-2 gameovers + **exactamente 1 spread `end-*`** de cierre.
+* **Autocontenido:** todos los `optionLink` viven dentro del capítulo; los `gameover-*` reinician el capítulo ("Reiniciar" → `startPageId`); el `end-*` cierra el capítulo y el front desbloquea el siguiente.
+* **Título:** todas las `rightPage` del capítulo (decisión, gameovers y finales) llevan `title` = **título del capítulo**, idéntico en todo el capítulo; `leftPage.title` vacío. Prohibidos los títulos por spread.
+* **Límite:** si el contenido no cabe en 8 spreads, se abre un capítulo nuevo (`-chapter-NN+1`).
+
 ### Unidad Básica: StorySpread
 Cada spread contiene **2 páginas**:
 
@@ -45,7 +54,7 @@ Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un 
 | Página | Contenido |
 |--------|-----------|
 | **leftPage** | **Solo texto**: exactamente **4 párrafos** de máx. 40 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante). Nunca `illustration`, nunca opciones |
-| **rightPage** | **Imagen `full`** (4 zonas, página entera), `text` `""` y `title` opcional. En `gameover-*`: **una sola** opción "Reiniciar" → `startPageId` (control de UI, no computa como zona). En `end-*`: **ninguna** opción (el front gestiona el reinicio del capítulo) |
+| **rightPage** | **Imagen `full`** (4 zonas, página entera), `text` `""` y `title` = título del capítulo. En `gameover-*`: **una sola** opción "Reiniciar" → `startPageId` (control de UI, no computa como zona). En `end-*`: **ninguna** opción (el front gestiona el reinicio del capítulo) |
 
 Fallback: si el catálogo no tiene imagen para ese gameover/final, se omite `illustration` y la `rightPage` queda con `text` `""` + `title` (+ "Reiniciar" en los gameovers).
 
@@ -58,8 +67,12 @@ stories/[story-name]/
 │   ├── timeline.md                    (Cronología y fases horarias)
 │   └── image-names.md                 (Catálogo de imágenes)
 └── generated/
-    └── [story-name]-act1.json         (Historia generada: spreads y spreadIds)
+    ├── [story-name]-chapter-01.json   (Capítulo 1: 6-8 spreads autocontenidos)
+    ├── [story-name]-chapter-02.json   (Capítulo 2: 6-8 spreads autocontenidos)
+    └── ...
 ```
+
+Cada archivo `chapter-NN.json` es un capítulo del dominio `Chapter` (ver `schemas/Chapter.ts`): sus `optionLink` nunca salen del propio archivo y su spread `end-*` es el único cierre válido del capítulo.
 
 ---
 
@@ -78,11 +91,12 @@ stories/[story-name]/
 
 ---
 
-## 🎯 Savepoint (Hito de Convergencia)
+## 🎯 Cierre de Capítulo (Hito de Convergencia)
 
-* **Ubicación:** punto de la historia donde convergen todas las rutas correctas.
-* **Páginas:** un tramo de spreads de decisión con ramificación letal.
-* **Narrativa:** cada decisión incorrecta lleva a muerte directa (Game Over).
+* **Ubicación:** punto del capítulo donde convergen todas las rutas correctas.
+* **Páginas:** spreads de decisión del propio capítulo con ramificación letal.
+* **Cierre:** exactamente **1 spread `end-*`** por capítulo. El front lo usa para desbloquear el capítulo siguiente (o dar por terminada la historia si es el último).
+* **Reinicio:** cada `gameover-*` reinicia **su capítulo** con la opción "Reiniciar" → `startPageId` del capítulo.
 
 ---
 
@@ -90,7 +104,8 @@ stories/[story-name]/
 
 * **Elección correcta:** Deducible leyendo el perfil del personaje (attributes, skills, items)
 * **Elección letal:** Obvia si prestas atención al contexto narrativo
-* **Consecuencia:** Game Over directo (muerte o captura)
+* **Consecuencia:** Game Over directo (muerte o captura), reiniciando el capítulo desde su `startPageId`
+* **Capítulo 1:** en el primer capítulo de la historia, **todo spread de decisión** incluye al menos una opción letal hacia un `gameover-*` del propio capítulo (los gameovers pueden compartirse entre spreads)
 
 ---
 
@@ -101,9 +116,13 @@ Cada opción en `rightPage` apunta a:
 * **Game Over** (elección letal): `gameover-XX`
 * Toda transición debe conectar espacios **adyacentes** según el escenario de la historia (ver Continuidad Espacial).
 
-**Flujo:**
+**Flujo (dentro de un capítulo):**
 ```
-spread-001 → spread-002 → spread-003 → ... → spread-010 → (Savepoint)
+Capítulo NN (6-8 spreads en total):
+spread-001 → spread-002 → spread-003 → ... → end-001 (cierre → capítulo siguiente)
     ↓ (letal)    ↓ (letal)    ↓ (letal)
 gameover-001  gameover-002  gameover-003
 ```
+
+* Los tres tipos de spread (decisión, gameover y `end-*`) **cuentan** en el límite de 6-8 por capítulo.
+* Ningún `optionLink` cruza de un capítulo a otro: la progresión entre capítulos la gestiona el front al alcanzar el `end-*`.

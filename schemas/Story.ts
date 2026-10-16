@@ -1,11 +1,10 @@
-import type { StorySpread } from './StorySpread';
+import type { Chapter } from './Chapter';
 
 export interface Story {
   id: string;
   titleEn: string;
   titleEs: string;
   startPageId: string;
-  spreads: StorySpread[],
-  spreadIds: string[],
+  chapters: Chapter[];
   cover?: { subtitle: string; coverImage?: string }
 }
