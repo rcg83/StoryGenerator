@@ -1,9 +1,9 @@
-export interface StoryPageOption {
+interface StoryPageOption {
   optionText: string;
   optionLink: string;
 }
 
-export interface CharacterData {
+interface CharacterData {
   name?: string;
   profession?: string;
   photoUrl?: string;
@@ -12,7 +12,7 @@ export interface CharacterData {
   items: string[];
 }
 
-export interface StoryPageIllustration {
+interface StoryPageIllustration {
   name: string;
   description: string;
   size?: 'small' | 'medium' | 'large' | 'full';
