@@ -43,18 +43,18 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 4. **Adaptar al Tono de la Historia**: Mantener coherencia con el estado narrativo establecido en la sinopsis y el contexto de la historia.
 5. **Redactar Elecciones Detalladas y Justificadas**: El texto de cada opción de la `rightPage` debe explicar **qué hace el personaje y con qué intención**, para que el lector entienda bien no solo la acción sino el dilema detrás de ella (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado: es la salida más alta y la criatura aún no te ha visto"*).
 6. **Convención de Nombres de Imagen**: Si se asigna una imagen, asegurar que el nombre del archivo (`illustration.name`) sea descriptivo, en minúsculas y con guiones bajos entre palabras (ej: `callejon-oscuro-niebla.jpg`, `elena-camara-fuelle.jpg`). El nombre debe reflejar fielmente el contenido visual de la página. **El nombre de la imagen describe la situación concreta de la escena y debe tenerse muy en cuenta al redactar el `text` descriptivo y la `illustration.description`**: cada elemento nombrado en el archivo (lugar, criatura, objeto, estado atmosférico) debe estar presente o resonar en la narrativa de la página.
-7. **Descripción de Imagen (`illustration.description`)**: Redactar **un único párrafo de máximo 60-70 palabras, todo junto** (sin saltos de línea), en **tercera persona y tiempo presente**: una descripción pura, precisa, detallada y breve de lo que la imagen muestra (encuadre, luz, atmósfera, figuras, objetos y estado de las cosas), pensada para que alguien que no ve la imagen pueda visualizarla lo mejor posible. **Prohibido** redactarla como narrativa en segunda persona, como acción del jugador o como consejo / lista de pistas. **Ley de pistas:** las pistas de decisión pueden venir del `text` de las páginas o de la propia imagen; cuando vengan de la imagen, los elementos clave se describen fielmente para que el lector los **deduzca** de la descripción — nunca se entregan explícitamente como pista. Sirve de contenido alternativo por accesibilidad o cuando la imagen no está disponible: el front muestra la imagen o la descripción.
+7. **Descripción de Imagen (`illustration.description`)**: Redactar **un único párrafo de máximo 48 palabras, todo junto** (sin saltos de línea), en **tercera persona y tiempo presente**: una descripción pura, precisa, detallada y breve de lo que la imagen muestra (encuadre, luz, atmósfera, figuras, objetos y estado de las cosas), pensada para que alguien que no ve la imagen pueda visualizarla lo mejor posible. **Prohibido** redactarla como narrativa en segunda persona, como acción del jugador o como consejo / lista de pistas. **Ley de pistas:** las pistas de decisión pueden venir del `text` de las páginas o de la propia imagen; cuando vengan de la imagen, los elementos clave se describen fielmente para que el lector los **deduzca** de la descripción — nunca se entregan explícitamente como pista. Sirve de contenido alternativo por accesibilidad o cuando la imagen no está disponible: el front muestra la imagen o la descripción.
 8. **Regla de Longitud Narrativa por Página (Regla de las 4 Zonas)**: Cada página se estructura en **4 zonas**. Todo componente ocupa un número fijo de zonas:
-   * **1 zona** = 1 párrafo de narrativa (máx. **40 palabras**) o 1 opción (`pageOption`, máx. **30 palabras**).
+    * **1 zona** = 1 párrafo de narrativa (máx. **32 palabras**) o 1 opción (`pageOption`, máx. **24 palabras**).
    * **Imagen** = según su `size`: `small` (1 zona), `medium` (2 zonas), `large` (3 zonas, default en `leftPage`), `full` (4 zonas, página entera de imagen, sin texto).
-   * **`illustration.description`** = máx. 60-70 palabras, un único párrafo en tercera persona que describe la imagen (campo de accesibilidad, no ocupa zona; los elementos clave se describen para **deducir** la decisión, no se dan como pistas).
+    * **`illustration.description`** = máx. 48 palabras, un único párrafo en tercera persona que describe la imagen (campo de accesibilidad, no ocupa zona; los elementos clave se describen para **deducir** la decisión, no se dan como pistas).
    * **leftPage (narrativa, NUNCA opciones)**:
-     - Sin imagen → **4 párrafos** de máx. 40 palabras.
+      - Sin imagen → **4 párrafos** de máx. 32 palabras.
      - Con imagen `small` → 3 párrafos · `medium` → 2 párrafos · `large` → 1 párrafo · `full` → 0 párrafos.
-   * **rightPage (path selector de decisiones)**: cada opción ocupa 1 zona; el resto se rellena con párrafos de contexto (máx. 40 palabras):
+    * **rightPage (path selector de decisiones)**: cada opción ocupa 1 zona; el resto se rellena con párrafos de contexto (máx. 32 palabras):
      - 2 opciones → 2 párrafos + 2 opciones · 3 opciones → 1 párrafo + 3 opciones · 4 opciones → 0 párrafos + 4 opciones.
      - Opcionalmente puede incluir 1 imagen `small` (1 zona) en lugar de uno de esos párrafos.
-   * **Gameover y finales (exentos de la regla de opciones)**: la `leftPage` es **solo texto** (nunca `illustration`, nunca opciones) con **exactamente 4 párrafos** de máx. 40 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante). La `rightPage` lleva la imagen `full` (4 zonas, página entera) y `text` vacío, con `title` = título del capítulo; en los spreads de muerte (`gameover-*`) añade una **única** opción "Reiniciar" (control de UI, no computa como zona) que enlaza al `startPageId`, y en los finales (`end-*`) se queda **sin opciones** (el front gestiona el reinicio del capítulo). Fallback: si el catálogo no tiene imagen para ese gameover/final, se omite `illustration` y la `rightPage` queda con `text` vacío + `title` (+ "Reiniciar" en los gameovers).
+    * **Gameover y finales (exentos de la regla de opciones)**: la `leftPage` es **solo texto** (nunca `illustration`, nunca opciones) con **exactamente 4 párrafos** de máx. 32 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante). La `rightPage` lleva la imagen `full` (4 zonas, página entera) y `text` vacío, con `title` = título del capítulo; en los spreads de muerte (`gameover-*`) añade una **única** opción "Reiniciar" (control de UI, no computa como zona) que enlaza al `startPageId`, y en los finales (`end-*`) se queda **sin opciones** (el front gestiona el reinicio del capítulo). Fallback: si el catálogo no tiene imagen para ese gameover/final, se omite `illustration` y la `rightPage` queda con `text` vacío + `title` (+ "Reiniciar" en los gameovers).
    * La `rightPage` **no** está limitada a `text` vacío: su `text` contiene los párrafos de contexto que completan las 4 zonas (salvo en gameover/finales, donde la imagen `full` ocupa la página entera).
 
 ---
@@ -67,7 +67,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 3. **Evitar Deadlocks**: Validar que la página no sea un callejón sin salida narrativo, a menos que sea un `gameover-*` (muerte) o el `end-*` de cierre del capítulo.
 4. **Plausibilidad Espacial**: Verificar que cada `optionLink` conecte espacios adyacentes según la red de conexiones del escenario cargado en el PASO 1 (`world/scenarios/`). Si la transición es físicamente imposible, devolver la página al ScribeAgent.
 5. **Validación de Imagen**: Si la página declara `illustration`, verificar que `illustration.name` está listado en `/stories/[story-name]/context/image-names.md`, que `illustration.description` existe, está redactada en **tercera persona** (no como narrativa ni como consejo) y no excede las **60-70 palabras**, y que `illustration.size` es uno de `small`, `medium`, `large` o `full`. Si no se cumple, eliminar el campo `illustration` de la página (no dejar referencias rotas).
-6. **Validación de Longitud Narrativa por Página (Regla de las 4 Zonas)**: Verificar que cada página suma exactamente **4 zonas** con los límites de palabras (párrafo máx. 40; opción máx. 30; `illustration.description` un único párrafo máx. 60-70 palabras en tercera persona):
+ 6. **Validación de Longitud Narrativa por Página (Regla de las 4 Zonas)**: Verificar que cada página suma exactamente **4 zonas** con los límites de palabras (párrafo máx. 32; opción máx. 24; `illustration.description` un único párrafo máx. 48 palabras en tercera persona):
    * `leftPage`: sin imagen → **4 párrafos**; con imagen según `size` — `small` → 3, `medium` → 2, `large` → 1, `full` → 0 párrafos.
    * `rightPage`: número de párrafos de contexto = 4 − número de opciones (2 opciones → 2 párrafos; 3 → 1; 4 → 0), opcionalmente sustituyendo un párrafo por 1 imagen `small`.
    * **Gameovers y finales**: `leftPage` sin `illustration` y con **4 párrafos**; `rightPage` con `illustration.size: "full"`, `text` vacío y `title` = título del capítulo. En `gameover-*`, una sola opción "Reiniciar" → `startPageId`; en `end-*`, ninguna opción. Si el catálogo no ofrece imagen para ese spread, se omite `illustration` y la `rightPage` conserva `text` vacío + `title` (+ "Reiniciar" en los gameovers).
@@ -162,11 +162,11 @@ Cada spread contiene **2 páginas** con roles diferentes:
   "illustration": {
     "name": "imagen-de-pagina.jpg (opcional)",
     "size": "small | medium | large | full (opcional; default large en leftPage, small en rightPage; full obligatorio en gameover/finales)",
-    "description": "Un único párrafo de máximo 60-70 palabras, tercera persona, descripción pura de la imagen"
+     "description": "Un único párrafo de máximo 48 palabras, tercera persona, descripción pura de la imagen"
   },
   "pageOptions": [
     {
-      "optionText": "string (máx. 30 palabras)",
+      "optionText": "string (máx. 24 palabras)",
       "optionLink": "string"
     }
   ]
@@ -183,12 +183,12 @@ Cada spread contiene **2 páginas** con roles diferentes:
 ```
 
 ### Reglas de Contenido (Regla de las 4 Zonas)
-* **Cada StoryPage suma exactamente 4 zonas.** 1 zona = 1 párrafo (máx. 40 palabras) o 1 opción (máx. 30 palabras) o 1 imagen `small`. Una imagen `medium`/`large`/`full` ocupa 2/3/4 zonas.
+* **Cada StoryPage suma exactamente 4 zonas.** 1 zona = 1 párrafo (máx. 32 palabras) o 1 opción (máx. 24 palabras) o 1 imagen `small`. Una imagen `medium`/`large`/`full` ocupa 2/3/4 zonas.
 * **leftPage.pageOptions**: Siempre `[]` (vacío)
-* **leftPage.text**: La narrativa vive en la leftPage. Sin imagen: **4 párrafos** de máx. 40 palabras. Con imagen según `size`: `small` → 3 párrafos, `medium` → 2, `large` → 1, `full` → 0
-* **leftPage.illustration**: Objeto `{ "name", "description", "size" }`. `name`: archivo listado en `image-names.md`. `description`: **un único párrafo de máximo 60-70 palabras en tercera persona** que describe la imagen con pureza y precisión — sirve para visualizarla a quien no la ve; sus elementos clave permiten **deducir** la decisión, nunca se dan como pistas explícitas (contenido alternativo por accesibilidad / imagen ausente). `size`: opcional, default `large` en leftPage y `small` en rightPage. En gameovers y finales la imagen **nunca** va en la `leftPage`
+* **leftPage.text**: La narrativa vive en la leftPage. Sin imagen: **4 párrafos** de máx. 32 palabras. Con imagen según `size`: `small` → 3 párrafos, `medium` → 2, `large` → 1, `full` → 0
+* **leftPage.illustration**: Objeto `{ "name", "description", "size" }`. `name`: archivo listado en `image-names.md`. `description`: **un único párrafo de máximo 48 palabras en tercera persona** que describe la imagen con pureza y precisión — sirve para visualizarla a quien no la ve; sus elementos clave permiten **deducir** la decisión, nunca se dan como pistas explícitas (contenido alternativo por accesibilidad / imagen ausente). `size`: opcional, default `large` en leftPage y `small` en rightPage. En gameovers y finales la imagen **nunca** va en la `leftPage`
 * **rightPage.text**: Párrafos de contexto que completan las 4 zonas: 2 opciones → 2 párrafos; 3 opciones → 1 párrafo; 4 opciones → `""`. Opcionalmente un párrafo puede sustituirse por 1 imagen `small`
-* **rightPage.pageOptions**: 2-4 opciones con `optionLink` a siguiente spread o gameover. Cada opción debe ser **detallada y justificada** (máx. **30 palabras**): expresa qué hace el personaje y con qué intención
+* **rightPage.pageOptions**: 2-4 opciones con `optionLink` a siguiente spread o gameover. Cada opción debe ser **detallada y justificada** (máx. **24 palabras**): expresa qué hace el personaje y con qué intención
 * **Path selector (página de decisiones)**: Página cuyo `pageOptions` no está vacío; el jugador elige el camino a seguir
 * **Gameovers y finales (exentos de la regla de opciones)**: `leftPage` solo texto con **4 párrafos**; `rightPage` con la imagen `size: "full"`, `text` `""` y `title` = título del capítulo. En `gameover-*`, una única opción "Reiniciar" (control de UI, no computa como zona) que enlaza al `startPageId`; en `end-*`, ninguna opción. Si el catálogo no ofrece imagen, se omite `illustration` y la `rightPage` queda en `text` `""` + `title` (+ "Reiniciar" en los gameovers)
 * **rightPage.title**: siempre el **título del capítulo** — idéntico en todos los spreads del capítulo (decisión, gameovers y finales). Prohibido escribir títulos propios por spread. `leftPage.title`: vacío
@@ -232,7 +232,7 @@ Cada spread contiene **2 páginas** con roles diferentes:
         "illustration": {
           "name": "cocina-pension-puerta-trasera.jpg",
           "size": "large",
-          "description": "Un único párrafo de máximo 60-70 palabras, tercera persona, descripción pura de la imagen."
+           "description": "Un único párrafo de máximo 48 palabras, tercera persona, descripción pura de la imagen."
         },
         "pageOptions": []
       },

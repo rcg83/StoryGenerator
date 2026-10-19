@@ -28,21 +28,21 @@ Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un 
 
 | Componente | Zonas | Límite |
 |------------|-------|--------|
-| Párrafo de narrativa | 1 | máx. **40 palabras** |
-| Opción (`pageOption`) | 1 | máx. **30 palabras** |
+| Párrafo de narrativa | 1 | máx. **32 palabras** |
+| Opción (`pageOption`) | 1 | máx. **24 palabras** |
 | Imagen `small` | 1 | — |
 | Imagen `medium` | 2 | — |
 | Imagen `large` | 3 | — |
 | Imagen `full` | 4 (página entera, sin texto) | — |
-| `illustration.description` | no ocupa zona (accesibilidad) | 1 párrafo en **tercera persona**, máx. **60-70 palabras**, descripción pura de la imagen (sus elementos permiten deducir la decisión, no se dan como pistas) |
+| `illustration.description` | no ocupa zona (accesibilidad) | 1 párrafo en **tercera persona**, máx. **48 palabras**, descripción pura de la imagen (sus elementos permiten deducir la decisión, no se dan como pistas) |
 
 **leftPage (narrativa, nunca opciones):**
-* Sin imagen → **4 párrafos** de máx. 40 palabras.
+* Sin imagen → **4 párrafos** de máx. 32 palabras.
 * Con imagen según `size`: `small` → 3 párrafos · `medium` → 2 · `large` → 1 · `full` → 0.
 * `size` default en leftPage: `large`.
 
 **rightPage (path selector):**
-* Cada opción ocupa 1 zona; el resto de zonas se rellena con párrafos de contexto (máx. 40 palabras):
+* Cada opción ocupa 1 zona; el resto de zonas se rellena con párrafos de contexto (máx. 32 palabras):
   * 2 opciones → 2 párrafos + 2 opciones.
   * 3 opciones → 1 párrafo + 3 opciones.
   * 4 opciones → 0 párrafos + 4 opciones.
@@ -53,7 +53,7 @@ Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un 
 
 | Página | Contenido |
 |--------|-----------|
-| **leftPage** | **Solo texto**: exactamente **4 párrafos** de máx. 40 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante). Nunca `illustration`, nunca opciones |
+| **leftPage** | **Solo texto**: exactamente **4 párrafos** de máx. 32 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante). Nunca `illustration`, nunca opciones |
 | **rightPage** | **Imagen `full`** (4 zonas, página entera), `text` `""` y `title` = título del capítulo. En `gameover-*`: **una sola** opción "Reiniciar" → `startPageId` (control de UI, no computa como zona). En `end-*`: **ninguna** opción (el front gestiona el reinicio del capítulo) |
 
 Fallback: si el catálogo no tiene imagen para ese gameover/final, se omite `illustration` y la `rightPage` queda con `text` `""` + `title` (+ "Reiniciar" en los gameovers).
