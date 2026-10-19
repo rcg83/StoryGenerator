@@ -2,6 +2,8 @@
 
 Escenario compartido en `world/scenarios/` (recurso reutilizable entre historias). Define la **verdad física del edificio**: plantas, habitaciones, elementos y conexiones. Toda página de historia que transcurra aquí debe ser coherente con este plano: ubicación, transiciones y elementos deben respetarlo.
 
+> **Datos de zonas y adyacencia:** el modelo máquina-legible (**zonas con IDs canónicos + lista de conexiones adyacentes**) vive en [`gilman-house.json`](./gilman-house.json). Los spreads referencian las zonas por su `id` y **solo pueden enlazar a una zona adyacente** según esa lista. De momento ese `.json` cubre **solo P4 (ático)**; el resto de plantas se irán añadiendo.
+
 ---
 
 ## 📋 Datos del Escenario
@@ -42,13 +44,17 @@ P0  Vestíbulo / recepción (+ salidas a la calle y al callejón)
 
 ## 🛏️ P4 — Ático
 
-**Pasillo del ático:** corredor estrecho con balaustrada, hilera de habitaciones de huéspedes. Casi todas están **clausuradas con tablas**. En el extremo opuesto a la habitación de Elena arranca la **escalera de servicio** (angosta, cruje, baja a P3).
+Estructura **sencilla**: un **pasillo** conecta las **habitaciones** y la **escalera de servicio** arranca al final del pasillo para bajar a P3. Zonas con IDs canónicos (ver [`gilman-house.json`](./gilman-house.json)): `p4-habitacion-elena`, `p4-alcoba-contigua`, `p4-pasillo`, `p4-escalera-servicio`.
 
-**Habitación de Elena (al fondo del pasillo):** puerta al pasillo (la de la fachada del marco), ventana **sin barrotes** que da a la cornisa de piedra que bordea toda la fachada del ático. Suelo frío, ropa de cama, la cámara y el mobiliario de una huésped cualquiera.
+**`p4-pasillo` — Pasillo del ático:** corredor estrecho que conecta las habitaciones; **al final del pasillo arranca la escalera de servicio**. Madera que cruje bajo los pies.
 
-**Cornisa de la fachada:** borde de piedra húmeda, estrecho, que recorre la fachada y conecta la ventana de la habitación de Elena con la de la **alcoba contigua**.
+**`p4-habitacion-elena` — Habitación de Elena:** al fondo del pasillo; puerta al pasillo y ventana **sin barrotes** que da a la cornisa de piedra. Suelo frío, ropa de cama, la cámara y el mobiliario de una huésped cualquiera.
 
-**Alcoba contigua (P4):** habitación vacía que huele a alcanfor y humedad; su ventana también está **sin barrotes** y conecta con la misma cornisa. Elementos: cajones con trastos (despertador, cepillo, naipes), un **revólver de tambor vacío** bajo la almohada, el hueco de un barrote antiguo junto a la ventana.
+**Cornisa de la fachada:** borde de piedra húmeda, estrecho, que conecta **por fuera** la ventana de la habitación de Elena con la de la **alcoba contigua** (única vía exterior en el ático).
+
+**`p4-alcoba-contigua` — Alcoba contigua:** habitación vacía que huele a alcanfor y humedad, contigua a la de Elena y **con puerta propia al mismo pasillo**; su ventana también está **sin barrotes**. Elementos: cajones con trastos (despertador, cepillo, naipes), un **revólver de tambor vacío** bajo la almohada, el hueco de un barrote antiguo junto a la ventana.
+
+**`p4-escalera-servicio` — Escalera de servicio:** tramo angosto al final del pasillo que desciende a la planta 3.
 
 ---
 
@@ -93,9 +99,11 @@ Rellano amplio en penumbra, desembocadura de la **escalera de servicio** (viene 
 
 | Desde | Hasta | Vía |
 |-------|-------|-----|
-| Habitación de Elena (P4) | Alcoba contigua (P4) | **Cornisa** exterior (por las ventanas) |
-| Habitación de Elena (P4) | Pasillo del ático (P4) | Puerta de la habitación |
-| Pasillo del ático (P4) | Descansillo del montacargas (P3) | **Escalera de servicio** |
+| `p4-habitacion-elena` | `p4-alcoba-contigua` | **Cornisa** exterior (por las ventanas, sin barrotes) |
+| `p4-habitacion-elena` | `p4-pasillo` | Puerta de la habitación |
+| `p4-alcoba-contigua` | `p4-pasillo` | Puerta de la alcoba |
+| `p4-pasillo` | `p4-escalera-servicio` | Extremo del pasillo |
+| `p4-escalera-servicio` | Descansillo del montacargas (P3) | **Escalera de servicio** (pendiente de modelar P3) |
 | Descansillo del montacargas (P3) | Salida de servicio de P2 | **Pozo del montacargas** (por tramo, por el cable) |
 | Descansillo del montacargas (P3) | P2 / P1 / P0 | **Escalera principal** |
 | Sala común (P2) | Pasillo de servicio (P2) | Puerta lateral |

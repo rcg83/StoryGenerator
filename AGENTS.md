@@ -9,7 +9,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 
 1. **Leer `/world/1938-era.md`**: Asimilar el entorno de 1938, la tecnología disponible y las limitaciones de la época.
 2. **Leer `/world/factions/` y `/world/creatures/`**: Cargar la información de las facciones y criaturas relevantes para la historia (ej: `dagon-cult.md`, `the-deep-ones.md`).
-3. **Leer `/world/scenarios/`**: Cargar el/los escenario(s) que la historia declare en `[story-name]-background.md`, en `world/scenarios/<scenario-id>.md` (ej: `gilman-house.md`). Es la verdad física del espacio: plantas, zonas, elementos y conexiones. Toda página debe ser coherente con esa geografía.
+3. **Leer `/world/scenarios/`**: Cargar el/los escenario(s) que la historia declare en `[story-name]-background.md`: el documento `world/scenarios/<scenario-id>.md` (ej: `gilman-house.md`) y su modelo máquina-legible `world/scenarios/<scenario-id>.json` (ej: `gilman-house.json`), que define las **zonas con IDs canónicos** y la **lista de conexiones adyacentes** (cada arista con su `via`, `direction` y `constraints`). Registrar ese grafo de zonas/adyacencia: es la verdad física del espacio (plantas, zonas, elementos y conexiones). Toda página debe ser coherente con esa geografía y **solo puede enlazar a zonas que sean adyacentes** según el grafo.
 4. **Leer `/stories/[story-name]/context/[story-name]-background.md`**: Extraer el prompt inicial, el enfoque del protagonista, los objetivos globales del relato y los escenarios declarados.
 5. **Leer `/stories/[story-name]/context/timeline.md`**: Cargar la cronología del evento activo y la fase horaria vigente (Fases 1 a 4).
 6. **Escanear `/characters/[character].json`**: Analizar el archivo de datos del personaje (ubicado en la raíz del proyecto, compartido entre historias). Registrar sus `attributes` (rasgos con valores), sus `skills` (habilidades) y sus `items` (objetos en inventario).
@@ -28,7 +28,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
    * Si el personaje no posee un atributo adecuado para la situación, la opción correspondiente debe implicar un riesgo narrativo evidente.
 3. **Estructurar las Opciones**: Generar un mínimo de 2 y un máximo de 4 elecciones. Al menos una debe apelar a la profesión/deducción del personaje (ej: *"Tomar fotografía"*, *"Investigar la estática de la radio"*) y otra a la autopreservación.
 4. **Vincular con Página Siguiente (intra-capítulo)**: Cada opción debe apuntar a una `optionLink` que corresponda al ID de la página destino dentro del spread o en el spread siguiente. Todos los `optionLink` deben permanecer **dentro del mismo capítulo**: el capítulo es una unidad autocontenida que se cierra con su spread `end-*` (el front usa ese cierre para desbloquear el capítulo siguiente). Nunca se enlaza a un spread de otro capítulo.
-5. **Adyacencia Física**: Cada `optionLink` debe conectar dos espacios adyacentes según el escenario del PASO 1 (misma planta por puerta o cornisa, o planta contigua por escalera/montacargas). Se descarta toda transición físicamente imposible.
+5. **Anclaje y Adyacencia Física (zonas)**: Anclar cada spread a una **zona** concreta usando su **ID canónico** del `.json` del PASO 1 (ej: `p4-pasillo`) y hacer que cada `optionLink` caiga en una **zona adyacente** según la lista de conexiones de ese `.json` (misma planta por puerta o cornisa, o planta contigua por escalera/montacargas), respetando los `constraints` de cada arista (p. ej. barrotes, montacargas por tramos). Se descarta toda transición que no sea una arista del grafo o que sea físicamente imposible.
 6. **Vinculación de Imagen (Opcional)**: Revisar el catálogo de imágenes del PASO 1 (`[story-name]/context/image-names.md`). Si alguna imagen del catálogo encaja naturalmente con la escena o momento de la página, asignarla al campo `illustration` como objeto con `name`, `description` y `size` (opcional; default `large` en `leftPage`, `small` en `rightPage`). Si ninguna encaja bien, omitir el campo — no forzar una imagen que no represente fielmente la narrativa.
    * **Excepción obligatoria (gameover y finales)**: en los spreads de muerte (`gameover-*`) y de final (`end-*`) la imagen va **siempre en la `rightPage`** con `size: "full"` (página entera de imagen, 4 zonas), y la `leftPage` queda **solo con texto**, nunca con `illustration`.
 
@@ -38,7 +38,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 *El agente asumirá el rol de ScribeAgent para transformar el esqueleto técnico en prosa literaria de terror psicológico:*
 
 1. **Perspectiva Narrativa**: Escribir estrictamente en segunda persona del singular ("Tú") para forzar la inmersión del lector.
-2. **Anclaje Físico-Espacial**: Anclar cada página al escenario del PASO 1: el personaje sabe dónde está (planta + zona), de dónde llegó y qué conexión queda delante. Las transiciones son continuas (la salida de un spread enlaza de forma natural con la llegada del siguiente) y los elementos nombrados existen en el plano del escenario.
+2. **Anclaje Físico-Espacial**: Anclar cada página al escenario del PASO 1 usando el **ID canónico de zona** del `.json`: el personaje sabe dónde está (planta + zona), de dónde llegó y qué conexión queda delante. Las transiciones son continuas (la salida de un spread enlaza de forma natural con la llegada del siguiente) y los elementos nombrados existen en la zona del escenario (nunca se inventan fuera de ella).
 3. **Filtro Atmosférico Lovecraftiano**: Describir los entornos utilizando estímulos sensoriales de la época (el olor fétido a fango abisal, el parpadeo titilante de las farolas de gas, el crujido de la madera podrida y el frío salitre).
 4. **Adaptar al Tono de la Historia**: Mantener coherencia con el estado narrativo establecido en la sinopsis y el contexto de la historia.
 5. **Redactar Elecciones Detalladas y Justificadas**: El texto de cada opción de la `rightPage` debe explicar **qué hace el personaje y con qué intención**, para que el lector entienda bien no solo la acción sino el dilema detrás de ella (ej: *"Aprovechas tu agilidad para trepar por el tragaluz oxidado: es la salida más alta y la criatura aún no te ha visto"*).
@@ -65,7 +65,7 @@ Este documento define el algoritmo de ejecución estricto que cada agente de Int
 1. **Integridad de Rutas**: Verificar que todas las `optionLink` declaradas apunten a un ID de página existente o planificado dentro de la estructura de spreads **del mismo capítulo**.
 2. **Validación de Capítulo (6-8 spreads)**: Verificar que el capítulo tenga **entre 6 y 8 spreads en total** (spreads de decisión + gameovers + finales, contando todos), que contiene **exactamente un spread `end-*`** de cierre y que ningún `optionLink` sale del archivo. Si el capítulo se pasa de 8, dividirlo en dos; si queda por debajo de 6, completar decisiones. Fuera de rango, devolverlo al PagePlotter.
 3. **Evitar Deadlocks**: Validar que la página no sea un callejón sin salida narrativo, a menos que sea un `gameover-*` (muerte) o el `end-*` de cierre del capítulo.
-4. **Plausibilidad Espacial**: Verificar que cada `optionLink` conecte espacios adyacentes según la red de conexiones del escenario cargado en el PASO 1 (`world/scenarios/`). Si la transición es físicamente imposible, devolver la página al ScribeAgent.
+4. **Plausibilidad Espacial (grafo de zonas)**: Verificar que toda zona usada exista en `world/scenarios/<scenario-id>.json` y que cada `optionLink` corresponda a una **arista** de ese grafo (zonas adyacentes), respetando sus `constraints`. Si la zona no existe o la transición no es una arista (o es físicamente imposible), devolver la página al PagePlotter / ScribeAgent.
 5. **Validación de Imagen**: Si la página declara `illustration`, verificar que `illustration.name` está listado en `/stories/[story-name]/context/image-names.md`, que `illustration.description` existe, está redactada en **tercera persona** (no como narrativa ni como consejo) y no excede las **60-70 palabras**, y que `illustration.size` es uno de `small`, `medium`, `large` o `full`. Si no se cumple, eliminar el campo `illustration` de la página (no dejar referencias rotas).
  6. **Validación de Longitud Narrativa por Página (Regla de las 4 Zonas)**: Verificar que cada página suma exactamente **4 zonas** con los límites de palabras (párrafo máx. 32; opción máx. 24; `illustration.description` un único párrafo máx. 48 palabras en tercera persona):
    * `leftPage`: sin imagen → **4 párrafos**; con imagen según `size` — `small` → 3, `medium` → 2, `large` → 1, `full` → 0 párrafos.
@@ -103,6 +103,7 @@ Cada historia se divide en **capítulos** (dominio `Chapter`). Un capítulo = **
 | **Normal** | 2 | 1 correcta, 1 alternativa |
 
 ### Reglas de Diseño
+* **Primer spread del capítulo (obligatorio):** el spread de arranque (`startPageId`) de cada capítulo tiene **exactamente 2 opciones**, y **una de ellas es letal** (enlaza a un `gameover-*` del propio capítulo). El peligro debe estar presente desde la primera elección.
 * **Elección correcta:** Deducible leyendo el perfil del personaje (attributes, skills, items)
 * **Elección letal:** Obvia si prestas atención al contexto narrativo
 * **Consecuencia:** Game Over directo (muerte o captura), reiniciando el capítulo desde su `startPageId`
@@ -115,7 +116,7 @@ Cada historia se divide en **capítulos** (dominio `Chapter`). Un capítulo = **
 
 * `docs/images.md` — Convención del catálogo de imágenes: `stories/[story-name]/context/image-names.md`.
 * `docs/story-guide.md` — Estructura genérica del libro interactivo: spreads, decisiones, enlaces entre spreads y reglas de diseño.
-* `world/scenarios/` — Escenarios físicos compartidos (edificios y espacios): cada historia declara los que usa en su `[story-name]-background.md`.
+* `world/scenarios/` — Escenarios físicos compartidos (edificios y espacios): cada historia declara los que usa en su `[story-name]-background.md`. Cada escenario tiene su `.md` (prosa) y su `.json` (**zonas con IDs canónicos + lista de conexiones adyacentes**), que es la fuente del grafo de adyacencia usado al crear y validar los spreads.
 
 ---
 
@@ -129,8 +130,8 @@ Un capítulo es una unidad autocontenida de 6-8 spreads. Cada capítulo es un ar
   "storyId": "your-story-id",
   "chapterNumber": 1,
   "id": "your-story-id-chapter-01",
-  "titleEn": "Chapter Title",
-  "titleEs": "Título del Capítulo",
+  "titleEn": "Story Title",
+  "titleEs": "Título del Relato",
   "startPageId": "spread-001",
   "cover": {
     "subtitle": "Capítulo 1 • Fase • Hora",
@@ -141,7 +142,7 @@ Un capítulo es una unidad autocontenida de 6-8 spreads. Cada capítulo es un ar
 }
 ```
 
-* **Reglas del dominio `Chapter`:** `id` = `<storyId>-chapter-NN`; `spreads` contiene **6-8 elementos exactamente** (decisión + gameovers + 1 `end-*`); `startPageId` apunta a su primer spread de decisión; ningún `optionLink` sale del capítulo; todas sus `rightPage` (decisión, gameovers y finales) llevan `title` = título del capítulo.
+* **Reglas del dominio `Chapter`:** `id` = `<storyId>-chapter-NN`; `spreads` contiene **6-8 elementos exactamente** (decisión + gameovers + 1 `end-*`); `startPageId` apunta a su primer spread de decisión; ningún `optionLink` sale del capítulo; todas sus `leftPage` llevan `title` = título del relato y todas sus `rightPage` (decisión, gameovers y finales) llevan `title` = título del capítulo. El `titleEn`/`titleEs` de nivel superior es el **título del relato (magazine)**.
 * **Dominio `Story`:** la historia agrega sus capítulos en orden (`chapters: Chapter[]`, ver `schemas/Chapter.ts` y `schemas/Story.ts`); el archivo por capítulo es la unidad de generación y de reproducción.
 
 ### Unidad Básica: StorySpread
@@ -157,7 +158,7 @@ Cada spread contiene **2 páginas** con roles diferentes:
 {
   "id": "string",
   "pageNumber": 1,
-  "title": "string (en rightPage: el título del capítulo, idéntico en todos los spreads del capítulo; en leftPage: vacío)",
+  "title": "string (en leftPage: el título del relato; en rightPage: el título del capítulo, idéntico en todos los spreads del capítulo)",
   "text": "string (narrativa en párrafos; en rightPage, párrafos de contexto de la regla de 4 zonas; vacío en gameover/finales)",
   "illustration": {
     "name": "imagen-de-pagina.jpg (opcional)",
@@ -191,7 +192,7 @@ Cada spread contiene **2 páginas** con roles diferentes:
 * **rightPage.pageOptions**: 2-4 opciones con `optionLink` a siguiente spread o gameover. Cada opción debe ser **detallada y justificada** (máx. **24 palabras**): expresa qué hace el personaje y con qué intención
 * **Path selector (página de decisiones)**: Página cuyo `pageOptions` no está vacío; el jugador elige el camino a seguir
 * **Gameovers y finales (exentos de la regla de opciones)**: `leftPage` solo texto con **4 párrafos**; `rightPage` con la imagen `size: "full"`, `text` `""` y `title` = título del capítulo. En `gameover-*`, una única opción "Reiniciar" (control de UI, no computa como zona) que enlaza al `startPageId`; en `end-*`, ninguna opción. Si el catálogo no ofrece imagen, se omite `illustration` y la `rightPage` queda en `text` `""` + `title` (+ "Reiniciar" en los gameovers)
-* **rightPage.title**: siempre el **título del capítulo** — idéntico en todos los spreads del capítulo (decisión, gameovers y finales). Prohibido escribir títulos propios por spread. `leftPage.title`: vacío
+* **Títulos de página**: `leftPage.title` = **título del relato** (idéntico en todo el capítulo); `rightPage.title` = **título del capítulo** — idéntico en todos los spreads del capítulo (decisión, gameovers y finales). Prohibido escribir títulos propios por spread.
 
 ### CharacterData (Datos del Personaje)
 ```json

@@ -30,7 +30,7 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 ### pozo-luz-montacargas.jpg
 - **Sentido:** Pozo del montacargas visto desde el rellano de la planta 3: boca oscura con cable grasiento que baja hasta la planta baja.
-- **Lugar:** `spread-003` → `leftPage.illustration` (decisión de bajar por el montacargas).
+- **Lugar:** `spread-004` → `leftPage.illustration` (decisión junto al pozo del montacargas, planta 3).
 
 ### sala-comun-radio.jpg
 - **Sentido:** Sala común del hotel en semipenumbra, con ventanas de barrotes y una radio de onda corta escupiendo estática.
@@ -78,7 +78,7 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 ### callejon-trasero-noche.jpg
 - **Sentido:** Callejón trasero del hotel de noche, con charcos de agua de mar y farolas apagadas.
-- **Lugar:** `end-002` → `rightPage.illustration` (Fin: El Callejón; imagen `full` de página entera).
+- **Lugar:** `end-001` → `rightPage.illustration` (Fin del Capítulo 1: huida al callejón trasero; imagen `full` de página entera).
 
 ---
 

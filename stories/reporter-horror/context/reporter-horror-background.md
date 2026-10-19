@@ -2,7 +2,7 @@
 
 ## 🏢 Escenario
 
-* **Escenario(s):** `gilman-house` → [`world/scenarios/gilman-house.md`](../../../world/scenarios/gilman-house.md). El plano físico del edificio (plantas, zonas, conexiones y elementos) es la verdad espacial de esta historia: toda página debe ser coherente con él.
+* **Escenario(s):** `gilman-house` → [`world/scenarios/gilman-house.md`](../../../world/scenarios/gilman-house.md) (prosa) y [`world/scenarios/gilman-house.json`](../../../world/scenarios/gilman-house.json) (zonas con `id` canónico + conexiones adyacentes). El plano físico del edificio (plantas, zonas, conexiones y elementos) es la verdad espacial de esta historia: toda página se ancla a una zona del `.json` y **solo enlaza a zonas adyacentes** según su grafo. De momento el `.json` cubre solo P4 (ático).
 
 ## ✅ Requisitos Fijos del Capítulo 1 (obligatorios en futuras regeneraciones)
 

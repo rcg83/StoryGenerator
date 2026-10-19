@@ -1,0 +1,73 @@
+{
+  "id": "gilman-house",
+  "name": "Gilman House",
+  "type": "hotel",
+  "floors": [
+    {
+      "id": "p4",
+      "name": "Ático",
+      "notes": "Planta más alta del hotel. Estructura sencilla: habitaciones conectadas por un pasillo, con la escalera de servicio al final del pasillo para bajar a P3. Las ventanas no tienen barrotes.",
+      "zones": [
+        {
+          "id": "p4-habitacion-elena",
+          "name": "Habitación de Elena",
+          "notes": "Habitación de huésped al fondo del pasillo; su ventana (sin barrotes) da a la cornisa de la fachada.",
+          "elements": ["cama", "ropa de cama", "cámara de Elena", "ventana sin barrotes", "mobiliario de huésped"]
+        },
+        {
+          "id": "p4-alcoba-contigua",
+          "name": "Alcoba contigua",
+          "notes": "Habitación vacía que huele a alcanfor y humedad; su ventana (sin barrotes) da a la misma cornisa.",
+          "elements": ["cajones con trastos (despertador, cepillo, naipes)", "revólver de tambor vacío bajo la almohada", "hueco de un barrote antiguo junto a la ventana"]
+        },
+        {
+          "id": "p4-pasillo",
+          "name": "Pasillo del ático",
+          "notes": "Corredor estrecho que conecta las habitaciones; la escalera de servicio arranca en su extremo.",
+          "elements": ["puertas de las habitaciones", "madera que cruje bajo los pies"]
+        },
+        {
+          "id": "p4-escalera-servicio",
+          "name": "Escalera de servicio",
+          "notes": "Tramo angosto al final del pasillo que desciende a la planta 3.",
+          "elements": ["peldaños de madera", "pasamanos"]
+        }
+      ],
+      "connections": [
+        {
+          "from": "p4-habitacion-elena",
+          "to": "p4-pasillo",
+          "via": "puerta",
+          "direction": "bidirectional"
+        },
+        {
+          "from": "p4-alcoba-contigua",
+          "to": "p4-pasillo",
+          "via": "puerta",
+          "direction": "bidirectional"
+        },
+        {
+          "from": "p4-habitacion-elena",
+          "to": "p4-alcoba-contigua",
+          "via": "cornisa",
+          "direction": "bidirectional",
+          "constraints": ["ventanas sin barrotes"]
+        },
+        {
+          "from": "p4-pasillo",
+          "to": "p4-escalera-servicio",
+          "via": "extremo del pasillo",
+          "direction": "bidirectional"
+        },
+        {
+          "from": "p4-escalera-servicio",
+          "to": "p3-descansillo-montacargas",
+          "via": "escalera de servicio",
+          "direction": "bidirectional",
+          "status": "pending",
+          "note": "Destino P3 fuera del alcance actual; se definirá al modelar la planta 3."
+        }
+      ]
+    }
+  ]
+}

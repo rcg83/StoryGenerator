@@ -12,7 +12,7 @@ Cada historia se divide en **capítulos** (dominio `Chapter`). Un capítulo es u
 * **Tamaño fijo:** cada capítulo contiene **exactamente entre 6 y 8 spreads en total**, contando spreads de decisión, gameovers y finales. Ni más ni menos.
 * **Composición:** 4-6 spreads de decisión + 1-2 gameovers + **exactamente 1 spread `end-*`** de cierre.
 * **Autocontenido:** todos los `optionLink` viven dentro del capítulo; los `gameover-*` reinician el capítulo ("Reiniciar" → `startPageId`); el `end-*` cierra el capítulo y el front desbloquea el siguiente.
-* **Título:** todas las `rightPage` del capítulo (decisión, gameovers y finales) llevan `title` = **título del capítulo**, idéntico en todo el capítulo; `leftPage.title` vacío. Prohibidos los títulos por spread.
+* **Título:** el `titleEn`/`titleEs` de nivel superior es el **título del relato (magazine)**. Todas las `leftPage` del capítulo llevan `title` = **título del relato**; todas las `rightPage` (decisión, gameovers y finales) llevan `title` = **título del capítulo**, idéntico en todo el capítulo. Prohibidos los títulos propios por spread.
 * **Límite:** si el contenido no cabe en 8 spreads, se abre un capítulo nuevo (`-chapter-NN+1`).
 
 ### Unidad Básica: StorySpread
@@ -53,7 +53,7 @@ Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un 
 
 | Página | Contenido |
 |--------|-----------|
-| **leftPage** | **Solo texto**: exactamente **4 párrafos** de máx. 32 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante). Nunca `illustration`, nunca opciones |
+| **leftPage** | **Solo texto**: exactamente **4 párrafos** de máx. 32 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante) y `title` = título del relato. Nunca `illustration`, nunca opciones |
 | **rightPage** | **Imagen `full`** (4 zonas, página entera), `text` `""` y `title` = título del capítulo. En `gameover-*`: **una sola** opción "Reiniciar" → `startPageId` (control de UI, no computa como zona). En `end-*`: **ninguna** opción (el front gestiona el reinicio del capítulo) |
 
 Fallback: si el catálogo no tiene imagen para ese gameover/final, se omite `illustration` y la `rightPage` queda con `text` `""` + `title` (+ "Reiniciar" en los gameovers).
@@ -78,15 +78,22 @@ Cada archivo `chapter-NN.json` es un capítulo del dominio `Chapter` (ver `schem
 
 ## 🏢 Escenarios Compartidos
 
-* **Ubicación:** `world/scenarios/<scenario-id>.md` — recursos físicos compartidos entre historias (ej: `gilman-house.md`).
+* **Ubicación:** `world/scenarios/<scenario-id>.md` (prosa) y `world/scenarios/<scenario-id>.json` (modelo máquina-legible) — recursos físicos compartidos entre historias (ej: `gilman-house.md` + `gilman-house.json`).
 * **Declaración:** cada historia declara sus escenarios en `stories/[story-name]/context/[story-name]-background.md` mediante la sección `**Escenario(s):** <scenario-id>`.
 * **Carga:** el pipeline (PASO 1) lee los escenarios declarados y los trata como la verdad física del espacio.
 
+### 🧭 Modelo de Zonas (`<scenario-id>.json`)
+
+* **`zones`**: cada zona tiene un **`id` canónico** (ej: `p4-pasillo`, `p4-habitacion-elena`), un `name`, unas `notes` y unos `elements` estables.
+* **`connections`**: cada arista une dos zonas adyacentes e indica `via`, `direction` y `constraints` (barrotes, montacargas por tramos, cerradura…). Una arista con `status: "pending"` apunta a una zona aún no modelada.
+* Los spreads **declaran su zona de origen** (el `id` canónico) y solo pueden enlazar a una **zona adyacente** del grafo.
+
 ## 📏 Continuidad Espacial
 
-* Cada página ancla al personaje: **planta + zona**, de dónde llegó y qué conexión queda delante.
+* Cada página ancla al personaje usando el **`id` canónico de zona**: el personaje sabe dónde está (planta + zona), de dónde llegó y qué conexión queda delante.
 * Las transiciones entre spreads son continuas: la salida de un spread enlaza de forma natural con la llegada del siguiente (puerta, escalera, cornisa o montacargas por tramos).
-* Cada `optionLink` debe conectar espacios **adyacentes** según el escenario; se descarta toda transición físicamente imposible.
+* Cada `optionLink` debe corresponder a una **arista del grafo** del escenario (zonas adyacentes), respetando sus `constraints`; se descarta toda transición que no sea una arista o que sea físicamente imposible.
+* Toda zona usada debe **existir en el `.json`** del escenario; una zona inexistente o una arista inventada es un error.
 * Los **elementos de cada zona son estables** y se toman del escenario, no se inventan fuera de él.
 
 ---
@@ -102,6 +109,7 @@ Cada archivo `chapter-NN.json` es un capítulo del dominio `Chapter` (ver `schem
 
 ## 📊 Reglas de Decisiones
 
+* **Primer spread del capítulo:** el spread de arranque (`startPageId`) de cada capítulo tiene **exactamente 2 opciones**, y **una de ellas es letal** (enlaza a un `gameover-*` del propio capítulo).
 * **Elección correcta:** Deducible leyendo el perfil del personaje (attributes, skills, items)
 * **Elección letal:** Obvia si prestas atención al contexto narrativo
 * **Consecuencia:** Game Over directo (muerte o captura), reiniciando el capítulo desde su `startPageId`
@@ -114,7 +122,7 @@ Cada archivo `chapter-NN.json` es un capítulo del dominio `Chapter` (ver `schem
 Cada opción en `rightPage` apunta a:
 * **Siguiente spread** (elección correcta): `spread-XX`
 * **Game Over** (elección letal): `gameover-XX`
-* Toda transición debe conectar espacios **adyacentes** según el escenario de la historia (ver Continuidad Espacial).
+* Toda transición debe corresponder a una **arista del grafo de zonas** (`world/scenarios/<scenario-id>.json`): la zona destino debe ser **adyacente** a la zona del spread (ver Continuidad Espacial).
 
 **Flujo (dentro de un capítulo):**
 ```
