@@ -93,7 +93,7 @@ Cada historia se divide en **capítulos** (dominio `Chapter`). Un capítulo = **
 * **2 a 4 decisiones** por capítulo, con **1-2 decisiones críticas** (vida o muerte) distribuidas uniformemente y el resto normales
 * **Peligro constante** en toda la narrativa
 * **Cierre obligatorio:** exactamente **1 spread `end-*`** — el hito de convergencia que el front usa para desbloquear el capítulo siguiente
-* **Capítulo 1 (regla especial):** en el **primer capítulo** de la historia, **todo spread de decisión** debe incluir al menos **una opción letal** que enlace a un `gameover-*` del propio capítulo: el peligro está presente desde el primer spread. Los gameovers pueden ser compartidos entre spreads del capítulo.
+* **Capítulo 1 (regla especial):** en el **primer capítulo** de la historia, **todo spread de decisión** debe incluir al menos **una opción letal** que enlace a un `gameover-*` del propio capítulo: el peligro está presente desde el primer spread. Los spreads `gameover-*` pueden reutilizarse entre distintos spreads de decisión dentro del mismo capítulo **cuando el espacio, la amenaza y el desenlace narrativo son idénticos**. Se crearán gameovers dedicados únicamente cuando la muerte ocurra en un espacio distinto o con una amenaza/causa distinta, justificando un desenlace narrativo diferente. Los gameovers pueden ser compartidos entre spreads del capítulo cuando la justificación narrativa es coherente.
 
 ### Distribución de Spreads por Decisión
 
