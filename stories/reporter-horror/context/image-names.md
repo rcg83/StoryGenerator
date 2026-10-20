@@ -29,8 +29,8 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 - **Lugar:** `spread-002` → `leftPage.illustration` (decisión de huir por la cornisa).
 
 ### pozo-luz-montacargas.jpg
-- **Sentido:** Pozo del montacargas visto desde el rellano de la planta 3: boca oscura con cable grasiento que baja hasta la planta baja.
-- **Lugar:** `spread-005` → `leftPage.illustration` (decisión junto al pozo del montacargas, planta 3).
+- **Sentido:** Pozo del montacargas de servicio visto desde el pasillo de habitaciones de la planta 3: boca oscura con cable grasiento que baja hasta la planta baja.
+- **Lugar:** `spread-005` → `leftPage.illustration` (decisión en el pasillo de habitaciones, junto al pozo del montacargas, planta 3).
 
 ### sala-comun-radio.jpg
 - **Sentido:** Sala común del hotel en semipenumbra, con ventanas de barrotes y una radio de onda corta escupiendo estática.
@@ -53,7 +53,7 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 - **Lugar:** No usada en el Capítulo 1 (reservada para un capítulo posterior; el Game Over de la puerta de servicio aún no está modelado).
 
 ### escalera-captura.jpg
-- **Sentido:** Escalera del ático del hotel entre P3 y P4: la criatura escamosa arrastrando a Elena por los peldaños que crujen, con la balaustrada rota y la boca oscura del pozo del montacargas al fondo del descansillo.
+- **Sentido:** Escalera del ático del hotel entre P3 y P4: la criatura escamosa arrastrando a Elena por los peldaños que crujen, con la balaustrada rota y la boca oscura del pasillo de la planta tres al fondo.
 - **Lugar:** No usada en esta versión (sustituida por `Elena-grabbed-by-deepone-from-behind.png` en `gameover-003`).
 
 ### gameover-corredor-atico.jpg
@@ -66,7 +66,7 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 ### Elena-grabbed-by-deepone-from-behind.png
 - **Sentido:** Descansillo del montacargas en la planta tres: la criatura escamosa aferra a Elena por detrás y la levanta del suelo, a cinco zancadas de la escalera principal, con la balaustrada astillada y el cable grasiento del pozo balanceándose.
-- **Lugar:** `gameover-003` → `leftPage.illustration` (Game Over por asomarse al hueco del montacargas en P3; imagen `full` de página entera).
+- **Lugar:** `gameover-003` → `leftPage.illustration` (Game Over por asomarse al pozo del montacargas en el pasillo de P3; imagen `full` de página entera).
 
 ### almacen-trastos-penumbra.jpg
 - **Sentido:** Almacén del piso bajo del hotel en penumbra: cajas apiladas y un maniquí sin cabeza entre polvo y botellas vacías.

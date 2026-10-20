@@ -1,0 +1,364 @@
+{
+  "storyId": "reporter-horror",
+  "chapterNumber": 1,
+  "id": "reporter-horror-chapter-01",
+  "titleEn": "The Reporter Trapped in Horror",
+  "titleEs": "La Reportera Atrapada en el Horror",
+  "startPageId": "spread-001",
+  "cover": {
+    "subtitle": "Capítulo 1 • Fase 3: La Cacería • 02:30 AM",
+    "coverImage": "/images/cover-reporter-trapped-horror.png"
+  },
+  "spreads": [
+    {
+      "id": "spread-001",
+      "type": "critical",
+      "leftPage": {
+        "id": "spread-001-left",
+        "text": "Estás en tu habitación del ático. La puerta de golpeo está a punto de ceder y la criatura la empuja desde el otro lado, aún fuera, en el umbral.",
+        "illustration": {
+          "name": "Elena-floor-crashdoor-deep-one.png",
+          "size": "large",
+          "description": "En la habitación del ático, la puerta de golpeo cede hacia dentro y una criatura escamosa asoma aún en el umbral, medio fuera del cuarto. A su espalda, una ventana abierta da a la cornisa de piedra; al otro lado, el pasillo queda a oscuras."
+        },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 1
+      },
+      "rightPage": {
+        "id": "spread-001-right",
+        "text": "Por la rendija de la puerta llega un hedor espeso a salitre y marisco podrido. Ese olor viene del umbral: la criatura aún no ha entrado.\n\nHacia la ventana, en cambio, solo huele a aire limpio de la noche.",
+        "pageOptions": [
+          {
+            "optionText": "Salto a la cornisa y avanzo hasta la ventana de la alcoba contigua.",
+            "optionLink": "spread-002"
+          },
+          {
+            "optionText": "Me escondo bajo la cama y contengo la respiración.",
+            "optionLink": "gameover-001"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 2
+      }
+    },
+    {
+      "id": "spread-002",
+      "type": "default",
+      "leftPage": {
+        "id": "spread-002-left",
+        "text": "Entras en la alcoba contigua desde la cornisa. El cuarto huele a alcanfor y humedad. La única salida es la puerta al pasillo del ático; la ventana de la cornisa queda atrás.",
+        "illustration": {
+          "name": "acceso-cornisa-noche.jpg",
+          "size": "large",
+          "description": "Sobre la cornisa de piedra que bordea la fachada del Gilman House, bajo una niebla baja y farolas mortecinas, una figura se afianza entre ventanas. El muro húmedo y las grietas ofrecen apoyo para avanzar hacia la ventana contigua."
+        },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 3
+      },
+      "rightPage": {
+        "id": "spread-002-right",
+        "text": "En la alcoba contigua, la puerta te devuelve al pasillo del ático y a la escalera.",
+        "pageOptions": [
+          {
+            "optionText": "Cruzo la puerta de la alcoba hacia el pasillo del ático.",
+            "optionLink": "spread-003"
+          },
+          {
+            "optionText": "Registro la habitación a ver qué encuentro y luego salgo al pasillo.",
+            "optionLink": "spread-003"
+          },
+          {
+            "optionText": "Me quedo tras la puerta conteniendo la respiración.",
+            "optionLink": "gameover-002"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 4
+      }
+    },
+    {
+      "id": "spread-003",
+      "type": "default",
+      "leftPage": {
+        "id": "spread-003-left",
+        "text": "Sales al pasillo del ático. Las paredes manchadas de humedad gotean y el suelo cruje bajo tus botas.\n\nLas puertas de las habitaciones permanecen cerradas. Al fondo, el hueco de la escalera baja hacia la planta tres.\n\nEl arrastre húmedo vuelve a empezar detrás de ti, al otro lado del corredor.\n\nTu única bajada en esta planta es la escalera. Debes moverte antes de que la criatura cierre el corredor.",
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 5
+      },
+      "rightPage": {
+        "id": "spread-003-right",
+        "text": "En el pasillo, frente a la escalera, decides si bajas ahora o buscas otra vía.",
+        "pageOptions": [
+          {
+            "optionText": "Bajo por la escalera, midiendo cada peldaño para no hacer ruido.",
+            "optionLink": "spread-004"
+          },
+          {
+            "optionText": "Entro en la alcoba contigua para buscar otra ruta antes de bajar.",
+            "optionLink": "spread-002"
+          },
+          {
+            "optionText": "Me quedo inmóvil junto a una puerta cerrada.",
+            "optionLink": "gameover-002"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 6
+      }
+    },
+    {
+      "id": "spread-004",
+      "type": "critical",
+      "leftPage": {
+        "id": "spread-004-left",
+        "text": "Empiezas a bajar por la escalera hacia la planta tres. Los peldaños de madera crujen bajo tu peso con cada paso.\n\nEl hueco amplifica todos los sonidos: tu respiración, el roce de la cámara y el crujido de la balaustrada carcomida.\n\nAbajo, la escalera desemboca en el descansillo de la planta tres, que da a un pasillo de habitaciones.\n\nAlgo se arrastra sobre los peldaños que acabas de dejar atrás.",
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 7
+      },
+      "rightPage": {
+        "id": "spread-004-right",
+        "text": "En mitad del descenso, entre el ático y la planta tres, decides si continúas bajando o te detienes.",
+        "pageOptions": [
+          {
+            "optionText": "Desciendo hasta el descansillo de la planta tres.",
+            "optionLink": "spread-005"
+          },
+          {
+            "optionText": "Me aparto del hueco y bajo por la escalera principal hacia las plantas inferiores.",
+            "optionLink": "end-001"
+          },
+          {
+            "optionText": "Me detengo en la escalera y aguardo.",
+            "optionLink": "gameover-002"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 8
+      }
+    },
+    {
+      "id": "spread-005",
+      "type": "critical",
+      "leftPage": {
+        "id": "spread-005-left",
+        "text": "Alcanzas el descansillo de la planta tres. Se abre ante ti un pasillo de habitaciones. Al fondo del corredor está el pozo del viejo montacargas de servicio, con los arcones apilados cerca.",
+        "illustration": {
+          "name": "pozo-luz-montacargas.jpg",
+          "size": "large",
+          "description": "Al fondo del pasillo de habitaciones de la planta tres, el pozo del montacargas de servicio se abre entre vigas mohosas. El cable pende oxidado y un hedor salitroso sube desde el hueco. Los arcones apilados contra la pared ofrecen cobertura en la penumbra."
+        },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 9
+      },
+      "rightPage": {
+        "id": "spread-005-right",
+        "text": "En el pasillo, con el pozo del montacargas al fondo, decides entre avanzar por el corredor o cubrirte.",
+        "pageOptions": [
+          {
+            "optionText": "Avanzo por el pasillo hacia el otro extremo.",
+            "optionLink": "spread-006"
+          },
+          {
+            "optionText": "Me oculto entre los arcones apilados antes de seguir.",
+            "optionLink": "spread-006"
+          },
+          {
+            "optionText": "Me asomo al pozo del montacargas.",
+            "optionLink": "gameover-003"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 10
+      }
+    },
+    {
+      "id": "spread-006",
+      "type": "default",
+      "leftPage": {
+        "id": "spread-006-left",
+        "text": "Bajas por la escalera principal hasta el vestíbulo. El mosaico está roto y el letrero Gilman House cuelga sobre la recepción; la puerta de la calle queda al fondo.",
+        "illustration": {
+          "name": "vestibulo-puerta-calle.jpg",
+          "size": "large",
+          "description": "En el vestíbulo del hotel, el mosaico del suelo está roto y el letrero Gilman House cuelga torcido sobre el mostrador de caoba. Al fondo, la puerta de la calle deja entrar una luz mortecina entre la penumbra."
+        },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 11
+      },
+      "rightPage": {
+        "id": "spread-006-right",
+        "text": "En el vestíbulo, con la puerta de la calle delante, eliges cómo cruzar.",
+        "pageOptions": [
+          {
+            "optionText": "Cruzo el vestíbulo hacia la puerta de la calle.",
+            "optionLink": "end-001"
+          },
+          {
+            "optionText": "Avanzo por detrás del mostrador de caoba.",
+            "optionLink": "end-001"
+          },
+          {
+            "optionText": "Disparo un flash de la cámara y cruzo el vestíbulo.",
+            "optionLink": "gameover-004"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 12
+      }
+    },
+    {
+      "id": "gameover-001",
+      "type": "death",
+      "leftPage": {
+        "id": "gameover-001-left",
+        "text": "",
+        "illustration": {
+          "name": "reporter-trapped-under-bed-cenital-view.png",
+          "size": "full",
+          "description": "Vista cenital de la habitación del ático: Elena oculta bajo la cama mientras la criatura rastrea la oscuridad con sus ojos sin párpados. La puerta cuelga de la bisagra y el suelo aparece manchado de barro húmedo."
+        },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 13
+      },
+      "rightPage": {
+        "id": "gameover-001-right",
+        "text": "Al esconderte bajo la cama, la criatura te descubre y te arrastra por la habitación hacia la oscuridad.",
+        "pageOptions": [
+          {
+            "optionText": "Reiniciar",
+            "optionLink": "spread-001"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 14
+      }
+    },
+    {
+      "id": "gameover-002",
+      "type": "death",
+      "leftPage": {
+        "id": "gameover-002-left",
+        "text": "",
+        "illustration": {
+          "name": "gameover-corredor-atico.jpg",
+          "size": "full",
+          "description": "En el corredor del ático, entre puertas cerradas y madera humedecida, la criatura escamosa aferra a Elena por detrás y la arrastra hacia el hueco de la escalera. El suelo cruje y las paredes gotean en la penumbra."
+        },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 15
+      },
+      "rightPage": {
+        "id": "gameover-002-right",
+        "text": "La criatura llega desde el corredor del ático y te arrastra hacia la escalera antes de que puedas reaccionar.",
+        "pageOptions": [
+          {
+            "optionText": "Reiniciar",
+            "optionLink": "spread-001"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 16
+      }
+    },
+    {
+      "id": "gameover-003",
+      "type": "death",
+      "leftPage": {
+        "id": "gameover-003-left",
+        "text": "",
+        "illustration": {
+          "name": "Elena-grabbed-by-deepone-from-behind.png",
+          "size": "full",
+          "description": "Junto al pozo del montacargas, al fondo del pasillo de la planta tres, la criatura escamosa aferra a Elena por detrás y la levanta del suelo. Los arcones están volcados y el cable grasiento del pozo se balancea en la penumbra."
+        },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 17
+      },
+      "rightPage": {
+        "id": "gameover-003-right",
+        "text": "Al asomarte al pozo del montacargas, la criatura te aferra por detrás y te arroja al hueco.",
+        "pageOptions": [
+          {
+            "optionText": "Reiniciar",
+            "optionLink": "spread-001"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 18
+      }
+    },
+    {
+      "id": "gameover-004",
+      "type": "death",
+      "leftPage": {
+        "id": "gameover-004-left",
+        "text": "",
+        "illustration": {
+          "name": "gameover-vestibulo.jpg",
+          "size": "full",
+          "description": "En el vestíbulo a oscuras del Gilman House, la criatura escamosa surge del mostrador de caoba y corta a Elena el paso hacia la puerta de la calle. El mosaico está roto y un fogonazo de cámara ilumina la escena."
+        },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 19
+      },
+      "rightPage": {
+        "id": "gameover-004-right",
+        "text": "El fogonazo de la cámara ilumina el vestíbulo y delata tu posición: la criatura te corta el paso hacia la calle.",
+        "pageOptions": [
+          {
+            "optionText": "Reiniciar",
+            "optionLink": "spread-001"
+          }
+        ],
+        "title": "El ático",
+        "pageNumber": 20
+      }
+    },
+    {
+      "id": "end-001",
+      "type": "ending",
+      "leftPage": {
+        "id": "end-001-left",
+        "text": "Cruzas el vestíbulo hacia la puerta de la calle. El mosaico roto y el mostrador descascarillado quedan atrás.\n\nEl letrero Gilman House cuelga oscuro sobre la recepción vacía.\n\nAbres la puerta de servicio trasera sin encender la linterna.\n\nEl callejón te recibe entre charcos y niebla; el hotel queda mudo a tu espalda.",
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 21
+      },
+      "rightPage": {
+        "id": "end-001-right",
+        "text": "",
+        "illustration": {
+          "name": "callejon-trasero-noche.jpg",
+          "size": "full",
+          "description": "En el callejón trasero del Gilman House, entre muros de ladrillo húmedos y charcos con olor a salitre, la puerta de servicio se cierra tras Elena. Las farolas apagadas dibujan sombras y el ruido del edificio queda atrás."
+        },
+        "pageOptions": [],
+        "title": "El ático",
+        "pageNumber": 22
+      }
+    }
+  ],
+  "spreadIds": [
+    "spread-001",
+    "spread-002",
+    "spread-003",
+    "spread-004",
+    "spread-005",
+    "spread-006",
+    "gameover-001",
+    "gameover-002",
+    "gameover-003",
+    "gameover-004",
+    "end-001"
+  ]
+}

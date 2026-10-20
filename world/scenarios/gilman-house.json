@@ -61,13 +61,65 @@
         },
         {
           "from": "p4-escalera",
-          "to": "p3-descansillo-montacargas",
+          "to": "p3-descansillo",
           "via": "escalera",
-          "direction": "bidirectional",
-          "status": "pending",
-          "note": "Destino P3 fuera del alcance actual; se definirá al modelar la planta 3."
+          "direction": "bidirectional"
         }
       ]
+    },
+    {
+      "id": "p3",
+      "name": "Planta 3",
+      "notes": "Planta de huéspedes sin barrotes en las ventanas. El rellano de la escalera da a un pasillo de habitaciones. El viejo montacargas de servicio tiene su pozo al fondo del pasillo, no en la escalera, con los arcones del servicio apilados junto a él.",
+      "zones": [
+        {
+          "id": "p3-descansillo",
+          "name": "Descansillo de la escalera",
+          "notes": "Meseta de la escalera donde termina el tramo que sube al ático; da al pasillo de habitaciones.",
+          "elements": ["peldaños de madera", "pasamanos", "puerta de rejilla de servicio"]
+        },
+        {
+          "id": "p3-pasillo-habitaciones",
+          "name": "Pasillo de habitaciones",
+          "notes": "Corredor largo de la planta con puertas de huéspedes a ambos lados; al fondo se abre el pozo del montacargas de servicio.",
+          "elements": ["puertas de habitaciones", "alfombra raída", "pozo del montacargas de servicio", "cable oxidado del montacargas", "arcones de servicio apilados", "luces de gas apagadas"]
+        }
+      ],
+      "connections": [
+        {
+          "from": "p3-descansillo",
+          "to": "p3-pasillo-habitaciones",
+          "via": "puerta",
+          "direction": "bidirectional"
+        },
+        {
+          "from": "p3-descansillo",
+          "to": "p4-escalera",
+          "via": "escalera",
+          "direction": "bidirectional"
+        },
+        {
+          "from": "p3-pasillo-habitaciones",
+          "to": "p0-vestibulo",
+          "via": "escalera principal",
+          "direction": "bidirectional",
+          "note": "La escalera principal desciende desde el pasillo de P3 por las plantas 2 y 1 hasta el vestíbulo de P0 (plantas intermedias aún sin modelar)."
+        }
+      ]
+    },
+    {
+      "id": "p0",
+      "name": "Planta baja (vestíbulo)",
+      "notes": "Vestíbulo del hotel con la recepción, el mostrador de caoba y el letrero Gilman House; sus ventanales tienen barrotes. La puerta de la calle y la puerta de servicio trasera dan a la calle.",
+      "zones": [
+        {
+          "id": "p0-vestibulo",
+          "name": "Vestíbulo",
+          "notes": "Sala de entrada con mosaico roto y mostrador de caoba; al fondo, la puerta de la calle y la puerta de servicio trasera.",
+          "elements": ["mosaico roto", "mostrador de caoba", "letrero Gilman House", "puerta de la calle", "puerta de servicio trasera"]
+        }
+      ],
+      "connections": []
     }
   ]
 }
