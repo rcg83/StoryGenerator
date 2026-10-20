@@ -30,11 +30,11 @@
         "text": "La criatura cruza el umbral con paso pesado y el cuarto se queda sin aire. Cada salida tiene su precio y el tiempo se agota.\n\nEl pasillo y la escalera quedan al otro lado de la criatura; la cornisa, a tu espalda. Solo una de las dos salidas no cruza frente a ella.",
         "pageOptions": [
           {
-            "optionText": "Salto a la cornisa y avanzas hasta la ventana de la alcoba contigua para evitar cruzar frente a la criatura.",
+            "optionText": "Salto a la cornisa y avanzo hasta la ventana de la alcoba contigua para evitar cruzar frente a la criatura.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Me escondo bajo la cama y contienes la respiración, confiando en que la criatura no te descubra.",
+            "optionText": "Me escondo bajo la cama y contengo la respiración, confiando en que la criatura no me descubra.",
             "optionLink": "gameover-001"
           }
         ],
@@ -57,11 +57,11 @@
         "text": "En el pasillo del ático, frente a la escalera, tienes que decidir si bajas ahora o buscas otra vía para ganar distancia.",
         "pageOptions": [
           {
-            "optionText": "Entras en la alcoba contigua para ganar tiempo y buscar una ruta más segura antes de bajar.",
+            "optionText": "Entro en la alcoba contigua para ganar tiempo y buscar una ruta más segura antes de bajar.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Bajo de inmediato por la escalera, midiendo cada peldaño para no delatar tu posición.",
+            "optionText": "Bajo de inmediato por la escalera, midiendo cada peldaño para no delatar mi posición.",
             "optionLink": "spread-003"
           },
           {
@@ -101,7 +101,7 @@
             "optionLink": "spread-001b"
           },
           {
-            "optionText": "Abro imprudentemente hacia el pasillo cuando la criatura ya está a tu alcance.",
+            "optionText": "Abro imprudentemente hacia el pasillo cuando la criatura ya está a mi alcance.",
             "optionLink": "gameover-001"
           }
         ],
@@ -128,11 +128,11 @@
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Me aparto del hueco y tomas la escalera principal del descansillo hacia las plantas inferiores.",
+            "optionText": "Me aparto del hueco y tomo la escalera principal del descansillo hacia las plantas inferiores.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Bajo al descansillo y la criatura te corta el paso junto al pozo del montacargas.",
+            "optionText": "Bajo al descansillo y la criatura me corta el paso junto al pozo del montacargas.",
             "optionLink": "gameover-002"
           }
         ],
@@ -164,11 +164,11 @@
             "optionLink": "end-001"
           },
           {
-            "optionText": "Me oculto entre los arcones apilados hasta que el hotel se calma; luego tomas la escalera principal.",
+            "optionText": "Me oculto entre los arcones apilados hasta que el hotel se calma; luego tomo la escalera principal.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Me asomo demasiado cerca del hueco mientras la criatura desciende por la escalera y te corta la retirada.",
+            "optionText": "Me asomo demasiado cerca del hueco mientras la criatura desciende por la escalera y me corta la retirada.",
             "optionLink": "gameover-002"
           }
         ],
