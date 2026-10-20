@@ -181,19 +181,19 @@
       "type": "death",
       "leftPage": {
         "id": "gameover-001-left",
-        "text": "Te metes bajo la cama y aguantas la respiración. El hedor a salitre llena el cuarto y la puerta cuelga de una bisagra.\n\nUna mano escamosa tantea el suelo a palmo de tu escondite. Los dedos recorren tus zapatillas y tu tobillo, y se detienen.\n\nEl agarre te arranca de debajo de la cama y te arrastra por el pasillo del ático hacia la escalera.\n\nLa ventana a la cornisa queda atrás. Tus dedos arañan la madera del suelo y nada te frena: el hotel se traga tu voz.",
-        "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
-        "pageNumber": 11
-      },
-      "rightPage": {
-        "id": "gameover-001-right",
         "text": "",
         "illustration": {
           "name": "reporter-trapped-under-bed-cenital-view.png",
           "size": "full",
           "description": "Vista cenital de la habitación del ático: Elena oculta bajo la cama mientras la criatura rastrea la oscuridad con sus ojos sin párpados. La puerta cuelga de la bisagra y el suelo aparece manchado de barro húmedo."
         },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 11
+      },
+      "rightPage": {
+        "id": "gameover-001-right",
+        "text": "Al esconderte bajo la cama, la criatura te descubre y te arrastra por el ático hacia la oscuridad.",
         "pageOptions": [
           {
             "optionText": "Reiniciar",
@@ -209,19 +209,19 @@
       "type": "death",
       "leftPage": {
         "id": "gameover-002-left",
-        "text": "Bajas al descansillo de la planta tres junto al pozo del montacargas. El hedor salitroso sube del hueco como una marea.\n\nUna mano escamosa desciende tras de ti y te corta el paso antes de que alcances la escalera principal.\n\nEl agarre te levanta del suelo y te estrella contra el borde de metal oxidado del pozo. La balaustrada cruje bajo el impacto.\n\nEl pasillo del ático queda arriba, fuera de alcance. Tu grito se pierde en la boca oscura del pozo.",
-        "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
-        "pageNumber": 13
-      },
-      "rightPage": {
-        "id": "gameover-002-right",
         "text": "",
         "illustration": {
           "name": "Elena-grabbed-by-deepone-from-behind.png",
           "size": "full",
           "description": "En el descansillo del montacargas de la planta tres, la criatura escamosa aferra a Elena por detrás y la levanta del suelo. La balaustrada está astillada y el cable grasiento del pozo se balancea en la penumbra."
         },
+        "pageOptions": [],
+        "title": "La Reportera Atrapada en el Horror",
+        "pageNumber": 13
+      },
+      "rightPage": {
+        "id": "gameover-002-right",
+        "text": "Al bajar al descansillo junto al pozo del montacargas, la criatura te corta el paso y te arroja al hueco del pozo.",
         "pageOptions": [
           {
             "optionText": "Reiniciar",
