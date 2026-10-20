@@ -7,7 +7,7 @@
   "gameovers": [
     {
       "spreadFrom": "spread-001",
-      "optionText": "Me escondo bajo la cama y contengo la respiración, confiando en que la criatura no me descubra.",
+      "optionText": "Me escondo bajo la cama y contengo la respiración.",
       "optionLink": "gameover-001",
       "zone": {
         "scenarioId": "gilman-house",
@@ -47,7 +47,7 @@
     },
     {
       "spreadFrom": "spread-001b",
-      "optionText": "Me quedo inmóvil junto a una puerta cerrada mientras la criatura se acerca por el pasillo.",
+      "optionText": "Me quedo inmóvil junto a una puerta cerrada.",
       "optionLink": "gameover-001",
       "zone": {
         "scenarioId": "gilman-house",
@@ -87,7 +87,7 @@
     },
     {
       "spreadFrom": "spread-002",
-      "optionText": "Abro imprudentemente hacia el pasillo cuando la criatura ya está a mi alcance.",
+      "optionText": "Abro la puerta hacia el pasillo.",
       "optionLink": "gameover-001",
       "zone": {
         "scenarioId": "gilman-house",
@@ -127,7 +127,7 @@
     },
     {
       "spreadFrom": "spread-003",
-      "optionText": "Bajo al descansillo y la criatura me corta el paso junto al pozo del montacargas.",
+      "optionText": "Bajo al descansillo y sigo el pasillo para llegar a la escalera.",
       "optionLink": "gameover-002",
       "zone": {
         "scenarioId": "gilman-house",
@@ -167,7 +167,7 @@
     },
     {
       "spreadFrom": "spread-004",
-      "optionText": "Me asomo demasiado cerca del hueco mientras la criatura desciende por la escalera y me corta la retirada.",
+      "optionText": "Me asomo al hueco.",
       "optionLink": "gameover-002",
       "zone": {
         "scenarioId": "gilman-house",
