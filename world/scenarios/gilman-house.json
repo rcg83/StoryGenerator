@@ -6,7 +6,7 @@
     {
       "id": "p4",
       "name": "Ático",
-      "notes": "Planta más alta del hotel. Estructura sencilla: habitaciones conectadas por un pasillo, con la escalera de servicio al final del pasillo para bajar a P3. Las ventanas no tienen barrotes.",
+      "notes": "Planta más alta del hotel. Estructura sencilla: habitaciones conectadas por un pasillo, con la escalera al final del pasillo para bajar a P3. Las ventanas no tienen barrotes.",
       "zones": [
         {
           "id": "p4-habitacion-elena",
@@ -23,12 +23,12 @@
         {
           "id": "p4-pasillo",
           "name": "Pasillo del ático",
-          "notes": "Corredor estrecho que conecta las habitaciones; la escalera de servicio arranca en su extremo.",
+          "notes": "Corredor estrecho que conecta las habitaciones; la escalera arranca en su extremo.",
           "elements": ["puertas de las habitaciones", "madera que cruje bajo los pies"]
         },
         {
-          "id": "p4-escalera-servicio",
-          "name": "Escalera de servicio",
+          "id": "p4-escalera",
+          "name": "Escalera",
           "notes": "Tramo angosto al final del pasillo que desciende a la planta 3.",
           "elements": ["peldaños de madera", "pasamanos"]
         }
@@ -55,14 +55,14 @@
         },
         {
           "from": "p4-pasillo",
-          "to": "p4-escalera-servicio",
+          "to": "p4-escalera",
           "via": "extremo del pasillo",
           "direction": "bidirectional"
         },
         {
-          "from": "p4-escalera-servicio",
+          "from": "p4-escalera",
           "to": "p3-descansillo-montacargas",
-          "via": "escalera de servicio",
+          "via": "escalera",
           "direction": "bidirectional",
           "status": "pending",
           "note": "Destino P3 fuera del alcance actual; se definirá al modelar la planta 3."

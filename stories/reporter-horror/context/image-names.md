@@ -52,8 +52,8 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 - **Sentido:** La criatura agarrando a Elena junto a la puerta de servicio del hotel.
 - **Lugar:** `gameover-003` → `rightPage.illustration` (Game Over por embestir la puerta a lo bruto; imagen `full` de página entera).
 
-### escalera-servicio-captura.jpg
-- **Sentido:** Escalera de servicio del hotel entre P3 y P4: la criatura escamosa arrastrando a Elena por los peldaños que crujen, con la balaustrada rota y la boca oscura del pozo del montacargas al fondo del descansillo.
+### escalera-captura.jpg
+- **Sentido:** Escalera del ático del hotel entre P3 y P4: la criatura escamosa arrastrando a Elena por los peldaños que crujen, con la balaustrada rota y la boca oscura del pozo del montacargas al fondo del descansillo.
 - **Lugar:** No usada en esta versión (sustituida por `Elena-grabbed-by-deepone-from-behind.png` en `gameover-002`).
 
 ### Elena-grabbed-by-deepone-from-behind.png

@@ -47,25 +47,25 @@
       "type": "default",
       "leftPage": {
         "id": "spread-001b-left",
-        "text": "Sales de la alcoba contigua y entras al pasillo del ático. Las paredes manchadas de humedad gotean y el suelo cruje bajo tus botas.\n\nCasi todas las puertas están clavadas con tablas. Más al fondo, el hueco de la escalera de servicio baja hacia la planta tres.\n\nEl arrastre húmedo vuelve a empezar detrás de ti, al otro lado del corredor. La criatura no tardará en alcanzar el pasillo.\n\nTu única bajada en esta planta es la escalera de servicio. Debes moverte antes de que la criatura cierre el corredor.",
+        "text": "Sales de la alcoba contigua y entras al pasillo del ático. Las paredes manchadas de humedad gotean y el suelo cruje bajo tus botas.\n\nLas puertas de las habitaciones permanecen cerradas. Más al fondo, el hueco de la escalera baja hacia la planta tres.\n\nEl arrastre húmedo vuelve a empezar detrás de ti, al otro lado del corredor. La criatura no tardará en alcanzar el pasillo.\n\nTu única bajada en esta planta es la escalera. Debes moverte antes de que la criatura cierre el corredor.",
         "pageOptions": [],
         "title": "La Reportera Atrapada en el Horror",
         "pageNumber": 3
       },
       "rightPage": {
         "id": "spread-001b-right",
-        "text": "En el pasillo del ático, frente a la escalera de servicio, tienes que decidir si bajas ahora o buscas otra vía para ganar distancia.",
+        "text": "En el pasillo del ático, frente a la escalera, tienes que decidir si bajas ahora o buscas otra vía para ganar distancia.",
         "pageOptions": [
           {
             "optionText": "Entras en la alcoba contigua para ganar tiempo y buscar una ruta más segura antes de bajar.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Bajas de inmediato por la escalera de servicio, midiendo cada peldaño para no delatar tu posición.",
+            "optionText": "Bajas de inmediato por la escalera, midiendo cada peldaño para no delatar tu posición.",
             "optionLink": "spread-003"
           },
           {
-            "optionText": "Te quedas inmóvil junto a una puerta clavada mientras la criatura se acerca por el pasillo.",
+            "optionText": "Te quedas inmóvil junto a una puerta cerrada mientras la criatura se acerca por el pasillo.",
             "optionLink": "gameover-001"
           }
         ],
@@ -78,7 +78,7 @@
       "type": "default",
       "leftPage": {
         "id": "spread-002-left",
-        "text": "Llegas a la alcoba contigua por la cornisa. El cuarto está en penumbra y huele a humedad. Desde aquí puedes volver al pasillo del ático o bajar por la escalera de servicio.",
+        "text": "Cruzas a la alcoba contigua. El cuarto huele a alcanfor y humedad. La única salida es la puerta al pasillo del ático; la ventana de la cornisa queda atrás.",
         "illustration": {
           "name": "acceso-cornisa-noche.jpg",
           "size": "large",
@@ -90,15 +90,15 @@
       },
       "rightPage": {
         "id": "spread-002-right",
-        "text": "En la alcoba contigua, el acceso al pasillo te permite reconectar con la escalera de servicio. Cada movimiento debe ser calculado para evitar ser vista.",
+        "text": "En la alcoba contigua, el acceso al pasillo te permite reconectar con la escalera. Cada movimiento debe ser calculado para evitar ser vista.",
         "pageOptions": [
           {
-            "optionText": "Cruzas la puerta de la alcoba hacia el pasillo del ático para alcanzar la escalera de servicio.",
+            "optionText": "Cruzas la puerta de la alcoba hacia el pasillo del ático para alcanzar la escalera.",
             "optionLink": "spread-001b"
           },
           {
-            "optionText": "Bajas por la escalera de servicio desde esta ala, midiendo cada peldaño para no delatar tu posición.",
-            "optionLink": "spread-003"
+            "optionText": "Registras la alcoba en penumbra: cajones con trastos y un revólver de tambor vacío bajo la almohada. Nada útil. Sales al pasillo.",
+            "optionLink": "spread-001b"
           },
           {
             "optionText": "Abres imprudentemente hacia el pasillo cuando la criatura ya está a tu alcance.",
@@ -114,7 +114,7 @@
       "type": "critical",
       "leftPage": {
         "id": "spread-003-left",
-        "text": "Empiezas a bajar por la escalera de servicio hacia la planta tres. Los peldaños de madera crujen bajo tu peso con cada paso.\n\nEl hueco amplifica todos los sonidos: tu respiración, el roce de la cámara y el crujido de la balaustrada carcomida.\n\nAbajo, en la planta tres, el pozo del montacargas se abre como una boca oscura junto al descansillo.\n\nAlgo se arrastra sobre los peldaños que acabas de dejar atrás. No puedes quedarte quieta en la escalera.",
+        "text": "Empiezas a bajar por la escalera hacia la planta tres. Los peldaños de madera crujen bajo tu peso con cada paso.\n\nEl hueco amplifica todos los sonidos: tu respiración, el roce de la cámara y el crujido de la balaustrada carcomida.\n\nAbajo, en la planta tres, el pozo del montacargas se abre como una boca oscura junto al descansillo.\n\nAlgo se arrastra sobre los peldaños que acabas de dejar atrás. No puedes quedarte quieta en la escalera.",
         "pageOptions": [],
         "title": "La Reportera Atrapada en el Horror",
         "pageNumber": 7
@@ -128,11 +128,11 @@
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Te desvías hacia el pasillo de planta tres, alejándote del hueco y buscando una salida.",
+            "optionText": "Te apartas del hueco y tomas la escalera principal del descansillo hacia las plantas inferiores.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Te detienes en un rellano estrecho y la criatura te alcanza desde arriba por la escalera.",
+            "optionText": "Bajas al descansillo y la criatura te corta el paso junto al pozo del montacargas.",
             "optionLink": "gameover-002"
           }
         ],
@@ -145,11 +145,11 @@
       "type": "critical",
       "leftPage": {
         "id": "spread-004-left",
-        "text": "Alcanzas la plataforma junto al pozo del montacargas en la planta tres. Un hedor salitroso sube desde el hueco. El cable está oxidado y el pasillo lateral ofrece otra salida.",
+        "text": "Alcanzas el descansillo junto al pozo del montacargas en la planta tres. Un hedor salitroso sube desde el hueco. El cable pende oxidado y los arcones apilados contra la pared ofrecen cobertura.",
         "illustration": {
           "name": "pozo-luz-montacargas.jpg",
           "size": "large",
-          "description": "Junto al pozo del montacargas en la planta tres, el hueco se abre entre vigas mohosas. El cable cuelga oxidado y un hedor salitroso sube desde el pozo. La puerta del pasillo ofrece otra salida."
+          "description": "Junto al pozo del montacargas en la planta tres, el hueco se abre entre vigas mohosas. El cable pende oxidado y un hedor salitroso sube desde el pozo. Los arcones apilados contra la pared ofrecen cobertura en la penumbra."
         },
         "pageOptions": [],
         "title": "La Reportera Atrapada en el Horror",
@@ -160,11 +160,11 @@
         "text": "En la planta tres, junto al pozo del montacargas, debes elegir entre buscar una salida por el pasillo o arriesgarte. La escalera sigue siendo peligrosa.",
         "pageOptions": [
           {
-            "optionText": "Te mueves por el pasillo de planta tres, alejándote del hueco y buscando el camino hacia la salida.",
+            "optionText": "Te alejas del pozo y bajas por la escalera principal, planta tras planta, sin hacer ruido.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Te quedas oculta junto al pozo del montacargas para dejar pasar la amenaza antes de avanzar.",
+            "optionText": "Te ocultas entre los arcones apilados hasta que el hotel se calma; luego tomas la escalera principal.",
             "optionLink": "end-001"
           },
           {
@@ -181,7 +181,7 @@
       "type": "death",
       "leftPage": {
         "id": "gameover-001-left",
-        "text": "Te metes bajo la cama y aguantas la respiración. El hedor a salitre llena el cuarto y la puerta cuelga de una bisagra.\n\nUna mano escamosa tantea el suelo a palmo de tu escondite. Los dedos recorren tus zapatillas y tu tobillo, y se detienen.\n\nEl agarre te arranca de debajo de la cama y te arrastra por el pasillo del ático hacia la escalera de servicio.\n\nLa ventana a la cornisa queda atrás. Tus dedos arañan la alfombra y nada te frena: el hotel se traga tu voz.",
+        "text": "Te metes bajo la cama y aguantas la respiración. El hedor a salitre llena el cuarto y la puerta cuelga de una bisagra.\n\nUna mano escamosa tantea el suelo a palmo de tu escondite. Los dedos recorren tus zapatillas y tu tobillo, y se detienen.\n\nEl agarre te arranca de debajo de la cama y te arrastra por el pasillo del ático hacia la escalera.\n\nLa ventana a la cornisa queda atrás. Tus dedos arañan la madera del suelo y nada te frena: el hotel se traga tu voz.",
         "pageOptions": [],
         "title": "La Reportera Atrapada en el Horror",
         "pageNumber": 11
@@ -209,7 +209,7 @@
       "type": "death",
       "leftPage": {
         "id": "gameover-002-left",
-        "text": "En la escalera de servicio, un peldaño cruje bajo tu bota y el sonido sube por el hueco hasta el ático.\n\nUna mano escamosa te alcanza desde arriba y te golpea contra el pasamanos. Pierdes el apoyo y el equilibrio.\n\nLa criatura te arrastra hacia el rellano entre la planta tres y la cuatro, donde no hay puerta que abrir.\n\nEl pasillo del ático queda arriba, fuera de alcance. Tu grito se pierde en el hueco de la escalera.",
+        "text": "Bajas al descansillo de la planta tres junto al pozo del montacargas. El hedor salitroso sube del hueco como una marea.\n\nUna mano escamosa desciende tras de ti y te corta el paso antes de que alcances la escalera principal.\n\nEl agarre te levanta del suelo y te estrella contra el borde de metal oxidado del pozo. La balaustrada cruje bajo el impacto.\n\nEl pasillo del ático queda arriba, fuera de alcance. Tu grito se pierde en la boca oscura del pozo.",
         "pageOptions": [],
         "title": "La Reportera Atrapada en el Horror",
         "pageNumber": 13
@@ -237,7 +237,7 @@
       "type": "ending",
       "leftPage": {
         "id": "end-001-left",
-        "text": "Ganas el pasillo lateral de la planta tres y te mueves hacia la puerta de servicio sin encender la linterna.\n\nEl pasillo huele a mar y a humedad. Las puertas de las habitaciones están cerradas y en silencio.\n\nCierras el pestillo a tu espalda sin hacer ruido. El edificio deja de empujarte y la noche te recibe.\n\nEn el callejón trasero, la niebla te oculta. Sales invisible para ella: la ciudad duerme herida.",
+        "text": "Te apartas del pozo y tomas la escalera principal. El primer tramo huye del hedor salitroso y de los pasos que bajan tras de ti.\n\nLa escalera desciende planta tras planta. En la planta dos, los barrotes de las ventanas bajas dibujan rayas de luz de gas sobre los peldaños.\n\nEn el vestíbulo el mosaico está roto y el mostrador de caoba descascarillado. El letrero Gilman House cuelga oscuro sobre la recepción.\n\nTe deslizas por el pasillo de servicio trasero sin encender la linterna. El callejón te recibe entre charcos y niebla; el hotel queda mudo a tu espalda.",
         "pageOptions": [],
         "title": "La Reportera Atrapada en el Horror",
         "pageNumber": 15

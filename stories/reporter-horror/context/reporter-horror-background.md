@@ -52,7 +52,7 @@ Elena es una periodista de investigación que ha llegado siguiendo pistas concre
 | Dec | Tipo | Planta | Escenario | Correcta (deducible) | Arriesgada | Game Over |
 |-----|------|--------|-----------|----------------------|------------|-----------|
 | 1 | Crítica | P4 Ático | Puerta derrumbada | Salir por la **cornisa** a la habitación contigua (atlética) | Flash de cámara + huir por el pasillo | Esconderse bajo la cama (captura) |
-| 2 | Normal | P4→P3 | Alcoba contigua (ventana sin barrotes) | Bajar por la escalera de servicio (oído) | Registrar la alcoba (revólver vacío) | — |
+| 2 | Normal | P4→P3 | Alcoba contigua (ventana sin barrotes) | Bajar por la escalera (oído) | Registrar la alcoba (revólver vacío) | — |
 | 3 | Crítica | P3 | Descansillo de arriba | Cruzar por el hueco del montacargas (atlética) | Esperar tras los arcones | Cruzar corriendo (captura) |
 | 4 | Normal | P2 (barrotes) | Sala común del hotel | Escuchar la radio de onda corta (deducción → coordenadas) | Destruir la radio | — |
 | 5 | Normal | P2 (barrotes) | Pasillo de servicio | Distraer con humo/fósforos (deducción) | Pasar en silencio | — |

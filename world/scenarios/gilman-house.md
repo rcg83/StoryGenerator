@@ -26,14 +26,14 @@ Escenario compartido en `world/scenarios/` (recurso reutilizable entre historias
 | **P0, P1, P2** | Con **barrotes** | No hay salida por ventana; cualquier escape es por puertas, escaleras o el montacargas. |
 | **P3, P4** | **Sin barrotes** | Desde aquí son posibles las maniobras de cornisa / fachada / ventana a ventana. |
 
-Regla derivada: **el ático solo se comunica con el resto del hotel por la escalera de servicio.** La escalera principal termina en P3; el ascensor de viajeros está muerto desde hace años.
+Regla derivada: **el ático solo se comunica con el resto del hotel por la escalera.** La escalera principal termina en P3; el ascensor de viajeros está muerto desde hace años.
 
 ---
 
 ## 🏗️ Distribución Vertical
 
 ```
-P4  Ático (habitaciones + escalera de servicio)
+P4  Ático (habitaciones + escalera)
 P3  Descansillo del montacargas (+ escalera principal hacia abajo)
 P2  Planta común (sala común + pasillo de servicio)
 P1  Planta de servicio (cocina/comedor + almacén + escalera principal)
@@ -44,9 +44,9 @@ P0  Vestíbulo / recepción (+ salidas a la calle y al callejón)
 
 ## 🛏️ P4 — Ático
 
-Estructura **sencilla**: un **pasillo** conecta las **habitaciones** y la **escalera de servicio** arranca al final del pasillo para bajar a P3. Zonas con IDs canónicos (ver [`gilman-house.json`](./gilman-house.json)): `p4-habitacion-elena`, `p4-alcoba-contigua`, `p4-pasillo`, `p4-escalera-servicio`.
+Estructura **sencilla**: un **pasillo** conecta las **habitaciones** y la **escalera** arranca al final del pasillo para bajar a P3. Zonas con IDs canónicos (ver [`gilman-house.json`](./gilman-house.json)): `p4-habitacion-elena`, `p4-alcoba-contigua`, `p4-pasillo`, `p4-escalera`.
 
-**`p4-pasillo` — Pasillo del ático:** corredor estrecho que conecta las habitaciones; **al final del pasillo arranca la escalera de servicio**. Madera que cruje bajo los pies.
+**`p4-pasillo` — Pasillo del ático:** corredor estrecho que conecta las habitaciones; **al final del pasillo arranca la escalera**. Madera que cruje bajo los pies.
 
 **`p4-habitacion-elena` — Habitación de Elena:** al fondo del pasillo; puerta al pasillo y ventana **sin barrotes** que da a la cornisa de piedra. Suelo frío, ropa de cama, la cámara y el mobiliario de una huésped cualquiera.
 
@@ -54,13 +54,13 @@ Estructura **sencilla**: un **pasillo** conecta las **habitaciones** y la **esca
 
 **`p4-alcoba-contigua` — Alcoba contigua:** habitación vacía que huele a alcanfor y humedad, contigua a la de Elena y **con puerta propia al mismo pasillo**; su ventana también está **sin barrotes**. Elementos: cajones con trastos (despertador, cepillo, naipes), un **revólver de tambor vacío** bajo la almohada, el hueco de un barrote antiguo junto a la ventana.
 
-**`p4-escalera-servicio` — Escalera de servicio:** tramo angosto al final del pasillo que desciende a la planta 3.
+**`p4-escalera` — Escalera:** tramo angosto al final del pasillo que desciende a la planta 3.
 
 ---
 
 ## ⚙️ P3 — Descansillo del Montacargas
 
-Rellano amplio en penumbra, desembocadura de la **escalera de servicio** (viene de P4). Elementos:
+Rellano amplio en penumbra, desembocadura de la **escalera** que viene de P4. Elementos:
 
 - **Pozo del montacargas:** boca rectangular de metal oxidado en la pared del fondo, **sin cabina**: solo un **cable grasiento** y un contrapeso. El hueco desciende hasta el sótano de servicio bajo P0 y tiene una **abertura por rellano de servicio**: P2 (junto al pasillo de servicio), P1 (tras la puerta de servicio de la cocina) y P0 (fondo, bloqueado). Deslizarse por el cable permite bajar **por tramos** y salir por la abertura elegida.
 - **Arcones apilados** y trastos junto a las paredes, donde alguien puede ocultarse.
@@ -102,8 +102,8 @@ Rellano amplio en penumbra, desembocadura de la **escalera de servicio** (viene 
 | `p4-habitacion-elena` | `p4-alcoba-contigua` | **Cornisa** exterior (por las ventanas, sin barrotes) |
 | `p4-habitacion-elena` | `p4-pasillo` | Puerta de la habitación |
 | `p4-alcoba-contigua` | `p4-pasillo` | Puerta de la alcoba |
-| `p4-pasillo` | `p4-escalera-servicio` | Extremo del pasillo |
-| `p4-escalera-servicio` | Descansillo del montacargas (P3) | **Escalera de servicio** (pendiente de modelar P3) |
+| `p4-pasillo` | `p4-escalera` | Extremo del pasillo |
+| `p4-escalera` | Descansillo del montacargas (P3) | **Escalera** (pendiente de modelar P3) |
 | Descansillo del montacargas (P3) | Salida de servicio de P2 | **Pozo del montacargas** (por tramo, por el cable) |
 | Descansillo del montacargas (P3) | P2 / P1 / P0 | **Escalera principal** |
 | Sala común (P2) | Pasillo de servicio (P2) | Puerta lateral |
@@ -122,4 +122,4 @@ Rellano amplio en penumbra, desembocadura de la **escalera de servicio** (viene 
 2. El **montacargas** se desciende **por tramos**: bajar de P3 a P2 es viajar un tramo y salir por la abertura de servicio de P2; no es caer hasta el sótano.
 3. Cada página debe anclar dónde está el personaje (planta + zona), por dónde llegó y qué conexión queda delante.
 4. Los **elementos de cada zona** son estables: si una página los menciona, deben existir en el plano de esa planta (radio en P2, llave y barra en P1, plano y maniquí en el almacén, registro en P0...).
-5. El ático (P4) no se abandona por otro camino que la escalera de servicio o la maniobra de cornisa entre habitaciones.
+5. El ático (P4) no se abandona por otro camino que la escalera o la maniobra de cornisa entre habitaciones.
