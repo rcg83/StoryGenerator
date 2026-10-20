@@ -2,7 +2,7 @@
   "storyId": "reporter-horror",
   "chapterId": "reporter-horror-chapter-01",
   "chapterNumber": 1,
-  "generatedAt": "2026-10-20T19:08:14.085Z",
+  "generatedAt": "2026-10-21T00:00:00.000Z",
   "generatedBy": "PageAuditor",
   "gameovers": [
     {
@@ -11,25 +11,31 @@
       "optionLink": "gameover-001",
       "zone": {
         "scenarioId": "gilman-house",
-        "fromZoneId": "p4-atico",
-        "notes": ""
+        "fromZoneId": "p4-habitacion-elena",
+        "notes": "Habitación del ático; la criatura cruza el umbral y la única salida limpia es la cornisa."
       },
       "reasonForGameover": {
-        "summary": "Esconderse bajo la cama resulta fatal: la criatura detecta al personaje.",
+        "summary": "Esconderse bajo la cama deja a Elena sin salida en una habitación pequeña barrida por la criatura.",
         "evidence": [
+          {
+            "page": "left",
+            "paragraphIndex": 0,
+            "excerpt": "Estás en la habitación del ático del Gilman House. La puerta salta de la bisagra y una criatura escamosa ocupa el umbral. Solo la ventana abierta hacia la cornisa promete salida.",
+            "justification": "La única salida libre descrita es la ventana a la cornisa; la criatura ocupa el umbral."
+          },
           {
             "page": "right",
             "paragraphIndex": 0,
-            "excerpt": "La criatura cruza el umbral con paso pesado y el cuarto se queda sin aire. Cada salida tiene su precio y el tiempo se agota.\n\nEl pasillo y la escalera quedan al otro lado de la criatura; la cornisa, a tu espalda. Solo una de las dos salidas no cruza frente a ella.",
-            "justification": "Contexto donde se elige la opción letal."
+            "excerpt": "La criatura cruza el umbral con paso pesado y el cuarto se queda sin aire. Cada salida tiene su precio y el tiempo se agota.",
+            "justification": "La criatura entra en el cuarto; quedarse dentro es letal."
           }
         ]
       },
       "solidityAssessment": {
         "isSolid": true,
-        "score": 8,
+        "score": 9,
         "verdict": "solid",
-        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
+        "rationale": "La pista está en el text: la criatura ocupa la puerta y solo la ventana/cornisa ofrece salida. Esconderse bajo la cama no esquiva a un rastreador dentro de la habitación.",
         "issues": [],
         "suggestions": []
       },
@@ -37,71 +43,37 @@
         "attributesChecked": true,
         "skillsChecked": true,
         "itemsChecked": true,
-        "notes": "Revisar contra perfil concreto."
+        "notes": "Elena es atlética (4) y ágil: saltar a la cornisa es la opción coherente con su perfil; esconderse niega su ventaja."
       },
       "spatialFit": {
         "adjacentChecked": true,
-        "fromZoneId": "p4-atico",
-        "notes": "Plausible en el espacio descrito."
-      }
-    },
-    {
-      "spreadFrom": "spread-001b",
-      "optionText": "Me quedo inmóvil junto a una puerta cerrada.",
-      "optionLink": "gameover-001",
-      "zone": {
-        "scenarioId": "gilman-house",
-        "fromZoneId": "p4-atico",
-        "notes": ""
-      },
-      "reasonForGameover": {
-        "summary": "Esconderse bajo la cama resulta fatal: la criatura detecta al personaje.",
-        "evidence": [
-          {
-            "page": "right",
-            "paragraphIndex": 0,
-            "excerpt": "En el pasillo del ático, frente a la escalera, tienes que decidir si bajas ahora o buscas otra vía para ganar distancia.",
-            "justification": "Contexto donde se elige la opción letal."
-          }
-        ]
-      },
-      "solidityAssessment": {
-        "isSolid": true,
-        "score": 8,
-        "verdict": "solid",
-        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
-        "issues": [],
-        "suggestions": []
-      },
-      "characterFit": {
-        "attributesChecked": true,
-        "skillsChecked": true,
-        "itemsChecked": true,
-        "notes": "Revisar contra perfil concreto."
-      },
-      "spatialFit": {
-        "adjacentChecked": true,
-        "fromZoneId": "p4-atico",
-        "notes": "Plausible en el espacio descrito."
+        "fromZoneId": "p4-habitacion-elena",
+        "notes": "La habitación conecta con p4-pasillo (puerta) y p4-alcoba-contigua (cornisa). La muerte ocurre dentro de la zona de origen."
       }
     },
     {
       "spreadFrom": "spread-002",
-      "optionText": "Abro la puerta hacia el pasillo.",
-      "optionLink": "gameover-001",
+      "optionText": "Me quedo tras la puerta conteniendo la respiración.",
+      "optionLink": "gameover-002",
       "zone": {
         "scenarioId": "gilman-house",
-        "fromZoneId": "p4-atico",
-        "notes": ""
+        "fromZoneId": "p4-alcoba-contigua",
+        "notes": "Alcoba contigua; quedarse tras la puerta no aleja a Elena de la criatura que sube por el corredor."
       },
       "reasonForGameover": {
-        "summary": "Esconderse bajo la cama resulta fatal: la criatura detecta al personaje.",
+        "summary": "Quedarse quieta tras la puerta de la alcoba deja que la criatura alcance el corredor y la capture.",
         "evidence": [
+          {
+            "page": "left",
+            "paragraphIndex": 0,
+            "excerpt": "Entras en la alcoba contigua desde la cornisa. El cuarto huele a alcanfor y humedad. La única salida es la puerta al pasillo del ático; la ventana de la cornisa queda atrás.",
+            "justification": "La única salida de la alcoba es la puerta al pasillo; quedarse dentro no gana distancia."
+          },
           {
             "page": "right",
             "paragraphIndex": 0,
-            "excerpt": "En la alcoba contigua, el acceso al pasillo te permite reconectar con la escalera. Cada movimiento debe ser calculado para evitar ser vista.",
-            "justification": "Contexto donde se elige la opción letal."
+            "excerpt": "En la alcoba contigua, la puerta te devuelve al pasillo del ático y a la escalera.",
+            "justification": "Cruzarla conecta con la escalera; demorarse deja a la criatura acercarse."
           }
         ]
       },
@@ -109,7 +81,7 @@
         "isSolid": true,
         "score": 8,
         "verdict": "solid",
-        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
+        "rationale": "El peligro activo (la criatura que sube por el corredor, descrito en el spread previo del pasillo) alcanza a Elena si se queda inmóvil en la alcoba.",
         "issues": [],
         "suggestions": []
       },
@@ -117,39 +89,45 @@
         "attributesChecked": true,
         "skillsChecked": true,
         "itemsChecked": true,
-        "notes": "Revisar contra perfil concreto."
+        "notes": "Elena tiene oído entrenado (4) para escuchar tras las puertas; aguantar el aliento es una lectura errada del peligro, no una habilidad."
       },
       "spatialFit": {
         "adjacentChecked": true,
-        "fromZoneId": "p4-atico",
-        "notes": "Plausible en el espacio descrito."
+        "fromZoneId": "p4-alcoba-contigua",
+        "notes": "La alcoba conecta con p4-pasillo (puerta) y p4-habitacion-elena (cornisa). La captura ocurre en la zona de origen y su umbral."
       }
     },
     {
       "spreadFrom": "spread-003",
-      "optionText": "Bajo al descansillo y sigo el pasillo para llegar a la escalera.",
+      "optionText": "Me quedo inmóvil junto a una puerta cerrada.",
       "optionLink": "gameover-002",
       "zone": {
         "scenarioId": "gilman-house",
-        "fromZoneId": "p4-atico",
-        "notes": ""
+        "fromZoneId": "p4-pasillo",
+        "notes": "Pasillo del ático; quedarse inmóvil permite que la criatura cierre el corredor."
       },
       "reasonForGameover": {
-        "summary": "Acercarse al hueco del montacargas permite que la criatura corte el paso.",
+        "summary": "Detenerse en el pasillo del ático deja que la criatura, que se arrastra por el corredor, alcance a Elena.",
         "evidence": [
           {
-            "page": "right",
-            "paragraphIndex": 0,
-            "excerpt": "En mitad del descenso, entre el ático y la planta tres, tienes que decidir si continúas hacia el pozo del montacargas o intentas ganar la planta inferior por otro camino.",
-            "justification": "Contexto donde se elige la opción letal."
+            "page": "left",
+            "paragraphIndex": 2,
+            "excerpt": "El arrastre húmedo vuelve a empezar detrás de ti, al otro lado del corredor.",
+            "justification": "Hay una criatura activa en el corredor que se acerca."
+          },
+          {
+            "page": "left",
+            "paragraphIndex": 3,
+            "excerpt": "Tu única bajada en esta planta es la escalera. Debes moverte antes de que la criatura cierre el corredor.",
+            "justification": "El text advierte que quedarse es mortal: hay que alcanzar la escalera."
           }
         ]
       },
       "solidityAssessment": {
         "isSolid": true,
-        "score": 8,
+        "score": 9,
         "verdict": "solid",
-        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
+        "rationale": "El propio text dice explícitamente que hay que moverse antes de que la criatura cierre el corredor; quedarse inmóvil es letal.",
         "issues": [],
         "suggestions": []
       },
@@ -157,31 +135,37 @@
         "attributesChecked": true,
         "skillsChecked": true,
         "itemsChecked": true,
-        "notes": "Revisar contra perfil concreto."
+        "notes": "Elena es ágil (4); la opción correcta es bajar por la escalera midiendo el ruido."
       },
       "spatialFit": {
         "adjacentChecked": true,
-        "fromZoneId": "p4-atico",
-        "notes": "Plausible en el espacio descrito."
+        "fromZoneId": "p4-pasillo",
+        "notes": "El pasillo conecta con p4-habitacion-elena y p4-alcoba-contigua (puertas) y con p4-escalera (extremo). La captura ocurre en el corredor de origen."
       }
     },
     {
       "spreadFrom": "spread-004",
-      "optionText": "Me asomo al hueco.",
+      "optionText": "Me detengo en la escalera y aguardo.",
       "optionLink": "gameover-002",
       "zone": {
         "scenarioId": "gilman-house",
-        "fromZoneId": "p4-atico",
-        "notes": ""
+        "fromZoneId": "p4-escalera",
+        "notes": "Escalera entre P4 y P3; detenerse en el tramo permite que la criatura alcance a Elena."
       },
       "reasonForGameover": {
-        "summary": "Acercarse al hueco del montacargas permite que la criatura corte el paso.",
+        "summary": "Detenerse a mitad de la escalera deja que la criatura alcance el tramo y capture a Elena.",
         "evidence": [
           {
-            "page": "right",
+            "page": "left",
+            "paragraphIndex": 3,
+            "excerpt": "Algo se arrastra sobre los peldaños que acabas de dejar atrás.",
+            "justification": "La criatura sube por los mismos peldaños; detenerse la deja al alcance."
+          },
+          {
+            "page": "left",
             "paragraphIndex": 0,
-            "excerpt": "En la planta tres, junto al pozo del montacargas, debes elegir entre buscar una salida por el pasillo o arriesgarte. La escalera sigue siendo peligrosa.",
-            "justification": "Contexto donde se elige la opción letal."
+            "excerpt": "Empiezas a bajar por la escalera hacia la planta tres. Los peldaños de madera crujen bajo tu peso con cada paso.",
+            "justification": "El ruido delata la posición; quedarse quieto no elimina la amenaza que ya sube."
           }
         ]
       },
@@ -189,7 +173,7 @@
         "isSolid": true,
         "score": 8,
         "verdict": "solid",
-        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
+        "rationale": "La criatura se arrastra por los peldaños justo detrás; detenerse en la escalera la deja llegar y capturar a Elena.",
         "issues": [],
         "suggestions": []
       },
@@ -197,12 +181,104 @@
         "attributesChecked": true,
         "skillsChecked": true,
         "itemsChecked": true,
-        "notes": "Revisar contra perfil concreto."
+        "notes": "La huida coherente con Elena es seguir bajando (bajada por la escalera principal)."
       },
       "spatialFit": {
         "adjacentChecked": true,
-        "fromZoneId": "p4-atico",
-        "notes": "Plausible en el espacio descrito."
+        "fromZoneId": "p4-escalera",
+        "notes": "La escalera conecta p4-pasillo con p3 (destino pendiente). La captura ocurre en el propio tramo de origen."
+      }
+    },
+    {
+      "spreadFrom": "spread-005",
+      "optionText": "Me asomo al hueco.",
+      "optionLink": "gameover-003",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p3-descansillo-montacargas",
+        "notes": "Descansillo del montacargas en P3; asomarse al hueco expone a Elena a la criatura."
+      },
+      "reasonForGameover": {
+        "summary": "Asomarse al hueco del montacargas permite que la criatura aferre a Elena por detrás y la arroje al pozo.",
+        "evidence": [
+          {
+            "page": "left",
+            "paragraphIndex": 0,
+            "excerpt": "Alcanzas el descansillo junto al pozo del montacargas en la planta tres. Un hedor salitroso sube desde el hueco. El cable pende oxidado y los arcones apilados ofrecen cobertura.",
+            "justification": "El pozo es el peligro central y los arcones ofrecen la cobertura real."
+          },
+          {
+            "page": "right",
+            "paragraphIndex": 0,
+            "excerpt": "En el descansillo, junto al pozo, decides entre cruzar hacia la escalera o cubrirte.",
+            "justification": "El text ofrece cruzar o cubrirse; asomarse al hueco es lo que expone."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 8,
+        "verdict": "solid",
+        "rationale": "La imagen (Elena aferrada por detrás junto al pozo) y el text (el pozo como peligro, los arcones como cobertura) sostienen la coherencia de la muerte al asomarse.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "La opción coherente con Elena es ocultarse entre los arcones (cobertura) o cruzar hacia la escalera principal."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p3-descansillo-montacargas",
+        "notes": "Descansillo en P3 junto al pozo del montacargas. La captura ocurre en la zona de origen."
+      }
+    },
+    {
+      "spreadFrom": "spread-006",
+      "optionText": "Disparo un flash de la cámara y cruzo el vestíbulo.",
+      "optionLink": "gameover-004",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p0-vestibulo",
+        "notes": "Vestíbulo; el fogonazo del flash delata la posición de Elena ante la criatura."
+      },
+      "reasonForGameover": {
+        "summary": "El fogonazo del flash ilumina el vestíbulo y delata a Elena a la criatura, que le corta la salida a la calle.",
+        "evidence": [
+          {
+            "page": "left",
+            "paragraphIndex": 0,
+            "excerpt": "Bajas por la escalera principal hasta el vestíbulo. El mosaico está roto y el letrero Gilman House cuelga sobre la recepción; la puerta de la calle queda al fondo.",
+            "justification": "La puerta de la calle, única salida limpia, queda al fondo del vestíbulo."
+          },
+          {
+            "page": "right",
+            "paragraphIndex": 0,
+            "excerpt": "En el vestíbulo, con la puerta de la calle delante, eliges cómo cruzar.",
+            "justification": "Cruzar en silencio es la vía segura; un flash revela la posición."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 7,
+        "verdict": "solid",
+        "rationale": "El vestíbulo es un espacio cerrado con una única salida; usar un fogonazo de cámara revela la posición de Elena a la criatura.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "Elena lleva la cámara de fuelle Kodak (1938); el flash es un recurso de su inventario, pero delata su posición."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p0-vestibulo",
+        "notes": "Vestíbulo en planta 0. La captura ocurre en la zona de origen, antes de alcanzar la puerta de la calle."
       }
     }
   ]
