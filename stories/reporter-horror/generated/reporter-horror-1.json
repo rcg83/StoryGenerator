@@ -30,11 +30,11 @@
         "text": "La criatura cruza el umbral con paso pesado y el cuarto se queda sin aire. Cada salida tiene su precio y el tiempo se agota.\n\nEl pasillo y la escalera quedan al otro lado de la criatura; la cornisa, a tu espalda. Solo una de las dos salidas no cruza frente a ella.",
         "pageOptions": [
           {
-            "optionText": "Saltas a la cornisa y avanzas hasta la ventana de la alcoba contigua para evitar cruzar frente a la criatura.",
+            "optionText": "Salto a la cornisa y avanzas hasta la ventana de la alcoba contigua para evitar cruzar frente a la criatura.",
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Te escondes bajo la cama y contienes la respiración, confiando en que la criatura no te descubra.",
+            "optionText": "Me escondo bajo la cama y contienes la respiración, confiando en que la criatura no te descubra.",
             "optionLink": "gameover-001"
           }
         ],
@@ -61,11 +61,11 @@
             "optionLink": "spread-002"
           },
           {
-            "optionText": "Bajas de inmediato por la escalera, midiendo cada peldaño para no delatar tu posición.",
+            "optionText": "Bajo de inmediato por la escalera, midiendo cada peldaño para no delatar tu posición.",
             "optionLink": "spread-003"
           },
           {
-            "optionText": "Te quedas inmóvil junto a una puerta cerrada mientras la criatura se acerca por el pasillo.",
+            "optionText": "Me quedo inmóvil junto a una puerta cerrada mientras la criatura se acerca por el pasillo.",
             "optionLink": "gameover-001"
           }
         ],
@@ -93,15 +93,15 @@
         "text": "En la alcoba contigua, el acceso al pasillo te permite reconectar con la escalera. Cada movimiento debe ser calculado para evitar ser vista.",
         "pageOptions": [
           {
-            "optionText": "Cruzas la puerta de la alcoba hacia el pasillo del ático para alcanzar la escalera.",
+            "optionText": "Cruzo la puerta de la alcoba hacia el pasillo del ático para alcanzar la escalera.",
             "optionLink": "spread-001b"
           },
           {
-            "optionText": "Registras la alcoba en penumbra: cajones con trastos y un revólver de tambor vacío bajo la almohada. Nada útil. Sales al pasillo.",
+            "optionText": "Registro la alcoba en penumbra: cajones con trastos y un revólver de tambor vacío bajo la almohada. Nada útil. Sales al pasillo.",
             "optionLink": "spread-001b"
           },
           {
-            "optionText": "Abres imprudentemente hacia el pasillo cuando la criatura ya está a tu alcance.",
+            "optionText": "Abro imprudentemente hacia el pasillo cuando la criatura ya está a tu alcance.",
             "optionLink": "gameover-001"
           }
         ],
@@ -124,15 +124,15 @@
         "text": "En mitad del descenso, entre el ático y la planta tres, tienes que decidir si continúas hacia el pozo del montacargas o intentas ganar la planta inferior por otro camino.",
         "pageOptions": [
           {
-            "optionText": "Bajas hasta la plataforma junto al pozo del montacargas en planta tres para buscar cobertura.",
+            "optionText": "Bajo hasta la plataforma junto al pozo del montacargas en planta tres para buscar cobertura.",
             "optionLink": "spread-004"
           },
           {
-            "optionText": "Te apartas del hueco y tomas la escalera principal del descansillo hacia las plantas inferiores.",
+            "optionText": "Me aparto del hueco y tomas la escalera principal del descansillo hacia las plantas inferiores.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Bajas al descansillo y la criatura te corta el paso junto al pozo del montacargas.",
+            "optionText": "Bajo al descansillo y la criatura te corta el paso junto al pozo del montacargas.",
             "optionLink": "gameover-002"
           }
         ],
@@ -160,15 +160,15 @@
         "text": "En la planta tres, junto al pozo del montacargas, debes elegir entre buscar una salida por el pasillo o arriesgarte. La escalera sigue siendo peligrosa.",
         "pageOptions": [
           {
-            "optionText": "Te alejas del pozo y bajas por la escalera principal, planta tras planta, sin hacer ruido.",
+            "optionText": "Me alejas del pozo y bajas por la escalera principal, planta tras planta, sin hacer ruido.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Te ocultas entre los arcones apilados hasta que el hotel se calma; luego tomas la escalera principal.",
+            "optionText": "Me oculto entre los arcones apilados hasta que el hotel se calma; luego tomas la escalera principal.",
             "optionLink": "end-001"
           },
           {
-            "optionText": "Te asomas demasiado cerca del hueco mientras la criatura desciende por la escalera y te corta la retirada.",
+            "optionText": "Me asomo demasiado cerca del hueco mientras la criatura desciende por la escalera y te corta la retirada.",
             "optionLink": "gameover-002"
           }
         ],

@@ -1,0 +1,209 @@
+{
+  "storyId": "reporter-horror",
+  "chapterId": "reporter-horror-chapter-01",
+  "chapterNumber": 1,
+  "generatedAt": "2026-10-20T19:08:14.085Z",
+  "generatedBy": "PageAuditor",
+  "gameovers": [
+    {
+      "spreadFrom": "spread-001",
+      "optionText": "Me escondo bajo la cama y contienes la respiración, confiando en que la criatura no te descubra.",
+      "optionLink": "gameover-001",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p4-atico",
+        "notes": ""
+      },
+      "reasonForGameover": {
+        "summary": "Esconderse bajo la cama resulta fatal: la criatura detecta al personaje.",
+        "evidence": [
+          {
+            "page": "right",
+            "paragraphIndex": 0,
+            "excerpt": "La criatura cruza el umbral con paso pesado y el cuarto se queda sin aire. Cada salida tiene su precio y el tiempo se agota.\n\nEl pasillo y la escalera quedan al otro lado de la criatura; la cornisa, a tu espalda. Solo una de las dos salidas no cruza frente a ella.",
+            "justification": "Contexto donde se elige la opción letal."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 8,
+        "verdict": "solid",
+        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "Revisar contra perfil concreto."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p4-atico",
+        "notes": "Plausible en el espacio descrito."
+      }
+    },
+    {
+      "spreadFrom": "spread-001b",
+      "optionText": "Me quedo inmóvil junto a una puerta cerrada mientras la criatura se acerca por el pasillo.",
+      "optionLink": "gameover-001",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p4-atico",
+        "notes": ""
+      },
+      "reasonForGameover": {
+        "summary": "Esconderse bajo la cama resulta fatal: la criatura detecta al personaje.",
+        "evidence": [
+          {
+            "page": "right",
+            "paragraphIndex": 0,
+            "excerpt": "En el pasillo del ático, frente a la escalera, tienes que decidir si bajas ahora o buscas otra vía para ganar distancia.",
+            "justification": "Contexto donde se elige la opción letal."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 8,
+        "verdict": "solid",
+        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "Revisar contra perfil concreto."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p4-atico",
+        "notes": "Plausible en el espacio descrito."
+      }
+    },
+    {
+      "spreadFrom": "spread-002",
+      "optionText": "Abro imprudentemente hacia el pasillo cuando la criatura ya está a tu alcance.",
+      "optionLink": "gameover-001",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p4-atico",
+        "notes": ""
+      },
+      "reasonForGameover": {
+        "summary": "Esconderse bajo la cama resulta fatal: la criatura detecta al personaje.",
+        "evidence": [
+          {
+            "page": "right",
+            "paragraphIndex": 0,
+            "excerpt": "En la alcoba contigua, el acceso al pasillo te permite reconectar con la escalera. Cada movimiento debe ser calculado para evitar ser vista.",
+            "justification": "Contexto donde se elige la opción letal."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 8,
+        "verdict": "solid",
+        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "Revisar contra perfil concreto."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p4-atico",
+        "notes": "Plausible en el espacio descrito."
+      }
+    },
+    {
+      "spreadFrom": "spread-003",
+      "optionText": "Bajo al descansillo y la criatura te corta el paso junto al pozo del montacargas.",
+      "optionLink": "gameover-002",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p4-atico",
+        "notes": ""
+      },
+      "reasonForGameover": {
+        "summary": "Acercarse al hueco del montacargas permite que la criatura corte el paso.",
+        "evidence": [
+          {
+            "page": "right",
+            "paragraphIndex": 0,
+            "excerpt": "En mitad del descenso, entre el ático y la planta tres, tienes que decidir si continúas hacia el pozo del montacargas o intentas ganar la planta inferior por otro camino.",
+            "justification": "Contexto donde se elige la opción letal."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 8,
+        "verdict": "solid",
+        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "Revisar contra perfil concreto."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p4-atico",
+        "notes": "Plausible en el espacio descrito."
+      }
+    },
+    {
+      "spreadFrom": "spread-004",
+      "optionText": "Me asomo demasiado cerca del hueco mientras la criatura desciende por la escalera y te corta la retirada.",
+      "optionLink": "gameover-002",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p4-atico",
+        "notes": ""
+      },
+      "reasonForGameover": {
+        "summary": "Acercarse al hueco del montacargas permite que la criatura corte el paso.",
+        "evidence": [
+          {
+            "page": "right",
+            "paragraphIndex": 0,
+            "excerpt": "En la planta tres, junto al pozo del montacargas, debes elegir entre buscar una salida por el pasillo o arriesgarte. La escalera sigue siendo peligrosa.",
+            "justification": "Contexto donde se elige la opción letal."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 8,
+        "verdict": "solid",
+        "rationale": "Opción incompatible con la supervivencia; coherente con el peligro activo.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "Revisar contra perfil concreto."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p4-atico",
+        "notes": "Plausible en el espacio descrito."
+      }
+    }
+  ]
+}
