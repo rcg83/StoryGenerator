@@ -17,76 +17,76 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 ## Imágenes de Página
 
 ### Elena-floor-crashdoor-deep-one.png
-- **Sentido:** Elena en el suelo de la habitación mientras un Profundo derriba la puerta. El suelo huele a fango abisal.
-- **Lugar:** `spread-001` → `leftPage.illustration` (página inicial, elección crítica).
+- **Sentido:** Habitación del ático: la puerta de golpeo cede hacia dentro y un Profundo asoma todavía en el umbral, medio fuera del cuarto, junto a la ventana abierta a la cornisa.
+- **Lugar:** `spread-001` → `leftPage.illustration` (página inicial, elección crítica; imagen `large`).
 
 ### reporter-trapped-under-bed-cenital-view.png
 - **Sentido:** Vista cenital de la habitación del ático: Elena oculta bajo la cama mientras la criatura rastrea la oscuridad con sus ojos sin párpados.
 - **Lugar:** `gameover-001` → `leftPage.illustration` (Game Over por esconderse bajo la cama; imagen `full` de página entera).
 
 ### acceso-cornisa-noche.jpg
-- **Sentido:** Cornisa de la fachada del ático del hotel (planta 4): Elena deslizándose por el borde de piedra hacia la ventana de la alcoba contigua, con la ciudad en sombras muy abajo.
-- **Lugar:** `spread-002` → `leftPage.illustration` (decisión de huir por la cornisa).
+- **Sentido:** Cornisa de la fachada del ático del hotel (planta 4): Elena afianzada entre ventanas, avanzando por el borde de piedra hacia la ventana de la alcoba contigua, con la ciudad en sombras muy abajo.
+- **Lugar:** `spread-002` → `leftPage.illustration` (decisión de huir por la cornisa; imagen `large`).
 
 ### pozo-luz-montacargas.jpg
-- **Sentido:** Pozo del montacargas de servicio visto desde el pasillo de habitaciones de la planta 3: boca oscura con cable grasiento que baja hasta la planta baja.
-- **Lugar:** `spread-005` → `leftPage.illustration` (decisión en el pasillo de habitaciones, junto al pozo del montacargas, planta 3).
+- **Sentido:** Pozo del montacargas de servicio visto desde el rellano de la planta 3: boca oscura sin cabina, con cable grasiento que baja, y los arcones apilados junto a la pared.
+- **Lugar:** `spread-004` → `leftPage.illustration` (decisión en el rellano de la planta 3, junto al pozo del montacargas).
 
 ### sala-comun-radio.jpg
 - **Sentido:** Sala común del hotel en semipenumbra, con ventanas de barrotes y una radio de onda corta escupiendo estática.
-- **Lugar:** `spread-004` → `leftPage.illustration` (decisión de la radio).
+- **Lugar:** Capítulo 2 (pendiente) → decisión de la radio en la sala común (planta 2).
 
 ### pasillo-servicio-humo.jpg
 - **Sentido:** Pasillo de servicio del hotel con el humo colándose entre las rendijas de la madera.
-- **Lugar:** `spread-005` → `leftPage.illustration` (decisión de distracción con fósforos).
+- **Lugar:** Capítulo 2 (pendiente) → decisión de distracción con fósforos (planta 2).
 
 ### cocina-hotel-puerta-servicio.jpg
 - **Sentido:** Cocina del hotel con la puerta de servicio cerrada por una cerradura gorda y oxidada.
-- **Lugar:** `spread-006` → `leftPage.illustration` (decisión de la llave de la puerta de servicio).
+- **Lugar:** Capítulo 2 (pendiente) → decisión de la llave de la puerta de servicio (planta 1).
 
 ### cerradura-puerta-servicio.jpg
 - **Sentido:** Primer plano de la cerradura oxidada de la puerta de servicio del hotel.
-- **Lugar:** `spread-006b` → `leftPage.illustration` (forzar la cerradura, arriesgado).
+- **Lugar:** Capítulo 2 (pendiente) → forzar la cerradura, arriesgado (planta 1).
 
 ### gameover-puerta-captura.jpg
 - **Sentido:** La criatura agarrando a Elena junto a la puerta de servicio del hotel.
-- **Lugar:** No usada en el Capítulo 1 (reservada para un capítulo posterior; el Game Over de la puerta de servicio aún no está modelado).
+- **Lugar:** Capítulo 2 (pendiente) → Game Over de la puerta de servicio (planta 1).
 
 ### escalera-captura.jpg
-- **Sentido:** Escalera del ático del hotel entre P3 y P4: la criatura escamosa arrastrando a Elena por los peldaños que crujen, con la balaustrada rota y la boca oscura del pasillo de la planta tres al fondo.
-- **Lugar:** No usada en esta versión (sustituida por `Elena-grabbed-by-deepone-from-behind.png` en `gameover-003`).
+- **Sentido:** Pasillo de habitaciones de la planta tres, en penumbra, con la escalera al fondo entre puertas cerradas y madera húmeda, la balaustrada rota y el suelo reflejando una luz mortecina.
+- **Lugar:** `end-001` → `rightPage.illustration` (Fin del Capítulo 1: Elena alcanza el pasillo de la planta tres; imagen `full` de página entera).
 
 ### gameover-corredor-atico.jpg
 - **Sentido:** Corredor del ático (planta 4) con la madera humedecida: la criatura escamosa aferra a Elena por detrás junto a las puertas cerradas de las habitaciones, con el hueco de la escalera al fondo y el suelo crujiendo.
-- **Lugar:** `gameover-002` → `leftPage.illustration` (Game Over por quedarse inmóvil en el corredor/escalera del ático; imagen `full` de página entera).
+- **Lugar:** `gameover-002` → `leftPage.illustration` (Game Over por quedarse inmóvil en la alcoba o el corredor del ático; imagen `full` de página entera).
 
 ### gameover-vestibulo.jpg
 - **Sentido:** Vestíbulo del hotel Gilman House a oscuras: la criatura escamosa surge del mostrador de caoba y corta a Elena el paso hacia la puerta de la calle, entre el mosaico roto y el letrero caído bajo un fogonazo de cámara.
-- **Lugar:** `gameover-004` → `leftPage.illustration` (Game Over por delatarse con el flash de la cámara en el vestíbulo; imagen `full` de página entera).
+- **Lugar:** Capítulo 2 (pendiente) → Game Over por delatarse con el flash de la cámara en el vestíbulo (planta 0); imagen `full` de página entera.
 
 ### Elena-grabbed-by-deepone-from-behind.png
-- **Sentido:** Descansillo del montacargas en la planta tres: la criatura escamosa aferra a Elena por detrás y la levanta del suelo, a cinco zancadas de la escalera principal, con la balaustrada astillada y el cable grasiento del pozo balanceándose.
-- **Lugar:** `gameover-003` → `leftPage.illustration` (Game Over por asomarse al pozo del montacargas en el pasillo de P3; imagen `full` de página entera).
+- **Sentido:** Rellano de la planta tres junto al pozo del montacargas: la criatura escamosa aferra a Elena por detrás y la levanta del suelo, con la balaustrada astillada y el cable grasiento del pozo balanceándose.
+- **Lugar:** `gameover-003` → `leftPage.illustration` (Game Over por asomarse al pozo del montacargas en el rellano de P3; imagen `full` de página entera).
 
 ### almacen-trastos-penumbra.jpg
 - **Sentido:** Almacén del piso bajo del hotel en penumbra: cajas apiladas y un maniquí sin cabeza entre polvo y botellas vacías.
-- **Lugar:** `spread-007` → `leftPage.illustration` (decisión de explorar el almacén).
+- **Lugar:** Capítulo 2 (pendiente) → decisión de explorar el almacén (planta 1).
 
 ### rellano-escaleras-noche.jpg
 - **Sentido:** Caja de la escalera principal del hotel de noche, con los barrotes de las ventanas bajas dibujando rayas de luz de gas.
-- **Lugar:** `spread-008` → `leftPage.illustration` (decisión de comprobar antes de bajar).
+- **Lugar:** Capítulo 2 (pendiente) → decisión de comprobar antes de bajar (plantas 1-0).
 
 ### vestibulo-puerta-calle.jpg
 - **Sentido:** Vestíbulo del hotel (Gilman House): mosaico roto, mostrador de caoba y la puerta de calle con cristales tras la que asoma la noche.
-- **Lugar:** `spread-006` → `leftPage.illustration` (decisión del vestíbulo).
+- **Lugar:** Capítulo 2 (pendiente) → decisión del vestíbulo (planta 0).
 
 ### calle-destrozos-bloqueada.jpg
 - **Sentido:** Calle principal ante el hotel en sombras: un tranvía volcado, escombros, humo quieto y calles bloqueadas.
-- **Lugar:** `end-001` → `rightPage.illustration` (Fin: La Calle; imagen `full` de página entera).
+- **Lugar:** Capítulo 2 (pendiente) → Final en la calle (planta 0).
 
 ### callejon-trasero-noche.jpg
 - **Sentido:** Callejón trasero del hotel de noche, con charcos de agua de mar y farolas apagadas.
-- **Lugar:** `end-001` → `rightPage.illustration` (Fin del Capítulo 1: huida al callejón trasero; imagen `full` de página entera).
+- **Lugar:** Capítulo 2 (pendiente) → Final del capítulo: huida al callejón trasero (planta 0).
 
 ---
 

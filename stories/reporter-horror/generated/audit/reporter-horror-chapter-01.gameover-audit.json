@@ -1,0 +1,187 @@
+{
+  "storyId": "reporter-horror",
+  "chapterId": "reporter-horror-chapter-01",
+  "chapterNumber": 1,
+  "generatedAt": "2026-10-21T00:00:00.000Z",
+  "generatedBy": "PageAuditor",
+  "gameovers": [
+    {
+      "spreadFrom": "spread-001",
+      "optionText": "Me deslizo bajo el somier y contengo el aliento.",
+      "optionLink": "gameover-001",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p4-habitacion-elena",
+        "notes": "Habitación del ático; la criatura empuja el batiente y la ventana a la cornisa es la única salida que no cruza su hedor."
+      },
+      "reasonForGameover": {
+        "summary": "Guarecerse bajo el somier deja a Elena atrapada en un cuarto pequeño por el que entra la criatura.",
+        "evidence": [
+          {
+            "page": "left",
+            "paragraphIndex": 0,
+            "excerpt": "El pasador de tu puerta ha saltado. Algo empuja el batiente hacia dentro y la madera gime en la oscuridad del cuarto.",
+            "justification": "La criatura empuja la puerta hacia dentro: entrará en el cuarto y la ventana a la cornisa es la vía libre."
+          },
+          {
+            "page": "right",
+            "paragraphIndex": 1,
+            "excerpt": "Por la ventana, en cambio, baja aire raso de la noche, limpio de ese hedor.",
+            "justification": "El olor señala la ventana como salida limpia frente al umbral ocupado por la criatura."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 9,
+        "verdict": "solid",
+        "rationale": "El hedor sitúa a la criatura en el umbral y la ventana limpia marca la salida coherente; esconderse bajo el somier no esquiva a un rastreador que entra en la habitación.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "Elena es atlética (4) y ágil: trepar a la cornisa aprovecha su perfil; esconderse lo desaprovecha."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p4-habitacion-elena",
+        "notes": "La habitación conecta con p4-pasillo (puerta) y p4-alcoba-contigua (cornisa). La muerte ocurre en la zona de origen."
+      }
+    },
+    {
+      "spreadFrom": "spread-002",
+      "optionText": "Me aprieto contra la pared sin abrir la puerta.",
+      "optionLink": "gameover-002",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p4-alcoba-contigua",
+        "notes": "Habitación vecina; quedarse apretada contra la pared no aleja a Elena del arrastre que sube por el corredor."
+      },
+      "reasonForGameover": {
+        "summary": "No abrir la puerta y arrimarse a la pared permite que la criatura llegue por el corredor y la capture.",
+        "evidence": [
+          {
+            "page": "left",
+            "paragraphIndex": 0,
+            "excerpt": "Ganas el alfeizar de la habitación vecina y entras. El cuarto apesta a alcanfor viejo y a humedad. Su única salida es la puerta al corredor.",
+            "justification": "La única salida es la puerta al corredor; quedarse dentro no gana distancia."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 8,
+        "verdict": "solid",
+        "rationale": "La criatura recorre el corredor del ático; quedarse inmóvil en la habitación vecina la deja alcanzable.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "Elena tiene oído entrenado (4) para escuchar tras las puertas; apretarse contra la pared es una lectura errada del peligro."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p4-alcoba-contigua",
+        "notes": "La habitación conecta con p4-pasillo (puerta) y p4-habitacion-elena (cornisa). La captura ocurre en la zona de origen."
+      }
+    },
+    {
+      "spreadFrom": "spread-003",
+      "optionText": "Me planto junto a una puerta cerrada y no me muevo.",
+      "optionLink": "gameover-002",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p4-pasillo",
+        "notes": "Corredor del ático; quedarse inmóvil deja que el arrastre del corredor alcance a Elena."
+      },
+      "reasonForGameover": {
+        "summary": "Detenerse en el corredor del ático deja que lo que se arrastra por él la capture.",
+        "evidence": [
+          {
+            "page": "left",
+            "paragraphIndex": 2,
+            "excerpt": "Un arrastre pastoso se cuela entre las sombras, al otro extremo.",
+            "justification": "Hay una criatura activa en el corredor que se aproxima."
+          },
+          {
+            "page": "left",
+            "paragraphIndex": 3,
+            "excerpt": "Tu única bajada aquí es la escalera; aguardar quieta es dar tiempo a lo que llega.",
+            "justification": "El propio text advierte de que aguardar quieta es mortal."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 9,
+        "verdict": "solid",
+        "rationale": "El text dice explícitamente que aguardar quieta es dar tiempo a lo que llega; la muerte en el corredor es coherente.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "Elena es ágil (4); la opción correcta es bajar por la escalera posando el pie con cuidado."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p4-pasillo",
+        "notes": "El corredor conecta con p4-habitacion-elena y p4-alcoba-contigua (puertas) y con p4-escalera (extremo). La captura ocurre en el corredor de origen."
+      }
+    },
+    {
+      "spreadFrom": "spread-004",
+      "optionText": "Me inclino sobre el hueco del montacargas.",
+      "optionLink": "gameover-003",
+      "zone": {
+        "scenarioId": "gilman-house",
+        "fromZoneId": "p3-descansillo",
+        "notes": "Rellano de la planta tres; inclinarse sobre el hueco del montacargas expone a Elena a la criatura."
+      },
+      "reasonForGameover": {
+        "summary": "Inclinarse sobre el hueco del montacargas permite que la criatura aferre a Elena por detrás y la arroje al pozo.",
+        "evidence": [
+          {
+            "page": "left",
+            "paragraphIndex": 0,
+            "excerpt": "Desciendes la escalera del ático hasta el rellano de la planta tercera. Cada tabla cruje bajo tu peso.",
+            "justification": "Elena llega al rellano de P3; la descripción de la imagen muestra el hueco del montacargas sin cabina como peligro central y los arcones como cobertura."
+          },
+          {
+            "page": "right",
+            "paragraphIndex": 0,
+            "excerpt": "En el rellano de la planta tres, entre el hueco del montacargas y la escalera principal, decides por dónde tirar.",
+            "justification": "El text ofrece cruzar o pegarse a los arcones; inclinarse sobre el hueco es lo que expone."
+          }
+        ]
+      },
+      "solidityAssessment": {
+        "isSolid": true,
+        "score": 8,
+        "verdict": "solid",
+        "rationale": "La imagen (Elena aferrada por detrás junto al hueco) y el text (el hueco como peligro, los arcones como cobertura) sostienen la coherencia de la muerte al inclinarse.",
+        "issues": [],
+        "suggestions": []
+      },
+      "characterFit": {
+        "attributesChecked": true,
+        "skillsChecked": true,
+        "itemsChecked": true,
+        "notes": "La opción coherente con Elena es pegarse a los arcones o cruzar el rellano hacia la escalera principal."
+      },
+      "spatialFit": {
+        "adjacentChecked": true,
+        "fromZoneId": "p3-descansillo",
+        "notes": "El rellano conecta con p3-pasillo-habitaciones (puerta) y con p4-escalera (escalera). La captura ocurre en la zona de origen."
+      }
+    }
+  ]
+}
