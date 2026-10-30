@@ -20,8 +20,8 @@ Cada spread contiene **2 páginas**:
 
 | Página | Contenido | Opciones |
 |--------|-----------|----------|
-| **leftPage** | Narrativa: texto de la escena. En gameovers y finales es **solo texto** (nunca imagen) | **NUNCA** |
-| **rightPage** | Decisiones: elecciones (`pageOptions`) + párrafos de contexto que completan las 4 zonas. En gameovers y finales, imagen `full` + "Reiniciar" | SÍ |
+| **leftPage** | Narrativa: texto de la escena. En gameovers: **imagen `full` sin texto** (o solo texto en el fallback); en finales, **texto + imagen** (nunca `full`) | **NUNCA** |
+| **rightPage** | Decisiones: elecciones (`pageOptions`) + párrafos de contexto que completan las 4 zonas. En gameovers: causa + "Reiniciar"; en finales: **reservada a componentes de estado del front** | SÍ |
 
 ### 🔢 Regla de las 4 Zonas
 Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un número fijo de zonas:
@@ -47,16 +47,16 @@ Cada página se estructura en **exactamente 4 zonas**. Todo componente ocupa un 
   * 3 opciones → 1 párrafo + 3 opciones.
   * 4 opciones → 0 párrafos + 4 opciones.
 * Opcionalmente, 1 imagen `small` (1 zona) puede sustituir a uno de esos párrafos.
-* `size` default en rightPage: `small`. La rightPage **no** tiene `text` vacío obligatorio: su `text` contiene los párrafos de contexto.
+* `size` default en rightPage: `small`. La rightPage **no** tiene `text` vacío obligatorio en páginas de decisión: su `text` contiene los párrafos de contexto (salvo en `end-*`, donde queda reservada al front).
 
-**Gameover y finales (exentos de la regla de opciones):** layout canónico de página completa de imagen:
+**Gameover y finales (exentos de la regla de opciones):**
 
-| Página | Contenido |
-|--------|-----------|
-| **leftPage** | **Solo texto**: exactamente **4 párrafos** de máx. 32 palabras (la muerte o la fuga, anclada a planta + zona + de dónde llega + qué conexión tenía delante) y `title` = título del relato. Nunca `illustration`, nunca opciones |
-| **rightPage** | **Imagen `full`** (4 zonas, página entera), `text` `""` y `title` = título del capítulo. En `gameover-*`: **una sola** opción "Reiniciar" → `startPageId` (control de UI, no computa como zona). En `end-*`: **ninguna** opción (el front gestiona el reinicio del capítulo) |
+| Página | Gameover (`gameover-*`) | Final (`end-*`) |
+|--------|--------------------------|------------------|
+| **leftPage** | **Imagen `full`** (4 zonas), `text` `""`, `title` = título del relato; nunca opciones | **Texto + ilustración** (`small` → 3 párrafos, `medium` → 2, `large` → 1; nunca `full`) o **solo texto** con 4 párrafos si no hay imagen; `title` = título del relato; nunca opciones |
+| **rightPage** | Sin `illustration`; `text` con **1 párrafo** (máx. 32 palabras) de causa; **una sola** opción "Reiniciar" → `startPageId`; `title` = título del capítulo | **Reservada a los componentes de estado del front** (rango, registro y opción de seguir): `text` `""`, sin `illustration`, sin opciones; `title` = título del capítulo; opcional `warning` |
 
-Fallback: si el catálogo no tiene imagen para ese gameover/final, se omite `illustration` y la `rightPage` queda con `text` `""` + `title` (+ "Reiniciar" en los gameovers).
+Fallback: si el catálogo no tiene imagen para un `gameover-*`, se omite `illustration` y la `leftPage` queda **solo texto** con 4 párrafos; la `rightPage` mantiene `text` `""` + "Reiniciar". Si no hay imagen para un `end-*`, la `leftPage` queda **solo texto** con 4 párrafos y la `rightPage` sigue reservada al front.
 
 ### Estructura de Archivos
 ```

@@ -24,6 +24,7 @@ export interface StoryPage {
   text: string;
   pageOptions: StoryPageOption[];
   title?: string;
+  warning?: string;
   illustration?: StoryPageIllustration;
   characterData?: CharacterData;
 }

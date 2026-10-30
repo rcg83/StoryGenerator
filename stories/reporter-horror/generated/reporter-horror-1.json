@@ -234,22 +234,23 @@
       "type": "ending",
       "leftPage": {
         "id": "end-001-left",
-        "text": "Cruzas el rellano de la planta tres dejando el hueco del montacargas a un lado. Se abre ante ti el corredor de habitaciones, a oscuras.\n\nAtrás quedan la escalera del ático y el arrastre pastoso que trepa por ella.\n\nDelante tienes el corredor de la planta tres, con hojas cerradas a banda y banda y una escalera al fondo.\n\nAspiras hondo: has ganado una planta, mas el hotel entero sigue entregado a la cacería.",
+        "text": "Cruzas el rellano de la planta tres; has ganado una planta. Dejas atrás el montacargas y la escalera del ático. Ante ti, el corredor de habitaciones y otra escalera al fondo.",
         "pageOptions": [],
         "title": "La Reportera Atrapada en el Horror",
-        "pageNumber": 15
+        "pageNumber": 15,
+        "illustration": {
+          "name": "escalera-captura.jpg",
+          "size": "large",
+          "description": "En el pasillo de habitaciones de la planta tres, en penumbra, una escalera se pierde al fondo entre puertas cerradas y madera húmeda. La balaustrada está rota y el suelo refleja una luz mortecina."
+        }
       },
       "rightPage": {
         "id": "end-001-right",
         "text": "",
-        "illustration": {
-          "name": "escalera-captura.jpg",
-          "size": "full",
-          "description": "En el pasillo de habitaciones de la planta tres, en penumbra, una escalera se pierde al fondo entre puertas cerradas y madera húmeda. La balaustrada está rota y el suelo refleja una luz mortecina."
-        },
         "pageOptions": [],
         "title": "El ático",
-        "pageNumber": 16
+        "pageNumber": 16,
+        "warning": "Espacio reservado para los componentes de estado (rango, registro y opción de seguir)."
       }
     },
     {

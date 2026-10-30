@@ -54,7 +54,7 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 ### escalera-captura.jpg
 - **Sentido:** Pasillo de habitaciones de la planta tres, en penumbra, con la escalera al fondo entre puertas cerradas y madera húmeda, la balaustrada rota y el suelo reflejando una luz mortecina.
-- **Lugar:** `end-001` → `rightPage.illustration` (Fin del Capítulo 1: Elena alcanza el pasillo de la planta tres; imagen `full` de página entera).
+- **Lugar:** `end-001` → `leftPage.illustration` (Fin del Capítulo 1: Elena alcanza el pasillo de la planta tres; imagen `large` junto al texto de cierre).
 
 ### gameover-corredor-atico.jpg
 - **Sentido:** Corredor del ático (planta 4) con la madera humedecida: la criatura escamosa aferra a Elena por detrás junto a las puertas cerradas de las habitaciones, con el hueco de la escalera al fondo y el suelo crujiendo.
@@ -94,7 +94,7 @@ Este catálogo es la **fuente de verdad** de las imágenes de la historia. Cada 
 
 * Solo se referencia una imagen si **está listada en el `.md`**.
 * La imagen se referencia vía el campo **`illustration`** como objeto `{ name, description, size }`: `name` es el archivo listado en este catálogo, `size` es opcional (`small` = 1 zona, `medium` = 2, `large` = 3, `full` = 4; default `large` en `leftPage`, `small` en `rightPage`) y `description` (un único párrafo en **tercera persona**, máximo **48 palabras**, descripción pura y precisa de lo que la imagen muestra: encuadre, luz, atmósfera, figuras y objetos) es el contenido alternativo por accesibilidad o cuando la imagen no está disponible. Las pistas de decisión pueden venir del `text` o de la imagen: si vienen de la imagen, sus elementos se describen fielmente para **deducirse** de la descripción, nunca se entregan como consejo explícito. El front puede mostrar la imagen o la descripción.
-* **Gameover y finales:** en `gameover-*` la imagen va **siempre en la `leftPage`** con `size: "full"` (página entera), la `leftPage` queda sin texto y la `rightPage` se reserva para la explicación breve + "Reiniciar". En `end-*` la imagen va **siempre en la `rightPage`** con `size: "full"` (página entera) y la `leftPage` queda **solo con texto**. Si un `gameover-*` no tiene imagen en el catálogo, se omite `illustration` y la `leftPage` pasa a **solo texto** (4 párrafos) con la opción "Reiniciar" en la `rightPage`.
+* **Gameover y finales:** en `gameover-*` la imagen va **siempre en la `leftPage`** con `size: "full"` (página entera), la `leftPage` queda sin texto y la `rightPage` se reserva para la explicación breve + "Reiniciar". En `end-*` la imagen va **siempre en la `leftPage`** junto al texto de cierre con `small`/`medium`/`large` (nunca `full`), y la `rightPage` queda reservada a los componentes de estado del front (rango, registro y opción de seguir), sin texto de historia ni `illustration`. Si un `gameover-*` no tiene imagen en el catálogo, se omite `illustration` y la `leftPage` pasa a **solo texto** (4 párrafos) con la opción "Reiniciar" en la `rightPage`.
 * Si ninguna imagen del catálogo encaja naturalmente con la escena, **omitir el campo `illustration`** — no forzar una imagen que no represente fielmente la narrativa.
 * Al añadir una imagen nueva a la historia, **registrarla en el `.md`** con su entrada de sentido y lugar.
 * El archivo físico de la imagen puede estar **pendiente de generación**: basta con que esté listado en el `.md` para poder referenciarlo en la historia.
