@@ -12,7 +12,7 @@ Cada historia se divide en **capítulos** (dominio `Chapter`). Un capítulo es u
 * **Tamaño fijo:** cada capítulo contiene **exactamente entre 6 y 8 spreads en total**, contando spreads de decisión, gameovers y finales. Ni más ni menos.
 * **Composición:** 4-6 spreads de decisión + 1-2 gameovers + **exactamente 1 spread `end-*`** de cierre.
 * **Autocontenido:** todos los `optionLink` viven dentro del capítulo; los `gameover-*` reinician el capítulo ("Reiniciar" → `startPageId`); el `end-*` cierra el capítulo y el front desbloquea el siguiente.
-* **Título:** el `titleEn`/`titleEs` de nivel superior es el **título del relato (magazine)**. Todas las `leftPage` del capítulo llevan `title` = **título del relato**; todas las `rightPage` (decisión, gameovers y finales) llevan `title` = **título del capítulo**, idéntico en todo el capítulo. Prohibidos los títulos propios por spread.
+* **Título:** el `titleEn`/`titleEs` de nivel superior es el **título del relato (magazine)**. Todas las `leftPage` del capítulo llevan `title` = **título del relato**; todas las `rightPage` (decisión, gameovers y finales) llevan `title` = **título del capítulo**, idéntico en todo el capítulo. Prohibidos los títulos propios por spread. Los títulos en **español** (`titleEs`, `leftPage.title`, `rightPage.title`, `cover.subtitle`) van en **sentence case**: solo mayúscula inicial y nombres propios (*"La reportera atrapada en el horror"*), nunca cada palabra. Los títulos en **inglés** (`titleEn`) van en **title case** (*"The Reporter Trapped in Horror"*).
 * **Límite:** si el contenido no cabe en 8 spreads, se abre un capítulo nuevo (`-chapter-NN+1`).
 
 ### Unidad Básica: StorySpread

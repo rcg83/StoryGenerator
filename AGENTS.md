@@ -182,7 +182,7 @@ Un capítulo es una unidad autocontenida de 6-8 spreads. Cada capítulo es un ar
 }
 ```
 
-* **Reglas del dominio `Chapter`:** `id` = `<storyId>-chapter-NN`; `spreads` contiene **6-8 elementos exactamente** (decisión + gameovers + 1 `end-*`); `startPageId` apunta a su primer spread de decisión; ningún `optionLink` sale del capítulo; todas sus `leftPage` llevan `title` = título del relato y todas sus `rightPage` (decisión, gameovers y finales) llevan `title` = título del capítulo. El `titleEn`/`titleEs` de nivel superior es el **título del relato (magazine)**.
+* **Reglas del dominio `Chapter`:** `id` = `<storyId>-chapter-NN`; `spreads` contiene **6-8 elementos exactamente** (decisión + gameovers + 1 `end-*`); `startPageId` apunta a su primer spread de decisión; ningún `optionLink` sale del capítulo; todas sus `leftPage` llevan `title` = título del relato y todas sus `rightPage` (decisión, gameovers y finales) llevan `title` = título del capítulo. El `titleEn`/`titleEs` de nivel superior es el **título del relato (magazine)**. Los títulos en **español** van en **sentence case** (solo mayúscula inicial y nombres propios); los títulos en **inglés** van en **title case**.
 * **Dominio `Story`:** la historia agrega sus capítulos en orden (`chapters: Chapter[]`, ver `schemas/Chapter.ts` y `schemas/Story.ts`); el archivo por capítulo es la unidad de generación y de reproducción.
 
 ### Unidad Básica: StorySpread
@@ -236,6 +236,7 @@ Cada spread contiene **2 páginas** con roles diferentes:
   * **`gameover-*`:** `leftPage` con `illustration.size: "full"`, `text` vacío, `pageOptions: []`, `title` = título del relato. `rightPage` sin `illustration`, con `text` formado por **únicamente 1 párrafo breve** explicando **la razón causal** por la que la decisión fue un error (máx. 32 palabras), y **exactamente 1 opción "Reiniciar"** (`optionLink` a `startPageId`), con `title` = título del capítulo (control de UI, no computa como zona).
   * **`end-*`:** `leftPage` con **texto + ilustración** (nunca `size: "full"`; `small` → 3 párrafos, `medium` → 2, `large` → 1) o **solo texto** con **exactamente 4 párrafos** si el catálogo no ofrece imagen; `rightPage` con `text` vacío, `title` = título del capítulo, **sin `illustration`**, **sin opciones** y, opcionalmente, un `warning` que indique que queda reservada a los componentes de estado del front (rango, registro y opción de seguir). Si no existe imagen para un `gameover-*`, se prefiere siempre aplicar la nueva estructura; en caso de no poder, se omite `illustration` y se adapta la estructura acorde a lo requerido.
 * **Títulos de página**: `leftPage.title` = **título del relato** (idéntico en todo el capítulo); `rightPage.title` = **título del capítulo** — idéntico en todos los spreads del capítulo (decisión, gameovers y finales). Prohibido escribir títulos propios por spread.
+* **Capitalización de títulos (ES vs EN)**: los títulos en **español** (`titleEs`, `leftPage.title`, `rightPage.title` y `cover.subtitle`) usan **sentence case**: solo la primera letra en mayúscula y los nombres propios (*"La reportera atrapada en el horror"*). **Prohibido** capitalizar cada palabra (*"La Reportera Atrapada en el Horror"*). Los títulos en **inglés** (`titleEn`) sí usan **title case**: *"The Reporter Trapped in Horror"*.
 
 ### CharacterData (Datos del Personaje)
 ```json

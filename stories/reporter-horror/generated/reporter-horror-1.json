@@ -3,10 +3,10 @@
   "chapterNumber": 1,
   "id": "reporter-horror-chapter-01",
   "titleEn": "The Reporter Trapped in Horror",
-  "titleEs": "La Reportera Atrapada en el Horror",
+  "titleEs": "La reportera atrapada en el horror",
   "startPageId": "spread-001",
   "cover": {
-    "subtitle": "Capítulo 1 • Fase 3: La Cacería • 02:30 AM",
+    "subtitle": "Capítulo 1 • Fase 3: La cacería • 02:30 AM",
     "coverImage": "/images/cover-reporter-trapped-horror.png"
   },
   "spreads": [
@@ -22,7 +22,7 @@
           "description": "En la habitación del ático, la hoja de la puerta cede hacia dentro y una criatura escamosa asoma aún en el umbral, medio fuera del cuarto. A su espalda, la ventana abierta da a la cornisa de piedra; el resto del pasillo queda a oscuras."
         },
         "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
+        "title": "La reportera atrapada en el horror",
         "pageNumber": 1
       },
       "rightPage": {
@@ -54,7 +54,7 @@
           "description": "Sobre la cornisa de piedra que bordea la fachada del Gilman House, envueltos en una niebla baja y farolas mortecinas, una figura se afianza entre ventanas. El muro húmedo y las grietas ofrecen agarre para avanzar hacia la ventana contigua."
         },
         "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
+        "title": "La reportera atrapada en el horror",
         "pageNumber": 3
       },
       "rightPage": {
@@ -85,7 +85,7 @@
         "id": "spread-003-left",
         "text": "Sales al corredor del ático. La humedad rezuma por los muros y las tablas del suelo protestan bajo tus botas.\n\nLas hojas de las demás habitaciones siguen cerradas. En el fondo del corredor arranca la escalera que desciende a la planta tercera.\n\nUn arrastre pastoso se cuela entre las sombras, al otro extremo.\n\nTu única bajada aquí es la escalera; aguardar quieta es dar tiempo a lo que llega.",
         "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
+        "title": "La reportera atrapada en el horror",
         "pageNumber": 5
       },
       "rightPage": {
@@ -121,7 +121,7 @@
           "description": "En el rellano de la planta tres, el hueco del montacargas de servicio se abre como una boca negra en el muro, sin cabina y con un cable grasiento colgando. Los arcones apilados contra la pared ofrecen cobertura en la penumbra."
         },
         "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
+        "title": "La reportera atrapada en el horror",
         "pageNumber": 7
       },
       "rightPage": {
@@ -157,7 +157,7 @@
           "description": "Vista cenital de la habitación del ático: Elena oculta bajo la cama mientras la criatura peina la oscuridad con sus ojos sin párpados. La puerta cuelga de una bisagra y el suelo aparece embadurnado de barro húmedo."
         },
         "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
+        "title": "La reportera atrapada en el horror",
         "pageNumber": 9
       },
       "rightPage": {
@@ -185,7 +185,7 @@
           "description": "En el corredor del ático, entre puertas cerradas y madera humedecida, la criatura escamosa aferra a Elena por la espalda y la arrastra hacia el hueco de la escalera. El suelo cruje y los muros rezuman en la penumbra."
         },
         "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
+        "title": "La reportera atrapada en el horror",
         "pageNumber": 11
       },
       "rightPage": {
@@ -213,7 +213,7 @@
           "description": "En el rellano de la planta tres, junto al hueco del montacargas, la criatura escamosa aferra a Elena por la espalda y la alza del suelo. La balaustrada está astillada y el cable grasiento del hueco oscila en la penumbra."
         },
         "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
+        "title": "La reportera atrapada en el horror",
         "pageNumber": 13
       },
       "rightPage": {
@@ -236,7 +236,7 @@
         "id": "end-001-left",
         "text": "Cruzas el rellano de la planta tres; has ganado una planta. Dejas atrás el montacargas y la escalera del ático. Ante ti, el corredor de habitaciones y otra escalera al fondo.",
         "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
+        "title": "La reportera atrapada en el horror",
         "pageNumber": 15,
         "illustration": {
           "name": "escalera-captura.jpg",
@@ -265,7 +265,7 @@
           "description": "En el corredor del ático, entre puertas cerradas y madera humedecida, la criatura escamosa aferra a Elena por la espalda y la arrastra hacia el hueco de la escalera. El suelo cruje y los muros rezuman en la penumbra."
         },
         "pageOptions": [],
-        "title": "La Reportera Atrapada en el Horror",
+        "title": "La reportera atrapada en el horror",
         "pageNumber": 11
       },
       "rightPage": {
