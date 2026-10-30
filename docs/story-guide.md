@@ -96,6 +96,14 @@ Cada archivo `chapter-NN.json` es un capítulo del dominio `Chapter` (ver `schem
 * Toda zona usada debe **existir en el `.json`** del escenario; una zona inexistente o una arista inventada es un error.
 * Los **elementos de cada zona son estables** y se toman del escenario, no se inventan fuera de él.
 
+## ✍️ Estilo de Escritura
+
+* **Español natural y limpio:** frases cortas, voz activa y palabras comunes y precisas; la atmósfera nace del detalle sensorial concreto, no de un léxico recargado.
+* **Sin pomposidad ni arcaísmos:** evitar términos de adorno cuando existe uno claro (*"otear" → "mirar/registrar/revisar"*; *"sopesas" → "dudas entre"*; *"aire raso" → "aire fresco"*).
+* **Sin sinónimos forzados:** si una palabra precisa ya se usó, se repite; no se cambia por un sinónimo raro solo para evitar la repetición.
+* **Persona:** narrativa en 2ª persona del singular; opciones en 1ª persona e intención pura.
+* La regla completa vive en `AGENTS.md` (PASO 3, punto 10).
+
 ---
 
 ## 🎯 Cierre de Capítulo (Hito de Convergencia)

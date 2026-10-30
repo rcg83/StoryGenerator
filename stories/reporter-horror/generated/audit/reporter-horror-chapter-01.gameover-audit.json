@@ -12,7 +12,7 @@
       "zone": {
         "scenarioId": "gilman-house",
         "fromZoneId": "p4-habitacion-elena",
-        "notes": "Habitación del ático; la criatura empuja el batiente y la ventana a la cornisa es la única salida que no cruza su hedor."
+        "notes": "Habitación del ático; la criatura empuja el puerta y la ventana a la cornisa es la única salida que no cruza su hedor."
       },
       "reasonForGameover": {
         "summary": "Guarecerse bajo el somier deja a Elena atrapada en un cuarto pequeño por el que entra la criatura.",
@@ -20,13 +20,13 @@
           {
             "page": "left",
             "paragraphIndex": 0,
-            "excerpt": "El pasador de tu puerta ha saltado. Algo empuja el batiente hacia dentro y la madera gime en la oscuridad del cuarto.",
+            "excerpt": "El pasador de tu puerta ha saltado. Algo empuja la puerta hacia dentro y la madera gime en la oscuridad del cuarto.",
             "justification": "La criatura empuja la puerta hacia dentro: entrará en el cuarto y la ventana a la cornisa es la vía libre."
           },
           {
             "page": "right",
             "paragraphIndex": 1,
-            "excerpt": "Por la ventana, en cambio, baja aire raso de la noche, limpio de ese hedor.",
+            "excerpt": "Por la ventana, en cambio, entra aire fresco de la noche, limpio de ese hedor.",
             "justification": "El olor señala la ventana como salida limpia frente al umbral ocupado por la criatura."
           }
         ]
@@ -66,7 +66,7 @@
           {
             "page": "left",
             "paragraphIndex": 0,
-            "excerpt": "Ganas el alfeizar de la habitación vecina y entras. El cuarto apesta a alcanfor viejo y a humedad. Su única salida es la puerta al corredor.",
+            "excerpt": "Alcanzas el alfeizar de la habitación vecina y entras. El cuarto apesta a alcanfor viejo y a humedad. Su única salida es la puerta al corredor.",
             "justification": "La única salida es la puerta al corredor; quedarse dentro no gana distancia."
           }
         ]
@@ -106,13 +106,13 @@
           {
             "page": "left",
             "paragraphIndex": 2,
-            "excerpt": "Un arrastre pastoso se cuela entre las sombras, al otro extremo.",
+            "excerpt": "Algo se arrastra, húmedo, entre las sombras, al otro extremo.",
             "justification": "Hay una criatura activa en el corredor que se aproxima."
           },
           {
             "page": "left",
             "paragraphIndex": 3,
-            "excerpt": "Tu única bajada aquí es la escalera; aguardar quieta es dar tiempo a lo que llega.",
+            "excerpt": "Tu única bajada aquí es la escalera; quedarte quieta es dar tiempo a lo que llega.",
             "justification": "El propio text advierte de que aguardar quieta es mortal."
           }
         ]
@@ -121,7 +121,7 @@
         "isSolid": true,
         "score": 9,
         "verdict": "solid",
-        "rationale": "El text dice explícitamente que aguardar quieta es dar tiempo a lo que llega; la muerte en el corredor es coherente.",
+        "rationale": "El text dice explícitamente que quedarte quieta es dar tiempo a lo que llega; la muerte en el corredor es coherente.",
         "issues": [],
         "suggestions": []
       },
@@ -129,7 +129,7 @@
         "attributesChecked": true,
         "skillsChecked": true,
         "itemsChecked": true,
-        "notes": "Elena es ágil (4); la opción correcta es bajar por la escalera posando el pie con cuidado."
+        "notes": "Elena es ágil (4); la opción correcta es bajar por la escalera apoyando el pie con cuidado."
       },
       "spatialFit": {
         "adjacentChecked": true,
@@ -158,7 +158,7 @@
           {
             "page": "right",
             "paragraphIndex": 0,
-            "excerpt": "En el rellano de la planta tres, entre el hueco del montacargas y la escalera principal, decides por dónde tirar.",
+            "excerpt": "En el rellano de la planta tres, entre el hueco del montacargas y la escalera principal, eliges por dónde seguir.",
             "justification": "El text ofrece cruzar o pegarse a los arcones; inclinarse sobre el hueco es lo que expone."
           }
         ]

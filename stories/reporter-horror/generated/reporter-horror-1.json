@@ -15,7 +15,7 @@
       "type": "critical",
       "leftPage": {
         "id": "spread-001-left",
-        "text": "El pasador de tu puerta ha saltado. Algo empuja el batiente hacia dentro y la madera gime en la oscuridad del cuarto.",
+        "text": "El pasador de tu puerta ha saltado. Algo empuja la puerta hacia dentro y la madera gime en la oscuridad del cuarto.",
         "illustration": {
           "name": "Elena-floor-crashdoor-deep-one.png",
           "size": "large",
@@ -27,7 +27,7 @@
       },
       "rightPage": {
         "id": "spread-001-right",
-        "text": "Por la rendija del batiente te llega un vaho denso a salitre y marisco descompuesto. Nace del umbral, donde la criatura se apoya.\n\nPor la ventana, en cambio, baja aire raso de la noche, limpio de ese hedor.",
+        "text": "Por la rendija de la puerta te llega un olor denso a salitre y marisco descompuesto. Sale del umbral, donde la criatura se apoya.\n\nPor la ventana, en cambio, entra aire fresco de la noche, limpio de ese hedor.",
         "pageOptions": [
           {
             "optionText": "Trepo por el alféizar a la cornisa y sigo hasta la ventana vecina.",
@@ -47,7 +47,7 @@
       "type": "default",
       "leftPage": {
         "id": "spread-002-left",
-        "text": "Ganas el alfeizar de la habitación vecina y entras. El cuarto apesta a alcanfor viejo y a humedad. Su única salida es la puerta al corredor.",
+        "text": "Alcanzas el alfeizar de la habitación vecina y entras. El cuarto apesta a alcanfor viejo y a humedad. Su única salida es la puerta al corredor.",
         "illustration": {
           "name": "acceso-cornisa-noche.jpg",
           "size": "large",
@@ -66,7 +66,7 @@
             "optionLink": "spread-003"
           },
           {
-            "optionText": "Oteo el cuarto por si guarda algo útil antes de salir.",
+            "optionText": "Reviso el cuarto por si guarda algo útil antes de salir.",
             "optionLink": "spread-003"
           },
           {
@@ -83,17 +83,17 @@
       "type": "default",
       "leftPage": {
         "id": "spread-003-left",
-        "text": "Sales al corredor del ático. La humedad rezuma por los muros y las tablas del suelo protestan bajo tus botas.\n\nLas hojas de las demás habitaciones siguen cerradas. En el fondo del corredor arranca la escalera que desciende a la planta tercera.\n\nUn arrastre pastoso se cuela entre las sombras, al otro extremo.\n\nTu única bajada aquí es la escalera; aguardar quieta es dar tiempo a lo que llega.",
+        "text": "Sales al corredor del ático. Los muros están húmedos y las tablas del suelo protestan bajo tus botas.\n\nLas puertas de las demás habitaciones siguen cerradas. En el fondo del corredor arranca la escalera que desciende a la planta tercera.\n\nAlgo se arrastra, húmedo, entre las sombras, al otro extremo.\n\nTu única bajada aquí es la escalera; quedarte quieta es dar tiempo a lo que llega.",
         "pageOptions": [],
         "title": "La reportera atrapada en el horror",
         "pageNumber": 5
       },
       "rightPage": {
         "id": "spread-003-right",
-        "text": "En el corredor del ático, ante la escalera, sopesas si bajas ya o tanteas otra salida.",
+        "text": "En el corredor del ático, ante la escalera, dudas entre bajar ya o buscar otra salida.",
         "pageOptions": [
           {
-            "optionText": "Desciendo la escalera, posando el pie con cuidado en cada peldaño.",
+            "optionText": "Desciendo la escalera, apoyando el pie con cuidado en cada peldaño.",
             "optionLink": "spread-004"
           },
           {
@@ -126,7 +126,7 @@
       },
       "rightPage": {
         "id": "spread-004-right",
-        "text": "En el rellano de la planta tres, entre el hueco del montacargas y la escalera principal, decides por dónde tirar.",
+        "text": "En el rellano de la planta tres, entre el hueco del montacargas y la escalera principal, eliges por dónde seguir.",
         "pageOptions": [
           {
             "optionText": "Atravieso el rellano hacia la escalera principal.",
@@ -154,7 +154,7 @@
         "illustration": {
           "name": "reporter-trapped-under-bed-cenital-view.png",
           "size": "full",
-          "description": "Vista cenital de la habitación del ático: Elena oculta bajo la cama mientras la criatura peina la oscuridad con sus ojos sin párpados. La puerta cuelga de una bisagra y el suelo aparece embadurnado de barro húmedo."
+          "description": "Vista cenital de la habitación del ático: Elena oculta bajo la cama mientras la criatura recorre la oscuridad con sus ojos sin párpados. La puerta cuelga de una bisagra y el suelo aparece embadurnado de barro húmedo."
         },
         "pageOptions": [],
         "title": "La reportera atrapada en el horror",
@@ -162,7 +162,7 @@
       },
       "rightPage": {
         "id": "gameover-001-right",
-        "text": "Esconderte bajo el somier fue un error: el batiente ya cedía y la criatura, atraída por el umbral, te vio al refugiarte.",
+        "text": "Esconderte bajo el somier fue un error: la puerta ya cedía y la criatura, atraída por el umbral, te vio al refugiarte.",
         "pageOptions": [
           {
             "optionText": "Reiniciar",
@@ -182,7 +182,7 @@
         "illustration": {
           "name": "gameover-corredor-atico.jpg",
           "size": "full",
-          "description": "En el corredor del ático, entre puertas cerradas y madera humedecida, la criatura escamosa aferra a Elena por la espalda y la arrastra hacia el hueco de la escalera. El suelo cruje y los muros rezuman en la penumbra."
+          "description": "En el corredor del ático, entre puertas cerradas y madera humedecida, la criatura escamosa aferra a Elena por la espalda y la arrastra hacia el hueco de la escalera. El suelo cruje y los muros gotean en la penumbra."
         },
         "pageOptions": [],
         "title": "La reportera atrapada en el horror",
@@ -190,7 +190,7 @@
       },
       "rightPage": {
         "id": "gameover-002-right",
-        "text": "Apretarte contra la pared sin abrir esa puerta fue un error: el ruido te delató y lo que acechaba en la habitación vecina te encontró junto a la única salida.",
+        "text": "Apretarte contra la pared sin abrir esa puerta fue un error: el ruido te delató y la criatura de la habitación vecina te encontró junto a la única salida.",
         "pageOptions": [
           {
             "optionText": "Reiniciar",
@@ -218,7 +218,7 @@
       },
       "rightPage": {
         "id": "gameover-003-right",
-        "text": "Asomarte al hueco del montacargas fue un error: carecía de cobertura y algo te aguardaba detrás, fuera de tu campo de visión.",
+        "text": "Asomarte al hueco del montacargas fue un error: no tenías dónde cubrirte y algo te esperaba detrás, fuera de tu vista.",
         "pageOptions": [
           {
             "optionText": "Reiniciar",
@@ -234,7 +234,7 @@
       "type": "ending",
       "leftPage": {
         "id": "end-001-left",
-        "text": "Cruzas el rellano de la planta tres; has ganado una planta. Dejas atrás el montacargas y la escalera del ático. Ante ti, el corredor de habitaciones y otra escalera al fondo.",
+        "text": "Cruzas el rellano de la planta tres; has bajado una planta. Dejas atrás el montacargas y la escalera del ático. Ante ti, el corredor de habitaciones y otra escalera al fondo.",
         "pageOptions": [],
         "title": "La reportera atrapada en el horror",
         "pageNumber": 15,
@@ -262,7 +262,7 @@
         "illustration": {
           "name": "gameover-corredor-atico.jpg",
           "size": "full",
-          "description": "En el corredor del ático, entre puertas cerradas y madera humedecida, la criatura escamosa aferra a Elena por la espalda y la arrastra hacia el hueco de la escalera. El suelo cruje y los muros rezuman en la penumbra."
+          "description": "En el corredor del ático, entre puertas cerradas y madera humedecida, la criatura escamosa aferra a Elena por la espalda y la arrastra hacia el hueco de la escalera. El suelo cruje y los muros gotean en la penumbra."
         },
         "pageOptions": [],
         "title": "La reportera atrapada en el horror",
@@ -270,7 +270,7 @@
       },
       "rightPage": {
         "id": "gameover-002b-right",
-        "text": "Quedarte junto a esa puerta cerrada fue un error: en ese corredor del ático, el arrastre se acercaba por el fondo y te cortaba la única huida.",
+        "text": "Quedarte junto a esa puerta cerrada fue un error: en ese corredor del ático, el sonido del arrastre se acercaba por el fondo y te cortaba la única huida.",
         "pageOptions": [
           {
             "optionText": "Reiniciar",
